@@ -1,0 +1,12 @@
+project:
+  environment: ci
+
+runtime:
+  fail_fast: true
+
+logging:
+  level: WARNING
+
+azure_mapping:
+  enabled: false
+  deployment_mode: reference-only

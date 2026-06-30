@@ -1,0 +1,74 @@
+flowchart TD
+    subgraph Sources["Synthetic Manufacturing Sources"]
+        Production["Production telemetry"]
+        Inventory["Inventory levels"]
+        Sales["Sales orders"]
+        Quality["Quality checks"]
+        Equipment["Equipment health"]
+        Warehouse["Warehouse movements"]
+        Suppliers["Supplier performance"]
+    end
+
+    subgraph Local["Local-first implementation"]
+        Batch["Batch file ingestion"]
+        Stream["Streaming event simulation"]
+        Validate["Validation and data-quality controls"]
+        Quarantine["Quarantine rejected records"]
+        Raw["Raw data zone"]
+        Interim["Interim data zone"]
+        Processed["Processed data zone"]
+        Features["Analytics and feature engineering"]
+        ML["Future ML workflows"]
+        Reporting["Power BI-ready extracts and reports"]
+    end
+
+    subgraph Governance["Governance and operations"]
+        Lineage["Lineage metadata"]
+        Manifests["Run manifests"]
+        Logs["Structured logs and metrics"]
+    end
+
+    subgraph Azure["Azure reference mapping, not deployed"]
+        EventHubs["Event Hubs / IoT Hub"]
+        ADLS["Data Lake Storage Gen2"]
+        StreamAnalytics["Stream Analytics"]
+        ADX["Data Explorer"]
+        Synapse["Synapse Analytics"]
+        AzureML["Azure Machine Learning"]
+        Foundry["Azure AI Foundry"]
+        PowerBI["Microsoft Power BI"]
+        Purview["Microsoft Purview"]
+        Monitor["Azure Monitor / App Insights"]
+    end
+
+    Production --> Stream
+    Equipment --> Stream
+    Inventory --> Batch
+    Sales --> Batch
+    Quality --> Batch
+    Warehouse --> Batch
+    Suppliers --> Batch
+    Stream --> Validate
+    Batch --> Validate
+    Validate --> Raw
+    Validate --> Quarantine
+    Raw --> Interim
+    Interim --> Processed
+    Processed --> Features
+    Features --> ML
+    Features --> Reporting
+    ML --> Reporting
+    Validate --> Lineage
+    Processed --> Manifests
+    Reporting --> Logs
+
+    Stream -.-> EventHubs
+    Raw -.-> ADLS
+    Stream -.-> StreamAnalytics
+    Features -.-> ADX
+    Reporting -.-> Synapse
+    ML -.-> AzureML
+    Reporting -.-> PowerBI
+    Lineage -.-> Purview
+    Logs -.-> Monitor
+    ML -.-> Foundry

@@ -1,0 +1,12 @@
+project:
+  environment: local
+
+runtime:
+  fail_fast: true
+
+logging:
+  level: INFO
+
+azure_mapping:
+  enabled: false
+  deployment_mode: reference-only

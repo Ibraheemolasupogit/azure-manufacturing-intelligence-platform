@@ -1,0 +1,24 @@
+project:
+  name: azure-manufacturing-intelligence-platform
+  version: 0.1.0
+  environment: local
+
+paths:
+  raw_data: data/raw
+  interim_data: data/interim
+  processed_data: data/processed
+  outputs: outputs
+  reports: reports
+
+runtime:
+  random_seed: 20260701
+  timezone: UTC
+  fail_fast: true
+
+logging:
+  level: INFO
+  format: json
+
+azure_mapping:
+  enabled: false
+  deployment_mode: reference-only
