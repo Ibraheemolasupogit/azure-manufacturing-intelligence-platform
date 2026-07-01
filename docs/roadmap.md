@@ -20,7 +20,7 @@ Out of scope: advanced analytics and cloud ingestion.
 
 Objective: ingest source files into governed local zones with validation.
 Principal components: schema checks, quarantine handling, lineage, and manifests.
-Planned evidence: accepted and rejected synthetic records with audit trails.
+Evidence: accepted records, empty successful quarantine files for the tracked sample, validation summaries, quarantine summaries, lineage records, ingestion manifest, data-quality report, and tests for invalid-record quarantine.
 Dependencies: Milestones 1-2.
 Out of scope: forecasting and optimisation.
 

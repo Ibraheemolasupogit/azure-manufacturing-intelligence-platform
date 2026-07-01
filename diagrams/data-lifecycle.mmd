@@ -1,9 +1,11 @@
 flowchart LR
-    Generate["Generate synthetic data"] --> Ingest["Ingest"]
+    Generate["Generate synthetic data"] --> Raw["Raw immutable files"]
+    Raw --> Ingest["Ingest"]
     Ingest --> Validate["Validate"]
     Validate --> Decision{"Accept?"}
     Decision -- No --> Quarantine["Quarantine with data-quality evidence"]
-    Decision -- Yes --> Transform["Transform"]
+    Decision -- Yes --> Accepted["Accepted interim records"]
+    Accepted --> Transform["Transform"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -15,5 +17,7 @@ flowchart LR
 
     Ingest -.-> Lineage["Lineage metadata"]
     Validate -.-> Evidence["Data-quality evidence"]
-    Score -.-> Manifest["Run manifests"]
+    Accepted -.-> Manifest["Run manifests"]
+    Quarantine -.-> Manifest
+    Score -.-> Manifest
     Report -.-> Manifest

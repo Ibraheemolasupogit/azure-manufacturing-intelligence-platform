@@ -38,3 +38,12 @@ jobs:
 
       - name: Test
         run: pytest
+
+      - name: Run CI ingestion
+        run: make ingest-ci
+
+      - name: Validate CI ingestion
+        run: python -m manufacturing_intelligence.ingestion --config configs/ingestion_ci.yaml --validate-existing-run --output-directory .generated/ci/interim
+
+      - name: Clean generated CI outputs
+        run: rm -rf .generated

@@ -10,11 +10,12 @@ flowchart TD
     end
 
     subgraph Local["Local-first implementation"]
+        Raw["Raw data zone"]
         Batch["Batch file ingestion"]
         Stream["Streaming event simulation"]
         Validate["Validation and data-quality controls"]
+        Accepted["Accepted records"]
         Quarantine["Quarantine rejected records"]
-        Raw["Raw data zone"]
         Interim["Interim data zone"]
         Processed["Processed data zone"]
         Features["Analytics and feature engineering"]
@@ -43,22 +44,26 @@ flowchart TD
 
     Production --> Stream
     Equipment --> Stream
-    Inventory --> Batch
-    Sales --> Batch
-    Quality --> Batch
-    Warehouse --> Batch
-    Suppliers --> Batch
+    Inventory --> Raw
+    Sales --> Raw
+    Quality --> Raw
+    Warehouse --> Raw
+    Suppliers --> Raw
+    Production --> Raw
+    Equipment --> Raw
+    Raw --> Batch
     Stream --> Validate
     Batch --> Validate
-    Validate --> Raw
+    Validate --> Accepted
     Validate --> Quarantine
-    Raw --> Interim
+    Accepted --> Interim
     Interim --> Processed
     Processed --> Features
     Features --> ML
     Features --> Reporting
     ML --> Reporting
     Validate --> Lineage
+    Validate --> Manifests
     Processed --> Manifests
     Reporting --> Logs
 

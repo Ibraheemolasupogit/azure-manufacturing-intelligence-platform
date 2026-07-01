@@ -1,0 +1,153 @@
+{
+  "accepted_outputs": {
+    "equipment_health": {
+      "file_size_bytes": 260611,
+      "path": "accepted/equipment_health.jsonl",
+      "row_count": 504,
+      "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+    },
+    "inventory_levels": {
+      "file_size_bytes": 6573,
+      "path": "accepted/inventory_levels.csv",
+      "row_count": 72,
+      "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+    },
+    "production_events": {
+      "file_size_bytes": 94769,
+      "path": "accepted/production_events.jsonl",
+      "row_count": 168,
+      "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+    },
+    "quality_checks": {
+      "file_size_bytes": 25900,
+      "path": "accepted/quality_checks.csv",
+      "row_count": 168,
+      "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+    },
+    "sales_orders": {
+      "file_size_bytes": 20684,
+      "path": "accepted/sales_orders.csv",
+      "row_count": 180,
+      "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+    },
+    "supplier_performance": {
+      "file_size_bytes": 14793,
+      "path": "accepted/supplier_performance.csv",
+      "row_count": 120,
+      "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+    },
+    "warehouse_movements": {
+      "file_size_bytes": 26670,
+      "path": "accepted/warehouse_movements.csv",
+      "row_count": 220,
+      "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+    }
+  },
+  "configuration_path": "configs/ingestion.yaml",
+  "configuration_sha256": "1d97f0d91dd5a2b3ff08f37efa3ad60f12c717c98e22670da82f8bce25cbb5b5",
+  "critical_count": 0,
+  "error_count": 0,
+  "execution_mode": "strict",
+  "generation_manifest_path": "data/raw/generation_manifest.json",
+  "generation_manifest_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0",
+  "git_commit": "2d26b6a48c2c76e6cdc24731963faf1823f51f3a",
+  "ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "pipeline_name": "governed_ingestion",
+  "pipeline_version": "0.1.0",
+  "quarantine_outputs": {
+    "equipment_health": {
+      "file_size_bytes": 0,
+      "path": "quarantine/equipment_health.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "inventory_levels": {
+      "file_size_bytes": 0,
+      "path": "quarantine/inventory_levels.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "production_events": {
+      "file_size_bytes": 0,
+      "path": "quarantine/production_events.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "quality_checks": {
+      "file_size_bytes": 0,
+      "path": "quarantine/quality_checks.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sales_orders": {
+      "file_size_bytes": 0,
+      "path": "quarantine/sales_orders.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "supplier_performance": {
+      "file_size_bytes": 0,
+      "path": "quarantine/supplier_performance.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "warehouse_movements": {
+      "file_size_bytes": 0,
+      "path": "quarantine/warehouse_movements.jsonl",
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "quarantine_rate": 0.0,
+  "raw_input_immutability_confirmed": true,
+  "schema_registry_path": "data/raw/schema_metadata.json",
+  "schema_registry_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af",
+  "software_version": "0.1.0",
+  "source_datasets": {
+    "equipment_health": {
+      "file_size_bytes": 260611,
+      "path": "data/raw/equipment_health.jsonl",
+      "row_count": 504,
+      "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+    },
+    "inventory_levels": {
+      "file_size_bytes": 6573,
+      "path": "data/raw/inventory_levels.csv",
+      "row_count": 72,
+      "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+    },
+    "production_events": {
+      "file_size_bytes": 94769,
+      "path": "data/raw/production_events.jsonl",
+      "row_count": 168,
+      "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+    },
+    "quality_checks": {
+      "file_size_bytes": 25900,
+      "path": "data/raw/quality_checks.csv",
+      "row_count": 168,
+      "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+    },
+    "sales_orders": {
+      "file_size_bytes": 20684,
+      "path": "data/raw/sales_orders.csv",
+      "row_count": 180,
+      "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+    },
+    "supplier_performance": {
+      "file_size_bytes": 14793,
+      "path": "data/raw/supplier_performance.csv",
+      "row_count": 120,
+      "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+    },
+    "warehouse_movements": {
+      "file_size_bytes": 26670,
+      "path": "data/raw/warehouse_movements.csv",
+      "row_count": 220,
+      "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+    }
+  },
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "validation_status": "success",
+  "warning_count": 0
+}

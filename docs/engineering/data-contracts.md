@@ -1,6 +1,6 @@
 # Data Contracts
 
-Milestone 2 implements deterministic synthetic raw source files. These are generation contracts for local synthetic data only; governed ingestion schemas and quarantine rules remain planned for Milestone 3.
+Milestones 2 and 3 implement deterministic synthetic raw source files plus governed local ingestion into accepted and quarantined interim zones. These are local synthetic-data contracts only; they do not describe external customer feeds.
 
 ## Contract principles
 
@@ -35,6 +35,28 @@ All data must be synthetic and free of real personal, customer, supplier, employ
 Milestone 2 writes `data/raw/schema_metadata.json` with dataset filenames, file formats, schema version, and ordered fields. It also writes `data/raw/generation_manifest.json` with deterministic run metadata, output paths, row counts, hashes, software version, configuration version, and random seed.
 
 The schema registry also records primary keys, field data types, nullable fields, categorical domains, timestamp fields, units, relationship references, invariants, logical owner/domain, and synthetic-data classification. The committed `data/raw/` files are a small deterministic sample; larger local or CI runs belong under ignored output locations such as `.generated/`.
+
+## Milestone 3 ingestion contracts
+
+Milestone 3 reads the raw schema registry and generation manifest as source-of-truth metadata. It verifies required files, row-level parseability, configured schema fields, source file sizes, and SHA-256 hashes before writing governed outputs.
+
+Accepted outputs preserve the raw dataset format:
+
+- CSV sources remain CSV with the same header order.
+- JSONL sources remain JSONL.
+- Accepted files are written under `data/interim/accepted/`.
+
+Quarantine outputs are always JSONL under `data/interim/quarantine/`. Each quarantined record includes dataset, source row number, record ID, ordered rule codes, structured issues, ingestion run ID, and original record payload.
+
+Ingestion metadata is written under `data/interim/_metadata/`:
+
+- `ingestion-manifest.json`
+- `validation-summary.json`
+- `quarantine-summary.json`
+- `data-quality-report.json`
+- `lineage-records.json`
+
+`make validate-ingestion` validates these metadata files and output hashes without regenerating the run.
 
 ## Future output contracts
 

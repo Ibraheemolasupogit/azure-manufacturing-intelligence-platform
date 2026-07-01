@@ -49,7 +49,7 @@ Local directories, Python modules, configuration files, tests, and run manifests
 | Local structured logs and metrics | Azure Monitor and Application Insights |
 | GitHub Actions | Azure DevOps Pipelines or GitHub Actions for Azure |
 
-These mappings are architectural references only. No Azure resource IDs, endpoints, credentials, deployments, screenshots, or cloud success claims are created by Milestone 1.
+These mappings are architectural references only. No Azure resource IDs, endpoints, credentials, deployments, screenshots, or cloud success claims are created by the completed local milestones.
 
 ## High-level architecture
 
@@ -86,13 +86,14 @@ tests/         Unit tests and deterministic fixture guidance
 | --- | --- |
 | Milestone 1 - Repository foundation and architecture | Complete |
 | Milestone 2 - Deterministic synthetic manufacturing datasets | Complete |
-| Milestone 3 onward | Planned |
+| Milestone 3 - Governed ingestion and data validation | Complete |
+| Milestone 4 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 2:
+Implemented through Milestone 3:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -104,8 +105,12 @@ Implemented through Milestone 2:
 - Schema metadata, generation manifest, and generation summary for the synthetic raw files.
 - Separate local and CI synthetic-data profiles.
 - Existing-run validation for generated data without regenerating it.
+- Governed local ingestion from `data/raw/` to `data/interim/accepted/` and `data/interim/quarantine/`.
+- Strict and permissive ingestion modes.
+- Source hash verification, schema checks, domain validation, duplicate detection, and cross-dataset relationship checks.
+- Ingestion manifests, validation summaries, quarantine summaries, lineage records, and data-quality reports.
 
-Not implemented yet: ingestion pipelines, validation rules, accepted/quarantined data zones, forecasting, optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: forecasting, optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -128,14 +133,19 @@ make test
 make generate-data
 make generate-data-ci
 make validate-generation
+make ingest
+make ingest-ci
+make validate-ingestion
 make quality
 ```
 
 `make generate-data` regenerates the intentionally tracked local sample under `data/raw/` using `configs/synthetic_data.yaml` and an explicit overwrite flag. Direct CLI generation refuses to overwrite existing managed files unless `--overwrite` is passed. `make generate-data-ci` uses the smaller `configs/synthetic_data_ci.yaml` profile and writes to ignored `.generated/ci/raw/`. `make validate-generation` validates the existing `data/raw/` run without regenerating it.
 
+`make ingest` validates the tracked synthetic raw sample and writes governed local outputs under `data/interim/`. `make ingest-ci` uses ignored `.generated/ci/interim/` outputs for CI. `make validate-ingestion` validates the existing local interim run without regenerating it.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, and cross-dataset entity consistency. Later milestones will add governed schema tests, data-quality tests, pipeline integration tests, model evaluation tests, and regression tests.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, overwrite behavior, and CLI execution outside the repository root. Later milestones will add model evaluation tests and analytics regression tests.
 
 ## Security, privacy, and synthetic data
 
@@ -143,11 +153,11 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample is intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. The generation timestamp is configured, not read from wall-clock time, so controlled runs remain byte-for-byte reproducible.
+The small deterministic `data/raw/` sample and its governed `data/interim/` validation evidence are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps are configured, not read from wall-clock time, so controlled runs remain byte-for-byte reproducible.
 
 ## Known limitations
 
-Milestone 2 generates synthetic raw source files only. It does not ingest data into governed zones, produce analytical outputs, deploy cloud infrastructure, train models, connect to Azure services, or fabricate operational results.
+Milestone 3 validates synthetic raw source files into local governed interim zones. It does not produce analytical outputs, deploy cloud infrastructure, train models, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 
@@ -155,4 +165,4 @@ Future milestones are expected to produce documented, reproducible outputs such 
 
 ## Disclaimer
 
-Azure services are represented through architecture mappings and local adapters unless a later milestone explicitly implements deployment guidance. Milestone 1 does not deploy, call, or require Azure resources.
+Azure services are represented through architecture mappings and local adapters unless a later milestone explicitly implements deployment guidance. The completed local milestones do not deploy, call, or require Azure resources.

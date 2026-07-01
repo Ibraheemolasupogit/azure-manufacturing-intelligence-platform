@@ -1,0 +1,52 @@
+{
+  "accepted_counts_by_dataset": {
+    "equipment_health": 504,
+    "inventory_levels": 72,
+    "production_events": 168,
+    "quality_checks": 168,
+    "sales_orders": 180,
+    "supplier_performance": 120,
+    "warehouse_movements": 220
+  },
+  "configured_maximum_quarantine_rate": 0.0,
+  "discovered_datasets": [
+    "production_events",
+    "inventory_levels",
+    "sales_orders",
+    "quality_checks",
+    "equipment_health",
+    "warehouse_movements",
+    "supplier_performance"
+  ],
+  "file_level_issue_count": 0,
+  "ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "mode": "strict",
+  "quarantine_counts_by_dataset": {
+    "equipment_health": 0,
+    "inventory_levels": 0,
+    "production_events": 0,
+    "quality_checks": 0,
+    "sales_orders": 0,
+    "supplier_performance": 0,
+    "warehouse_movements": 0
+  },
+  "quarantine_rate": 0.0,
+  "record_level_issue_count": 0,
+  "rule_code_counts": {},
+  "severity_counts": {},
+  "source_counts_by_dataset": {
+    "equipment_health": 504,
+    "inventory_levels": 72,
+    "production_events": 168,
+    "quality_checks": 168,
+    "sales_orders": 180,
+    "supplier_performance": 120,
+    "warehouse_movements": 220
+  },
+  "source_hash_verification_result": "passed",
+  "synthetic_data_confirmation": true,
+  "total_accepted_count": 1432,
+  "total_quarantine_count": 0,
+  "total_source_count": 1432,
+  "validation_status": "success"
+}

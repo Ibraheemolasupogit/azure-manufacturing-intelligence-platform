@@ -6,6 +6,8 @@ The project uses local components to represent responsibilities commonly handled
 | --- | --- |
 | JSONL and CSV event simulation | Azure Event Hubs and Azure IoT Hub |
 | Local raw-data directories | Azure Data Lake Storage Gen2 |
+| Local accepted and quarantine directories | Azure Data Lake Storage Gen2 medallion-style zones |
+| Local validation rules | Azure Data Factory data flows or Microsoft Fabric data pipelines |
 | Python streaming simulator | Azure Stream Analytics |
 | Local telemetry analysis | Azure Data Explorer |
 | Local analytical outputs | Azure Synapse Analytics |
@@ -18,4 +20,4 @@ The project uses local components to represent responsibilities commonly handled
 
 ## Safety boundary
 
-Milestone 1 does not create Azure resource IDs, credentials, endpoints, screenshots, deployment logs, or success claims. `azure_mapping.enabled` is false in the provided configuration and must not initiate cloud calls.
+The completed local milestones do not create Azure resource IDs, credentials, endpoints, screenshots, deployment logs, or success claims. `azure_mapping.enabled` is false in the provided configuration and must not initiate cloud calls.

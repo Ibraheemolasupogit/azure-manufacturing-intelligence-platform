@@ -1,0 +1,18 @@
+{
+  "actual_quarantine_rate": 0.0,
+  "error_examples": [],
+  "maximum_quarantine_rate": 0.0,
+  "quarantined_records_by_dataset": {
+    "equipment_health": 0,
+    "inventory_levels": 0,
+    "production_events": 0,
+    "quality_checks": 0,
+    "sales_orders": 0,
+    "supplier_performance": 0,
+    "warehouse_movements": 0
+  },
+  "quarantined_records_by_rule_code": {},
+  "quarantined_records_by_severity": {},
+  "threshold_status": "passed",
+  "total_quarantined_records": 0
+}
