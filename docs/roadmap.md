@@ -12,7 +12,7 @@ Out of scope: data generation, analytics, ML, dashboards, and Azure deployment.
 
 Objective: create deterministic synthetic source data.
 Principal components: data generators and source schemas.
-Planned evidence: sample synthetic files, generator tests, and manifest examples.
+Evidence: synthetic raw files, schema metadata, generator tests, generation manifest, and generation summary.
 Dependencies: Milestone 1.
 Out of scope: advanced analytics and cloud ingestion.
 

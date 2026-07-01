@@ -17,7 +17,7 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 ## Core capabilities
 
-Planned capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, supplier-performance analytics, quality anomaly detection, predictive maintenance, operational monitoring, scenario analysis, GenAI-assisted recommendations, and Power BI-ready extracts. Milestone 1 implements only the repository foundation, architecture scaffold, configuration loader, shared utilities, documentation, structure checks, tests, and CI workflow.
+Planned capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, supplier-performance analytics, quality anomaly detection, predictive maintenance, operational monitoring, scenario analysis, GenAI-assisted recommendations, and Power BI-ready extracts. Milestones 1 and 2 implement the repository foundation and deterministic synthetic raw datasets only.
 
 ## Intended users
 
@@ -27,7 +27,7 @@ Example decisions include whether production is meeting plan, where throughput i
 
 ## Data domains
 
-Future synthetic sources will cover production operations, inventory, sales and demand, quality checks, equipment health, warehouse movements, and supplier performance. All data is synthetic and must not represent real individuals, employees, customers, suppliers, or commercially sensitive operations.
+Synthetic raw sources now cover production operations, inventory, sales and demand, quality checks, equipment health, warehouse movements, and supplier performance. All data is synthetic and must not represent real individuals, employees, customers, suppliers, or commercially sensitive operations.
 
 ## Local-first approach
 
@@ -85,13 +85,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone | Status |
 | --- | --- |
 | Milestone 1 - Repository foundation and architecture | Complete |
-| Milestone 2 onward | Planned |
+| Milestone 2 - Deterministic synthetic manufacturing datasets | Complete |
+| Milestone 3 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented in Milestone 1:
+Implemented through Milestone 2:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -99,8 +100,12 @@ Implemented in Milestone 1:
 - Standard-library structured logging foundation.
 - Exception hierarchy for future pipelines.
 - Documentation, diagrams, tests, CI workflow, and structure validation.
+- Deterministic synthetic data generation for seven raw manufacturing and supply-chain domains.
+- Schema metadata, generation manifest, and generation summary for the synthetic raw files.
+- Separate local and CI synthetic-data profiles.
+- Existing-run validation for generated data without regenerating it.
 
-Not implemented yet: datasets, ingestion pipelines, validation rules, forecasting, optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: ingestion pipelines, validation rules, accepted/quarantined data zones, forecasting, optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -120,20 +125,29 @@ make format
 make lint
 make type-check
 make test
+make generate-data
+make generate-data-ci
+make validate-generation
 make quality
 ```
 
+`make generate-data` regenerates the intentionally tracked local sample under `data/raw/` using `configs/synthetic_data.yaml` and an explicit overwrite flag. Direct CLI generation refuses to overwrite existing managed files unless `--overwrite` is passed. `make generate-data-ci` uses the smaller `configs/synthetic_data_ci.yaml` profile and writes to ignored `.generated/ci/raw/`. `make validate-generation` validates the existing `data/raw/` run without regenerating it.
+
 ## Testing approach
 
-Milestone 1 tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, and Azure reference-only safety. Later milestones will add schema tests, data-quality tests, deterministic fixture tests, pipeline integration tests, model evaluation tests, and regression tests.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, and cross-dataset entity consistency. Later milestones will add governed schema tests, data-quality tests, pipeline integration tests, model evaluation tests, and regression tests.
 
 ## Security, privacy, and synthetic data
 
 This repository is synthetic-data only. Do not commit credentials, `.env` files, real employee data, customer data, supplier data, commercial production details, or private operational records. Future cloud deployments should use least privilege, managed identities, Key Vault, immutable raw-data conventions, lineage metadata, retention principles, and accepted-versus-quarantined data separation.
 
+## Generated-data tracking policy
+
+The small deterministic `data/raw/` sample is intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. The generation timestamp is configured, not read from wall-clock time, so controlled runs remain byte-for-byte reproducible.
+
 ## Known limitations
 
-Milestone 1 is an architecture and engineering foundation. It does not produce analytical outputs, deploy cloud infrastructure, train models, connect to Azure services, or fabricate operational results.
+Milestone 2 generates synthetic raw source files only. It does not ingest data into governed zones, produce analytical outputs, deploy cloud infrastructure, train models, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 

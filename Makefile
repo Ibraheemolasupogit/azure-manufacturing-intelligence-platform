@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install format lint type-check test structure-check quality clean
+.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation quality clean
 
 install:
 	$(PYTHON) -m pip install --upgrade pip
@@ -21,6 +21,15 @@ test:
 
 structure-check:
 	$(PYTHON) scripts/check_structure.py
+
+generate-data:
+	$(PYTHON) scripts/generate_synthetic_data.py --config configs/synthetic_data.yaml --overwrite
+
+generate-data-ci:
+	$(PYTHON) scripts/generate_synthetic_data.py --config configs/synthetic_data_ci.yaml --output-dir .generated/ci/raw --overwrite
+
+validate-generation:
+	$(PYTHON) scripts/generate_synthetic_data.py --validate-existing --output-dir data/raw
 
 quality: structure-check lint type-check test
 

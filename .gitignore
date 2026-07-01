@@ -4,6 +4,7 @@
 !.env.example
 .venv/
 venv/
+.generated/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -16,6 +17,16 @@ dist/
 *.egg-info/
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/production_events.jsonl
+!data/raw/inventory_levels.csv
+!data/raw/sales_orders.csv
+!data/raw/quality_checks.csv
+!data/raw/equipment_health.jsonl
+!data/raw/warehouse_movements.csv
+!data/raw/supplier_performance.csv
+!data/raw/schema_metadata.json
+!data/raw/generation_manifest.json
+!data/raw/generation_summary.md
 data/interim/*
 !data/interim/.gitkeep
 data/processed/*

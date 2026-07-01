@@ -1,0 +1,549 @@
+{
+  "datasets": {
+    "equipment_health": {
+      "categorical_domains": {
+        "maintenance_state": [
+          "normal",
+          "warning_monitor",
+          "critical_inspection_required"
+        ],
+        "operating_mode": [
+          "standby",
+          "production"
+        ],
+        "sensor_type": [
+          "vibration",
+          "temperature"
+        ],
+        "threshold_status": [
+          "normal",
+          "warning",
+          "critical"
+        ]
+      },
+      "data_types": {
+        "critical_threshold": "float",
+        "degradation_index": "float",
+        "line_id": "string",
+        "machine_id": "string",
+        "maintenance_state": "string",
+        "measurement": "float",
+        "measurement_unit": "string",
+        "operating_mode": "string",
+        "plant_id": "string",
+        "runtime_hours": "float",
+        "sensor_event_id": "string",
+        "sensor_id": "string",
+        "sensor_type": "string",
+        "service_hours_since_maintenance": "float",
+        "threshold_status": "string",
+        "timestamp": "timestamp",
+        "warning_threshold": "float"
+      },
+      "dataset_name": "equipment_health",
+      "fields": [
+        "sensor_event_id",
+        "timestamp",
+        "plant_id",
+        "line_id",
+        "machine_id",
+        "sensor_id",
+        "sensor_type",
+        "measurement",
+        "measurement_unit",
+        "warning_threshold",
+        "critical_threshold",
+        "threshold_status",
+        "runtime_hours",
+        "service_hours_since_maintenance",
+        "degradation_index",
+        "operating_mode",
+        "maintenance_state"
+      ],
+      "file_format": "jsonl",
+      "filename": "equipment_health.jsonl",
+      "invariants": [
+        "threshold_status derives from measurement and thresholds"
+      ],
+      "logical_owner": "maintenance",
+      "nullable_fields": [],
+      "primary_key": [
+        "sensor_event_id"
+      ],
+      "relationships": {
+        "line_id": "catalog.lines",
+        "machine_id": "catalog.machines",
+        "plant_id": "catalog.plants"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "timestamp"
+      ],
+      "units": {
+        "degradation_index": "ratio",
+        "runtime_hours": "hours",
+        "service_hours_since_maintenance": "hours"
+      }
+    },
+    "inventory_levels": {
+      "categorical_domains": {
+        "product_or_material_type": [
+          "product",
+          "steel",
+          "aluminium",
+          "electronics",
+          "polymer",
+          "packaging"
+        ]
+      },
+      "data_types": {
+        "available_quantity": "integer",
+        "expiry_date": "date",
+        "inventory_value": "float",
+        "item_id": "string",
+        "lead_time_days": "integer",
+        "on_hand_quantity": "integer",
+        "plant_id": "string",
+        "product_or_material_type": "string",
+        "reorder_point": "integer",
+        "reserved_quantity": "integer",
+        "safety_stock_quantity": "integer",
+        "snapshot_timestamp": "timestamp",
+        "unit_cost": "float",
+        "warehouse_id": "string"
+      },
+      "dataset_name": "inventory_levels",
+      "fields": [
+        "snapshot_timestamp",
+        "warehouse_id",
+        "plant_id",
+        "item_id",
+        "product_or_material_type",
+        "on_hand_quantity",
+        "reserved_quantity",
+        "available_quantity",
+        "reorder_point",
+        "safety_stock_quantity",
+        "lead_time_days",
+        "unit_cost",
+        "inventory_value",
+        "expiry_date"
+      ],
+      "file_format": "csv",
+      "filename": "inventory_levels.csv",
+      "invariants": [
+        "available_quantity = on_hand_quantity - reserved_quantity",
+        "inventory_value = on_hand_quantity * unit_cost"
+      ],
+      "logical_owner": "inventory",
+      "nullable_fields": [
+        "expiry_date"
+      ],
+      "primary_key": [
+        "snapshot_timestamp",
+        "warehouse_id",
+        "item_id"
+      ],
+      "relationships": {
+        "item_id": "catalog.products or catalog.materials",
+        "plant_id": "catalog.plants",
+        "warehouse_id": "catalog.warehouses"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "snapshot_timestamp"
+      ],
+      "units": {
+        "inventory_value": "synthetic_currency",
+        "unit_cost": "synthetic_currency"
+      }
+    },
+    "production_events": {
+      "categorical_domains": {
+        "event_type": [
+          "production_run"
+        ],
+        "operating_status": [
+          "running",
+          "under_target",
+          "degraded"
+        ]
+      },
+      "data_types": {
+        "accepted_quantity": "integer",
+        "batch_id": "string",
+        "cycle_time_seconds": "float",
+        "downtime_duration_minutes": "integer",
+        "event_id": "string",
+        "event_timestamp": "timestamp",
+        "event_type": "string",
+        "machine_id": "string",
+        "operating_status": "string",
+        "planned_quantity": "integer",
+        "plant_id": "string",
+        "produced_quantity": "integer",
+        "product_id": "string",
+        "production_line_id": "string",
+        "production_order_id": "string",
+        "rejected_quantity": "integer",
+        "shift_id": "string",
+        "target_cycle_time_seconds": "integer"
+      },
+      "dataset_name": "production_events",
+      "fields": [
+        "event_id",
+        "event_timestamp",
+        "plant_id",
+        "production_line_id",
+        "machine_id",
+        "product_id",
+        "production_order_id",
+        "batch_id",
+        "shift_id",
+        "planned_quantity",
+        "produced_quantity",
+        "accepted_quantity",
+        "rejected_quantity",
+        "cycle_time_seconds",
+        "target_cycle_time_seconds",
+        "downtime_duration_minutes",
+        "event_type",
+        "operating_status"
+      ],
+      "file_format": "jsonl",
+      "filename": "production_events.jsonl",
+      "invariants": [
+        "accepted_quantity + rejected_quantity = produced_quantity"
+      ],
+      "logical_owner": "production_operations",
+      "nullable_fields": [],
+      "primary_key": [
+        "event_id"
+      ],
+      "relationships": {
+        "machine_id": "catalog.machines",
+        "plant_id": "catalog.plants",
+        "product_id": "catalog.products",
+        "production_line_id": "catalog.lines",
+        "shift_id": "derived shift calendar"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "event_timestamp"
+      ],
+      "units": {
+        "cycle_time_seconds": "seconds",
+        "downtime_duration_minutes": "minutes",
+        "target_cycle_time_seconds": "seconds"
+      }
+    },
+    "quality_checks": {
+      "categorical_domains": {
+        "inspection_result": [
+          "pass",
+          "fail"
+        ],
+        "quality_metric": [
+          "diameter_mm",
+          "surface_finish_ra",
+          "torque_nm"
+        ],
+        "severity": [
+          "none",
+          "medium",
+          "high"
+        ]
+      },
+      "data_types": {
+        "batch_id": "string",
+        "defect_category": "string",
+        "defective_units": "integer",
+        "inspection_id": "string",
+        "inspection_result": "string",
+        "inspection_timestamp": "timestamp",
+        "line_id": "string",
+        "lower_specification_limit": "float",
+        "machine_id": "string",
+        "measured_value": "float",
+        "plant_id": "string",
+        "product_id": "string",
+        "quality_metric": "string",
+        "sample_size": "integer",
+        "severity": "string",
+        "upper_specification_limit": "float"
+      },
+      "dataset_name": "quality_checks",
+      "fields": [
+        "inspection_id",
+        "inspection_timestamp",
+        "plant_id",
+        "line_id",
+        "machine_id",
+        "batch_id",
+        "product_id",
+        "quality_metric",
+        "sample_size",
+        "defective_units",
+        "measured_value",
+        "lower_specification_limit",
+        "upper_specification_limit",
+        "inspection_result",
+        "defect_category",
+        "severity"
+      ],
+      "file_format": "csv",
+      "filename": "quality_checks.csv",
+      "invariants": [
+        "inspection_result derives from lower_specification_limit <= measured_value <= upper_specification_limit",
+        "defective_units <= sample_size"
+      ],
+      "logical_owner": "quality",
+      "nullable_fields": [
+        "defect_category"
+      ],
+      "primary_key": [
+        "inspection_id"
+      ],
+      "relationships": {
+        "batch_id": "production_events.batch_id",
+        "line_id": "catalog.lines",
+        "machine_id": "catalog.machines",
+        "plant_id": "catalog.plants",
+        "product_id": "catalog.products"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "inspection_timestamp"
+      ],
+      "units": {
+        "diameter_mm": "millimetres",
+        "surface_finish_ra": "micrometres",
+        "torque_nm": "nm"
+      }
+    },
+    "sales_orders": {
+      "categorical_domains": {
+        "customer_segment": [
+          "automotive_oem",
+          "industrial_distribution",
+          "aftermarket_service",
+          "export_channel"
+        ],
+        "distribution_region": [
+          "north",
+          "south",
+          "central",
+          "west"
+        ],
+        "order_status": [
+          "fulfilled",
+          "partially_fulfilled",
+          "backordered"
+        ]
+      },
+      "data_types": {
+        "actual_delivery_date": "date",
+        "customer_segment": "string",
+        "distribution_region": "string",
+        "fulfilled_quantity": "integer",
+        "order_date": "date",
+        "order_id": "string",
+        "order_status": "string",
+        "order_value": "float",
+        "ordered_quantity": "integer",
+        "product_id": "string",
+        "requested_delivery_date": "date",
+        "selling_price": "float"
+      },
+      "dataset_name": "sales_orders",
+      "fields": [
+        "order_id",
+        "order_date",
+        "requested_delivery_date",
+        "actual_delivery_date",
+        "customer_segment",
+        "product_id",
+        "ordered_quantity",
+        "fulfilled_quantity",
+        "selling_price",
+        "order_value",
+        "distribution_region",
+        "order_status"
+      ],
+      "file_format": "csv",
+      "filename": "sales_orders.csv",
+      "invariants": [
+        "fulfilled_quantity <= ordered_quantity",
+        "order_value = fulfilled_quantity * selling_price"
+      ],
+      "logical_owner": "sales_and_demand",
+      "nullable_fields": [],
+      "primary_key": [
+        "order_id"
+      ],
+      "relationships": {
+        "product_id": "catalog.products"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "order_date",
+        "requested_delivery_date",
+        "actual_delivery_date"
+      ],
+      "units": {
+        "order_value": "synthetic_currency",
+        "selling_price": "synthetic_currency"
+      }
+    },
+    "supplier_performance": {
+      "categorical_domains": {
+        "delivery_status": [
+          "on_time_in_full",
+          "on_time_short",
+          "late_in_full",
+          "late_short"
+        ],
+        "supplier_region": [
+          "north",
+          "south",
+          "central",
+          "west"
+        ]
+      },
+      "data_types": {
+        "accepted_quantity": "integer",
+        "actual_delivery_date": "date",
+        "delay_days": "integer",
+        "delivered_quantity": "integer",
+        "delivery_status": "string",
+        "in_full_flag": "boolean",
+        "material_id": "string",
+        "on_time_flag": "boolean",
+        "order_date": "date",
+        "ordered_quantity": "integer",
+        "promised_date": "date",
+        "purchase_order_id": "string",
+        "quality_score": "float",
+        "rejected_quantity": "integer",
+        "supplier_id": "string",
+        "supplier_region": "string",
+        "unit_price": "float"
+      },
+      "dataset_name": "supplier_performance",
+      "fields": [
+        "supplier_id",
+        "material_id",
+        "purchase_order_id",
+        "order_date",
+        "promised_date",
+        "actual_delivery_date",
+        "delay_days",
+        "on_time_flag",
+        "in_full_flag",
+        "ordered_quantity",
+        "delivered_quantity",
+        "accepted_quantity",
+        "rejected_quantity",
+        "unit_price",
+        "quality_score",
+        "supplier_region",
+        "delivery_status"
+      ],
+      "file_format": "csv",
+      "filename": "supplier_performance.csv",
+      "invariants": [
+        "accepted_quantity + rejected_quantity <= delivered_quantity",
+        "delay_days = actual_delivery_date - promised_date",
+        "delivery_status derives from on_time_flag and in_full_flag"
+      ],
+      "logical_owner": "supplier_performance",
+      "nullable_fields": [],
+      "primary_key": [
+        "purchase_order_id"
+      ],
+      "relationships": {
+        "material_id": "catalog.materials",
+        "supplier_id": "catalog.suppliers"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "order_date",
+        "promised_date",
+        "actual_delivery_date"
+      ],
+      "units": {
+        "quality_score": "percentage",
+        "unit_price": "synthetic_currency"
+      }
+    },
+    "warehouse_movements": {
+      "categorical_domains": {
+        "movement_status": [
+          "completed"
+        ],
+        "movement_type": [
+          "receipt",
+          "issue_to_production",
+          "transfer",
+          "adjustment"
+        ]
+      },
+      "data_types": {
+        "destination_location": "string",
+        "item_id": "string",
+        "movement_id": "string",
+        "movement_status": "string",
+        "movement_timestamp": "timestamp",
+        "movement_type": "string",
+        "operator_or_automated_system_id": "string",
+        "quantity": "integer",
+        "reference_order": "string",
+        "source_location": "string",
+        "warehouse_id": "string"
+      },
+      "dataset_name": "warehouse_movements",
+      "fields": [
+        "movement_id",
+        "movement_timestamp",
+        "warehouse_id",
+        "source_location",
+        "destination_location",
+        "item_id",
+        "quantity",
+        "movement_type",
+        "movement_status",
+        "reference_order",
+        "operator_or_automated_system_id"
+      ],
+      "file_format": "csv",
+      "filename": "warehouse_movements.csv",
+      "invariants": [
+        "quantity > 0"
+      ],
+      "logical_owner": "warehouse",
+      "nullable_fields": [],
+      "primary_key": [
+        "movement_id"
+      ],
+      "relationships": {
+        "item_id": "catalog.products or catalog.materials",
+        "reference_order": "synthetic source reference",
+        "warehouse_id": "catalog.warehouses"
+      },
+      "schema_version": "1.0.0",
+      "synthetic_data_classification": "synthetic_portfolio_sample",
+      "timestamp_fields": [
+        "movement_timestamp"
+      ],
+      "units": {}
+    }
+  },
+  "schema_version": "1.0.0",
+  "synthetic_data_only": true
+}

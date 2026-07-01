@@ -1,0 +1,44 @@
+generation:
+  schema_version: "1.0.0"
+  config_version: "2026.07-milestone-2"
+  random_seed: 20260702
+  generation_timestamp: "2026-07-01T00:00:00Z"
+  start_date: "2026-01-01"
+  end_date: "2026-01-14"
+  timezone: UTC
+  generation_mode: local_sample
+  overwrite_existing: false
+  shifts_per_day: 2
+
+probabilities:
+  quality_defect: 0.08
+  supplier_delay: 0.28
+  sales_backorder: 0.04
+
+entities:
+  plants: 3
+  lines_per_plant: 2
+  machines_per_line: 3
+  products: 8
+  materials: 10
+  warehouses: 4
+  suppliers: 6
+  customer_segments:
+    - automotive_oem
+    - industrial_distribution
+    - aftermarket_service
+    - export_channel
+  regions:
+    - north
+    - south
+    - central
+    - west
+
+volumes:
+  production_events_per_line_shift: 1
+  sales_orders: 180
+  inventory_snapshots_per_item_warehouse: 1
+  quality_checks_per_production_event: 1
+  equipment_health_readings_per_machine_day: 2
+  warehouse_movements: 220
+  supplier_purchase_orders: 120

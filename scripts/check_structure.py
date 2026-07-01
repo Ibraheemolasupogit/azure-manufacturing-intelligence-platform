@@ -1,4 +1,4 @@
-"""Validate the Milestone 1 repository scaffold."""
+"""Validate the repository scaffold and generated synthetic-data assets."""
 
 from __future__ import annotations
 
@@ -17,6 +17,8 @@ def project_root() -> Path:
 REQUIRED_PATHS = [
     ".github/workflows/ci.yml",
     "configs/platform.yaml",
+    "configs/synthetic_data.yaml",
+    "configs/synthetic_data_ci.yaml",
     "configs/environments/local.yaml",
     "configs/environments/ci.yaml",
     "dashboard/README.md",
@@ -36,6 +38,7 @@ REQUIRED_PATHS = [
     "docs/engineering/data-contracts.md",
     "docs/engineering/testing-strategy.md",
     "docs/milestones/milestone-1.md",
+    "docs/milestones/milestone-2.md",
     "docs/roadmap.md",
     "outputs/.gitkeep",
     "reports/.gitkeep",
@@ -44,8 +47,14 @@ REQUIRED_PATHS = [
     "src/manufacturing_intelligence/common/exceptions.py",
     "src/manufacturing_intelligence/common/logging.py",
     "src/manufacturing_intelligence/common/paths.py",
+    "src/manufacturing_intelligence/data_generation/catalog.py",
+    "src/manufacturing_intelligence/data_generation/cli.py",
+    "src/manufacturing_intelligence/data_generation/generator.py",
+    "src/manufacturing_intelligence/data_generation/schemas.py",
+    "scripts/generate_synthetic_data.py",
     "tests/unit/test_config.py",
     "tests/unit/test_repository_structure.py",
+    "tests/unit/test_synthetic_data_generation.py",
     "tests/fixtures/README.md",
     ".editorconfig",
     ".gitignore",
@@ -57,6 +66,19 @@ REQUIRED_PATHS = [
     "README.md",
     "pyproject.toml",
     "requirements-dev.txt",
+]
+
+RAW_SYNTHETIC_OUTPUTS = [
+    "data/raw/production_events.jsonl",
+    "data/raw/inventory_levels.csv",
+    "data/raw/sales_orders.csv",
+    "data/raw/quality_checks.csv",
+    "data/raw/equipment_health.jsonl",
+    "data/raw/warehouse_movements.csv",
+    "data/raw/supplier_performance.csv",
+    "data/raw/schema_metadata.json",
+    "data/raw/generation_manifest.json",
+    "data/raw/generation_summary.md",
 ]
 
 PACKAGE_DIRS = [
@@ -77,6 +99,7 @@ PACKAGE_DIRS = [
 def main() -> int:
     root = project_root()
     missing = [path for path in REQUIRED_PATHS if not (root / path).exists()]
+    missing.extend(path for path in RAW_SYNTHETIC_OUTPUTS if not (root / path).exists())
     for package_dir in PACKAGE_DIRS:
         marker = root / "src" / "manufacturing_intelligence" / package_dir / "__init__.py"
         if not marker.exists():

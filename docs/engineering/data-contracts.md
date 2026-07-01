@@ -1,6 +1,6 @@
 # Data Contracts
 
-Milestone 1 does not implement datasets. Future data contracts should follow these principles.
+Milestone 2 implements deterministic synthetic raw source files. These are generation contracts for local synthetic data only; governed ingestion schemas and quarantine rules remain planned for Milestone 3.
 
 ## Contract principles
 
@@ -18,7 +18,7 @@ Milestone 1 does not implement datasets. Future data contracts should follow the
 - Raw inputs should be treated as immutable.
 - Pipeline runs should produce manifests.
 
-## Planned data domains
+## Synthetic raw data domains
 
 - `production_events.jsonl`: event ID, event timestamp, plant ID, production-line ID, machine ID, product ID, production order ID, shift ID, planned quantity, produced quantity, accepted quantity, rejected quantity, cycle time, target cycle time, downtime duration, event type, and operating status.
 - `inventory_levels.csv`: snapshot timestamp, warehouse ID, plant ID, item ID, product or material type, on-hand quantity, reserved quantity, available quantity, reorder point, safety-stock quantity, lead time, unit cost, and expiry date where applicable.
@@ -29,6 +29,12 @@ Milestone 1 does not implement datasets. Future data contracts should follow the
 - `supplier_performance.csv`: supplier ID, material ID, purchase-order ID, order date, promised date, actual delivery date, ordered quantity, delivered quantity, accepted quantity, rejected quantity, unit price, supplier region, quality score, and delivery status.
 
 All data must be synthetic and free of real personal, customer, supplier, employee, and commercially sensitive information.
+
+## Milestone 2 schema metadata
+
+Milestone 2 writes `data/raw/schema_metadata.json` with dataset filenames, file formats, schema version, and ordered fields. It also writes `data/raw/generation_manifest.json` with deterministic run metadata, output paths, row counts, hashes, software version, configuration version, and random seed.
+
+The schema registry also records primary keys, field data types, nullable fields, categorical domains, timestamp fields, units, relationship references, invariants, logical owner/domain, and synthetic-data classification. The committed `data/raw/` files are a small deterministic sample; larger local or CI runs belong under ignored output locations such as `.generated/`.
 
 ## Future output contracts
 
