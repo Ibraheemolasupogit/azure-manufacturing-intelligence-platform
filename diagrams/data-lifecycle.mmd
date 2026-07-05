@@ -5,7 +5,15 @@ flowchart LR
     Validate --> Decision{"Accept?"}
     Decision -- No --> Quarantine["Quarantine with data-quality evidence"]
     Decision -- Yes --> Accepted["Accepted interim records"]
-    Accepted --> Transform["Transform"]
+    Accepted --> Demand["Aggregate accepted sales orders"]
+    Demand --> Complete["Complete daily demand series"]
+    Complete --> Feature["Build leakage-safe features"]
+    Feature --> Split["Chronological splits"]
+    Split --> Backtest["Rolling-origin backtesting"]
+    Backtest --> Select["Validation-only model selection"]
+    Select --> Test["Held-out test evaluation"]
+    Test --> Forecast["Future demand forecasts"]
+    Forecast --> Transform["Future transformations"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -17,6 +25,7 @@ flowchart LR
 
     Ingest -.-> Lineage["Lineage metadata"]
     Validate -.-> Evidence["Data-quality evidence"]
+    Forecast -.-> ForecastLineage["Forecast reports and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

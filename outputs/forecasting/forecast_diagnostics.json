@@ -1,0 +1,172 @@
+{
+  "bias_by_series": {
+    "PROD-001|north": 23.42304284927665,
+    "PROD-002|south": -43.63868183760136,
+    "PROD-003|central": 72.69186878933192,
+    "PROD-004|west": -89.24207418357024,
+    "PROD-005|north": 70.33127460522702,
+    "PROD-006|south": -61.27996954296466,
+    "PROD-007|central": 88.19165857221988,
+    "PROD-008|west": 39.15944443332569
+  },
+  "calendar_fill_policy": "Missing series/date combinations are filled with zero demand and calendar_filled_flag=true because no order row means no observed demand in this synthetic order-book extract.",
+  "data_sufficiency_limitation": "Tracked governed sample has 14 days; use the extended forecasting profile for credible rolling-origin evidence.",
+  "demand_distribution": {
+    "max": 572.0,
+    "mean": 172.3125,
+    "min": 0.0
+  },
+  "excluded_or_fallback_series": {},
+  "forecast_distribution": {
+    "max": 395.3189682539682,
+    "mean": 161.38727012567003,
+    "min": 0.0
+  },
+  "history_length_by_series": {
+    "PROD-001|north": 14,
+    "PROD-002|south": 14,
+    "PROD-003|central": 14,
+    "PROD-004|west": 14,
+    "PROD-005|north": 14,
+    "PROD-006|south": 14,
+    "PROD-007|central": 14,
+    "PROD-008|west": 14
+  },
+  "largest_forecast_errors": [
+    {
+      "absolute_error": 572.0,
+      "actual": 572.0,
+      "demand_date": "2026-01-12",
+      "distribution_region": "west",
+      "horizon_day": 1,
+      "model": "seasonal_naive",
+      "prediction": 0.0,
+      "product_id": "PROD-004",
+      "series_id": "PROD-004|west",
+      "split": "test"
+    },
+    {
+      "absolute_error": 472.0,
+      "actual": 0.0,
+      "demand_date": "2026-01-13",
+      "distribution_region": "south",
+      "horizon_day": 2,
+      "model": "seasonal_naive",
+      "prediction": 472.0,
+      "product_id": "PROD-006",
+      "series_id": "PROD-006|south",
+      "split": "test"
+    },
+    {
+      "absolute_error": 445.0,
+      "actual": 0.0,
+      "demand_date": "2026-01-13",
+      "distribution_region": "west",
+      "horizon_day": 2,
+      "model": "seasonal_naive",
+      "prediction": 445.0,
+      "product_id": "PROD-004",
+      "series_id": "PROD-004|west",
+      "split": "test"
+    },
+    {
+      "absolute_error": 429.0,
+      "actual": 429.0,
+      "demand_date": "2026-01-12",
+      "distribution_region": "south",
+      "horizon_day": 1,
+      "model": "seasonal_naive",
+      "prediction": 0.0,
+      "product_id": "PROD-006",
+      "series_id": "PROD-006|south",
+      "split": "test"
+    },
+    {
+      "absolute_error": 429.0,
+      "actual": 429.0,
+      "demand_date": "2026-01-13",
+      "distribution_region": "north",
+      "horizon_day": 2,
+      "model": "seasonal_naive",
+      "prediction": 0.0,
+      "product_id": "PROD-001",
+      "series_id": "PROD-001|north",
+      "split": "test"
+    },
+    {
+      "absolute_error": 428.0,
+      "actual": 0.0,
+      "demand_date": "2026-01-13",
+      "distribution_region": "west",
+      "horizon_day": 2,
+      "model": "seasonal_naive",
+      "prediction": 428.0,
+      "product_id": "PROD-008",
+      "series_id": "PROD-008|west",
+      "split": "test"
+    },
+    {
+      "absolute_error": 413.0,
+      "actual": 0.0,
+      "demand_date": "2026-01-12",
+      "distribution_region": "central",
+      "horizon_day": 1,
+      "model": "seasonal_naive",
+      "prediction": 413.0,
+      "product_id": "PROD-007",
+      "series_id": "PROD-007|central",
+      "split": "test"
+    },
+    {
+      "absolute_error": 392.1428571428571,
+      "actual": 572.0,
+      "demand_date": "2026-01-12",
+      "distribution_region": "west",
+      "horizon_day": 1,
+      "model": "moving_average",
+      "prediction": 179.85714285714286,
+      "product_id": "PROD-004",
+      "series_id": "PROD-004|west",
+      "split": "test"
+    },
+    {
+      "absolute_error": 386.0,
+      "actual": 0.0,
+      "demand_date": "2026-01-12",
+      "distribution_region": "north",
+      "horizon_day": 1,
+      "model": "seasonal_naive",
+      "prediction": 386.0,
+      "product_id": "PROD-005",
+      "series_id": "PROD-005|north",
+      "split": "test"
+    },
+    {
+      "absolute_error": 385.0,
+      "actual": 385.0,
+      "demand_date": "2026-01-13",
+      "distribution_region": "north",
+      "horizon_day": 2,
+      "model": "seasonal_naive",
+      "prediction": 0.0,
+      "product_id": "PROD-005",
+      "series_id": "PROD-005|north",
+      "split": "test"
+    }
+  ],
+  "missing_dates_before_calendar_completion": 56,
+  "model_selection_counts": {
+    "global_selected_model_count": 1
+  },
+  "negative_raw_prediction_count_before_clipping": 0,
+  "prediction_interval_width_mean": 213.44239745671004,
+  "residual_summary": {
+    "validation_abs_error_mean": 191.9717172126807
+  },
+  "target_definition": "ordered_quantity is used as demand because it reflects customer demand at order date; fulfilled_quantity and delivery outcomes are excluded to prevent future-outcome leakage.",
+  "validation_versus_test_performance": {
+    "test_rows": 96,
+    "validation_rows": 96
+  },
+  "zero_demand_frequency": 0.5
+}

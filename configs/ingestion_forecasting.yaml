@@ -1,0 +1,33 @@
+ingestion:
+  input_directory: .generated/forecasting/raw
+  output_directory: .generated/forecasting/interim
+  mode: strict
+  overwrite: false
+  fail_fast: false
+  preserve_empty_quarantine_files: true
+  expected_datasets:
+    - production_events
+    - inventory_levels
+    - sales_orders
+    - quality_checks
+    - equipment_health
+    - warehouse_movements
+    - supplier_performance
+
+validation:
+  generation_manifest_path: .generated/forecasting/raw/generation_manifest.json
+  schema_registry_path: .generated/forecasting/raw/schema_metadata.json
+  entity_catalogue_path: .generated/forecasting/raw/schema_metadata.json
+  verify_source_hashes: true
+  allow_unknown_fields: false
+  allow_missing_optional_fields: true
+  reject_duplicate_primary_keys: true
+  reject_unresolved_references: true
+  maximum_quarantine_rate: 0.0
+  numeric_tolerance: 0.000001
+
+reporting:
+  include_record_examples: false
+  maximum_error_examples: 5
+  write_lineage: true
+  write_quality_report: true

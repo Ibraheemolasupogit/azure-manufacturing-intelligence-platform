@@ -19,6 +19,7 @@ flowchart TD
         Interim["Interim data zone"]
         Processed["Processed data zone"]
         Features["Analytics and feature engineering"]
+        Forecasting["Demand forecasting and evaluation"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -59,6 +60,8 @@ flowchart TD
     Accepted --> Interim
     Interim --> Processed
     Processed --> Features
+    Features --> Forecasting
+    Forecasting --> Reporting
     Features --> ML
     Features --> Reporting
     ML --> Reporting
@@ -66,11 +69,15 @@ flowchart TD
     Validate --> Manifests
     Processed --> Manifests
     Reporting --> Logs
+    Forecasting --> Lineage
+    Forecasting --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
     Stream -.-> StreamAnalytics
     Features -.-> ADX
+    Forecasting -.-> AzureML
+    Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML
     Reporting -.-> PowerBI

@@ -28,9 +28,9 @@ Out of scope: forecasting and optimisation.
 
 Objective: forecast product demand from synthetic sales history.
 Principal components: baseline models, evaluation metrics, forecast outputs.
-Planned evidence: forecast CSV and model report.
+Evidence: daily demand series, feature dataset, chronological splits, backtests, model comparison, selected model metadata, held-out test metrics, forecast CSV, forecast manifest, lineage, Markdown report, and an ignored extended governed profile for stronger backtesting evidence.
 Dependencies: Milestones 1-3.
-Out of scope: deep learning and live demand feeds.
+Out of scope: inventory optimisation, deep learning, live demand feeds, and Azure ML deployment.
 
 ## Milestone 5 - Inventory intelligence and optimisation
 

@@ -8,6 +8,12 @@ The local data layout mirrors governed lakehouse zones without requiring Azure s
 | `data/interim/` | Governed accepted records, quarantine records, and ingestion metadata. | Milestone 3 local ingestion evidence |
 | `data/processed/` | Analytics-ready local outputs for later pipelines. | Directory scaffold only |
 
+Milestone 4 forecast outputs are stored outside the data lake zones:
+
+- `outputs/forecasting/`: daily demand series, features, split metadata, model comparison, backtests, metrics, diagnostics, model metadata, forecast manifest, and lineage.
+- `outputs/demand_forecast.csv`: forecast-ready demand output.
+- `reports/demand_forecasting_report.md`: human-readable forecast evidence.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -39,5 +45,9 @@ Useful commands:
 - `make ingest`: validate the tracked raw sample and regenerate local interim evidence.
 - `make ingest-ci`: run the CI ingestion profile under ignored `.generated/ci/interim/`.
 - `make validate-ingestion`: validate the existing tracked interim evidence without regenerating it.
+- `make forecast`: regenerate tracked controlled forecast evidence.
+- `make prepare-forecast-data`: generate, validate, ingest, validate, and threshold-check the ignored extended forecasting dataset.
+- `make forecast-ci`: generate ignored CI forecast evidence.
+- `make validate-forecast`: validate an existing forecast run without retraining.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

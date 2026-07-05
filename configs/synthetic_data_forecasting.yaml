@@ -1,0 +1,42 @@
+generation:
+  schema_version: "1.0.0"
+  config_version: "2026.07-milestone-4-forecasting"
+  random_seed: 20260704
+  generation_timestamp: "2026-07-01T00:00:00Z"
+  start_date: "2025-01-01"
+  end_date: "2025-06-30"
+  timezone: UTC
+  generation_mode: forecasting_extended
+  overwrite_existing: false
+  shifts_per_day: 1
+
+probabilities:
+  quality_defect: 0.08
+  supplier_delay: 0.28
+  sales_backorder: 0.04
+
+entities:
+  plants: 2
+  lines_per_plant: 1
+  machines_per_line: 2
+  products: 6
+  materials: 8
+  warehouses: 3
+  suppliers: 4
+  customer_segments:
+    - automotive_oem
+    - industrial_distribution
+    - aftermarket_service
+  regions:
+    - north
+    - south
+    - west
+
+volumes:
+  production_events_per_line_shift: 1
+  sales_orders: 1629
+  inventory_snapshots_per_item_warehouse: 1
+  quality_checks_per_production_event: 1
+  equipment_health_readings_per_machine_day: 1
+  warehouse_movements: 360
+  supplier_purchase_orders: 240

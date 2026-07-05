@@ -1,0 +1,61 @@
+forecasting:
+  input_path: .generated/forecasting/interim/accepted/sales_orders.csv
+  ingestion_manifest_path: .generated/forecasting/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: .generated/forecasting/interim/_metadata/validation-summary.json
+  data_quality_report_path: .generated/forecasting/interim/_metadata/data-quality-report.json
+  lineage_path: .generated/forecasting/interim/_metadata/lineage-records.json
+  output_directory: .generated/forecasting/outputs
+  forecast_output_path: .generated/forecasting/demand_forecast.csv
+  report_directory: .generated/forecasting/reports
+  overwrite: false
+  random_seed: 20260704
+  frequency: daily
+  target_field: ordered_quantity
+  date_field: order_date
+  series_keys:
+    - product_id
+    - distribution_region
+  forecast_horizon_days: 14
+  minimum_history_days: 28
+  prediction_interval_level: 0.90
+
+splitting:
+  validation_days: 28
+  test_days: 28
+  minimum_training_days: 90
+  rolling_backtest_windows: 3
+  step_days: 14
+
+features:
+  lag_days:
+    - 1
+    - 2
+    - 3
+    - 7
+    - 14
+  rolling_windows:
+    - 3
+    - 7
+    - 14
+  include_day_of_week: true
+  include_weekend_flag: true
+  include_month: true
+  include_trend_index: true
+  include_region: true
+  include_product: true
+
+models:
+  enabled:
+    - seasonal_naive
+    - moving_average
+    - linear_regression
+    - random_forest
+  moving_average_window: 14
+  seasonal_lag_days: 7
+  selection_metric: wape
+
+reporting:
+  write_forecast_report: true
+  write_model_comparison: true
+  write_backtest_predictions: true
+  maximum_series_examples: 10

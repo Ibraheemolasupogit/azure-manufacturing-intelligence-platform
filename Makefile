@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion quality clean
+.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast quality clean
 
 install:
 	$(PYTHON) -m pip install --upgrade pip
@@ -39,6 +39,18 @@ ingest-ci:
 
 validate-ingestion:
 	$(PYTHON) -m manufacturing_intelligence.ingestion --config configs/ingestion.yaml --validate-existing-run
+
+prepare-forecast-data:
+	$(PYTHON) scripts/prepare_forecasting_data.py --overwrite
+
+forecast:
+	$(PYTHON) -m manufacturing_intelligence.forecasting --config configs/forecasting.yaml --overwrite
+
+forecast-ci:
+	$(PYTHON) -m manufacturing_intelligence.forecasting --config configs/forecasting_ci.yaml --overwrite
+
+validate-forecast:
+	$(PYTHON) -m manufacturing_intelligence.forecasting --config configs/forecasting.yaml --validate-existing-run
 
 quality: structure-check lint type-check test
 

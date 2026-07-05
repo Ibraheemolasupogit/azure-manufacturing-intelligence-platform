@@ -45,5 +45,11 @@ jobs:
       - name: Validate CI ingestion
         run: python -m manufacturing_intelligence.ingestion --config configs/ingestion_ci.yaml --validate-existing-run --output-directory .generated/ci/interim
 
+      - name: Run CI forecast
+        run: make forecast-ci
+
+      - name: Validate CI forecast
+        run: python -m manufacturing_intelligence.forecasting --config configs/forecasting_ci.yaml --validate-existing-run --output-directory .generated/ci/forecasting
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

@@ -87,7 +87,8 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 1 - Repository foundation and architecture | Complete |
 | Milestone 2 - Deterministic synthetic manufacturing datasets | Complete |
 | Milestone 3 - Governed ingestion and data validation | Complete |
-| Milestone 4 onward | Planned |
+| Milestone 4 - Demand forecasting and forecast evaluation | Complete |
+| Milestone 5 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
@@ -109,8 +110,10 @@ Implemented through Milestone 3:
 - Strict and permissive ingestion modes.
 - Source hash verification, schema checks, domain validation, duplicate detection, and cross-dataset relationship checks.
 - Ingestion manifests, validation summaries, quarantine summaries, lineage records, and data-quality reports.
+- Governed demand forecasting from accepted sales orders.
+- Leakage-safe daily demand aggregation, lag features, chronological splits, rolling-origin backtests, model comparison, held-out test metrics, prediction intervals, forecast manifests, and forecast lineage.
 
-Not implemented yet: forecasting, optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: inventory optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -136,12 +139,20 @@ make validate-generation
 make ingest
 make ingest-ci
 make validate-ingestion
+make forecast
+make forecast-ci
+make prepare-forecast-data
+make validate-forecast
 make quality
 ```
 
 `make generate-data` regenerates the intentionally tracked local sample under `data/raw/` using `configs/synthetic_data.yaml` and an explicit overwrite flag. Direct CLI generation refuses to overwrite existing managed files unless `--overwrite` is passed. `make generate-data-ci` uses the smaller `configs/synthetic_data_ci.yaml` profile and writes to ignored `.generated/ci/raw/`. `make validate-generation` validates the existing `data/raw/` run without regenerating it.
 
 `make ingest` validates the tracked synthetic raw sample and writes governed local outputs under `data/interim/`. `make ingest-ci` uses ignored `.generated/ci/interim/` outputs for CI. `make validate-ingestion` validates the existing local interim run without regenerating it.
+
+`make forecast` builds controlled forecast evidence under `outputs/forecasting/`, `outputs/demand_forecast.csv`, and `reports/demand_forecasting_report.md`. `make prepare-forecast-data` creates the longer governed forecasting profile under ignored `.generated/forecasting/` and fails on unexpected sales-order quarantine. `make forecast-ci` writes ignored CI forecast outputs. `make validate-forecast` verifies an existing forecast run without retraining.
+
+Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_region` grain. The selected controlled-run model is `random_forest`, chosen from validation WAPE only; held-out test metrics are reported separately. Prediction intervals use deterministic empirical residual bands.
 
 ## Testing approach
 
@@ -157,7 +168,7 @@ The small deterministic `data/raw/` sample and its governed `data/interim/` vali
 
 ## Known limitations
 
-Milestone 3 validates synthetic raw source files into local governed interim zones. It does not produce analytical outputs, deploy cloud infrastructure, train models, connect to Azure services, or fabricate operational results.
+Milestone 4 produces local forecast outputs from synthetic governed inputs. The tracked sample has only 14 days of demand history, so forecast metrics are smoke evidence and not strong performance claims. It does not implement inventory optimisation, deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 

@@ -1,0 +1,75 @@
+{
+  "data_lineage_references": [
+    "forecast-manifest.json",
+    "lineage-records.json"
+  ],
+  "dependency_versions": {
+    "numpy": "2.4.6",
+    "scikit-learn": "1.8.0"
+  },
+  "feature_names": [
+    "lag_1_demand",
+    "lag_2_demand",
+    "lag_3_demand",
+    "lag_7_demand",
+    "rolling_mean_3",
+    "rolling_std_3",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "day_of_week",
+    "weekend_flag",
+    "month",
+    "trend_index",
+    "product_id",
+    "distribution_region"
+  ],
+  "held_out_test_metrics": {
+    "absolute_bias": 3.1691816892598204,
+    "bias": -3.1691816892598204,
+    "mae": 46.53434162191974,
+    "rmse": 74.17738865555691,
+    "smape": 0.13048205546219896,
+    "wape": 0.2584642904249187
+  },
+  "known_limitations": [
+    "Controlled tracked sample is too short for strong performance claims.",
+    "Prediction intervals use empirical residual width and are not calibrated guarantees."
+  ],
+  "model_name": "random_forest",
+  "model_type": "global deterministic regression or baseline",
+  "parameters": {
+    "enabled_models": [
+      "seasonal_naive",
+      "moving_average",
+      "linear_regression",
+      "random_forest"
+    ],
+    "moving_average_window": 7,
+    "random_seed": 20260704,
+    "seasonal_lag_days": 7
+  },
+  "selected_status": true,
+  "selection_metric": "wape",
+  "series_count": 8,
+  "test_range": [
+    "2026-01-12",
+    "2026-01-14"
+  ],
+  "training_range": [
+    "2026-01-01",
+    "2026-01-08"
+  ],
+  "training_row_count": 64,
+  "validation_metrics": {
+    "selected_model": "random_forest",
+    "selection_metric": "wape",
+    "selection_reason": "Lowest validation wape with deterministic tie-breaks on MAE, absolute bias, model simplicity, and model name.",
+    "validation_absolute_bias": 6.493943602693615,
+    "validation_mae": 44.08533121392497,
+    "validation_score": 0.26306512907364477
+  },
+  "validation_range": [
+    "2026-01-09",
+    "2026-01-11"
+  ]
+}

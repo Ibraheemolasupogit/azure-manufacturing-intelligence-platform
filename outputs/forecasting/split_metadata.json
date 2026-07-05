@@ -1,0 +1,10 @@
+{
+  "forecast_end": "2026-01-21",
+  "forecast_start": "2026-01-15",
+  "test_end": "2026-01-14",
+  "test_start": "2026-01-12",
+  "train_end": "2026-01-08",
+  "train_start": "2026-01-01",
+  "validation_end": "2026-01-11",
+  "validation_start": "2026-01-09"
+}

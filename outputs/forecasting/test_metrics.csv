@@ -1,0 +1,2 @@
+mae,rmse,wape,smape,bias,absolute_bias,model,split
+46.534342,74.177389,0.258464,0.130482,-3.169182,3.169182,random_forest,test

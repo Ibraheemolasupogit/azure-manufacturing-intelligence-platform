@@ -1,0 +1,131 @@
+{
+  "configuration_path": "configs/forecasting.yaml",
+  "configuration_sha256": "46a35c68a9469459571ca8da8099b71f5a0eda063b29ec98746b135f773b8c85",
+  "date_field": "order_date",
+  "enabled_models": [
+    "seasonal_naive",
+    "moving_average",
+    "linear_regression",
+    "random_forest"
+  ],
+  "feature_row_count": 112,
+  "forecast_run_id": "FORECAST-6357daf22de3ea43",
+  "forecasting_grain": [
+    "product_id",
+    "distribution_region"
+  ],
+  "git_commit": "cf886b40300bad8b55faa2d06d90f2b07666e04a",
+  "governed_input_path": "data/interim/accepted/sales_orders.csv",
+  "governed_input_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9",
+  "governed_inputs_modified": false,
+  "metrics_summary": {
+    "held_out_test": {
+      "absolute_bias": 3.1691816892598204,
+      "bias": -3.1691816892598204,
+      "mae": 46.53434162191974,
+      "rmse": 74.17738865555691,
+      "smape": 0.13048205546219896,
+      "wape": 0.2584642904249187
+    }
+  },
+  "observed_date_range": [
+    "2026-01-01",
+    "2026-01-14"
+  ],
+  "output_files": {
+    "backtest_metrics": {
+      "file_size_bytes": 2242,
+      "path": "outputs/forecasting/backtest_metrics.csv",
+      "row_count": 24,
+      "sha256": "fbfbdeb283bde13c9f598a25f5d8254fd862210bfcffeb42e9a568cfcc166c95"
+    },
+    "backtest_predictions": {
+      "file_size_bytes": 19204,
+      "path": "outputs/forecasting/backtest_predictions.csv",
+      "row_count": 192,
+      "sha256": "e22184bd2b227bb1e40b8f35207cdba76b9b3710a20d1918053c1eac0b273d42"
+    },
+    "daily_demand_series": {
+      "file_size_bytes": 6717,
+      "path": "outputs/forecasting/daily_demand_series.csv",
+      "row_count": 112,
+      "sha256": "e25239f887d8f6fd2296c11178c52d769ff6ed65f427b621674b51b409cb7b6f"
+    },
+    "demand_forecast": {
+      "file_size_bytes": 9670,
+      "path": "outputs/demand_forecast.csv",
+      "row_count": 56,
+      "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+    },
+    "feature_dataset": {
+      "file_size_bytes": 16010,
+      "path": "outputs/forecasting/feature_dataset.csv",
+      "row_count": 112,
+      "sha256": "0a2a38473223bd91331996a81839e773fffc2693375f4462be2eebe681c40e78"
+    },
+    "forecast_diagnostics": {
+      "file_size_bytes": 5022,
+      "path": "outputs/forecasting/forecast_diagnostics.json",
+      "row_count": null,
+      "sha256": "4acb764ef6ea2a48aaaa57015177806da3cd5ae4bf3e3e3fe732f0ad10caafcc"
+    },
+    "model_comparison": {
+      "file_size_bytes": 417,
+      "path": "outputs/forecasting/model_comparison.csv",
+      "row_count": 4,
+      "sha256": "c43139365edfbe4c3bc0cce725395b3da46b62d2617b5364bd8ffb7b85d87d1c"
+    },
+    "model_metadata": {
+      "file_size_bytes": 1917,
+      "path": "outputs/forecasting/model_metadata.json",
+      "row_count": null,
+      "sha256": "f6fd6a5c2eafd91a07a4e2e3879e77c358b8ea0341049817a0c09141c58ac8e0"
+    },
+    "split_metadata": {
+      "file_size_bytes": 257,
+      "path": "outputs/forecasting/split_metadata.json",
+      "row_count": null,
+      "sha256": "c6a3f7695d4a9675746d62d605d3085f7f214b2d9c0309ae9711b2ca4f73cc59"
+    },
+    "test_metrics": {
+      "file_size_bytes": 127,
+      "path": "outputs/forecasting/test_metrics.csv",
+      "row_count": 1,
+      "sha256": "a2ad8381e2bc89d5a6917fbcaafee94ee7a4df5747ead46c5f4cf5fb6183736f"
+    }
+  },
+  "pipeline_name": "demand_forecasting",
+  "pipeline_version": "0.1.0",
+  "prediction_interval_method": "empirical absolute residual quantile from rolling backtests",
+  "random_seed": 20260704,
+  "selected_model": "random_forest",
+  "selection_policy": {
+    "selected_model": "random_forest",
+    "selection_metric": "wape",
+    "selection_reason": "Lowest validation wape with deterministic tie-breaks on MAE, absolute bias, model simplicity, and model name.",
+    "validation_absolute_bias": 6.493943602693615,
+    "validation_mae": 44.08533121392497,
+    "validation_score": 0.26306512907364477
+  },
+  "series_count": 8,
+  "software_version": "0.1.0",
+  "split_metadata": {
+    "forecast_end": "2026-01-21",
+    "forecast_start": "2026-01-15",
+    "test_end": "2026-01-14",
+    "test_start": "2026-01-12",
+    "train_end": "2026-01-08",
+    "train_start": "2026-01-01",
+    "validation_end": "2026-01-11",
+    "validation_start": "2026-01-09"
+  },
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "target_field": "ordered_quantity",
+  "upstream_ingestion_manifest_path": "data/interim/_metadata/ingestion-manifest.json",
+  "upstream_ingestion_manifest_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+  "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "validation_status": "success",
+  "warnings": [
+    "Tracked governed sample has 14 days; use the extended forecasting profile for credible rolling-origin evidence."
+  ]
+}

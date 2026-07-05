@@ -20,7 +20,7 @@ from manufacturing_intelligence.data_generation.schemas import SCHEMAS, DatasetS
 
 JsonRecord = dict[str, str | int | float | bool]
 CsvRecord = dict[str, str | int | float | bool]
-SAFE_GENERATION_MODES = {"local_sample", "ci_smoke"}
+SAFE_GENERATION_MODES = {"local_sample", "ci_smoke", "forecasting_extended"}
 METADATA_FILENAMES = ("schema_metadata.json", "generation_manifest.json", "generation_summary.md")
 
 
@@ -261,7 +261,7 @@ def _generate_production_events(
                     line_machines = machines_by_line[line_id]
                     machine = line_machines[(event_index - 1) % len(line_machines)]
                     product = config.catalog.products[
-                        (event_index + day_offset) % len(config.catalog.products)
+                        (event_index - 1) % len(config.catalog.products)
                     ]
                     planned = 95 + rng.randint(0, 35)
                     downtime = rng.choice((0, 0, 5, 10, 15, 25, 40))
