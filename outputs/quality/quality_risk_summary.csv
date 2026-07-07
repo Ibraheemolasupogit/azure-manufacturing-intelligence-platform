@@ -1,0 +1,5 @@
+risk_level,observation_count,average_quality_risk_score,specification_failures,spc_signals,anomaly_count
+critical,4,90.360832,4,4,4
+high,6,62.861113,6,0,2
+low,141,13.884939,0,2,4
+medium,17,54.375022,16,1,3

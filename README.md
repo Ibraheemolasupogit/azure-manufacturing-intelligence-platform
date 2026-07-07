@@ -89,13 +89,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 3 - Governed ingestion and data validation | Complete |
 | Milestone 4 - Demand forecasting and forecast evaluation | Complete |
 | Milestone 5 - Inventory intelligence and optimisation | Complete |
-| Milestone 6 onward | Planned |
+| Milestone 6 - Quality analytics and anomaly detection | Complete |
+| Milestone 7 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 5:
+Implemented through Milestone 6:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -115,8 +116,10 @@ Implemented through Milestone 5:
 - Leakage-safe daily demand aggregation, lag features, chronological splits, rolling-origin backtests, model comparison, held-out test metrics, prediction intervals, forecast manifests, and forecast lineage.
 - Governed inventory intelligence from accepted inventory, supplier, warehouse-movement, sales, and forecast evidence.
 - Deterministic warehouse demand allocation, supplier-risk metrics, inventory policy inputs, inventory position, safety-stock, reorder-point, reorder-quantity, excess-stock, expiry-risk, working-capital, prioritised-action, constrained-allocation, scenario-result, manifest, lineage, diagnostics, and report outputs.
+- Governed quality analytics from accepted quality checks and production events.
+- Deterministic specification compliance, KPI/yield proxies, defect Pareto, capability diagnostics, expanding control-chart baselines, SPC rules, robust z-score, Isolation Forest diagnostics, quality-risk scoring, alert outputs, manifests, lineage, diagnostics, and reports.
 
-Not implemented yet: quality anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: predictive maintenance, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -149,6 +152,9 @@ make validate-forecast
 make inventory
 make inventory-ci
 make validate-inventory
+make quality-analytics
+make quality-analytics-ci
+make validate-quality-analytics
 make quality
 ```
 
@@ -162,9 +168,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make inventory` reads governed accepted inventory, supplier, warehouse-movement, sales, and forecast evidence; writes `outputs/inventory_scores.csv`, warehouse demand allocation, supplier risk, policy input, inventory position, recommendation, scenario, diagnostics, manifest, and lineage artifacts under `outputs/inventory/`; writes `reports/inventory_intelligence_report.md` and `reports/inventory_scenario_summary.md`; and records upstream hashes without mutating governed inputs. `make inventory-ci` writes the same shape under ignored `.generated/ci/`. `make validate-inventory` verifies an existing inventory run without rescoring.
 
+`make quality-analytics` reads governed accepted quality checks and production events; writes `outputs/quality_alerts.csv`, detailed quality observations, KPIs, Pareto, capability, control-chart, SPC, anomaly, risk, diagnostics, manifest, and lineage artifacts under `outputs/quality/`; writes `reports/quality_analytics_report.md` and `reports/quality_alert_summary.md`; and records upstream hashes without mutating governed inputs. The controlled run processes 168 inspections, finds 26 specification failures, 5 near-limit observations, 7 SPC signals, 2 robust-z anomalies, 12 Isolation Forest anomalies, and 38 alerts. `make quality-analytics-ci` writes the same shape under ignored `.generated/ci/`. `make validate-quality-analytics` verifies an existing quality run without rescoring.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, overwrite behavior, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -172,11 +180,11 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample and its governed `data/interim/` validation evidence are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps are configured, not read from wall-clock time, so controlled runs remain byte-for-byte reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, controlled forecast, inventory, and quality outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 5 produces local inventory policy recommendations from synthetic governed inputs. The tracked sample has only 14 days of demand history, so inventory outputs are deterministic decision-support evidence rather than real operational advice. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
+Milestone 6 quality analytics produces deterministic decision-support evidence from synthetic governed inputs. First-pass yield is a labelled proxy because explicit rework fields are unavailable; anomaly scores are diagnostics, not probabilities; and investigation context is not root-cause proof. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 

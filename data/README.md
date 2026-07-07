@@ -21,6 +21,13 @@ Milestone 5 inventory outputs are also stored outside the data lake zones:
 - `reports/inventory_intelligence_report.md`: human-readable inventory recommendation evidence.
 - `reports/inventory_scenario_summary.md`: human-readable scenario comparison evidence.
 
+Milestone 6 quality outputs are also stored outside the data lake zones:
+
+- `outputs/quality_alerts.csv`: portfolio-level quality alert extract.
+- `outputs/quality/`: quality observations, KPIs, defect Pareto, process capability, control-chart points, SPC signals, anomaly scores, alerts, risk summary, diagnostics, manifest, and lineage.
+- `reports/quality_analytics_report.md`: human-readable quality analytics evidence.
+- `reports/quality_alert_summary.md`: human-readable alert summary evidence.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -59,5 +66,8 @@ Useful commands:
 - `make inventory`: regenerate tracked controlled inventory intelligence evidence.
 - `make inventory-ci`: generate ignored CI inventory evidence.
 - `make validate-inventory`: validate an existing inventory run without rescoring.
+- `make quality-analytics`: regenerate tracked controlled quality analytics evidence.
+- `make quality-analytics-ci`: generate ignored CI quality evidence.
+- `make validate-quality-analytics`: validate an existing quality run without rescoring.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

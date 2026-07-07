@@ -1,0 +1,202 @@
+{
+  "alert_summary": {
+    "alert_count": 38,
+    "risk_level_distribution": {
+      "critical": 4,
+      "high": 6,
+      "low": 11,
+      "medium": 17
+    }
+  },
+  "analysis_grains": {
+    "alert_grain": [
+      "inspection_id"
+    ],
+    "control_chart_grain": [
+      "machine_id",
+      "quality_metric",
+      "measurement_unit"
+    ],
+    "trend_grain": [
+      "product_id",
+      "quality_metric",
+      "inspection_date"
+    ]
+  },
+  "anomaly_settings": {
+    "contamination": 0.05,
+    "enabled": true,
+    "minimum_training_rows": 20,
+    "models": [
+      "robust_zscore",
+      "isolation_forest"
+    ],
+    "robust_zscore_threshold": 3.5
+  },
+  "azure_mapping": {
+    "analytical_preparation": "Synapse Analytics or Microsoft Fabric responsibility",
+    "batch_anomaly_scoring": "Azure Machine Learning responsibility",
+    "dashboard_extracts": "Power BI-ready outputs responsibility",
+    "deployment_status": "reference-only; no Azure services deployed or called",
+    "governed_quality_zone": "Azure Data Lake Storage Gen2 responsibility",
+    "lineage": "Microsoft Purview responsibility",
+    "operational_quality_analytics": "Azure Data Explorer responsibility",
+    "quality_metrics": "Azure Monitor responsibility"
+  },
+  "capability_settings": {
+    "calculate_cp": true,
+    "calculate_cpk": true,
+    "enabled": true,
+    "minimum_observations": 10
+  },
+  "configuration_path": "configs/quality.yaml",
+  "configuration_sha256": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+  "git_commit": "b8923fb08aceffe41f893c365c8b8245ccdc8ea3",
+  "governed_input_hashes": {
+    "production_events": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483",
+    "quality_checks": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+  },
+  "governed_input_paths": {
+    "production_events": "data/interim/accepted/production_events.jsonl",
+    "quality_checks": "data/interim/accepted/quality_checks.csv"
+  },
+  "governed_input_row_counts": {
+    "production_events": 168,
+    "quality_checks": 168
+  },
+  "governed_inputs_modified": false,
+  "kpi_summary": {
+    "alert_count": 38,
+    "batches_represented": 168,
+    "critical_risk_alert_count": 4,
+    "high_risk_alert_count": 6,
+    "isolation_forest_anomaly_count": 12,
+    "lines_represented": 6,
+    "machines_represented": 6,
+    "near_limit_count": 5,
+    "plants_represented": 3,
+    "products_represented": 8,
+    "quality_metrics_represented": 3,
+    "quality_records_processed": 168,
+    "robust_z_anomaly_count": 2,
+    "spc_signal_count": 7,
+    "specification_failure_count": 26
+  },
+  "output_files": {
+    "anomaly_scores": {
+      "file_size_bytes": 32832,
+      "path": "outputs/quality/anomaly_scores.csv",
+      "row_count": 168,
+      "sha256": "3f903706b8e0e47bb2c3af7792a0eedc7867e57ca35b374bd69ce390b07d6a0a"
+    },
+    "control_chart_points": {
+      "file_size_bytes": 26319,
+      "path": "outputs/quality/control_chart_points.csv",
+      "row_count": 168,
+      "sha256": "c5c0b9f4e244e4a47be6f9f97c6a029b384c47f05730aca8cdd0563ee73c070b"
+    },
+    "defect_pareto": {
+      "file_size_bytes": 2944,
+      "path": "outputs/quality/defect_pareto.csv",
+      "row_count": 51,
+      "sha256": "469ddfea42f5b53cf9cbdeedfde331778859eeddec80b6b119e2b5dc09d1ac52"
+    },
+    "portfolio_quality_alerts": {
+      "file_size_bytes": 21959,
+      "path": "outputs/quality_alerts.csv",
+      "row_count": 38,
+      "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+    },
+    "process_capability": {
+      "file_size_bytes": 7375,
+      "path": "outputs/quality/process_capability.csv",
+      "row_count": 48,
+      "sha256": "03c236178389d6886caf5f30848ce6df6e31ed4eb84cd3964e60b768d598dd52"
+    },
+    "quality_alert_summary": {
+      "file_size_bytes": 247,
+      "path": "reports/quality_alert_summary.md",
+      "row_count": null,
+      "sha256": "fb08a509d28f67d8dd3119c1b5fd2f2ad44a291d03fdd9f4d560d0d71f05943d"
+    },
+    "quality_alerts": {
+      "file_size_bytes": 21959,
+      "path": "outputs/quality/quality_alerts.csv",
+      "row_count": 38,
+      "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+    },
+    "quality_analytics_report": {
+      "file_size_bytes": 2646,
+      "path": "reports/quality_analytics_report.md",
+      "row_count": null,
+      "sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+    },
+    "quality_diagnostics": {
+      "file_size_bytes": 1722,
+      "path": "outputs/quality/quality_diagnostics.json",
+      "row_count": null,
+      "sha256": "cd3b7f05c11cedfa5cf0710477a643bcf095a277ca087fad1d7418a5a0f574e8"
+    },
+    "quality_kpis": {
+      "file_size_bytes": 5756,
+      "path": "outputs/quality/quality_kpis.csv",
+      "row_count": 27,
+      "sha256": "88b905775e39fa508f03687d3ce99ffe09e27846d0c2dc89148c5d8321dba947"
+    },
+    "quality_observations": {
+      "file_size_bytes": 162056,
+      "path": "outputs/quality/quality_observations.csv",
+      "row_count": 168,
+      "sha256": "d2b694a9f88650216bca0533efcf887c3be98d5560c7c1e00f830ba7818a9515"
+    },
+    "quality_risk_summary": {
+      "file_size_bytes": 206,
+      "path": "outputs/quality/quality_risk_summary.csv",
+      "row_count": 4,
+      "sha256": "e42b49cafeb118107991611d0d5a7e82f82289437ba75abe032d97f66a0ea87c"
+    },
+    "spc_signals": {
+      "file_size_bytes": 15521,
+      "path": "outputs/quality/spc_signals.csv",
+      "row_count": 168,
+      "sha256": "3eed8cf7a2312fc2c42a5f3a79dcd227e8ba3da1d7b6c95bdb3d77c72c62fe87"
+    }
+  },
+  "pipeline_name": "quality_analytics",
+  "pipeline_version": "0.1.0",
+  "quality_run_id": "QUALITY-ea15caf8c05763b0",
+  "risk_scoring_settings": {
+    "anomaly_score_weight": 0.2,
+    "critical_threshold": 80.0,
+    "defect_severity_weight": 0.15,
+    "high_threshold": 60.0,
+    "spc_signal_weight": 0.25,
+    "specification_failure_weight": 0.4
+  },
+  "software_version": "0.1.0",
+  "spc_settings": {
+    "baseline_minimum_observations": 8,
+    "center_line_method": "mean",
+    "control_limit_sigma": 3.0,
+    "dispersion_method": "standard_deviation",
+    "enable_rule_1": true,
+    "enable_rule_2": true,
+    "enable_rule_3": true,
+    "enable_rule_4": true,
+    "enabled": true,
+    "minimum_series_length": 8
+  },
+  "specification_settings": {
+    "near_limit_margin_fraction": 0.05,
+    "use_record_limits": true,
+    "warning_margin_fraction": 0.1
+  },
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "upstream_ingestion_manifest_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+  "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "validation_status": "success",
+  "warnings": [
+    "First-pass yield is a labelled proxy because explicit rework fields are unavailable.",
+    "Isolation Forest scores are retrospective deterministic diagnostics, not probabilities."
+  ]
+}

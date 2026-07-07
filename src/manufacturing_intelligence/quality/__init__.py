@@ -1,1 +1,1 @@
-"""Future quality analytics package."""
+"""Governed quality analytics and anomaly detection."""

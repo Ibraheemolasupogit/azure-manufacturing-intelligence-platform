@@ -1,0 +1,366 @@
+[
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality_observations.csv",
+    "target_row_count": 168,
+    "target_sha256": "d2b694a9f88650216bca0533efcf887c3be98d5560c7c1e00f830ba7818a9515",
+    "transformation_name": "quality_observations",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality_kpis.csv",
+    "target_row_count": 27,
+    "target_sha256": "88b905775e39fa508f03687d3ce99ffe09e27846d0c2dc89148c5d8321dba947",
+    "transformation_name": "quality_kpis",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/defect_pareto.csv",
+    "target_row_count": 51,
+    "target_sha256": "469ddfea42f5b53cf9cbdeedfde331778859eeddec80b6b119e2b5dc09d1ac52",
+    "transformation_name": "defect_pareto",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/process_capability.csv",
+    "target_row_count": 48,
+    "target_sha256": "03c236178389d6886caf5f30848ce6df6e31ed4eb84cd3964e60b768d598dd52",
+    "transformation_name": "process_capability",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "expanding_prior_observations",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/control_chart_points.csv",
+    "target_row_count": 168,
+    "target_sha256": "c5c0b9f4e244e4a47be6f9f97c6a029b384c47f05730aca8cdd0563ee73c070b",
+    "transformation_name": "control_chart_points",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "SPC_RULE_1;SPC_RULE_2;SPC_RULE_3;SPC_RULE_4",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/spc_signals.csv",
+    "target_row_count": 168,
+    "target_sha256": "3eed8cf7a2312fc2c42a5f3a79dcd227e8ba3da1d7b6c95bdb3d77c72c62fe87",
+    "transformation_name": "spc_signals",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "robust_zscore;isolation_forest",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/anomaly_scores.csv",
+    "target_row_count": 168,
+    "target_sha256": "3f903706b8e0e47bb2c3af7792a0eedc7867e57ca35b374bd69ce390b07d6a0a",
+    "transformation_name": "anomaly_scores",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality_alerts.csv",
+    "target_row_count": 38,
+    "target_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f",
+    "transformation_name": "quality_alerts",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality_alerts.csv",
+    "target_row_count": 38,
+    "target_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f",
+    "transformation_name": "portfolio_quality_alerts",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality_risk_summary.csv",
+    "target_row_count": 4,
+    "target_sha256": "e42b49cafeb118107991611d0d5a7e82f82289437ba75abe032d97f66a0ea87c",
+    "transformation_name": "quality_risk_summary",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "cd3b7f05c11cedfa5cf0710477a643bcf095a277ca087fad1d7418a5a0f574e8",
+    "transformation_name": "quality_diagnostics",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/quality_analytics_report.md",
+    "target_row_count": null,
+    "target_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a",
+    "transformation_name": "quality_analytics_report",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/quality_alert_summary.md",
+    "target_row_count": null,
+    "target_sha256": "fb08a509d28f67d8dd3119c1b5fd2f2ad44a291d03fdd9f4d560d0d71f05943d",
+    "transformation_name": "quality_alert_summary",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "4469098dd42ed994c68a2a3e2919e8e72b36f82c45d6e564b1b029d0b4d56b08",
+    "quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/quality/quality-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf",
+    "transformation_name": "quality_manifest",
+    "transformation_type": "local governed quality analytics and anomaly detection",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  }
+]

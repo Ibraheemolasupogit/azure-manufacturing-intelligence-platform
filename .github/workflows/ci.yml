@@ -57,5 +57,11 @@ jobs:
       - name: Validate CI inventory intelligence
         run: python -m manufacturing_intelligence.inventory --config configs/inventory_ci.yaml --validate-existing-run --output-directory .generated/ci/inventory
 
+      - name: Run CI quality analytics
+        run: make quality-analytics-ci
+
+      - name: Validate CI quality analytics
+        run: python -m manufacturing_intelligence.quality --config configs/quality_ci.yaml --validate-existing-run --output-directory .generated/ci/quality
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

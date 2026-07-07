@@ -13,8 +13,9 @@ The project uses local components to represent responsibilities commonly handled
 | Local analytical outputs | Azure Synapse Analytics |
 | Local forecast training and model metadata | Azure Machine Learning |
 | Local inventory scoring and scenario policy | Azure Machine Learning batch scoring or Container Apps |
+| Local quality SPC and anomaly scoring | Azure Data Explorer and Azure Machine Learning batch scoring |
 | Local feature preparation | Azure Synapse Analytics or Microsoft Fabric |
-| Local forecast metrics and diagnostics | Azure Monitor and Application Insights |
+| Local forecast, inventory, and quality metrics and diagnostics | Azure Monitor and Application Insights |
 | Local GenAI adapter | Azure AI Foundry |
 | Local dashboard extracts | Microsoft Power BI |
 | Local lineage metadata | Microsoft Purview |

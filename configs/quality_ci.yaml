@@ -1,0 +1,65 @@
+quality:
+  quality_checks_path: data/interim/accepted/quality_checks.csv
+  production_events_path: data/interim/accepted/production_events.jsonl
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: data/interim/_metadata/validation-summary.json
+  data_quality_report_path: data/interim/_metadata/data-quality-report.json
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  output_directory: .generated/ci/quality
+  quality_alerts_path: .generated/ci/quality/quality_alerts.csv
+  report_directory: .generated/ci/quality/reports
+  overwrite: true
+  random_seed: 20260706
+  timestamp_field: inspection_timestamp
+  primary_key: inspection_id
+  trend_grain:
+    - product_id
+    - quality_metric
+    - inspection_date
+  alert_grain:
+    - inspection_id
+
+specification:
+  use_record_limits: true
+  warning_margin_fraction: 0.10
+  near_limit_margin_fraction: 0.05
+
+spc:
+  enabled: true
+  baseline_minimum_observations: 8
+  center_line_method: mean
+  dispersion_method: standard_deviation
+  control_limit_sigma: 3.0
+  enable_rule_1: true
+  enable_rule_2: true
+  enable_rule_3: true
+  enable_rule_4: true
+  minimum_series_length: 8
+
+capability:
+  enabled: true
+  minimum_observations: 10
+  calculate_cp: true
+  calculate_cpk: true
+
+anomaly_detection:
+  enabled: true
+  models:
+    - robust_zscore
+    - isolation_forest
+  contamination: 0.05
+  robust_zscore_threshold: 3.5
+  minimum_training_rows: 20
+
+risk_scoring:
+  specification_failure_weight: 0.40
+  spc_signal_weight: 0.25
+  anomaly_score_weight: 0.20
+  defect_severity_weight: 0.15
+  high_threshold: 60
+  critical_threshold: 80
+
+reporting:
+  maximum_alert_examples: 20
+  maximum_pareto_categories: 15
+  write_markdown_report: true

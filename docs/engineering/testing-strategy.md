@@ -1,6 +1,6 @@
 # Testing Strategy
 
-Implemented tests cover configuration loading, overrides, path resolution, package imports, repository structure, metadata coherence, Azure reference-only safety, deterministic synthetic generation, governed ingestion, validation, quarantine behavior, lineage evidence, demand forecasting, leakage boundaries, chronological splits, metrics, forecast manifests, and CLI entry points.
+Implemented tests cover configuration loading, overrides, path resolution, package imports, repository structure, metadata coherence, Azure reference-only safety, deterministic synthetic generation, governed ingestion, validation, quarantine behavior, lineage evidence, demand forecasting, leakage boundaries, chronological splits, metrics, forecast manifests, inventory intelligence, quality analytics, and CLI entry points.
 Inventory tests also cover governed input protection, upstream hash verification, deterministic inventory scoring, policy math, scenario comparison, manifest validation, tamper detection, overwrite protection, raw-input rejection, and CLI execution outside the repository root.
 
 ## Planned test layers
@@ -22,5 +22,7 @@ Milestone 4 specifically tests governed accepted input use, raw-input rejection,
 Extended-profile regression tests verify that longer generated sales orders reference products present in production events, generation remains deterministic, governed ingestion has zero sales-order quarantine, quarantine-threshold enforcement fails on unexpected quarantine, and the extended forecast produces three chronological rolling-origin windows from accepted data.
 
 Milestone 5 specifically tests that inventory intelligence reads accepted governed inputs and validated forecast outputs only, preserves upstream files, computes bounded risk scores and non-negative reorder quantities, emits deterministic manifests and lineage, validates existing runs, and separates rules-based inventory policy from constrained scenario allocation.
+
+Milestone 6 specifically tests that quality analytics reads governed accepted quality and production data only, preserves upstream files, verifies hashes and manifests, calculates specification compliance, capability diagnostics, SPC signals, anomaly scores, risk scores, deterministic alerts, existing-run validation, tamper detection, overwrite behavior, raw-input rejection, and CLI execution outside the repository root.
 
 Later milestones should expand tests in proportion to behavioural risk and blast radius.

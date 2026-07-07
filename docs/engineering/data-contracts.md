@@ -1,6 +1,6 @@
 # Data Contracts
 
-Milestones 2, 3, 4, and 5 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, governed demand-forecast outputs, and governed inventory-intelligence outputs. These are local synthetic-data contracts only; they do not describe external customer feeds.
+Milestones 2, 3, 4, 5, and 6 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, governed demand-forecast outputs, governed inventory-intelligence outputs, and governed quality-analytics outputs. These are local synthetic-data contracts only; they do not describe external customer feeds.
 
 ## Contract principles
 
@@ -78,8 +78,14 @@ Implemented Milestone 4 outputs include:
 Implemented Milestone 5 outputs include:
 
 - `outputs/inventory_scores.csv`
+- `outputs/inventory/warehouse_demand_forecast.csv`
+- `outputs/inventory/supplier_risk_metrics.csv`
+- `outputs/inventory/inventory_policy_inputs.csv`
+- `outputs/inventory/inventory_position.csv`
+- `outputs/inventory/inventory_scores.csv`
 - `outputs/inventory/inventory_health.csv`
 - `outputs/inventory/reorder_recommendations.csv`
+- `outputs/inventory/scenario_results.csv`
 - `outputs/inventory/scenario_comparison.csv`
 - `outputs/inventory/inventory_summary.json`
 - `outputs/inventory/inventory_diagnostics.json`
@@ -87,9 +93,26 @@ Implemented Milestone 5 outputs include:
 - `outputs/inventory/lineage-records.json`
 - `reports/inventory_intelligence_report.md`
 
-Future outputs include:
+Implemented Milestone 6 outputs include:
 
 - `outputs/quality_alerts.csv`
+- `outputs/quality/quality_observations.csv`
+- `outputs/quality/quality_kpis.csv`
+- `outputs/quality/defect_pareto.csv`
+- `outputs/quality/process_capability.csv`
+- `outputs/quality/control_chart_points.csv`
+- `outputs/quality/spc_signals.csv`
+- `outputs/quality/anomaly_scores.csv`
+- `outputs/quality/quality_alerts.csv`
+- `outputs/quality/quality_risk_summary.csv`
+- `outputs/quality/quality_diagnostics.json`
+- `outputs/quality/quality-manifest.json`
+- `outputs/quality/lineage-records.json`
+- `reports/quality_analytics_report.md`
+- `reports/quality_alert_summary.md`
+
+Future outputs include:
+
 - `outputs/maintenance_predictions.json`
 - `outputs/production_kpis.csv`
 - `outputs/supplier_risk_scores.csv`
@@ -99,4 +122,4 @@ Future outputs include:
 - `reports/supply_chain_summary.md`
 - `reports/executive_manufacturing_brief.md`
 
-Future run manifests should include run ID, pipeline name, configuration version, input paths, input hashes, output paths, output hashes, row counts, validation status, start and completion timestamps, software version, random seed, and success or failure status.
+Future run manifests should include run ID, pipeline name, configuration version, input paths, input hashes, output paths, output hashes, row counts, validation status, software version, random seed, and success or failure status. Current controlled analytical manifests avoid current timestamps so outputs remain reproducible.

@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality clean
+.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality-analytics quality-analytics-ci validate-quality-analytics quality clean
 
 install:
 	$(PYTHON) -m pip install --upgrade pip
@@ -60,6 +60,15 @@ inventory-ci:
 
 validate-inventory:
 	$(PYTHON) -m manufacturing_intelligence.inventory --config configs/inventory.yaml --validate-existing-run
+
+quality-analytics:
+	$(PYTHON) -m manufacturing_intelligence.quality --config configs/quality.yaml --overwrite
+
+quality-analytics-ci:
+	$(PYTHON) -m manufacturing_intelligence.quality --config configs/quality_ci.yaml --overwrite
+
+validate-quality-analytics:
+	$(PYTHON) -m manufacturing_intelligence.quality --config configs/quality.yaml --validate-existing-run
 
 quality: structure-check lint type-check test
 

@@ -21,6 +21,7 @@ flowchart TD
         Features["Analytics and feature engineering"]
         Forecasting["Demand forecasting and evaluation"]
         InventoryIntel["Inventory intelligence and policy scoring"]
+        QualityAnalytics["Quality analytics and anomaly detection"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -64,6 +65,8 @@ flowchart TD
     Features --> Forecasting
     Forecasting --> InventoryIntel
     Interim --> InventoryIntel
+    Interim --> QualityAnalytics
+    QualityAnalytics --> Reporting
     Forecasting --> Reporting
     InventoryIntel --> Reporting
     Features --> ML
@@ -77,6 +80,8 @@ flowchart TD
     Forecasting --> Manifests
     InventoryIntel --> Lineage
     InventoryIntel --> Manifests
+    QualityAnalytics --> Lineage
+    QualityAnalytics --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
@@ -85,6 +90,9 @@ flowchart TD
     Forecasting -.-> AzureML
     InventoryIntel -.-> AzureML
     InventoryIntel -.-> Synapse
+    QualityAnalytics -.-> ADX
+    QualityAnalytics -.-> AzureML
+    QualityAnalytics -.-> Synapse
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

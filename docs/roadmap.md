@@ -43,10 +43,10 @@ Out of scope: production scheduling, quality analytics, dashboards, GenAI, live 
 ## Milestone 6 - Quality analytics and anomaly detection
 
 Objective: detect quality deterioration and unusual measurements.
-Principal components: quality KPIs, rule-based alerts, statistical anomaly checks.
-Planned evidence: quality alerts and evaluation notes.
+Principal components: specification compliance, yield proxies, Pareto analysis, capability diagnostics, control charts, SPC rules, robust z-score, Isolation Forest diagnostics, risk scoring, and deterministic alerts.
+Evidence: quality observations, KPIs, defect Pareto, process capability, control-chart points, SPC signals, anomaly scores, quality alerts, diagnostics, manifest, lineage, reports, tests, and documented limitations.
 Dependencies: Milestones 1-3.
-Out of scope: unvalidated production claims.
+Out of scope: predictive maintenance, root-cause claims, dashboards, GenAI, and Azure deployment.
 
 ## Milestone 7 - Predictive maintenance
 

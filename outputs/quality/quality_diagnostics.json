@@ -1,0 +1,69 @@
+{
+  "alert_count": 38,
+  "alert_distribution_by_category": {
+    "": 12,
+    "dimensional_variance": 19,
+    "surface_finish": 7
+  },
+  "alert_distribution_by_line": {
+    "LINE-01-01": 3,
+    "LINE-01-02": 2,
+    "LINE-02-01": 10,
+    "LINE-02-02": 7,
+    "LINE-03-01": 5,
+    "LINE-03-02": 11
+  },
+  "alert_distribution_by_machine": {
+    "MACH-01-01-01": 3,
+    "MACH-01-02-02": 2,
+    "MACH-02-01-03": 10,
+    "MACH-02-02-01": 7,
+    "MACH-03-01-02": 5,
+    "MACH-03-02-03": 11
+  },
+  "alert_distribution_by_metric": {
+    "diameter_mm": 21,
+    "surface_finish_ra": 10,
+    "torque_nm": 7
+  },
+  "alert_distribution_by_product": {
+    "PROD-001": 3,
+    "PROD-002": 3,
+    "PROD-003": 3,
+    "PROD-004": 5,
+    "PROD-005": 4,
+    "PROD-006": 9,
+    "PROD-007": 5,
+    "PROD-008": 6
+  },
+  "batches_represented": 168,
+  "capability_groups_calculated": 0,
+  "capability_groups_unavailable": 48,
+  "critical_risk_alert_count": 4,
+  "fallback_counts": {
+    "first_pass_yield_proxy": 168,
+    "rework_information_unavailable": 168
+  },
+  "groups_using_anomaly_fallback": 120,
+  "groups_with_insufficient_spc_history": 48,
+  "groups_with_sufficient_spc_history": 120,
+  "high_risk_alert_count": 6,
+  "isolation_forest_anomaly_count": 12,
+  "lines_represented": 6,
+  "machines_represented": 6,
+  "missing_or_unsupported_fields": [],
+  "near_limit_count": 5,
+  "plants_represented": 3,
+  "products_represented": 8,
+  "quality_metrics_represented": 3,
+  "quality_records_processed": 168,
+  "robust_z_anomaly_count": 2,
+  "source_calculated_result_inconsistencies": 0,
+  "spc_signal_count": 7,
+  "spc_signals_by_rule": {
+    "SPC_RULE_1": 5,
+    "SPC_RULE_2": 1,
+    "SPC_RULE_3": 1
+  },
+  "specification_failure_count": 26
+}

@@ -17,6 +17,8 @@ flowchart LR
     Forecast --> Inventory["Inventory intelligence and policy scoring"]
     Accepted --> Inventory
     Inventory --> InventoryOutputs["Inventory recommendations and scenario comparison"]
+    Accepted --> Quality["Quality analytics and anomaly detection"]
+    Quality --> QualityOutputs["Quality alerts, SPC signals, anomaly scores, and reports"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -30,6 +32,7 @@ flowchart LR
     Validate -.-> Evidence["Data-quality evidence"]
     Forecast -.-> ForecastLineage["Forecast reports and lineage"]
     Inventory -.-> InventoryLineage["Inventory manifests and lineage"]
+    Quality -.-> QualityLineage["Quality manifests and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest
