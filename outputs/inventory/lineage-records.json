@@ -1,0 +1,535 @@
+[
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/warehouse_demand_forecast.csv",
+    "target_row_count": 112,
+    "target_sha256": "46176ec3a7dea809d4b5d9972adce1c7cf57c44c60b196c2f205d11d9b3be32c",
+    "transformation_name": "warehouse_demand_forecast",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/supplier_risk_metrics.csv",
+    "target_row_count": 10,
+    "target_sha256": "af1e0e7af7e7bf66862cf8f6596a91cad65f71e5e248beeeba17a62cb75ddc1a",
+    "transformation_name": "supplier_risk_metrics",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_policy_inputs.csv",
+    "target_row_count": 72,
+    "target_sha256": "99358e24d7f45a2aec3314c362594cb7fe5f98a29d44c81d4f025ad26168cd09",
+    "transformation_name": "inventory_policy_inputs",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_position.csv",
+    "target_row_count": 72,
+    "target_sha256": "bf23ae94b33b25022c5e6da79de89d52b1844d385767287120dfa42c8fd6e46e",
+    "transformation_name": "inventory_position",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_scores.csv",
+    "target_row_count": 72,
+    "target_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859",
+    "transformation_name": "inventory_scores",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory_scores.csv",
+    "target_row_count": 72,
+    "target_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859",
+    "transformation_name": "portfolio_inventory_scores",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_health.csv",
+    "target_row_count": 72,
+    "target_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859",
+    "transformation_name": "inventory_health",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/reorder_recommendations.csv",
+    "target_row_count": 72,
+    "target_sha256": "5c6cba1d1d05ee26f94c5f95f8e3df00faeec99446395f06ffc05336b530d746",
+    "transformation_name": "reorder_recommendations",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/scenario_results.csv",
+    "target_row_count": 5,
+    "target_sha256": "6e10ef97bf3fabae62ca83daf1ed15fd84023b69a758d9972ba09dddd3c3b306",
+    "transformation_name": "scenario_results",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/scenario_comparison.csv",
+    "target_row_count": 5,
+    "target_sha256": "6e10ef97bf3fabae62ca83daf1ed15fd84023b69a758d9972ba09dddd3c3b306",
+    "transformation_name": "scenario_comparison",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_summary.json",
+    "target_row_count": null,
+    "target_sha256": "709a6ae7688f99b78bd6163290db89c440abb15b66cf2225188ff5a6ea976af4",
+    "transformation_name": "inventory_summary",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "2d57a725209edfa1aaaeb33cecffa5f1d43b2c8ad3d5e14604ecfdf728a6daec",
+    "transformation_name": "inventory_diagnostics",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  },
+  {
+    "azure_mapping": "Microsoft Purview lineage responsibility, not registered",
+    "configuration_hash": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+    "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+    "source_inputs": {
+      "accepted_inventory": {
+        "path": "data/interim/accepted/inventory_levels.csv",
+        "row_count": 72,
+        "sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      "accepted_sales_orders": {
+        "path": "data/interim/accepted/sales_orders.csv",
+        "row_count": 180,
+        "sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      "accepted_supplier_performance": {
+        "path": "data/interim/accepted/supplier_performance.csv",
+        "row_count": 120,
+        "sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      "accepted_warehouse_movements": {
+        "path": "data/interim/accepted/warehouse_movements.csv",
+        "row_count": 220,
+        "sha256": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+      },
+      "governed_demand_forecast": {
+        "path": "outputs/demand_forecast.csv",
+        "row_count": 56,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/inventory/inventory-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "transformation_name": "inventory_manifest",
+    "transformation_type": "local governed inventory intelligence and policy scoring",
+    "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "validation_status": "success"
+  }
+]

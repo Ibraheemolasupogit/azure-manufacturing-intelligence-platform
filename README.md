@@ -17,7 +17,7 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 ## Core capabilities
 
-Planned capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, supplier-performance analytics, quality anomaly detection, predictive maintenance, operational monitoring, scenario analysis, GenAI-assisted recommendations, and Power BI-ready extracts. Milestones 1 and 2 implement the repository foundation and deterministic synthetic raw datasets only.
+Planned capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, supplier-performance analytics, quality anomaly detection, predictive maintenance, operational monitoring, scenario analysis, GenAI-assisted recommendations, and Power BI-ready extracts.
 
 ## Intended users
 
@@ -88,13 +88,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 2 - Deterministic synthetic manufacturing datasets | Complete |
 | Milestone 3 - Governed ingestion and data validation | Complete |
 | Milestone 4 - Demand forecasting and forecast evaluation | Complete |
-| Milestone 5 onward | Planned |
+| Milestone 5 - Inventory intelligence and optimisation | Complete |
+| Milestone 6 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 3:
+Implemented through Milestone 5:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -112,8 +113,10 @@ Implemented through Milestone 3:
 - Ingestion manifests, validation summaries, quarantine summaries, lineage records, and data-quality reports.
 - Governed demand forecasting from accepted sales orders.
 - Leakage-safe daily demand aggregation, lag features, chronological splits, rolling-origin backtests, model comparison, held-out test metrics, prediction intervals, forecast manifests, and forecast lineage.
+- Governed inventory intelligence from accepted inventory, supplier, warehouse-movement, sales, and forecast evidence.
+- Deterministic warehouse demand allocation, supplier-risk metrics, inventory policy inputs, inventory position, safety-stock, reorder-point, reorder-quantity, excess-stock, expiry-risk, working-capital, prioritised-action, constrained-allocation, scenario-result, manifest, lineage, diagnostics, and report outputs.
 
-Not implemented yet: inventory optimisation, anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: quality anomaly detection, predictive maintenance, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -143,6 +146,9 @@ make forecast
 make forecast-ci
 make prepare-forecast-data
 make validate-forecast
+make inventory
+make inventory-ci
+make validate-inventory
 make quality
 ```
 
@@ -154,9 +160,11 @@ make quality
 
 Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_region` grain. The selected controlled-run model is `random_forest`, chosen from validation WAPE only; held-out test metrics are reported separately. Prediction intervals use deterministic empirical residual bands.
 
+`make inventory` reads governed accepted inventory, supplier, warehouse-movement, sales, and forecast evidence; writes `outputs/inventory_scores.csv`, warehouse demand allocation, supplier risk, policy input, inventory position, recommendation, scenario, diagnostics, manifest, and lineage artifacts under `outputs/inventory/`; writes `reports/inventory_intelligence_report.md` and `reports/inventory_scenario_summary.md`; and records upstream hashes without mutating governed inputs. `make inventory-ci` writes the same shape under ignored `.generated/ci/`. `make validate-inventory` verifies an existing inventory run without rescoring.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, overwrite behavior, and CLI execution outside the repository root. Later milestones will add model evaluation tests and analytics regression tests.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, overwrite behavior, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -168,7 +176,7 @@ The small deterministic `data/raw/` sample and its governed `data/interim/` vali
 
 ## Known limitations
 
-Milestone 4 produces local forecast outputs from synthetic governed inputs. The tracked sample has only 14 days of demand history, so forecast metrics are smoke evidence and not strong performance claims. It does not implement inventory optimisation, deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
+Milestone 5 produces local inventory policy recommendations from synthetic governed inputs. The tracked sample has only 14 days of demand history, so inventory outputs are deterministic decision-support evidence rather than real operational advice. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 

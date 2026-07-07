@@ -24,6 +24,8 @@ REQUIRED_PATHS = [
     "configs/forecasting_extended.yaml",
     "configs/synthetic_data_forecasting.yaml",
     "configs/ingestion_forecasting.yaml",
+    "configs/inventory.yaml",
+    "configs/inventory_ci.yaml",
     "configs/synthetic_data.yaml",
     "configs/synthetic_data_ci.yaml",
     "configs/environments/local.yaml",
@@ -53,6 +55,15 @@ REQUIRED_PATHS = [
     "docs/forecasting/leakage-prevention.md",
     "docs/forecasting/limitations.md",
     "docs/forecasting/prediction-intervals.md",
+    "docs/inventory/constrained-allocation.md",
+    "docs/inventory/demand-allocation.md",
+    "docs/inventory/governed-inputs-and-grain.md",
+    "docs/inventory/inventory-intelligence-design.md",
+    "docs/inventory/inventory-lineage-and-manifest.md",
+    "docs/inventory/inventory-risk-scoring.md",
+    "docs/inventory/limitations.md",
+    "docs/inventory/safety-stock-and-reorder-policy.md",
+    "docs/inventory/scenario-analysis.md",
     "docs/ingestion/data-quality-metrics.md",
     "docs/ingestion/ingestion-design.md",
     "docs/ingestion/lineage-and-manifests.md",
@@ -63,11 +74,13 @@ REQUIRED_PATHS = [
     "docs/milestones/milestone-2.md",
     "docs/milestones/milestone-3.md",
     "docs/milestones/milestone-4.md",
+    "docs/milestones/milestone-5.md",
     "docs/roadmap.md",
     "outputs/.gitkeep",
     "reports/.gitkeep",
     "reports/data_quality_report.md",
     "reports/demand_forecasting_report.md",
+    "reports/inventory_intelligence_report.md",
     "src/manufacturing_intelligence/__init__.py",
     "src/manufacturing_intelligence/common/config.py",
     "src/manufacturing_intelligence/common/exceptions.py",
@@ -97,6 +110,17 @@ REQUIRED_PATHS = [
     "src/manufacturing_intelligence/forecasting/selection.py",
     "src/manufacturing_intelligence/forecasting/serialization.py",
     "src/manufacturing_intelligence/forecasting/splits.py",
+    "src/manufacturing_intelligence/inventory/__main__.py",
+    "src/manufacturing_intelligence/inventory/cli.py",
+    "src/manufacturing_intelligence/inventory/config.py",
+    "src/manufacturing_intelligence/inventory/data.py",
+    "src/manufacturing_intelligence/inventory/existing_run.py",
+    "src/manufacturing_intelligence/inventory/lineage.py",
+    "src/manufacturing_intelligence/inventory/manifest.py",
+    "src/manufacturing_intelligence/inventory/pipeline.py",
+    "src/manufacturing_intelligence/inventory/policy.py",
+    "src/manufacturing_intelligence/inventory/reporting.py",
+    "src/manufacturing_intelligence/inventory/serialization.py",
     "src/manufacturing_intelligence/ingestion/__main__.py",
     "src/manufacturing_intelligence/ingestion/cli.py",
     "src/manufacturing_intelligence/ingestion/config.py",
@@ -124,6 +148,7 @@ REQUIRED_PATHS = [
     "tests/unit/test_synthetic_data_generation.py",
     "tests/unit/test_ingestion_pipeline.py",
     "tests/unit/test_forecasting_pipeline.py",
+    "tests/unit/test_inventory_pipeline.py",
     "tests/fixtures/README.md",
     ".editorconfig",
     ".gitignore",
@@ -187,6 +212,24 @@ FORECAST_OUTPUTS = [
     "outputs/forecasting/lineage-records.json",
 ]
 
+INVENTORY_OUTPUTS = [
+    "outputs/inventory_scores.csv",
+    "outputs/inventory/warehouse_demand_forecast.csv",
+    "outputs/inventory/supplier_risk_metrics.csv",
+    "outputs/inventory/inventory_policy_inputs.csv",
+    "outputs/inventory/inventory_position.csv",
+    "outputs/inventory/inventory_scores.csv",
+    "outputs/inventory/inventory_health.csv",
+    "outputs/inventory/reorder_recommendations.csv",
+    "outputs/inventory/scenario_results.csv",
+    "outputs/inventory/scenario_comparison.csv",
+    "outputs/inventory/inventory_summary.json",
+    "outputs/inventory/inventory_diagnostics.json",
+    "outputs/inventory/inventory-manifest.json",
+    "outputs/inventory/lineage-records.json",
+    "reports/inventory_scenario_summary.md",
+]
+
 PACKAGE_DIRS = [
     "common",
     "data_generation",
@@ -208,6 +251,7 @@ def main() -> int:
     missing.extend(path for path in RAW_SYNTHETIC_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in INTERIM_INGESTION_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in FORECAST_OUTPUTS if not (root / path).exists())
+    missing.extend(path for path in INVENTORY_OUTPUTS if not (root / path).exists())
     for package_dir in PACKAGE_DIRS:
         marker = root / "src" / "manufacturing_intelligence" / package_dir / "__init__.py"
         if not marker.exists():

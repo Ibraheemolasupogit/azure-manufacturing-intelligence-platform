@@ -14,6 +14,9 @@ flowchart LR
     Select --> Test["Held-out test evaluation"]
     Test --> Forecast["Future demand forecasts"]
     Forecast --> Transform["Future transformations"]
+    Forecast --> Inventory["Inventory intelligence and policy scoring"]
+    Accepted --> Inventory
+    Inventory --> InventoryOutputs["Inventory recommendations and scenario comparison"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -26,6 +29,7 @@ flowchart LR
     Ingest -.-> Lineage["Lineage metadata"]
     Validate -.-> Evidence["Data-quality evidence"]
     Forecast -.-> ForecastLineage["Forecast reports and lineage"]
+    Inventory -.-> InventoryLineage["Inventory manifests and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

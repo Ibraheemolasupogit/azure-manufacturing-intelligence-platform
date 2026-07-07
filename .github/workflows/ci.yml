@@ -51,5 +51,11 @@ jobs:
       - name: Validate CI forecast
         run: python -m manufacturing_intelligence.forecasting --config configs/forecasting_ci.yaml --validate-existing-run --output-directory .generated/ci/forecasting
 
+      - name: Run CI inventory intelligence
+        run: make inventory-ci
+
+      - name: Validate CI inventory intelligence
+        run: python -m manufacturing_intelligence.inventory --config configs/inventory_ci.yaml --validate-existing-run --output-directory .generated/ci/inventory
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

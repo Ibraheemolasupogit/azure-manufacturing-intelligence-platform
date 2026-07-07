@@ -20,6 +20,7 @@ flowchart TD
         Processed["Processed data zone"]
         Features["Analytics and feature engineering"]
         Forecasting["Demand forecasting and evaluation"]
+        InventoryIntel["Inventory intelligence and policy scoring"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -61,7 +62,10 @@ flowchart TD
     Interim --> Processed
     Processed --> Features
     Features --> Forecasting
+    Forecasting --> InventoryIntel
+    Interim --> InventoryIntel
     Forecasting --> Reporting
+    InventoryIntel --> Reporting
     Features --> ML
     Features --> Reporting
     ML --> Reporting
@@ -71,12 +75,16 @@ flowchart TD
     Reporting --> Logs
     Forecasting --> Lineage
     Forecasting --> Manifests
+    InventoryIntel --> Lineage
+    InventoryIntel --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
     Stream -.-> StreamAnalytics
     Features -.-> ADX
     Forecasting -.-> AzureML
+    InventoryIntel -.-> AzureML
+    InventoryIntel -.-> Synapse
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

@@ -34,11 +34,11 @@ Out of scope: inventory optimisation, deep learning, live demand feeds, and Azur
 
 ## Milestone 5 - Inventory intelligence and optimisation
 
-Objective: score inventory risk and recommend replenishment priorities.
-Principal components: stockout risk, overstock, safety-stock coverage, reorder logic.
-Planned evidence: inventory score output and documented assumptions.
+Objective: score inventory risk, allocate forecast demand to warehouses, and recommend replenishment priorities under deterministic budget and capacity constraints.
+Principal components: stockout risk, overstock, safety-stock coverage, reorder logic, supplier risk, working-capital exposure, and deterministic scenario comparison.
+Evidence: warehouse demand forecast allocation, supplier risk metrics, policy inputs, inventory position, inventory score output, reorder recommendations, scenario results, diagnostics, manifest, lineage, reports, tests, and documented assumptions.
 Dependencies: Milestones 1-4.
-Out of scope: solver-heavy optimisation unless justified.
+Out of scope: production scheduling, quality analytics, dashboards, GenAI, live solver services, and cloud deployment.
 
 ## Milestone 6 - Quality analytics and anomaly detection
 

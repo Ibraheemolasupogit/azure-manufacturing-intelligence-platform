@@ -1,0 +1,18 @@
+{
+  "budget_utilisation": 0.999972,
+  "capacity_utilisation": 0.09285,
+  "critical_risk_count": 0,
+  "high_risk_count": 5,
+  "item_count": 18,
+  "material_record_count": 40,
+  "product_record_count": 32,
+  "projected_excess_quantity": 12740.0,
+  "projected_shortage_quantity": 11813.687119999999,
+  "recommendation_row_count": 72,
+  "row_count": 72,
+  "total_constrained_quantity": 9285.0,
+  "total_recommended_value": 999972.0,
+  "total_unconstrained_quantity": 23120.0,
+  "total_working_capital_exposure": 1077719.7000000002,
+  "warehouse_count": 4
+}

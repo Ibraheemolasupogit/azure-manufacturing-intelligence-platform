@@ -12,6 +12,7 @@ The project uses local components to represent responsibilities commonly handled
 | Local telemetry analysis | Azure Data Explorer |
 | Local analytical outputs | Azure Synapse Analytics |
 | Local forecast training and model metadata | Azure Machine Learning |
+| Local inventory scoring and scenario policy | Azure Machine Learning batch scoring or Container Apps |
 | Local feature preparation | Azure Synapse Analytics or Microsoft Fabric |
 | Local forecast metrics and diagnostics | Azure Monitor and Application Insights |
 | Local GenAI adapter | Azure AI Foundry |

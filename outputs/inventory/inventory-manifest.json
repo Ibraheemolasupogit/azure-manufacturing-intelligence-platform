@@ -1,0 +1,193 @@
+{
+  "azure_mapping": {
+    "analytical_preparation": "Synapse Analytics or Microsoft Fabric responsibility",
+    "batch_scoring": "Azure Machine Learning batch scoring responsibility",
+    "dashboard_extracts": "Power BI-ready outputs responsibility",
+    "deployment_status": "reference-only; no Azure services deployed or called",
+    "lineage": "Microsoft Purview responsibility",
+    "operations": "Azure Monitor responsibility",
+    "recommendation_service": "Azure Functions or Container Apps responsibility"
+  },
+  "configuration_path": "configs/inventory.yaml",
+  "configuration_sha256": "67db290820ec645a8be6e78c76dc29c360bb7e7fb82e00142826ae14132d056c",
+  "constrained_allocation": {
+    "available_budget": 1000000.0,
+    "available_replenishment_capacity": 100000,
+    "method": "deterministic_constrained_allocation",
+    "objective_weights": {
+      "service_level": 0.25,
+      "stockout_risk": 0.5,
+      "supplier_risk": 0.1,
+      "working_capital": 0.15
+    },
+    "solver_claim": "deterministic greedy allocation; not exact global optimisation"
+  },
+  "decision_grain": [
+    "warehouse_id",
+    "item_id"
+  ],
+  "git_commit": "1aca74b860493620d37a37777f7c0cfb2b8e696d",
+  "governed_input_hashes": {
+    "demand_forecast": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8",
+    "inventory_levels": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb",
+    "sales_orders": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9",
+    "supplier_performance": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3",
+    "warehouse_movements": "a431b9f39b1136dec1514db7710ad36990f21b89e1e066566b6611b9e5768b61"
+  },
+  "governed_input_row_counts": {
+    "demand_forecast": 56,
+    "inventory_levels": 72,
+    "sales_orders": 180,
+    "supplier_performance": 120,
+    "warehouse_movements": 220
+  },
+  "governed_inputs_modified": false,
+  "input_paths": {
+    "demand_forecast": "outputs/demand_forecast.csv",
+    "inventory_levels": "data/interim/accepted/inventory_levels.csv",
+    "sales_orders": "data/interim/accepted/sales_orders.csv",
+    "supplier_performance": "data/interim/accepted/supplier_performance.csv",
+    "warehouse_movements": "data/interim/accepted/warehouse_movements.csv"
+  },
+  "inventory_run_id": "INVENTORY-5a5cc7e83afe8502",
+  "metrics_summary": {
+    "budget_utilisation": 0.999972,
+    "capacity_utilisation": 0.09285,
+    "critical_risk_count": 0,
+    "high_risk_count": 5,
+    "item_count": 18,
+    "material_record_count": 40,
+    "product_record_count": 32,
+    "projected_excess_quantity": 12740.0,
+    "projected_shortage_quantity": 11813.687119999999,
+    "recommendation_row_count": 72,
+    "row_count": 72,
+    "total_constrained_quantity": 9285.0,
+    "total_recommended_value": 999972.0,
+    "total_unconstrained_quantity": 23120.0,
+    "total_working_capital_exposure": 1077719.7000000002,
+    "warehouse_count": 4
+  },
+  "output_files": {
+    "inventory_diagnostics": {
+      "file_size_bytes": 4971,
+      "path": "outputs/inventory/inventory_diagnostics.json",
+      "row_count": null,
+      "sha256": "2d57a725209edfa1aaaeb33cecffa5f1d43b2c8ad3d5e14604ecfdf728a6daec"
+    },
+    "inventory_health": {
+      "file_size_bytes": 65992,
+      "path": "outputs/inventory/inventory_health.csv",
+      "row_count": 72,
+      "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+    },
+    "inventory_policy_inputs": {
+      "file_size_bytes": 20805,
+      "path": "outputs/inventory/inventory_policy_inputs.csv",
+      "row_count": 72,
+      "sha256": "99358e24d7f45a2aec3314c362594cb7fe5f98a29d44c81d4f025ad26168cd09"
+    },
+    "inventory_position": {
+      "file_size_bytes": 22306,
+      "path": "outputs/inventory/inventory_position.csv",
+      "row_count": 72,
+      "sha256": "bf23ae94b33b25022c5e6da79de89d52b1844d385767287120dfa42c8fd6e46e"
+    },
+    "inventory_scores": {
+      "file_size_bytes": 65992,
+      "path": "outputs/inventory/inventory_scores.csv",
+      "row_count": 72,
+      "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+    },
+    "inventory_summary": {
+      "file_size_bytes": 553,
+      "path": "outputs/inventory/inventory_summary.json",
+      "row_count": null,
+      "sha256": "709a6ae7688f99b78bd6163290db89c440abb15b66cf2225188ff5a6ea976af4"
+    },
+    "portfolio_inventory_scores": {
+      "file_size_bytes": 65992,
+      "path": "outputs/inventory_scores.csv",
+      "row_count": 72,
+      "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+    },
+    "reorder_recommendations": {
+      "file_size_bytes": 24687,
+      "path": "outputs/inventory/reorder_recommendations.csv",
+      "row_count": 72,
+      "sha256": "5c6cba1d1d05ee26f94c5f95f8e3df00faeec99446395f06ffc05336b530d746"
+    },
+    "scenario_comparison": {
+      "file_size_bytes": 1150,
+      "path": "outputs/inventory/scenario_comparison.csv",
+      "row_count": 5,
+      "sha256": "6e10ef97bf3fabae62ca83daf1ed15fd84023b69a758d9972ba09dddd3c3b306"
+    },
+    "scenario_results": {
+      "file_size_bytes": 1150,
+      "path": "outputs/inventory/scenario_results.csv",
+      "row_count": 5,
+      "sha256": "6e10ef97bf3fabae62ca83daf1ed15fd84023b69a758d9972ba09dddd3c3b306"
+    },
+    "supplier_risk_metrics": {
+      "file_size_bytes": 1717,
+      "path": "outputs/inventory/supplier_risk_metrics.csv",
+      "row_count": 10,
+      "sha256": "af1e0e7af7e7bf66862cf8f6596a91cad65f71e5e248beeeba17a62cb75ddc1a"
+    },
+    "warehouse_demand_forecast": {
+      "file_size_bytes": 19552,
+      "path": "outputs/inventory/warehouse_demand_forecast.csv",
+      "row_count": 112,
+      "sha256": "46176ec3a7dea809d4b5d9972adce1c7cf57c44c60b196c2f205d11d9b3be32c"
+    }
+  },
+  "pipeline_name": "inventory_intelligence",
+  "pipeline_version": "0.1.0",
+  "planning_horizon_days": 14,
+  "policy_parameters": {
+    "critical_coverage_days": 3,
+    "default_lead_time_days": 7,
+    "default_material_daily_usage": 0.0,
+    "default_service_level": 0.95,
+    "demand_variability_multiplier": 1.0,
+    "excess_coverage_days": 45,
+    "expiry_warning_days": 30,
+    "holding_cost_rate_annual": 0.2,
+    "lead_time_variability_multiplier": 1.0,
+    "material_usage_window_days": 14,
+    "maximum_reorder_quantity": 100000,
+    "minimum_order_quantity": 1,
+    "order_multiple": 10,
+    "review_period_days": 7,
+    "stockout_cost_multiplier": 2.0,
+    "supplier_risk_adjustment_enabled": true,
+    "supplier_safety_stock_adjustment_cap": 0.35
+  },
+  "recommendation_row_count": 72,
+  "scenario_parameters": {
+    "budget_constrained_fraction": 0.35,
+    "capacity_constrained_fraction": 0.5,
+    "enabled": [
+      "baseline",
+      "high_demand",
+      "supplier_delay",
+      "budget_constrained",
+      "capacity_constrained"
+    ],
+    "high_demand_multiplier": 1.25,
+    "supplier_delay_multiplier": 1.5
+  },
+  "scored_row_count": 72,
+  "software_version": "0.1.0",
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "upstream_forecast_manifest_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+  "upstream_forecast_run_id": "FORECAST-6357daf22de3ea43",
+  "upstream_ingestion_manifest_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+  "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "validation_status": "success",
+  "warnings": [
+    "Material inventory health uses warehouse movement usage because no BOM exists.",
+    "Tracked forecast history is a short synthetic smoke sample."
+  ]
+}

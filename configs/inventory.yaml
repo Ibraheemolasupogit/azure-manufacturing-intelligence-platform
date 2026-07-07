@@ -1,0 +1,69 @@
+inventory:
+  inventory_path: data/interim/accepted/inventory_levels.csv
+  supplier_path: data/interim/accepted/supplier_performance.csv
+  movements_path: data/interim/accepted/warehouse_movements.csv
+  sales_orders_path: data/interim/accepted/sales_orders.csv
+  forecast_path: outputs/demand_forecast.csv
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: data/interim/_metadata/validation-summary.json
+  data_quality_report_path: data/interim/_metadata/data-quality-report.json
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  forecast_manifest_path: outputs/forecasting/forecast-manifest.json
+  forecast_model_metadata_path: outputs/forecasting/model_metadata.json
+  forecast_lineage_path: outputs/forecasting/lineage-records.json
+  output_directory: outputs/inventory
+  inventory_scores_path: outputs/inventory_scores.csv
+  report_directory: reports
+  overwrite: false
+  random_seed: 20260705
+  decision_grain:
+    - warehouse_id
+    - item_id
+  planning_horizon_days: 14
+
+policy:
+  default_service_level: 0.95
+  default_lead_time_days: 7
+  lead_time_variability_multiplier: 1.0
+  demand_variability_multiplier: 1.0
+  review_period_days: 7
+  minimum_order_quantity: 1
+  order_multiple: 10
+  maximum_reorder_quantity: 100000
+  holding_cost_rate_annual: 0.20
+  stockout_cost_multiplier: 2.0
+  excess_coverage_days: 45
+  critical_coverage_days: 3
+  expiry_warning_days: 30
+  supplier_risk_adjustment_enabled: true
+  supplier_safety_stock_adjustment_cap: 0.35
+  material_usage_window_days: 14
+  default_material_daily_usage: 0.0
+
+optimisation:
+  enabled: true
+  method: deterministic_constrained_allocation
+  available_budget: 1000000.0
+  available_replenishment_capacity: 100000
+  objective_weights:
+    stockout_risk: 0.50
+    service_level: 0.25
+    working_capital: 0.15
+    supplier_risk: 0.10
+
+scenarios:
+  enabled:
+    - baseline
+    - high_demand
+    - supplier_delay
+    - budget_constrained
+    - capacity_constrained
+  high_demand_multiplier: 1.25
+  supplier_delay_multiplier: 1.50
+  budget_constrained_fraction: 0.35
+  capacity_constrained_fraction: 0.50
+
+reporting:
+  write_inventory_report: true
+  write_scenario_comparison: true
+  maximum_recommendation_examples: 20

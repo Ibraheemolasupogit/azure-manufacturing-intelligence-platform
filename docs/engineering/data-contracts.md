@@ -1,6 +1,6 @@
 # Data Contracts
 
-Milestones 2, 3, and 4 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, and governed demand-forecast outputs. These are local synthetic-data contracts only; they do not describe external customer feeds.
+Milestones 2, 3, 4, and 5 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, governed demand-forecast outputs, and governed inventory-intelligence outputs. These are local synthetic-data contracts only; they do not describe external customer feeds.
 
 ## Contract principles
 
@@ -75,9 +75,20 @@ Implemented Milestone 4 outputs include:
 - `outputs/forecasting/lineage-records.json`
 - `reports/demand_forecasting_report.md`
 
-Future outputs include:
+Implemented Milestone 5 outputs include:
 
 - `outputs/inventory_scores.csv`
+- `outputs/inventory/inventory_health.csv`
+- `outputs/inventory/reorder_recommendations.csv`
+- `outputs/inventory/scenario_comparison.csv`
+- `outputs/inventory/inventory_summary.json`
+- `outputs/inventory/inventory_diagnostics.json`
+- `outputs/inventory/inventory-manifest.json`
+- `outputs/inventory/lineage-records.json`
+- `reports/inventory_intelligence_report.md`
+
+Future outputs include:
+
 - `outputs/quality_alerts.csv`
 - `outputs/maintenance_predictions.json`
 - `outputs/production_kpis.csv`
