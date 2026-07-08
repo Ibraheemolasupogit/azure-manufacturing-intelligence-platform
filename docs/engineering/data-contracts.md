@@ -137,3 +137,9 @@ Required equipment fields include `sensor_event_id`, `timestamp`, `plant_id`, `l
 The maintenance contract requires upstream manifest hash verification, row-count verification, successful ingestion validation, synthetic-data classification, coherent sensor type/unit pairs, non-negative runtime and service fields, valid thresholds, unique sensor event IDs, relative manifest paths, deterministic run identity, and unchanged upstream inputs.
 
 Maintenance outputs under `outputs/maintenance/` are controlled portfolio evidence. CI and experiments must write under `.generated/`.
+
+## Monitoring contract
+
+Milestone 8 consumes tracked evidence only: generation, ingestion, forecast, inventory, quality, and maintenance manifests; lineage files; portfolio outputs; and data-quality evidence. Required evidence must exist, parse successfully, match declared SHA-256 hashes and row counts where available, and confirm synthetic classification.
+
+Monitoring outputs under `outputs/monitoring/` and `outputs/platform_health_summary.json` are controlled portfolio evidence. CI and experiments must write under `.generated/`.

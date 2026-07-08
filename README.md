@@ -12,12 +12,12 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 - Build deterministic synthetic data pipelines for manufacturing and supply-chain domains.
 - Establish governed local data zones that map conceptually to Azure services.
-- Support forecasting, inventory intelligence, quality analytics, predictive maintenance, and future monitoring, GenAI assistance, and reporting.
+- Support forecasting, inventory intelligence, quality analytics, predictive maintenance, monitoring, and future GenAI assistance and reporting.
 - Keep every milestone reproducible, testable, auditable, and CI-ready.
 
 ## Core capabilities
 
-Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, and predictive maintenance. Planned capabilities include operational monitoring, supplier-risk expansion, GenAI-assisted recommendations, and Power BI-ready extracts.
+Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, and local evidence monitoring. Planned capabilities include supplier-risk expansion, GenAI-assisted recommendations, and Power BI-ready extracts.
 
 ## Intended users
 
@@ -91,13 +91,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 5 - Inventory intelligence and optimisation | Complete |
 | Milestone 6 - Quality analytics and anomaly detection | Complete |
 | Milestone 7 - Predictive maintenance and equipment failure risk | Complete |
-| Milestone 8 onward | Planned |
+| Milestone 8 - Monitoring and observability | Complete |
+| Milestone 9 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 7:
+Implemented through Milestone 8:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -121,8 +122,10 @@ Implemented through Milestone 7:
 - Deterministic specification compliance, KPI/yield proxies, defect Pareto, capability diagnostics, expanding control-chart baselines, SPC rules, robust z-score, Isolation Forest diagnostics, quality-risk scoring, alert outputs, manifests, lineage, diagnostics, and reports.
 - Governed predictive maintenance from accepted equipment health, accepted production events, and optional quality context.
 - Deterministic sensor-threshold compliance, runtime/service proxies, chronological degradation indicators, robust z-score, deterministic Isolation Forest diagnostics, failure-risk scoring, equipment-health scoring, maintenance alerts, machine and sensor summaries, manifest, lineage, diagnostics, portfolio prediction JSON, and reports.
+- Governed local monitoring from tracked generation, ingestion, forecast, inventory, quality, and maintenance evidence.
+- Deterministic manifest integrity checks, lineage completeness checks, data-quality monitoring, model and analytics monitoring, domain health scores, platform health summary, monitoring alerts, manifest, lineage, diagnostics, portfolio health JSON, and observability reports.
 
-Not implemented yet: Milestone 8 monitoring, GenAI, dashboards, or live Azure integration.
+Not implemented yet: Milestone 9 GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -161,6 +164,9 @@ make validate-quality-analytics
 make maintenance
 make maintenance-ci
 make validate-maintenance
+make monitoring
+make monitoring-ci
+make validate-monitoring
 make quality
 ```
 
@@ -178,9 +184,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make maintenance` reads governed accepted equipment-health and production-event data plus optional governed quality context; writes `outputs/maintenance_predictions.json`, equipment features, scores, alerts, machine and sensor summaries, degradation signals, anomaly scores, risk summary, diagnostics, manifest, and lineage under `outputs/maintenance/`; writes `reports/maintenance_analytics_report.md` and `reports/maintenance_alert_summary.md`; and records upstream hashes without mutating governed inputs. The controlled run processes 504 equipment records, finds 60 warning breaches, 9 critical breaches, 59 degradation signals, 0 robust-z anomalies, 0 Isolation Forest anomalies, and 135 maintenance alerts. `make maintenance-ci` writes the same shape under ignored `.generated/ci/`. `make validate-maintenance` verifies an existing maintenance run without rescoring.
 
+`make monitoring` reads tracked governed evidence from generation, ingestion, forecasting, inventory, quality, and maintenance; writes `outputs/platform_health_summary.json`, domain health scores, pipeline health, data-quality monitoring, model and analytics monitoring, evidence integrity checks, lineage completeness, alerts, diagnostics, manifest, and lineage under `outputs/monitoring/`; writes `reports/platform_monitoring_report.md` and `reports/observability_summary.md`; and records upstream hashes without mutating governed evidence. The controlled run scores platform health at 98.666667, with manifest integrity 100, lineage completeness 100, and one informational monitoring alert. `make monitoring-ci` writes the same shape under ignored `.generated/ci/`. `make validate-monitoring` verifies an existing monitoring run without recalculating.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, overwrite behavior, tamper detection, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -188,15 +196,15 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, and maintenance outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, and monitoring outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 7 predictive maintenance produces deterministic decision-support evidence from synthetic governed inputs. Runtime and service measures are labelled proxies where explicit schedules are unavailable; anomaly scores and failure-risk scores are diagnostics, not probabilities; and investigation context is not root-cause proof or a certified maintenance instruction. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
+Milestone 8 monitoring produces deterministic observability evidence from tracked synthetic governed files. Health scores are heuristic local indicators, not formal SLA measurements; monitoring reports are not live dashboards; and no Azure Monitor, Log Analytics, Application Insights, or cloud resource is deployed or called.
 
 ## Planned portfolio outputs
 
-Future milestones are expected to produce documented, reproducible outputs such as `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/production_kpis.csv`, `outputs/supplier_risk_scores.csv`, Power BI fact extracts, and narrative reports under `reports/`.
+Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, and `outputs/platform_health_summary.json`. Future milestones are expected to produce documented, reproducible outputs such as supplier risk scores, Power BI fact extracts, and additional narrative reports under `reports/`.
 
 ## Disclaimer
 

@@ -1,0 +1,5 @@
+domain,selected_model,row_count,warning_count,indicator
+forecasting,random_forest,56,1,forecast_horizon_and_model_documented
+inventory,rules_based_inventory_policy,72,2,inventory_risk_and_scenario_outputs_present
+maintenance,robust_zscore;isolation_forest;heuristic_failure_risk,504,3,maintenance_alert_and_risk_outputs_present
+quality,robust_zscore;isolation_forest;spc_rules,168,2,quality_alert_and_anomaly_outputs_present

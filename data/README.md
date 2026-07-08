@@ -35,6 +35,13 @@ Milestone 7 maintenance outputs are also stored outside the data lake zones:
 - `reports/maintenance_analytics_report.md`: human-readable predictive-maintenance evidence.
 - `reports/maintenance_alert_summary.md`: human-readable maintenance alert summary.
 
+Milestone 8 monitoring outputs are also stored outside the data lake zones:
+
+- `outputs/platform_health_summary.json`: portfolio-level platform health projection.
+- `outputs/monitoring/`: platform health summary, pipeline health, domain health scores, data-quality monitoring, model and analytics monitoring, alerts, integrity checks, lineage completeness, diagnostics, manifest, and lineage.
+- `reports/platform_monitoring_report.md`: human-readable monitoring report.
+- `reports/observability_summary.md`: concise observability summary.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -79,5 +86,8 @@ Useful commands:
 - `make maintenance`: regenerate tracked controlled predictive-maintenance evidence.
 - `make maintenance-ci`: generate and validate ignored CI maintenance evidence.
 - `make validate-maintenance`: validate an existing maintenance run without rescoring.
+- `make monitoring`: regenerate tracked controlled monitoring evidence.
+- `make monitoring-ci`: generate and validate ignored CI monitoring evidence.
+- `make validate-monitoring`: validate an existing monitoring run without recalculating.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

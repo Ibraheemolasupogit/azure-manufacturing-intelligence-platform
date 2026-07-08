@@ -38,3 +38,16 @@ Milestone 7 maps local maintenance responsibilities to Azure concepts without de
 - Maintenance alert and score extracts: Power BI-ready output responsibility.
 
 No Azure SDK client, credential, endpoint, workspace, database, dashboard, or deployment is created by this milestone.
+
+## Monitoring reference mapping
+
+Milestone 8 maps local monitoring responsibilities to Azure concepts without deploying them:
+
+- Platform and pipeline metrics: Azure Monitor responsibility.
+- Local observability summaries: Log Analytics responsibility.
+- Evidence and output query patterns: Azure Data Explorer responsibility.
+- Analytics and model-health indicators: Azure Machine Learning monitoring responsibility.
+- Local lineage metadata: Microsoft Purview responsibility.
+- Portfolio health extracts: Power BI-ready output responsibility.
+
+No live telemetry collection, Azure SDK client, workspace, dashboard, secret, or cloud deployment is created.

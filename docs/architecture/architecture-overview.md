@@ -20,3 +20,9 @@ Milestone 6 does not perform predictive maintenance, generate dashboards, or dep
 The local predictive-maintenance layer consumes governed accepted equipment-health records, governed production events, and optional governed quality context. It produces deterministic equipment features, threshold compliance, degradation indicators, robust z-score and Isolation Forest anomaly diagnostics, failure-risk scores, equipment-health scores, maintenance alerts, summaries, reports, manifests, and lineage.
 
 The implementation is local-first and reference-mapped only. It does not deploy Azure resources, stream live telemetry, issue certified safety instructions, or claim root cause. Runtime and service outputs are labelled proxies where the synthetic source data lacks real schedules.
+
+## Milestone 8 monitoring
+
+The local monitoring layer consumes tracked governed evidence from generation, ingestion, forecasting, inventory, quality, and maintenance. It verifies manifest integrity, hashes, row counts, lineage completeness, domain health, platform health, and monitoring alerts.
+
+The implementation produces machine-readable monitoring outputs and Markdown observability reports. It is not live Azure Monitor integration and does not ingest live telemetry.

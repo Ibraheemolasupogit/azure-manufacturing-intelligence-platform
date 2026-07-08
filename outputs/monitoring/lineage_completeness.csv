@@ -1,0 +1,6 @@
+domain,expected_lineage_targets,observed_lineage_targets,lineage_completeness_score,missing_targets,lineage_status
+forecasting,10,10,100.000000,,passed
+ingestion,7,7,100.000000,,passed
+inventory,12,12,100.000000,,passed
+maintenance,12,12,100.000000,,passed
+quality,13,13,100.000000,,passed

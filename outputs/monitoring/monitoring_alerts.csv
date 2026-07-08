@@ -1,0 +1,2 @@
+monitoring_run_id,alert_id,domain,severity,alert_type,affected_artifact,observed_value,threshold_value,message,recommended_action,synthetic_data_flag
+MONITOR-6a22c0e7c78c0641,MO-3ae43ba86f9a,platform,info,monitoring_completed,all_domains,0,0,All required monitoring checks completed without warning or critical alerts.,Continue standard local evidence monitoring.,True

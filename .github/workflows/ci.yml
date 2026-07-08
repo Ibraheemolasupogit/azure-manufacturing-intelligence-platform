@@ -69,5 +69,11 @@ jobs:
       - name: Validate CI predictive maintenance
         run: python -m manufacturing_intelligence.maintenance --config configs/maintenance_ci.yaml --validate-existing-run --output-directory .generated/ci/maintenance
 
+      - name: Run CI monitoring
+        run: make monitoring-ci
+
+      - name: Validate CI monitoring
+        run: python -m manufacturing_intelligence.monitoring --config configs/monitoring_ci.yaml --validate-existing-run --output-directory .generated/ci/monitoring
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

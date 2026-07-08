@@ -110,6 +110,19 @@ outputs/*
 !outputs/maintenance/maintenance_diagnostics.json
 !outputs/maintenance/maintenance-manifest.json
 !outputs/maintenance/lineage-records.json
+!outputs/platform_health_summary.json
+!outputs/monitoring/
+!outputs/monitoring/platform_health_summary.json
+!outputs/monitoring/pipeline_health.csv
+!outputs/monitoring/domain_health_scores.csv
+!outputs/monitoring/data_quality_monitoring.csv
+!outputs/monitoring/model_and_analytics_monitoring.csv
+!outputs/monitoring/monitoring_alerts.csv
+!outputs/monitoring/evidence_integrity_checks.csv
+!outputs/monitoring/lineage_completeness.csv
+!outputs/monitoring/monitoring_diagnostics.json
+!outputs/monitoring/monitoring-manifest.json
+!outputs/monitoring/lineage-records.json
 reports/*
 !reports/.gitkeep
 !reports/data_quality_report.md
@@ -120,3 +133,5 @@ reports/*
 !reports/quality_alert_summary.md
 !reports/maintenance_analytics_report.md
 !reports/maintenance_alert_summary.md
+!reports/platform_monitoring_report.md
+!reports/observability_summary.md

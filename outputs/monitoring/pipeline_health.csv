@@ -1,0 +1,7 @@
+domain,run_id,validation_status,health_score,health_label,warning_count,synthetic_data_flag
+forecasting,FORECAST-6357daf22de3ea43,success,100.000000,healthy,1,True
+generation,synthetic-b46d0952ec38e781,success,100.000000,healthy,0,True
+ingestion,INGEST-da9a11a67abc6a18,success,100.000000,healthy,0,True
+inventory,INVENTORY-5a5cc7e83afe8502,success,100.000000,healthy,2,True
+maintenance,MAINT-f281a27e7d014de8,success,100.000000,healthy,3,True
+quality,QUALITY-ea15caf8c05763b0,success,92.000000,healthy,2,True

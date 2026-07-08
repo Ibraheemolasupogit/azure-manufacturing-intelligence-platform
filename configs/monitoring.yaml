@@ -1,0 +1,51 @@
+monitoring:
+  output_directory: outputs/monitoring
+  portfolio_summary_path: outputs/platform_health_summary.json
+  report_directory: reports
+  overwrite: false
+  random_seed: 20260708
+  required_domains:
+    - generation
+    - ingestion
+    - forecasting
+    - inventory
+    - quality
+    - maintenance
+
+inputs:
+  generation_manifest_path: data/raw/generation_manifest.json
+  schema_metadata_path: data/raw/schema_metadata.json
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: data/interim/_metadata/validation-summary.json
+  data_quality_report_path: data/interim/_metadata/data-quality-report.json
+  data_quality_markdown_path: reports/data_quality_report.md
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  forecast_manifest_path: outputs/forecasting/forecast-manifest.json
+  forecast_lineage_path: outputs/forecasting/lineage-records.json
+  demand_forecast_path: outputs/demand_forecast.csv
+  inventory_manifest_path: outputs/inventory/inventory-manifest.json
+  inventory_lineage_path: outputs/inventory/lineage-records.json
+  inventory_scores_path: outputs/inventory_scores.csv
+  quality_manifest_path: outputs/quality/quality-manifest.json
+  quality_lineage_path: outputs/quality/lineage-records.json
+  quality_alerts_path: outputs/quality_alerts.csv
+  maintenance_manifest_path: outputs/maintenance/maintenance-manifest.json
+  maintenance_lineage_path: outputs/maintenance/lineage-records.json
+  maintenance_predictions_path: outputs/maintenance_predictions.json
+
+thresholds:
+  maximum_allowed_quarantine_rate: 0.01
+  maximum_forecast_warning_count: 20
+  maximum_inventory_high_risk_count: 20
+  maximum_quality_high_risk_alerts: 20
+  maximum_maintenance_high_risk_alerts: 20
+  minimum_manifest_integrity_score: 100
+  minimum_lineage_completeness_score: 90
+  minimum_pipeline_health_score: 80
+  warning_score_threshold: 70
+  critical_score_threshold: 50
+
+reporting:
+  maximum_alert_examples: 25
+  write_markdown_report: true
+  include_domain_sections: true

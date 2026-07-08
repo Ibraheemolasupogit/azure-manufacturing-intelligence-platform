@@ -1,0 +1,22 @@
+{
+  "alert_counts_by_severity": {
+    "info": 1
+  },
+  "domain_health_scores": {
+    "forecasting": 100.0,
+    "generation": 100.0,
+    "ingestion": 100.0,
+    "inventory": 100.0,
+    "maintenance": 100.0,
+    "quality": 92.0
+  },
+  "evidence_integrity_checks": 62,
+  "failed_integrity_checks": 0,
+  "lineage_domains_checked": 5,
+  "live_azure_monitor_integration": false,
+  "minimum_lineage_completeness_score": 100.0,
+  "monitored_input_hash_count": 19,
+  "monitored_manifest_count": 6,
+  "platform_health_score": 98.66666666666667,
+  "synthetic_data_flag": true
+}

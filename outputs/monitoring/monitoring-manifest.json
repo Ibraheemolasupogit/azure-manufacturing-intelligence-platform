@@ -1,0 +1,151 @@
+{
+  "alert_counts_by_severity": {
+    "info": 1
+  },
+  "azure_mapping": {
+    "dashboard_extracts": "Power BI-ready outputs responsibility",
+    "deployment_status": "reference-only; no Azure services deployed or called",
+    "lineage": "Microsoft Purview responsibility",
+    "logs": "Log Analytics responsibility",
+    "metrics": "Azure Monitor responsibility",
+    "ml_monitoring": "Azure Machine Learning monitoring responsibility",
+    "operational_queries": "Azure Data Explorer responsibility"
+  },
+  "configuration_path": "configs/monitoring.yaml",
+  "configuration_sha256": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+  "domain_health_scores": {
+    "forecasting": 100.0,
+    "generation": 100.0,
+    "ingestion": 100.0,
+    "inventory": 100.0,
+    "maintenance": 100.0,
+    "quality": 92.0
+  },
+  "git_commit": "772be51f4f444107ac0b840791e03b789264b8a1",
+  "input_hashes": {
+    "data_quality_markdown": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e",
+    "data_quality_report": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406",
+    "demand_forecast": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8",
+    "forecast_lineage": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced",
+    "forecast_manifest": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+    "generation_manifest": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0",
+    "ingestion_lineage": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838",
+    "ingestion_manifest": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+    "inventory_lineage": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc",
+    "inventory_manifest": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "inventory_scores": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859",
+    "maintenance_lineage": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37",
+    "maintenance_manifest": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "maintenance_predictions": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9",
+    "quality_alerts": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f",
+    "quality_lineage": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6",
+    "quality_manifest": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf",
+    "schema_metadata": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af",
+    "validation_summary": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+  },
+  "input_manifests": {
+    "forecasting": "outputs/forecasting/forecast-manifest.json",
+    "generation": "data/raw/generation_manifest.json",
+    "ingestion": "data/interim/_metadata/ingestion-manifest.json",
+    "inventory": "outputs/inventory/inventory-manifest.json",
+    "maintenance": "outputs/maintenance/maintenance-manifest.json",
+    "quality": "outputs/quality/quality-manifest.json"
+  },
+  "lineage_completeness_score": 100.0,
+  "manifest_integrity_score": 100.0,
+  "monitored_domains": [
+    "generation",
+    "ingestion",
+    "forecasting",
+    "inventory",
+    "quality",
+    "maintenance"
+  ],
+  "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+  "output_files": {
+    "data_quality_monitoring": {
+      "file_size_bytes": 410,
+      "path": "outputs/monitoring/data_quality_monitoring.csv",
+      "row_count": 7,
+      "sha256": "27d0fd0f891edc66431636d561bd85bef2026c7b3116d4f558407ea6a0331ca7"
+    },
+    "domain_health_scores": {
+      "file_size_bytes": 405,
+      "path": "outputs/monitoring/domain_health_scores.csv",
+      "row_count": 6,
+      "sha256": "976e3052c8e76f768ecb6839b6e1aaa8be9f3aa6feb73abe64e80f90fdb54010"
+    },
+    "evidence_integrity_checks": {
+      "file_size_bytes": 15023,
+      "path": "outputs/monitoring/evidence_integrity_checks.csv",
+      "row_count": 62,
+      "sha256": "4a8a72358e684288cbe4ac1ba66fceb20cfaa42c2cd98e85273256a0a40f84f0"
+    },
+    "lineage_completeness": {
+      "file_size_bytes": 290,
+      "path": "outputs/monitoring/lineage_completeness.csv",
+      "row_count": 5,
+      "sha256": "7b6df95cfc7d5097b21237ab01fb8594373ac8fa106bdfe5a50ad9417f8ddaff"
+    },
+    "model_and_analytics_monitoring": {
+      "file_size_bytes": 425,
+      "path": "outputs/monitoring/model_and_analytics_monitoring.csv",
+      "row_count": 4,
+      "sha256": "f37c56b2c6c080c0c54847b34c81cd00b3fe25c7b1746f88d46e420491426d93"
+    },
+    "monitoring_alerts": {
+      "file_size_bytes": 369,
+      "path": "outputs/monitoring/monitoring_alerts.csv",
+      "row_count": 1,
+      "sha256": "50025f8236a2b334b1665f7e411bc39c2262606d6b6b07368c1cede012597cab"
+    },
+    "monitoring_diagnostics": {
+      "file_size_bytes": 567,
+      "path": "outputs/monitoring/monitoring_diagnostics.json",
+      "row_count": null,
+      "sha256": "02717d80c457b3d2592112f1060457d6ef76b968935c48872be3d04598d595bb"
+    },
+    "observability_summary": {
+      "file_size_bytes": 150,
+      "path": "reports/observability_summary.md",
+      "row_count": null,
+      "sha256": "df0cb518c1ffa05c0ece1ce9cfc400e47ee358fa34a8ec275dcd8b09676f5b20"
+    },
+    "pipeline_health": {
+      "file_size_bytes": 510,
+      "path": "outputs/monitoring/pipeline_health.csv",
+      "row_count": 6,
+      "sha256": "1015e097b0d1bd69078cfaa0e633315044a414ea04bc83f47eb9f7ca8c03d768"
+    },
+    "platform_health_summary": {
+      "file_size_bytes": 938,
+      "path": "outputs/monitoring/platform_health_summary.json",
+      "row_count": null,
+      "sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+    },
+    "platform_monitoring_report": {
+      "file_size_bytes": 890,
+      "path": "reports/platform_monitoring_report.md",
+      "row_count": null,
+      "sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+    },
+    "portfolio_platform_health_summary": {
+      "file_size_bytes": 938,
+      "path": "outputs/platform_health_summary.json",
+      "row_count": null,
+      "sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+    }
+  },
+  "pipeline_name": "platform_monitoring",
+  "pipeline_version": "0.1.0",
+  "platform_health_label": "healthy",
+  "platform_health_score": 98.66666666666667,
+  "software_version": "0.1.0",
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "upstream_inputs_modified": false,
+  "validation_status": "success",
+  "warnings": [
+    "Monitoring is deterministic local evidence monitoring, not live Azure Monitor integration.",
+    "Health scores are heuristic observability indicators, not formal SLA measurements."
+  ]
+}

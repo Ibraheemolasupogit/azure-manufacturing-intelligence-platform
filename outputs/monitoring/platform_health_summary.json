@@ -1,0 +1,31 @@
+{
+  "alert_counts_by_severity": {
+    "info": 1
+  },
+  "azure_deployment_status": "reference_only_no_azure_services_called",
+  "domain_health_labels": {
+    "forecasting": "healthy",
+    "generation": "healthy",
+    "ingestion": "healthy",
+    "inventory": "healthy",
+    "maintenance": "healthy",
+    "quality": "healthy"
+  },
+  "domain_health_scores": {
+    "forecasting": 100.0,
+    "generation": 100.0,
+    "ingestion": 100.0,
+    "inventory": 100.0,
+    "maintenance": 100.0,
+    "quality": 92.0
+  },
+  "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+  "platform_health_label": "healthy",
+  "platform_health_score": 98.66666666666667,
+  "relationship": {
+    "outputs/monitoring/monitoring_alerts.csv": "row-level monitoring alerts",
+    "outputs/monitoring/platform_health_summary.json": "controlled monitoring summary",
+    "outputs/platform_health_summary.json": "portfolio-level projection"
+  },
+  "synthetic_data_flag": true
+}

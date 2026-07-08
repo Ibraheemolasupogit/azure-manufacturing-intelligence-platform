@@ -1,0 +1,7 @@
+domain,health_score,health_label,deductions,quarantine_rate,warning_count,high_risk_count,critical_risk_count
+forecasting,100.000000,healthy,,,1.000000,,
+generation,100.000000,healthy,,,,,
+ingestion,100.000000,healthy,,0.000000,,,
+inventory,100.000000,healthy,,,,0.000000,0.000000
+maintenance,100.000000,healthy,,,,7.000000,0.000000
+quality,92.000000,healthy,quality_critical_alerts=4,,,6.000000,4.000000

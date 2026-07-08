@@ -60,10 +60,11 @@ Out of scope: Milestone 8 monitoring, live IoT integration, cloud deployment, da
 ## Milestone 8 - Operational monitoring and observability
 
 Objective: expose local run metrics, logs, and health checks.
-Principal components: structured logs, run summaries, pipeline status.
-Planned evidence: monitoring report and failure examples.
-Dependencies: Milestones 1-3.
-Out of scope: live Azure Monitor integration.
+Principal components: governed evidence monitoring, manifest integrity checks, lineage completeness checks, domain health scores, platform health summary, deterministic monitoring alerts, observability reports, manifest, lineage, CLI, tests, and CI profile.
+Evidence: platform health JSON, pipeline health, domain scores, data-quality monitoring, model and analytics monitoring, evidence integrity checks, lineage completeness, alerts, diagnostics, manifest, lineage, reports, tests, and documented limitations.
+Dependencies: Milestones 1-7.
+Status: Complete.
+Out of scope: live Azure Monitor integration, dashboards, GenAI, Azure SDKs, streaming telemetry, and cloud deployment.
 
 ## Milestone 9 - GenAI manufacturing operations assistant
 

@@ -1,0 +1,1406 @@
+[
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/platform_health_summary.json",
+    "target_row_count": null,
+    "target_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f",
+    "transformation_name": "platform_health_summary",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/pipeline_health.csv",
+    "target_row_count": 6,
+    "target_sha256": "1015e097b0d1bd69078cfaa0e633315044a414ea04bc83f47eb9f7ca8c03d768",
+    "transformation_name": "pipeline_health",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/domain_health_scores.csv",
+    "target_row_count": 6,
+    "target_sha256": "976e3052c8e76f768ecb6839b6e1aaa8be9f3aa6feb73abe64e80f90fdb54010",
+    "transformation_name": "domain_health_scores",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/data_quality_monitoring.csv",
+    "target_row_count": 7,
+    "target_sha256": "27d0fd0f891edc66431636d561bd85bef2026c7b3116d4f558407ea6a0331ca7",
+    "transformation_name": "data_quality_monitoring",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/model_and_analytics_monitoring.csv",
+    "target_row_count": 4,
+    "target_sha256": "f37c56b2c6c080c0c54847b34c81cd00b3fe25c7b1746f88d46e420491426d93",
+    "transformation_name": "model_and_analytics_monitoring",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/monitoring_alerts.csv",
+    "target_row_count": 1,
+    "target_sha256": "50025f8236a2b334b1665f7e411bc39c2262606d6b6b07368c1cede012597cab",
+    "transformation_name": "monitoring_alerts",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/evidence_integrity_checks.csv",
+    "target_row_count": 62,
+    "target_sha256": "4a8a72358e684288cbe4ac1ba66fceb20cfaa42c2cd98e85273256a0a40f84f0",
+    "transformation_name": "evidence_integrity_checks",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/lineage_completeness.csv",
+    "target_row_count": 5,
+    "target_sha256": "7b6df95cfc7d5097b21237ab01fb8594373ac8fa106bdfe5a50ad9417f8ddaff",
+    "transformation_name": "lineage_completeness",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/monitoring_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "02717d80c457b3d2592112f1060457d6ef76b968935c48872be3d04598d595bb",
+    "transformation_name": "monitoring_diagnostics",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/platform_health_summary.json",
+    "target_row_count": null,
+    "target_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f",
+    "transformation_name": "portfolio_platform_health_summary",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/platform_monitoring_report.md",
+    "target_row_count": null,
+    "target_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd",
+    "transformation_name": "platform_monitoring_report",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/observability_summary.md",
+    "target_row_count": null,
+    "target_sha256": "df0cb518c1ffa05c0ece1ce9cfc400e47ee358fa34a8ec275dcd8b09676f5b20",
+    "transformation_name": "observability_summary",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "99709bebe209475401dc68a9c934469609cd99cd3372f8155764b12bdbcdd87c",
+    "monitoring_run_id": "MONITOR-6a22c0e7c78c0641",
+    "purview_registration_status": "not_registered_reference_only",
+    "source_inputs": {
+      "data_quality_markdown": {
+        "path": "data_quality_markdown",
+        "row_count": null,
+        "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      "data_quality_report": {
+        "path": "data_quality_report",
+        "row_count": null,
+        "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      "demand_forecast": {
+        "path": "demand_forecast",
+        "row_count": null,
+        "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      "forecast_lineage": {
+        "path": "forecast_lineage",
+        "row_count": null,
+        "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      "forecast_manifest": {
+        "path": "forecast_manifest",
+        "row_count": null,
+        "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      "generation_manifest": {
+        "path": "generation_manifest",
+        "row_count": null,
+        "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      "ingestion_lineage": {
+        "path": "ingestion_lineage",
+        "row_count": null,
+        "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      "ingestion_manifest": {
+        "path": "ingestion_manifest",
+        "row_count": null,
+        "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      "inventory_lineage": {
+        "path": "inventory_lineage",
+        "row_count": null,
+        "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      "inventory_manifest": {
+        "path": "inventory_manifest",
+        "row_count": null,
+        "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      "inventory_scores": {
+        "path": "inventory_scores",
+        "row_count": null,
+        "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      "maintenance_lineage": {
+        "path": "maintenance_lineage",
+        "row_count": null,
+        "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      "maintenance_manifest": {
+        "path": "maintenance_manifest",
+        "row_count": null,
+        "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      "maintenance_predictions": {
+        "path": "maintenance_predictions",
+        "row_count": null,
+        "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      "quality_alerts": {
+        "path": "quality_alerts",
+        "row_count": null,
+        "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      "quality_lineage": {
+        "path": "quality_lineage",
+        "row_count": null,
+        "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      "quality_manifest": {
+        "path": "quality_manifest",
+        "row_count": null,
+        "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      "schema_metadata": {
+        "path": "schema_metadata",
+        "row_count": null,
+        "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      "validation_summary": {
+        "path": "validation_summary",
+        "row_count": null,
+        "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/monitoring/monitoring-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b",
+    "transformation_name": "monitoring_manifest",
+    "validation_status": "success"
+  }
+]

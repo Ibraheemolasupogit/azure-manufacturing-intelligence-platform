@@ -1,0 +1,8 @@
+dataset,accepted_count,quarantine_count,quarantine_rate,validation_status,synthetic_data_flag
+equipment_health,504,0,0.000000,success,True
+inventory_levels,72,0,0.000000,success,True
+production_events,168,0,0.000000,success,True
+quality_checks,168,0,0.000000,success,True
+sales_orders,180,0,0.000000,success,True
+supplier_performance,120,0,0.000000,success,True
+warehouse_movements,220,0,0.000000,success,True

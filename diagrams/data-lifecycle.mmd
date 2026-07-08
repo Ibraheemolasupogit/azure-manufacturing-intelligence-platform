@@ -22,6 +22,11 @@ flowchart LR
     Accepted --> Maintenance["Predictive maintenance and failure-risk scoring"]
     QualityOutputs --> Maintenance
     Maintenance --> MaintenanceOutputs["Maintenance predictions, alerts, summaries, reports, and lineage"]
+    MaintenanceOutputs --> Monitoring["Monitoring and observability"]
+    Forecast --> Monitoring
+    InventoryOutputs --> Monitoring
+    QualityOutputs --> Monitoring
+    Monitoring --> MonitoringOutputs["Platform health summary, monitoring alerts, reports, and lineage"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -37,6 +42,7 @@ flowchart LR
     Inventory -.-> InventoryLineage["Inventory manifests and lineage"]
     Quality -.-> QualityLineage["Quality manifests and lineage"]
     Maintenance -.-> MaintenanceLineage["Maintenance manifests and lineage"]
+    Monitoring -.-> MonitoringLineage["Monitoring manifests and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest
