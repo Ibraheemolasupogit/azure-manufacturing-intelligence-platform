@@ -15,3 +15,8 @@ Milestone 3 produces lineage metadata, data-quality evidence, and run manifests 
 ## Implementation boundary
 
 Milestone 6 does not perform predictive maintenance, generate dashboards, or deploy Azure resources.
+## Milestone 7 predictive maintenance
+
+The local predictive-maintenance layer consumes governed accepted equipment-health records, governed production events, and optional governed quality context. It produces deterministic equipment features, threshold compliance, degradation indicators, robust z-score and Isolation Forest anomaly diagnostics, failure-risk scores, equipment-health scores, maintenance alerts, summaries, reports, manifests, and lineage.
+
+The implementation is local-first and reference-mapped only. It does not deploy Azure resources, stream live telemetry, issue certified safety instructions, or claim root cause. Runtime and service outputs are labelled proxies where the synthetic source data lacks real schedules.

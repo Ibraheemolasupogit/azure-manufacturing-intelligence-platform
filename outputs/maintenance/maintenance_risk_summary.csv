@@ -1,0 +1,4 @@
+risk_level,equipment_event_count,average_failure_risk_score,warning_breach_count,critical_breach_count,degradation_signal_count,anomaly_count
+high,7,69.237019,0,7,7,0
+low,426,13.058886,0,0,16,0
+medium,71,41.578029,60,2,36,0

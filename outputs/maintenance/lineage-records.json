@@ -1,0 +1,405 @@
+[
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "thresholds;production_context;quality_context",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/equipment_health_features.csv",
+    "target_row_count": 504,
+    "target_sha256": "9bc11958eb1935c4f60cc976db9db355bb42cca794b03deae6c9119ec3e3bfbb",
+    "transformation_name": "equipment_health_features",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "transparent_weighted_heuristic_score",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/equipment_health_scores.csv",
+    "target_row_count": 504,
+    "target_sha256": "c56e02d876633fa6b951ffeb0a5e10ba0f15a471a6cd83dff3a110bbf2a383a0",
+    "transformation_name": "equipment_health_scores",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "deterministic_alert_rules",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/maintenance_alerts.csv",
+    "target_row_count": 135,
+    "target_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7",
+    "transformation_name": "maintenance_alerts",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/machine_health_summary.csv",
+    "target_row_count": 18,
+    "target_sha256": "b4ad807679ddb29d1067dacefd3b5764d8c2f03c47c5df1d0e40f4968d50f284",
+    "transformation_name": "machine_health_summary",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/sensor_health_summary.csv",
+    "target_row_count": 36,
+    "target_sha256": "910008d252e5405b6cc1f2ae7016004930c3f3f4d3bc1ab23a5eaea0cda25816",
+    "transformation_name": "sensor_health_summary",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "rolling_slope_no_future_leakage",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/degradation_signals.csv",
+    "target_row_count": 504,
+    "target_sha256": "586c40a1bd5d60c45b383173909e3f071a39c2d035d382fc47fa46f6fe5e27ae",
+    "transformation_name": "degradation_signals",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "robust_zscore;isolation_forest",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/anomaly_scores.csv",
+    "target_row_count": 504,
+    "target_sha256": "393d8c3a59243c0795df34911b5e7c45f5376b1c6bd9b7106758fb4add7b6a4a",
+    "transformation_name": "anomaly_scores",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/maintenance_risk_summary.csv",
+    "target_row_count": 3,
+    "target_sha256": "e4efeee4a7afeb781fe752d0119dd2ca7a6f7172ad8f24fe88853330737e9b49",
+    "transformation_name": "maintenance_risk_summary",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/maintenance_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "771c030ec271668eb5af7e4ce25136ce5bcc7a9c32c5182b27f34af302ee847e",
+    "transformation_name": "maintenance_diagnostics",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/maintenance_analytics_report.md",
+    "target_row_count": null,
+    "target_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010",
+    "transformation_name": "maintenance_analytics_report",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/maintenance_alert_summary.md",
+    "target_row_count": null,
+    "target_sha256": "bd0156ce761dcc1883cc171fd7c3ef6e796f1bb9e0a87f9bffcc59f73d68b305",
+    "transformation_name": "maintenance_alert_summary",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance_predictions.json",
+    "target_row_count": null,
+    "target_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9",
+    "transformation_name": "portfolio_maintenance_predictions",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+    "maintenance_run_id": "MAINT-f281a27e7d014de8",
+    "purview_registration_status": "not_registered_reference_only",
+    "rule_or_model": "",
+    "source_inputs": {
+      "accepted_equipment_health": {
+        "path": "data/interim/accepted/equipment_health.jsonl",
+        "row_count": 504,
+        "sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      "accepted_production_events": {
+        "path": "data/interim/accepted/production_events.jsonl",
+        "row_count": 168,
+        "sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      "accepted_quality_checks": {
+        "path": "data/interim/accepted/quality_checks.csv",
+        "row_count": 168,
+        "sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      }
+    },
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/maintenance/maintenance-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "transformation_name": "maintenance_manifest",
+    "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+    "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+    "validation_status": "success"
+  }
+]

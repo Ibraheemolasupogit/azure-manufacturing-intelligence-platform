@@ -19,6 +19,9 @@ flowchart LR
     Inventory --> InventoryOutputs["Inventory recommendations and scenario comparison"]
     Accepted --> Quality["Quality analytics and anomaly detection"]
     Quality --> QualityOutputs["Quality alerts, SPC signals, anomaly scores, and reports"]
+    Accepted --> Maintenance["Predictive maintenance and failure-risk scoring"]
+    QualityOutputs --> Maintenance
+    Maintenance --> MaintenanceOutputs["Maintenance predictions, alerts, summaries, reports, and lineage"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -33,6 +36,7 @@ flowchart LR
     Forecast -.-> ForecastLineage["Forecast reports and lineage"]
     Inventory -.-> InventoryLineage["Inventory manifests and lineage"]
     Quality -.-> QualityLineage["Quality manifests and lineage"]
+    Maintenance -.-> MaintenanceLineage["Maintenance manifests and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

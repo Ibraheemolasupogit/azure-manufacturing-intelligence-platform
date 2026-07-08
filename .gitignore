@@ -97,6 +97,19 @@ outputs/*
 !outputs/quality/quality_diagnostics.json
 !outputs/quality/quality-manifest.json
 !outputs/quality/lineage-records.json
+!outputs/maintenance_predictions.json
+!outputs/maintenance/
+!outputs/maintenance/equipment_health_features.csv
+!outputs/maintenance/equipment_health_scores.csv
+!outputs/maintenance/maintenance_alerts.csv
+!outputs/maintenance/machine_health_summary.csv
+!outputs/maintenance/sensor_health_summary.csv
+!outputs/maintenance/degradation_signals.csv
+!outputs/maintenance/anomaly_scores.csv
+!outputs/maintenance/maintenance_risk_summary.csv
+!outputs/maintenance/maintenance_diagnostics.json
+!outputs/maintenance/maintenance-manifest.json
+!outputs/maintenance/lineage-records.json
 reports/*
 !reports/.gitkeep
 !reports/data_quality_report.md
@@ -105,3 +118,5 @@ reports/*
 !reports/inventory_scenario_summary.md
 !reports/quality_analytics_report.md
 !reports/quality_alert_summary.md
+!reports/maintenance_analytics_report.md
+!reports/maintenance_alert_summary.md

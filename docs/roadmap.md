@@ -51,10 +51,11 @@ Out of scope: predictive maintenance, root-cause claims, dashboards, GenAI, and 
 ## Milestone 7 - Predictive maintenance
 
 Objective: identify equipment health risks from synthetic telemetry.
-Principal components: sensor features, maintenance labels, risk scoring.
-Planned evidence: maintenance prediction output and explainability notes.
-Dependencies: Milestones 1-3.
-Out of scope: live IoT integration.
+Principal components: governed equipment loading, production and quality context, threshold compliance, runtime/service proxies, degradation indicators, robust z-score, deterministic Isolation Forest diagnostics, failure-risk scoring, equipment-health scoring, alerts, manifest, lineage, reports, and existing-run validation.
+Evidence: equipment features, scores, alerts, machine and sensor summaries, degradation signals, anomaly scores, diagnostics, `outputs/maintenance_predictions.json`, manifest, lineage, reports, tests, and documented limitations.
+Dependencies: Milestones 1-6.
+Status: Complete.
+Out of scope: Milestone 8 monitoring, live IoT integration, cloud deployment, dashboards, GenAI, and safety-certified maintenance instructions.
 
 ## Milestone 8 - Operational monitoring and observability
 

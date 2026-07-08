@@ -1,0 +1,505 @@
+sensor_event_id,event_timestamp,machine_id,sensor_type,measurement_unit,degradation_status,degradation_slope,degradation_score,degradation_signal_flag,degradation_reason
+EH-000477,2026-01-14 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.665179,97.982143,True,sensor_trend_moving_toward_risk; repeated_warning_breaches; recent_critical_breach
+EH-000424,2026-01-12 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,2.758821,98.105857,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000371,2026-01-11 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.569821,96.837857,True,sensor_trend_moving_toward_risk; repeated_warning_breaches; recent_critical_breach
+EH-000318,2026-01-09 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,2.526357,95.316286,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000212,2026-01-06 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,3.815914,100.000000,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000265,2026-01-08 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.095536,66.146429,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000159,2026-01-05 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,0.611700,72.340400,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000337,2026-01-10 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.519536,92.848429,True,sensor_trend_moving_toward_risk; repeated_warning_breaches; recent_critical_breach
+EH-000301,2026-01-09 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.326964,91.921571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches; recent_critical_breach
+EH-000433,2026-01-13 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.254714,46.176571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000441,2026-01-13 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.337214,46.942571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000503,2026-01-14 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,-0.032821,41.964000,True,repeated_warning_breaches
+EH-000487,2026-01-14 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,0.370214,47.692571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000437,2026-01-13 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.254107,44.807286,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000401,2026-01-12 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.400321,46.905857,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000445,2026-01-13 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,-0.091893,43.062000,True,repeated_warning_breaches
+EH-000419,2026-01-12 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.196214,44.730571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000417,2026-01-12 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.230250,44.767000,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000397,2026-01-12 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.066429,42.099143,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000395,2026-01-11 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.049750,41.923000,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000409,2026-01-12 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.131607,43.799286,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000351,2026-01-10 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.110679,41.492000,True,repeated_warning_breaches
+EH-000495,2026-01-14 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,0.021607,17.495286,False,sensor_trend_moving_toward_risk
+EH-000335,2026-01-10 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.230643,45.867714,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000485,2026-01-14 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,0.294643,21.211714,False,sensor_trend_moving_toward_risk
+EH-000347,2026-01-10 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.124000,45.100000,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000179,2026-01-05 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.787400,51.666800,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000451,2026-01-13 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.056643,18.330000,False,calculated
+EH-000145,2026-01-05 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.484000,49.194000,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000235,2026-01-07 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,0.087536,43.854429,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000053,2026-01-02 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,recent_critical_breach
+EH-000106,2026-01-03 12:00:00+00:00,MACH-03-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,recent_critical_breach
+EH-000475,2026-01-14 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.098643,16.722000,False,calculated
+EH-000405,2026-01-12 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.154071,18.746857,False,sensor_trend_moving_toward_risk
+EH-000277,2026-01-08 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.073821,42.432000,True,repeated_warning_breaches
+EH-000243,2026-01-07 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,0.019107,41.949286,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000465,2026-01-13 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,0.161464,19.729571,False,sensor_trend_moving_toward_risk
+EH-000163,2026-01-05 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,0.208900,46.126800,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000169,2026-01-05 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,0.608100,50.345200,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000171,2026-01-05 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,0.218400,44.300800,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000205,2026-01-06 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,0.481343,48.154114,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000359,2026-01-10 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,-0.133429,16.378000,False,calculated
+EH-000365,2026-01-11 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.175821,19.313857,False,sensor_trend_moving_toward_risk
+EH-000289,2026-01-09 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,-0.140393,17.972000,False,calculated
+EH-000327,2026-01-10 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.250857,22.170286,False,sensor_trend_moving_toward_risk
+EH-000355,2026-01-10 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,0.168893,18.796714,False,sensor_trend_moving_toward_risk
+EH-000173,2026-01-05 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.040800,41.642000,True,repeated_warning_breaches
+EH-000345,2026-01-10 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.005607,17.909286,False,sensor_trend_moving_toward_risk
+EH-000317,2026-01-09 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,0.024107,18.419286,False,sensor_trend_moving_toward_risk
+EH-000275,2026-01-08 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.211143,19.883714,False,sensor_trend_moving_toward_risk
+EH-000263,2026-01-08 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.048571,18.534857,False,sensor_trend_moving_toward_risk
+EH-000259,2026-01-08 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,0.157821,18.797857,False,sensor_trend_moving_toward_risk
+EH-000197,2026-01-06 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,0.196429,19.335143,False,sensor_trend_moving_toward_risk
+EH-000165,2026-01-05 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.716000,26.802000,False,sensor_trend_moving_toward_risk
+EH-000229,2026-01-07 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.035893,16.736714,False,sensor_trend_moving_toward_risk
+EH-000149,2026-01-05 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.166000,19.360000,False,sensor_trend_moving_toward_risk
+EH-000143,2026-01-04 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000127,2026-01-04 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,repeated_warning_breaches
+EH-000467,2026-01-13 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.063893,41.854714,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000109,2026-01-04 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000135,2026-01-04 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,repeated_warning_breaches
+EH-000091,2026-01-03 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,repeated_warning_breaches
+EH-000473,2026-01-14 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.050321,41.365857,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000131,2026-01-04 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000141,2026-01-04 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000267,2026-01-08 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,0.241750,63.369000,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000453,2026-01-13 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.084071,40.948857,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000085,2026-01-03 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,repeated_warning_breaches
+EH-000049,2026-01-02 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000027,2026-01-01 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000065,2026-01-02 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000161,2026-01-05 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,0.081700,61.966400,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000061,2026-01-02 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000496,2026-01-14 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,0.944071,70.826857,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000195,2026-01-06 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,0.358286,64.771429,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000279,2026-01-08 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,0.174250,42.155000,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000019,2026-01-01 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000460,2026-01-13 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,1.711429,80.151143,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000373,2026-01-11 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.234714,87.174571,True,sensor_trend_moving_toward_risk; repeated_warning_breaches; recent_critical_breach
+EH-000449,2026-01-13 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,0.229429,18.117143,False,sensor_trend_moving_toward_risk
+EH-000215,2026-01-06 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.531314,47.035771,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000501,2026-01-14 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,0.204571,18.092857,False,sensor_trend_moving_toward_risk
+EH-000471,2026-01-14 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.032893,16.284714,False,sensor_trend_moving_toward_risk
+EH-000499,2026-01-14 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,0.107357,16.938286,False,sensor_trend_moving_toward_risk
+EH-000491,2026-01-14 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,-0.303786,15.022000,False,calculated
+EH-000181,2026-01-06 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.235686,43.284229,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000199,2026-01-06 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,0.054800,41.277600,True,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000493,2026-01-14 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.043571,15.342000,False,calculated
+EH-000354,2026-01-10 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,1.789679,81.192143,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000333,2026-01-10 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,-0.027857,16.006000,False,calculated
+EH-000390,2026-01-11 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,1.058393,72.292714,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000427,2026-01-12 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,0.298536,18.712429,False,sensor_trend_moving_toward_risk
+EH-000363,2026-01-11 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.300429,19.513143,False,sensor_trend_moving_toward_risk
+EH-000479,2026-01-14 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,-0.316679,59.242000,True,recent_critical_breach
+EH-000385,2026-01-11 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.275107,15.168000,False,calculated
+EH-000329,2026-01-10 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.280536,18.946429,False,sensor_trend_moving_toward_risk
+EH-000339,2026-01-10 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.142429,15.610000,False,calculated
+EH-000248,2026-01-07 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,1.760036,80.298429,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000426,2026-01-12 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,0.100143,60.543714,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000443,2026-01-13 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,-0.245250,57.050000,True,recent_critical_breach
+EH-000407,2026-01-12 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.153321,57.561857,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000357,2026-01-10 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,-0.098214,15.840000,False,calculated
+EH-000287,2026-01-08 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.184964,18.141571,False,sensor_trend_moving_toward_risk
+EH-000323,2026-01-09 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,-0.074107,16.088000,False,calculated
+EH-000311,2026-01-09 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.174000,17.870000,False,sensor_trend_moving_toward_risk
+EH-000293,2026-01-09 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.087250,17.059000,False,sensor_trend_moving_toward_risk
+EH-000284,2026-01-08 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,0.772393,68.766714,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000469,2026-01-14 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.006357,36.096286,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000257,2026-01-08 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,0.013286,15.751429,False,sensor_trend_moving_toward_risk
+EH-000320,2026-01-09 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,-0.040821,59.672000,True,recent_critical_breach
+EH-000167,2026-01-05 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.736900,23.474800,False,sensor_trend_moving_toward_risk
+EH-000227,2026-01-07 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,-0.012357,16.020000,False,calculated
+EH-000245,2026-01-07 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.035429,14.820000,False,calculated
+EH-000147,2026-01-05 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.565100,22.515200,False,sensor_trend_moving_toward_risk
+EH-000431,2026-01-12 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,-0.053464,35.952000,False,repeated_warning_breaches
+EH-000481,2026-01-14 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,-0.440464,35.730000,False,repeated_warning_breaches
+EH-000209,2026-01-06 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.038457,14.864000,False,calculated
+EH-000231,2026-01-07 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,0.181929,61.549143,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000177,2026-01-05 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,0.279500,18.196000,False,sensor_trend_moving_toward_risk
+EH-000271,2026-01-08 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.026107,38.430000,False,repeated_warning_breaches
+EH-000455,2026-01-13 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,-0.165107,34.260000,False,repeated_warning_breaches
+EH-000478,2026-01-14 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,-0.029393,14.484000,False,calculated
+EH-000214,2026-01-06 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-0.477171,59.646000,True,recent_critical_breach
+EH-000178,2026-01-05 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,0.331900,63.798800,True,sensor_trend_moving_toward_risk; recent_critical_breach
+EH-000504,2026-01-14 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,-0.231107,14.546000,False,calculated
+EH-000434,2026-01-13 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,0.024071,14.796857,False,sensor_trend_moving_toward_risk
+EH-000486,2026-01-14 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.032571,14.838857,False,sensor_trend_moving_toward_risk
+EH-000117,2026-01-04 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000081,2026-01-03 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000470,2026-01-14 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,-0.025714,14.634000,False,calculated
+EH-000452,2026-01-13 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,-0.019000,14.442000,False,calculated
+EH-000251,2026-01-07 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,calculated,0.198750,38.747000,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000383,2026-01-11 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.011429,33.857143,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000468,2026-01-13 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,-0.204786,14.526000,False,calculated
+EH-000442,2026-01-13 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.145857,16.296286,False,sensor_trend_moving_toward_risk
+EH-000450,2026-01-13 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.182929,16.831143,False,sensor_trend_moving_toward_risk
+EH-000484,2026-01-14 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,0.376893,19.386714,False,sensor_trend_moving_toward_risk
+EH-000502,2026-01-14 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,0.265679,17.746143,False,sensor_trend_moving_toward_risk
+EH-000378,2026-01-11 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.249464,17.547571,False,sensor_trend_moving_toward_risk
+EH-000492,2026-01-14 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.099321,15.959857,False,sensor_trend_moving_toward_risk
+EH-000416,2026-01-12 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.008036,14.688429,False,sensor_trend_moving_toward_risk
+EH-000488,2026-01-14 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,-0.074714,14.416000,False,calculated
+EH-000472,2026-01-14 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,0.015679,14.928143,False,sensor_trend_moving_toward_risk
+EH-000474,2026-01-14 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,-0.265214,14.472000,False,calculated
+EH-000490,2026-01-14 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.011571,14.590857,False,sensor_trend_moving_toward_risk
+EH-000073,2026-01-03 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000480,2026-01-14 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.115429,15.739143,False,sensor_trend_moving_toward_risk
+EH-000482,2026-01-14 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.035643,15.267714,False,sensor_trend_moving_toward_risk
+EH-000388,2026-01-11 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,-0.323929,14.218000,False,calculated
+EH-000406,2026-01-12 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.076679,15.436143,False,sensor_trend_moving_toward_risk
+EH-000500,2026-01-14 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,-0.080857,14.388000,False,calculated
+EH-000432,2026-01-12 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,-0.350750,14.124000,False,calculated
+EH-000466,2026-01-13 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,0.294036,18.448429,False,sensor_trend_moving_toward_risk
+EH-000498,2026-01-14 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,-2.276571,14.146000,False,calculated
+EH-000476,2026-01-14 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,0.027714,15.182571,False,sensor_trend_moving_toward_risk
+EH-000415,2026-01-12 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.400786,12.010000,False,calculated
+EH-000483,2026-01-14 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.281464,14.206000,False,calculated
+EH-000494,2026-01-14 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,-0.303679,14.306000,False,calculated
+EH-000448,2026-01-13 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,0.217214,17.380571,False,sensor_trend_moving_toward_risk
+EH-000313,2026-01-09 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.245536,35.044000,False,repeated_warning_breaches
+EH-000423,2026-01-12 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.131500,8.720000,False,calculated
+EH-000362,2026-01-11 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,0.008857,14.548286,False,sensor_trend_moving_toward_risk
+EH-000217,2026-01-07 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,0.051036,39.418429,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000207,2026-01-06 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.168229,34.548000,False,repeated_warning_breaches
+EH-000387,2026-01-11 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.052357,12.644000,False,calculated
+EH-000458,2026-01-13 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,-0.162821,14.212000,False,calculated
+EH-000440,2026-01-13 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.254321,14.342000,False,calculated
+EH-000438,2026-01-13 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,-0.064643,14.626000,False,calculated
+EH-000489,2026-01-14 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,-0.058107,11.340000,False,calculated
+EH-000456,2026-01-13 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,-0.082429,14.412000,False,calculated
+EH-000497,2026-01-14 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.045536,13.058000,False,calculated
+EH-000454,2026-01-13 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,-0.080714,14.320000,False,calculated
+EH-000444,2026-01-13 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.121786,16.109429,False,sensor_trend_moving_toward_risk
+EH-000361,2026-01-11 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,-0.181643,13.852000,False,calculated
+EH-000436,2026-01-13 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.263036,14.210000,False,calculated
+EH-000464,2026-01-13 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,0.060500,15.176000,False,sensor_trend_moving_toward_risk
+EH-000446,2026-01-13 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.084429,15.459143,False,sensor_trend_moving_toward_risk
+EH-000133,2026-01-04 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000459,2026-01-13 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.335750,12.658000,False,calculated
+EH-000360,2026-01-10 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,-0.299464,14.206000,False,calculated
+EH-000037,2026-01-02 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000457,2026-01-13 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.093071,13.410000,False,calculated
+EH-000129,2026-01-04 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000398,2026-01-12 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,0.005571,14.686857,False,sensor_trend_moving_toward_risk
+EH-000462,2026-01-13 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,-1.038286,14.160000,False,calculated
+EH-000334,2026-01-10 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,-0.233357,14.272000,False,calculated
+EH-000370,2026-01-11 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.034393,15.000714,False,sensor_trend_moving_toward_risk
+EH-000435,2026-01-13 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.085179,13.464143,False,sensor_trend_moving_toward_risk
+EH-000377,2026-01-11 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.392929,9.616000,False,calculated
+EH-000463,2026-01-13 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,0.074464,14.213571,False,sensor_trend_moving_toward_risk
+EH-000412,2026-01-12 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,0.251786,17.519429,False,sensor_trend_moving_toward_risk
+EH-000414,2026-01-12 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.016786,14.395429,False,sensor_trend_moving_toward_risk
+EH-000418,2026-01-12 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.120250,16.147000,False,sensor_trend_moving_toward_risk
+EH-000396,2026-01-11 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,-0.190964,14.610000,False,calculated
+EH-000119,2026-01-04 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000461,2026-01-13 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.177429,13.720000,False,calculated
+EH-000402,2026-01-12 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.019321,15.113857,False,sensor_trend_moving_toward_risk
+EH-000241,2026-01-07 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,0.155643,38.905714,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000420,2026-01-12 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.053964,14.905571,False,sensor_trend_moving_toward_risk
+EH-000413,2026-01-12 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.141893,14.408000,False,calculated
+EH-000404,2026-01-12 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.113357,14.602000,False,calculated
+EH-000369,2026-01-11 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.046250,13.989000,False,sensor_trend_moving_toward_risk
+EH-000422,2026-01-12 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,-0.212714,14.088000,False,calculated
+EH-000298,2026-01-09 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,-0.299179,14.166000,False,calculated
+EH-000272,2026-01-08 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.189071,16.870857,False,sensor_trend_moving_toward_risk
+EH-000101,2026-01-03 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000400,2026-01-12 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,0.008000,14.452000,False,sensor_trend_moving_toward_risk
+EH-000083,2026-01-03 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000380,2026-01-11 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.003214,14.684571,False,sensor_trend_moving_toward_risk
+EH-000429,2026-01-12 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,0.215250,15.885000,False,sensor_trend_moving_toward_risk
+EH-000097,2026-01-03 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000410,2026-01-12 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.047179,15.242143,False,sensor_trend_moving_toward_risk
+EH-000408,2026-01-12 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.076357,15.336286,False,sensor_trend_moving_toward_risk
+EH-000439,2026-01-13 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.253107,9.314000,False,calculated
+EH-000428,2026-01-12 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,-2.776964,14.580000,False,calculated
+EH-000399,2026-01-12 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.293214,14.406571,False,sensor_trend_moving_toward_risk
+EH-000430,2026-01-12 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-0.205821,14.064000,False,calculated
+EH-000366,2026-01-11 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.238857,17.600286,False,sensor_trend_moving_toward_risk
+EH-000077,2026-01-03 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000352,2026-01-10 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,-0.417464,14.214000,False,calculated
+EH-000447,2026-01-13 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.407571,10.060000,False,calculated
+EH-000105,2026-01-03 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000252,2026-01-07 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,0.491286,20.315429,False,sensor_trend_moving_toward_risk
+EH-000386,2026-01-11 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,0.067857,15.144286,False,sensor_trend_moving_toward_risk
+EH-000305,2026-01-09 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.004500,13.810000,False,calculated
+EH-000297,2026-01-09 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,-0.278571,11.680000,False,calculated
+EH-000364,2026-01-11 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,0.129929,15.809143,False,sensor_trend_moving_toward_risk
+EH-000372,2026-01-11 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,-0.286964,14.116000,False,calculated
+EH-000384,2026-01-11 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,-0.000679,14.826000,False,calculated
+EH-000382,2026-01-11 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.074143,15.371714,False,sensor_trend_moving_toward_risk
+EH-000306,2026-01-09 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,-0.159071,14.930000,False,calculated
+EH-000280,2026-01-08 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,-0.134536,14.738000,False,calculated
+EH-000368,2026-01-11 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.085857,14.250000,False,calculated
+EH-000330,2026-01-10 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.375571,19.164857,False,sensor_trend_moving_toward_risk
+EH-000180,2026-01-05 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,0.971600,26.401200,False,sensor_trend_moving_toward_risk
+EH-000308,2026-01-09 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,-0.034357,14.384000,False,calculated
+EH-000047,2026-01-02 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000391,2026-01-11 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,0.194071,16.818857,False,sensor_trend_moving_toward_risk
+EH-000421,2026-01-12 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.308214,9.556000,False,calculated
+EH-000376,2026-01-11 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,0.041321,15.163857,False,sensor_trend_moving_toward_risk
+EH-000393,2026-01-11 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,0.141607,15.941286,False,sensor_trend_moving_toward_risk
+EH-000290,2026-01-09 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,-0.171036,14.238000,False,calculated
+EH-000394,2026-01-11 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-0.283036,14.458000,False,calculated
+EH-000403,2026-01-12 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.001643,9.028000,False,calculated
+EH-000326,2026-01-10 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,0.017786,14.999429,False,sensor_trend_moving_toward_risk
+EH-000379,2026-01-11 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.551071,10.100000,False,calculated
+EH-000392,2026-01-11 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,-2.151679,14.072000,False,calculated
+EH-000057,2026-01-02 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000374,2026-01-11 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,-0.299893,14.266000,False,calculated
+EH-000342,2026-01-10 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.018321,14.545857,False,sensor_trend_moving_toward_risk
+EH-000367,2026-01-11 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,0.109536,13.046429,False,sensor_trend_moving_toward_risk
+EH-000288,2026-01-08 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,0.446071,20.210857,False,sensor_trend_moving_toward_risk
+EH-000316,2026-01-09 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,-0.190357,14.358000,False,calculated
+EH-000307,2026-01-09 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.268286,12.800000,False,calculated
+EH-000350,2026-01-10 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,0.081179,15.692143,False,sensor_trend_moving_toward_risk
+EH-000254,2026-01-08 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,0.013857,14.978286,False,sensor_trend_moving_toward_risk
+EH-000356,2026-01-10 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,-0.956679,14.312000,False,calculated
+EH-000338,2026-01-10 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,-0.175929,14.494000,False,calculated
+EH-000425,2026-01-12 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.323929,9.666000,False,calculated
+EH-000344,2026-01-10 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,-0.163464,14.612000,False,calculated
+EH-000336,2026-01-10 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,-0.059179,14.504000,False,calculated
+EH-000328,2026-01-10 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,0.110357,15.986286,False,sensor_trend_moving_toward_risk
+EH-000411,2026-01-12 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.342000,8.770000,False,calculated
+EH-000157,2026-01-05 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,0.021200,38.238400,False,sensor_trend_moving_toward_risk; repeated_warning_breaches
+EH-000324,2026-01-09 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,0.230929,17.509143,False,sensor_trend_moving_toward_risk
+EH-000325,2026-01-10 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,-0.243679,13.812000,False,calculated
+EH-000033,2026-01-01 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000332,2026-01-10 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,0.003286,14.467429,False,sensor_trend_moving_toward_risk
+EH-000348,2026-01-10 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,-0.299750,14.490000,False,calculated
+EH-000015,2026-01-01 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000331,2026-01-10 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,0.114786,15.547429,False,sensor_trend_moving_toward_risk
+EH-000346,2026-01-10 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,-0.036893,14.748000,False,calculated
+EH-000031,2026-01-01 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000381,2026-01-11 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,-0.126286,11.230000,False,calculated
+EH-000389,2026-01-11 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.298536,9.740000,False,calculated
+EH-000375,2026-01-11 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.420036,12.378000,False,calculated
+EH-000294,2026-01-09 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.316929,18.739143,False,sensor_trend_moving_toward_risk
+EH-000353,2026-01-10 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,0.039429,13.589143,False,sensor_trend_moving_toward_risk
+EH-000216,2026-01-06 12:00:00+00:00,MACH-03-02-03,temperature,celsius,calculated,0.802457,24.391486,False,sensor_trend_moving_toward_risk
+EH-000358,2026-01-10 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-0.336000,14.302000,False,calculated
+EH-000340,2026-01-10 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,-0.097786,14.558000,False,calculated
+EH-000296,2026-01-09 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,0.185929,16.849143,False,sensor_trend_moving_toward_risk
+EH-000349,2026-01-10 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,calculated,-0.307571,13.064000,False,calculated
+EH-000315,2026-01-09 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,calculated,-0.030929,11.270000,False,calculated
+EH-000270,2026-01-08 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,-0.348536,14.140000,False,calculated
+EH-000341,2026-01-10 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.109714,10.618000,False,calculated
+EH-000253,2026-01-08 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,calculated,-0.227857,11.800000,False,calculated
+EH-000343,2026-01-10 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,calculated,-0.426321,11.614000,False,calculated
+EH-000304,2026-01-09 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,-0.275821,14.412000,False,calculated
+EH-000322,2026-01-09 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-3.086821,14.164000,False,calculated
+EH-000302,2026-01-09 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,-0.094036,14.342000,False,calculated
+EH-000262,2026-01-08 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.126250,16.395000,False,sensor_trend_moving_toward_risk
+EH-000300,2026-01-09 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,-0.292214,14.440000,False,calculated
+EH-000225,2026-01-07 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.089750,15.647000,False,sensor_trend_moving_toward_risk
+EH-000314,2026-01-09 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,-0.183464,14.902000,False,calculated
+EH-000303,2026-01-09 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,calculated,-0.012893,14.598000,False,calculated
+EH-000226,2026-01-07 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,-0.150714,14.142000,False,calculated
+EH-000312,2026-01-09 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.021179,14.956143,False,sensor_trend_moving_toward_risk
+EH-000269,2026-01-08 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.459857,13.100000,False,calculated
+EH-000208,2026-01-06 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,-0.095429,14.064000,False,calculated
+EH-000299,2026-01-09 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.040750,14.369000,False,sensor_trend_moving_toward_risk
+EH-000310,2026-01-09 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,-0.159429,14.304000,False,calculated
+EH-000292,2026-01-09 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.170679,14.330000,False,calculated
+EH-000266,2026-01-08 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.159357,16.810286,False,sensor_trend_moving_toward_risk
+EH-000154,2026-01-05 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.146500,16.162000,False,sensor_trend_moving_toward_risk
+EH-000321,2026-01-09 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,-0.300393,12.158000,False,calculated
+EH-000236,2026-01-07 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.022464,14.831571,False,sensor_trend_moving_toward_risk
+EH-000319,2026-01-09 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,-0.016500,12.170000,False,calculated
+EH-000172,2026-01-05 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,0.556100,21.541200,False,sensor_trend_moving_toward_risk
+EH-000258,2026-01-08 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.171071,16.942857,False,sensor_trend_moving_toward_risk
+EH-000286,2026-01-08 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-1.840393,14.432000,False,calculated
+EH-000190,2026-01-06 12:00:00+00:00,MACH-01-02-02,temperature,celsius,calculated,0.041200,14.946400,False,sensor_trend_moving_toward_risk
+EH-000282,2026-01-08 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,-0.055393,14.802000,False,calculated
+EH-000268,2026-01-08 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,-0.296714,14.304000,False,calculated
+EH-000244,2026-01-07 12:00:00+00:00,MACH-03-01-02,temperature,celsius,calculated,0.000429,14.729143,False,sensor_trend_moving_toward_risk
+EH-000274,2026-01-08 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.129000,15.970000,False,sensor_trend_moving_toward_risk
+EH-000309,2026-01-09 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,-0.023464,12.236000,False,calculated
+EH-000276,2026-01-08 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.092286,15.399429,False,sensor_trend_moving_toward_risk
+EH-000291,2026-01-09 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,-0.026500,12.510000,False,calculated
+EH-000189,2026-01-06 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.086686,15.268229,False,sensor_trend_moving_toward_risk
+EH-000264,2026-01-08 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,-0.300536,14.226000,False,calculated
+EH-000260,2026-01-08 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,0.013571,14.830857,False,sensor_trend_moving_toward_risk
+EH-000218,2026-01-07 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,-0.101643,14.396000,False,calculated
+EH-000200,2026-01-06 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.047657,15.205886,False,sensor_trend_moving_toward_risk
+EH-000278,2026-01-08 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,-0.176536,14.266000,False,calculated
+EH-000285,2026-01-08 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,-0.064321,13.774000,False,calculated
+EH-000162,2026-01-05 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.270600,17.435200,False,sensor_trend_moving_toward_risk
+EH-000198,2026-01-06 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,0.187600,16.729200,False,sensor_trend_moving_toward_risk
+EH-000237,2026-01-07 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.205857,16.970286,False,sensor_trend_moving_toward_risk
+EH-000234,2026-01-07 12:00:00+00:00,MACH-02-01-03,temperature,celsius,calculated,-0.012357,14.166000,False,calculated
+EH-000153,2026-01-05 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,0.093200,13.696400,False,sensor_trend_moving_toward_risk
+EH-000256,2026-01-08 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.282750,14.526000,False,calculated
+EH-000261,2026-01-08 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,calculated,-0.066536,10.960000,False,calculated
+EH-000283,2026-01-08 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,-0.045250,13.366000,False,calculated
+EH-000168,2026-01-05 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.765300,24.129600,False,sensor_trend_moving_toward_risk
+EH-000295,2026-01-09 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.091536,9.922000,False,calculated
+EH-000182,2026-01-06 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,-0.007571,14.628000,False,calculated
+EH-000240,2026-01-07 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.251107,17.615286,False,sensor_trend_moving_toward_risk
+EH-000238,2026-01-07 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.267321,17.941857,False,sensor_trend_moving_toward_risk
+EH-000220,2026-01-07 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.166857,14.616000,False,calculated
+EH-000273,2026-01-08 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.013286,14.379429,False,sensor_trend_moving_toward_risk
+EH-000222,2026-01-07 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.228214,17.426571,False,sensor_trend_moving_toward_risk
+EH-000146,2026-01-05 12:00:00+00:00,MACH-01-01-01,temperature,celsius,calculated,-0.054800,14.476000,False,calculated
+EH-000250,2026-01-07 12:00:00+00:00,MACH-03-02-02,temperature,celsius,calculated,-0.947286,14.164000,False,calculated
+EH-000232,2026-01-07 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,-0.241250,14.538000,False,calculated
+EH-000242,2026-01-07 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,0.118750,15.665000,False,sensor_trend_moving_toward_risk
+EH-000194,2026-01-06 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.409714,19.472571,False,sensor_trend_moving_toward_risk
+EH-000230,2026-01-07 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.049857,14.696286,False,sensor_trend_moving_toward_risk
+EH-000186,2026-01-06 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,0.213829,17.361943,False,sensor_trend_moving_toward_risk
+EH-000228,2026-01-07 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.028036,14.754429,False,sensor_trend_moving_toward_risk
+EH-000206,2026-01-06 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,0.411314,19.675771,False,sensor_trend_moving_toward_risk
+EH-000246,2026-01-07 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,-0.066107,14.180000,False,calculated
+EH-000255,2026-01-08 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,-0.077714,12.320000,False,calculated
+EH-000158,2026-01-05 12:00:00+00:00,MACH-02-01-01,temperature,celsius,calculated,0.677600,23.059200,False,sensor_trend_moving_toward_risk
+EH-000249,2026-01-07 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,-0.099571,14.404000,False,calculated
+EH-000202,2026-01-06 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.190771,16.685257,False,sensor_trend_moving_toward_risk
+EH-000224,2026-01-07 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.089464,14.704000,False,calculated
+EH-000281,2026-01-08 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,calculated,-0.288786,10.030000,False,calculated
+EH-000203,2026-01-06 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.380543,16.414514,False,sensor_trend_moving_toward_risk
+EH-000156,2026-01-05 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.618500,22.374000,False,sensor_trend_moving_toward_risk
+EH-000247,2026-01-07 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,-0.211321,13.532000,False,calculated
+EH-000164,2026-01-05 12:00:00+00:00,MACH-02-02-01,temperature,celsius,calculated,0.005200,14.628400,False,sensor_trend_moving_toward_risk
+EH-000204,2026-01-06 12:00:00+00:00,MACH-02-02-03,temperature,celsius,calculated,0.327314,18.289771,False,sensor_trend_moving_toward_risk
+EH-000219,2026-01-07 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.075821,11.541857,False,sensor_trend_moving_toward_risk
+EH-000233,2026-01-07 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,calculated,-0.104750,9.486000,False,calculated
+EH-000210,2026-01-06 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,0.159057,16.288686,False,sensor_trend_moving_toward_risk
+EH-000166,2026-01-05 12:00:00+00:00,MACH-02-02-02,temperature,celsius,calculated,0.375500,18.926000,False,sensor_trend_moving_toward_risk
+EH-000184,2026-01-06 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.367086,14.140000,False,calculated
+EH-000174,2026-01-05 12:00:00+00:00,MACH-03-01-03,temperature,celsius,calculated,0.472400,20.252800,False,sensor_trend_moving_toward_risk
+EH-000192,2026-01-06 12:00:00+00:00,MACH-01-02-03,temperature,celsius,calculated,0.097057,15.318686,False,sensor_trend_moving_toward_risk
+EH-000239,2026-01-07 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,calculated,0.166536,12.772429,False,sensor_trend_moving_toward_risk
+EH-000196,2026-01-06 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,-0.336000,14.148000,False,calculated
+EH-000221,2026-01-07 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,-0.098643,12.232000,False,calculated
+EH-000170,2026-01-05 12:00:00+00:00,MACH-03-01-01,temperature,celsius,calculated,0.431800,19.577600,False,sensor_trend_moving_toward_risk
+EH-000201,2026-01-06 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,calculated,0.237600,13.511200,False,sensor_trend_moving_toward_risk
+EH-000176,2026-01-05 12:00:00+00:00,MACH-03-02-01,temperature,celsius,calculated,0.290100,18.251200,False,sensor_trend_moving_toward_risk
+EH-000188,2026-01-06 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.260543,14.454000,False,calculated
+EH-000223,2026-01-07 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.153679,10.572000,False,calculated
+EH-000183,2026-01-06 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,calculated,0.195029,12.182343,False,sensor_trend_moving_toward_risk
+EH-000152,2026-01-05 12:00:00+00:00,MACH-01-02-01,temperature,celsius,calculated,-0.325700,14.380000,False,calculated
+EH-000185,2026-01-06 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,calculated,-0.071257,11.072000,False,calculated
+EH-000150,2026-01-05 12:00:00+00:00,MACH-01-01-03,temperature,celsius,calculated,-0.037900,14.230000,False,calculated
+EH-000148,2026-01-05 12:00:00+00:00,MACH-01-01-02,temperature,celsius,calculated,-0.175300,14.234000,False,calculated
+EH-000160,2026-01-05 12:00:00+00:00,MACH-02-01-02,temperature,celsius,calculated,0.028400,15.154800,False,sensor_trend_moving_toward_risk
+EH-000191,2026-01-06 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,-0.150029,11.902000,False,calculated
+EH-000193,2026-01-06 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,calculated,-0.136657,11.306000,False,calculated
+EH-000151,2026-01-05 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,0.064400,13.228800,False,sensor_trend_moving_toward_risk
+EH-000211,2026-01-06 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,-0.355343,9.938000,False,calculated
+EH-000175,2026-01-05 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,calculated,-0.220600,14.062000,False,calculated
+EH-000213,2026-01-06 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,calculated,-0.189914,8.860000,False,calculated
+EH-000155,2026-01-05 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,calculated,0.003600,13.249200,False,sensor_trend_moving_toward_risk
+EH-000187,2026-01-06 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,calculated,-0.160943,8.928000,False,calculated
+EH-000082,2026-01-03 12:00:00+00:00,MACH-01-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000126,2026-01-04 12:00:00+00:00,MACH-02-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000118,2026-01-04 12:00:00+00:00,MACH-01-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000125,2026-01-04 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,recent_critical_breach
+EH-000144,2026-01-04 12:00:00+00:00,MACH-03-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000128,2026-01-04 12:00:00+00:00,MACH-02-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000108,2026-01-03 12:00:00+00:00,MACH-03-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000107,2026-01-03 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000074,2026-01-03 12:00:00+00:00,MACH-01-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000110,2026-01-04 12:00:00+00:00,MACH-01-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000092,2026-01-03 12:00:00+00:00,MACH-02-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000064,2026-01-02 12:00:00+00:00,MACH-03-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000100,2026-01-03 12:00:00+00:00,MACH-03-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000134,2026-01-04 12:00:00+00:00,MACH-03-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000036,2026-01-01 12:00:00+00:00,MACH-03-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000116,2026-01-04 12:00:00+00:00,MACH-01-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000132,2026-01-04 12:00:00+00:00,MACH-02-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000038,2026-01-02 12:00:00+00:00,MACH-01-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000063,2026-01-02 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000099,2026-01-03 02:00:00+00:00,MACH-03-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000136,2026-01-04 12:00:00+00:00,MACH-03-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000114,2026-01-04 12:00:00+00:00,MACH-01-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000130,2026-01-04 12:00:00+00:00,MACH-02-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000112,2026-01-04 12:00:00+00:00,MACH-01-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000035,2026-01-01 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000115,2026-01-04 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000142,2026-01-04 12:00:00+00:00,MACH-03-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,recent_critical_breach
+EH-000113,2026-01-04 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000124,2026-01-04 12:00:00+00:00,MACH-02-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000111,2026-01-04 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000140,2026-01-04 12:00:00+00:00,MACH-03-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000122,2026-01-04 12:00:00+00:00,MACH-02-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000090,2026-01-03 12:00:00+00:00,MACH-02-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000138,2026-01-04 12:00:00+00:00,MACH-03-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000120,2026-01-04 12:00:00+00:00,MACH-01-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000123,2026-01-04 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000139,2026-01-04 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000089,2026-01-03 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,recent_critical_breach
+EH-000121,2026-01-04 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,repeated_warning_breaches
+EH-000137,2026-01-04 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000084,2026-01-03 12:00:00+00:00,MACH-01-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000054,2026-01-02 12:00:00+00:00,MACH-02-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000098,2026-01-03 12:00:00+00:00,MACH-03-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000080,2026-01-03 12:00:00+00:00,MACH-01-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000046,2026-01-02 12:00:00+00:00,MACH-01-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000096,2026-01-03 12:00:00+00:00,MACH-02-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000078,2026-01-03 12:00:00+00:00,MACH-01-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000094,2026-01-03 12:00:00+00:00,MACH-02-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000076,2026-01-03 12:00:00+00:00,MACH-01-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000079,2026-01-03 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000045,2026-01-02 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000095,2026-01-03 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000072,2026-01-02 12:00:00+00:00,MACH-03-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000088,2026-01-03 12:00:00+00:00,MACH-02-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000093,2026-01-03 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000075,2026-01-03 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000104,2026-01-03 12:00:00+00:00,MACH-03-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000086,2026-01-03 12:00:00+00:00,MACH-02-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000102,2026-01-03 12:00:00+00:00,MACH-03-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000071,2026-01-02 02:00:00+00:00,MACH-03-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000087,2026-01-03 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000002,2026-01-01 12:00:00+00:00,MACH-01-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000018,2026-01-01 12:00:00+00:00,MACH-02-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000103,2026-01-03 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000050,2026-01-02 12:00:00+00:00,MACH-02-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000028,2026-01-01 12:00:00+00:00,MACH-03-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000066,2026-01-02 12:00:00+00:00,MACH-03-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000056,2026-01-02 12:00:00+00:00,MACH-02-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000048,2026-01-02 12:00:00+00:00,MACH-01-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000017,2026-01-01 02:00:00+00:00,MACH-02-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000001,2026-01-01 02:00:00+00:00,MACH-01-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000067,2026-01-02 02:00:00+00:00,MACH-03-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000062,2026-01-02 12:00:00+00:00,MACH-03-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000044,2026-01-02 12:00:00+00:00,MACH-01-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000060,2026-01-02 12:00:00+00:00,MACH-02-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000042,2026-01-02 12:00:00+00:00,MACH-01-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000055,2026-01-02 02:00:00+00:00,MACH-02-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000058,2026-01-02 12:00:00+00:00,MACH-02-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000040,2026-01-02 12:00:00+00:00,MACH-01-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000043,2026-01-02 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000059,2026-01-02 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000041,2026-01-02 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000070,2026-01-02 12:00:00+00:00,MACH-03-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000052,2026-01-02 12:00:00+00:00,MACH-02-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000010,2026-01-01 12:00:00+00:00,MACH-01-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000068,2026-01-02 12:00:00+00:00,MACH-03-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000039,2026-01-02 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000069,2026-01-02 02:00:00+00:00,MACH-03-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000051,2026-01-02 02:00:00+00:00,MACH-02-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000020,2026-01-01 12:00:00+00:00,MACH-02-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000009,2026-01-01 02:00:00+00:00,MACH-01-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000016,2026-01-01 12:00:00+00:00,MACH-02-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000032,2026-01-01 12:00:00+00:00,MACH-03-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000014,2026-01-01 12:00:00+00:00,MACH-02-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000030,2026-01-01 12:00:00+00:00,MACH-03-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000012,2026-01-01 12:00:00+00:00,MACH-01-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000008,2026-01-01 12:00:00+00:00,MACH-01-02-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000026,2026-01-01 12:00:00+00:00,MACH-03-01-01,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000013,2026-01-01 02:00:00+00:00,MACH-02-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000029,2026-01-01 02:00:00+00:00,MACH-03-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000024,2026-01-01 12:00:00+00:00,MACH-02-02-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000011,2026-01-01 02:00:00+00:00,MACH-01-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000006,2026-01-01 12:00:00+00:00,MACH-01-01-03,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000022,2026-01-01 12:00:00+00:00,MACH-02-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000004,2026-01-01 12:00:00+00:00,MACH-01-01-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000025,2026-01-01 02:00:00+00:00,MACH-03-01-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000007,2026-01-01 02:00:00+00:00,MACH-01-02-01,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000023,2026-01-01 02:00:00+00:00,MACH-02-02-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000034,2026-01-01 12:00:00+00:00,MACH-03-02-02,temperature,celsius,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000005,2026-01-01 02:00:00+00:00,MACH-01-01-03,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000021,2026-01-01 02:00:00+00:00,MACH-02-02-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history
+EH-000003,2026-01-01 02:00:00+00:00,MACH-01-01-02,vibration,mm_s,insufficient_history,0.000000,0.000000,False,insufficient_history

@@ -25,3 +25,16 @@ The project uses local components to represent responsibilities commonly handled
 ## Safety boundary
 
 The completed local milestones do not create Azure resource IDs, credentials, endpoints, screenshots, deployment logs, model registrations, or success claims. `azure_mapping.enabled` is false in the provided configuration and must not initiate cloud calls.
+## Predictive maintenance reference mapping
+
+Milestone 7 maps local maintenance responsibilities to Azure concepts without deploying them:
+
+- Governed equipment-health and production inputs: Azure Data Lake Storage Gen2 responsibility.
+- Operational telemetry analytics and sensor-threshold exploration: Azure Data Explorer responsibility.
+- Feature preparation and analytical tables: Azure Synapse Analytics or Microsoft Fabric responsibility.
+- Batch anomaly and failure-risk scoring: Azure Machine Learning responsibility.
+- Equipment and pipeline metrics: Azure Monitor responsibility.
+- Lineage metadata: Microsoft Purview responsibility.
+- Maintenance alert and score extracts: Power BI-ready output responsibility.
+
+No Azure SDK client, credential, endpoint, workspace, database, dashboard, or deployment is created by this milestone.

@@ -12,12 +12,12 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 - Build deterministic synthetic data pipelines for manufacturing and supply-chain domains.
 - Establish governed local data zones that map conceptually to Azure services.
-- Support future forecasting, inventory intelligence, quality analytics, predictive maintenance, monitoring, GenAI assistance, and reporting.
+- Support forecasting, inventory intelligence, quality analytics, predictive maintenance, and future monitoring, GenAI assistance, and reporting.
 - Keep every milestone reproducible, testable, auditable, and CI-ready.
 
 ## Core capabilities
 
-Planned capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, supplier-performance analytics, quality anomaly detection, predictive maintenance, operational monitoring, scenario analysis, GenAI-assisted recommendations, and Power BI-ready extracts.
+Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, and predictive maintenance. Planned capabilities include operational monitoring, supplier-risk expansion, GenAI-assisted recommendations, and Power BI-ready extracts.
 
 ## Intended users
 
@@ -90,13 +90,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 4 - Demand forecasting and forecast evaluation | Complete |
 | Milestone 5 - Inventory intelligence and optimisation | Complete |
 | Milestone 6 - Quality analytics and anomaly detection | Complete |
-| Milestone 7 onward | Planned |
+| Milestone 7 - Predictive maintenance and equipment failure risk | Complete |
+| Milestone 8 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 6:
+Implemented through Milestone 7:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -118,8 +119,10 @@ Implemented through Milestone 6:
 - Deterministic warehouse demand allocation, supplier-risk metrics, inventory policy inputs, inventory position, safety-stock, reorder-point, reorder-quantity, excess-stock, expiry-risk, working-capital, prioritised-action, constrained-allocation, scenario-result, manifest, lineage, diagnostics, and report outputs.
 - Governed quality analytics from accepted quality checks and production events.
 - Deterministic specification compliance, KPI/yield proxies, defect Pareto, capability diagnostics, expanding control-chart baselines, SPC rules, robust z-score, Isolation Forest diagnostics, quality-risk scoring, alert outputs, manifests, lineage, diagnostics, and reports.
+- Governed predictive maintenance from accepted equipment health, accepted production events, and optional quality context.
+- Deterministic sensor-threshold compliance, runtime/service proxies, chronological degradation indicators, robust z-score, deterministic Isolation Forest diagnostics, failure-risk scoring, equipment-health scoring, maintenance alerts, machine and sensor summaries, manifest, lineage, diagnostics, portfolio prediction JSON, and reports.
 
-Not implemented yet: predictive maintenance, GenAI, dashboards, or live Azure integration.
+Not implemented yet: Milestone 8 monitoring, GenAI, dashboards, or live Azure integration.
 
 ## Development setup
 
@@ -155,6 +158,9 @@ make validate-inventory
 make quality-analytics
 make quality-analytics-ci
 make validate-quality-analytics
+make maintenance
+make maintenance-ci
+make validate-maintenance
 make quality
 ```
 
@@ -170,9 +176,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make quality-analytics` reads governed accepted quality checks and production events; writes `outputs/quality_alerts.csv`, detailed quality observations, KPIs, Pareto, capability, control-chart, SPC, anomaly, risk, diagnostics, manifest, and lineage artifacts under `outputs/quality/`; writes `reports/quality_analytics_report.md` and `reports/quality_alert_summary.md`; and records upstream hashes without mutating governed inputs. The controlled run processes 168 inspections, finds 26 specification failures, 5 near-limit observations, 7 SPC signals, 2 robust-z anomalies, 12 Isolation Forest anomalies, and 38 alerts. `make quality-analytics-ci` writes the same shape under ignored `.generated/ci/`. `make validate-quality-analytics` verifies an existing quality run without rescoring.
 
+`make maintenance` reads governed accepted equipment-health and production-event data plus optional governed quality context; writes `outputs/maintenance_predictions.json`, equipment features, scores, alerts, machine and sensor summaries, degradation signals, anomaly scores, risk summary, diagnostics, manifest, and lineage under `outputs/maintenance/`; writes `reports/maintenance_analytics_report.md` and `reports/maintenance_alert_summary.md`; and records upstream hashes without mutating governed inputs. The controlled run processes 504 equipment records, finds 60 warning breaches, 9 critical breaches, 59 degradation signals, 0 robust-z anomalies, 0 Isolation Forest anomalies, and 135 maintenance alerts. `make maintenance-ci` writes the same shape under ignored `.generated/ci/`. `make validate-maintenance` verifies an existing maintenance run without rescoring.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, overwrite behavior, tamper detection, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -180,11 +188,11 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, controlled forecast, inventory, and quality outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, and maintenance outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 6 quality analytics produces deterministic decision-support evidence from synthetic governed inputs. First-pass yield is a labelled proxy because explicit rework fields are unavailable; anomaly scores are diagnostics, not probabilities; and investigation context is not root-cause proof. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
+Milestone 7 predictive maintenance produces deterministic decision-support evidence from synthetic governed inputs. Runtime and service measures are labelled proxies where explicit schedules are unavailable; anomaly scores and failure-risk scores are diagnostics, not probabilities; and investigation context is not root-cause proof or a certified maintenance instruction. It does not deploy cloud infrastructure, connect to Azure services, or fabricate operational results.
 
 ## Planned portfolio outputs
 

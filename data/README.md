@@ -28,6 +28,13 @@ Milestone 6 quality outputs are also stored outside the data lake zones:
 - `reports/quality_analytics_report.md`: human-readable quality analytics evidence.
 - `reports/quality_alert_summary.md`: human-readable alert summary evidence.
 
+Milestone 7 maintenance outputs are also stored outside the data lake zones:
+
+- `outputs/maintenance_predictions.json`: portfolio-level projection of alert and score summaries.
+- `outputs/maintenance/`: equipment-health features, scores, alerts, machine and sensor summaries, degradation signals, anomaly scores, risk summary, diagnostics, manifest, and lineage.
+- `reports/maintenance_analytics_report.md`: human-readable predictive-maintenance evidence.
+- `reports/maintenance_alert_summary.md`: human-readable maintenance alert summary.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -69,5 +76,8 @@ Useful commands:
 - `make quality-analytics`: regenerate tracked controlled quality analytics evidence.
 - `make quality-analytics-ci`: generate ignored CI quality evidence.
 - `make validate-quality-analytics`: validate an existing quality run without rescoring.
+- `make maintenance`: regenerate tracked controlled predictive-maintenance evidence.
+- `make maintenance-ci`: generate and validate ignored CI maintenance evidence.
+- `make validate-maintenance`: validate an existing maintenance run without rescoring.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

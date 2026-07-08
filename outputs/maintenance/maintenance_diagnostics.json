@@ -1,0 +1,75 @@
+{
+  "alert_count": 135,
+  "alert_distribution_by_line": {
+    "LINE-01-01": 21,
+    "LINE-01-02": 18,
+    "LINE-02-01": 20,
+    "LINE-02-02": 21,
+    "LINE-03-01": 28,
+    "LINE-03-02": 27
+  },
+  "alert_distribution_by_machine": {
+    "MACH-01-01-01": 8,
+    "MACH-01-01-02": 4,
+    "MACH-01-01-03": 9,
+    "MACH-01-02-01": 2,
+    "MACH-01-02-02": 6,
+    "MACH-01-02-03": 10,
+    "MACH-02-01-01": 9,
+    "MACH-02-01-02": 6,
+    "MACH-02-01-03": 5,
+    "MACH-02-02-01": 8,
+    "MACH-02-02-02": 6,
+    "MACH-02-02-03": 7,
+    "MACH-03-01-01": 8,
+    "MACH-03-01-02": 10,
+    "MACH-03-01-03": 10,
+    "MACH-03-02-01": 8,
+    "MACH-03-02-02": 10,
+    "MACH-03-02-03": 9
+  },
+  "alert_distribution_by_plant": {
+    "PLANT-01": 39,
+    "PLANT-02": 41,
+    "PLANT-03": 55
+  },
+  "alert_distribution_by_sensor_type": {
+    "temperature": 14,
+    "vibration": 121
+  },
+  "critical_breach_count": 9,
+  "critical_risk_alert_count": 0,
+  "degradation_signal_count": 59,
+  "equipment_records_processed": 504,
+  "fallback_counts": {
+    "production_context_records_used": 168,
+    "quality_context_records_used": 168,
+    "service_interval_proxy_used": 504
+  },
+  "groups_using_anomaly_fallback": 1008,
+  "groups_with_insufficient_degradation_history": 144,
+  "groups_with_sufficient_degradation_history": 360,
+  "high_risk_alert_count": 7,
+  "isolation_forest_anomaly_count": 0,
+  "lines_represented": 6,
+  "machines_represented": 18,
+  "maintenance_states_represented": [
+    "critical_inspection_required",
+    "normal",
+    "warning_monitor"
+  ],
+  "missing_or_unsupported_fields": [],
+  "near_threshold_observations": 52,
+  "operating_modes_represented": [
+    "production",
+    "standby"
+  ],
+  "plants_represented": 3,
+  "production_context_records_used": 168,
+  "quality_context_records_used": 168,
+  "robust_z_anomaly_count": 0,
+  "sensor_types_represented": 2,
+  "sensors_represented": 36,
+  "threshold_status_inconsistency_count": 0,
+  "warning_breach_count": 60
+}

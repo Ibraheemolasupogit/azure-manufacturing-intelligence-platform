@@ -1,0 +1,62 @@
+maintenance:
+  equipment_health_path: data/interim/accepted/equipment_health.jsonl
+  production_events_path: data/interim/accepted/production_events.jsonl
+  quality_checks_path: data/interim/accepted/quality_checks.csv
+  quality_alerts_path: outputs/quality/quality_alerts.csv
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: data/interim/_metadata/validation-summary.json
+  data_quality_report_path: data/interim/_metadata/data-quality-report.json
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  quality_manifest_path: outputs/quality/quality-manifest.json
+  output_directory: .generated/ci/maintenance
+  portfolio_predictions_path: .generated/ci/maintenance/maintenance_predictions.json
+  report_directory: .generated/ci/maintenance/reports
+  overwrite: true
+  random_seed: 20260707
+  timestamp_field: timestamp
+  primary_key: sensor_event_id
+
+thresholds:
+  use_record_thresholds: true
+  warning_margin_fraction: 0.10
+  critical_margin_fraction: 0.05
+
+degradation:
+  enabled: true
+  rolling_windows:
+    - 3
+    - 7
+  minimum_observations: 5
+  trend_method: slope
+  rising_risk_sensor_types:
+    - vibration
+    - temperature
+  falling_risk_sensor_types:
+    - oil_pressure
+    - hydraulic_pressure
+
+anomaly_detection:
+  enabled: true
+  models:
+    - robust_zscore
+    - isolation_forest
+  contamination: 0.05
+  robust_zscore_threshold: 3.5
+  minimum_training_rows: 20
+
+risk_scoring:
+  threshold_breach_weight: 0.30
+  anomaly_weight: 0.20
+  degradation_weight: 0.20
+  runtime_weight: 0.15
+  maintenance_state_weight: 0.10
+  production_context_weight: 0.05
+  high_threshold: 60
+  critical_threshold: 80
+
+recommendations:
+  maximum_alert_examples: 10
+  create_machine_summary: true
+  create_sensor_summary: true
+  include_quality_context: true
+  include_production_context: true

@@ -63,5 +63,11 @@ jobs:
       - name: Validate CI quality analytics
         run: python -m manufacturing_intelligence.quality --config configs/quality_ci.yaml --validate-existing-run --output-directory .generated/ci/quality
 
+      - name: Run CI predictive maintenance
+        run: make maintenance-ci
+
+      - name: Validate CI predictive maintenance
+        run: python -m manufacturing_intelligence.maintenance --config configs/maintenance_ci.yaml --validate-existing-run --output-directory .generated/ci/maintenance
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

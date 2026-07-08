@@ -28,6 +28,8 @@ REQUIRED_PATHS = [
     "configs/inventory_ci.yaml",
     "configs/quality.yaml",
     "configs/quality_ci.yaml",
+    "configs/maintenance.yaml",
+    "configs/maintenance_ci.yaml",
     "configs/synthetic_data.yaml",
     "configs/synthetic_data_ci.yaml",
     "configs/environments/local.yaml",
@@ -76,6 +78,15 @@ REQUIRED_PATHS = [
     "docs/quality/quality-lineage-and-manifest.md",
     "docs/quality/quality-risk-scoring.md",
     "docs/quality/specification-and-yield-metrics.md",
+    "docs/maintenance/predictive-maintenance-design.md",
+    "docs/maintenance/governed-inputs-and-grains.md",
+    "docs/maintenance/sensor-threshold-analysis.md",
+    "docs/maintenance/degradation-analysis.md",
+    "docs/maintenance/anomaly-detection.md",
+    "docs/maintenance/failure-risk-scoring.md",
+    "docs/maintenance/maintenance-alerts.md",
+    "docs/maintenance/maintenance-lineage-and-manifest.md",
+    "docs/maintenance/limitations.md",
     "docs/ingestion/data-quality-metrics.md",
     "docs/ingestion/ingestion-design.md",
     "docs/ingestion/lineage-and-manifests.md",
@@ -88,6 +99,7 @@ REQUIRED_PATHS = [
     "docs/milestones/milestone-4.md",
     "docs/milestones/milestone-5.md",
     "docs/milestones/milestone-6.md",
+    "docs/milestones/milestone-7.md",
     "docs/roadmap.md",
     "outputs/.gitkeep",
     "reports/.gitkeep",
@@ -153,6 +165,21 @@ REQUIRED_PATHS = [
     "src/manufacturing_intelligence/quality/scoring.py",
     "src/manufacturing_intelligence/quality/serialization.py",
     "src/manufacturing_intelligence/quality/specification.py",
+    "src/manufacturing_intelligence/maintenance/__main__.py",
+    "src/manufacturing_intelligence/maintenance/anomalies.py",
+    "src/manufacturing_intelligence/maintenance/cli.py",
+    "src/manufacturing_intelligence/maintenance/config.py",
+    "src/manufacturing_intelligence/maintenance/data.py",
+    "src/manufacturing_intelligence/maintenance/degradation.py",
+    "src/manufacturing_intelligence/maintenance/existing_run.py",
+    "src/manufacturing_intelligence/maintenance/lineage.py",
+    "src/manufacturing_intelligence/maintenance/manifest.py",
+    "src/manufacturing_intelligence/maintenance/pipeline.py",
+    "src/manufacturing_intelligence/maintenance/reporting.py",
+    "src/manufacturing_intelligence/maintenance/scoring.py",
+    "src/manufacturing_intelligence/maintenance/serialization.py",
+    "src/manufacturing_intelligence/maintenance/summaries.py",
+    "src/manufacturing_intelligence/maintenance/thresholds.py",
     "src/manufacturing_intelligence/ingestion/__main__.py",
     "src/manufacturing_intelligence/ingestion/cli.py",
     "src/manufacturing_intelligence/ingestion/config.py",
@@ -279,6 +306,23 @@ QUALITY_OUTPUTS = [
     "outputs/quality/lineage-records.json",
 ]
 
+MAINTENANCE_OUTPUTS = [
+    "outputs/maintenance_predictions.json",
+    "outputs/maintenance/equipment_health_features.csv",
+    "outputs/maintenance/equipment_health_scores.csv",
+    "outputs/maintenance/maintenance_alerts.csv",
+    "outputs/maintenance/machine_health_summary.csv",
+    "outputs/maintenance/sensor_health_summary.csv",
+    "outputs/maintenance/degradation_signals.csv",
+    "outputs/maintenance/anomaly_scores.csv",
+    "outputs/maintenance/maintenance_risk_summary.csv",
+    "outputs/maintenance/maintenance_diagnostics.json",
+    "outputs/maintenance/maintenance-manifest.json",
+    "outputs/maintenance/lineage-records.json",
+    "reports/maintenance_analytics_report.md",
+    "reports/maintenance_alert_summary.md",
+]
+
 PACKAGE_DIRS = [
     "common",
     "data_generation",
@@ -302,6 +346,7 @@ def main() -> int:
     missing.extend(path for path in FORECAST_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in INVENTORY_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in QUALITY_OUTPUTS if not (root / path).exists())
+    missing.extend(path for path in MAINTENANCE_OUTPUTS if not (root / path).exists())
     for package_dir in PACKAGE_DIRS:
         marker = root / "src" / "manufacturing_intelligence" / package_dir / "__init__.py"
         if not marker.exists():

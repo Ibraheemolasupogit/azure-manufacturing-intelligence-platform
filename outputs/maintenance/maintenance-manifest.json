@@ -1,0 +1,211 @@
+{
+  "alert_summary": {
+    "alert_count": 135,
+    "risk_level_distribution": {
+      "high": 7,
+      "low": 57,
+      "medium": 71
+    }
+  },
+  "analysis_grains": {
+    "principal_alert_grain": [
+      "sensor_event_id"
+    ],
+    "supported_grains": [
+      "plant_id",
+      "plant_id+production_line_id",
+      "plant_id+production_line_id+machine_id",
+      "machine_id",
+      "machine_id+sensor_type",
+      "machine_id+sensor_id",
+      "machine_id+maintenance_state",
+      "machine_id+operating_mode"
+    ],
+    "trend_grain": [
+      "machine_id",
+      "sensor_type",
+      "event_date"
+    ]
+  },
+  "anomaly_settings": {
+    "contamination": 0.05,
+    "enabled": true,
+    "minimum_training_rows": 20,
+    "models": [
+      "robust_zscore",
+      "isolation_forest"
+    ],
+    "robust_zscore_threshold": 3.5
+  },
+  "azure_mapping": {
+    "batch_predictive_scoring": "Azure Machine Learning responsibility",
+    "dashboard_extracts": "Power BI-ready outputs responsibility",
+    "deployment_status": "reference-only; no Azure services deployed or called",
+    "equipment_metrics": "Azure Monitor responsibility",
+    "feature_preparation": "Synapse Analytics or Microsoft Fabric responsibility",
+    "governed_equipment_zone": "Azure Data Lake Storage Gen2 responsibility",
+    "lineage": "Microsoft Purview responsibility",
+    "operational_telemetry_analytics": "Azure Data Explorer responsibility"
+  },
+  "configuration_path": "configs/maintenance.yaml",
+  "configuration_sha256": "5b48b1110cd1cf8fd408801cfcadb9a65c3fc6df18bd72ebea01918b2ed60dd7",
+  "degradation_settings": {
+    "enabled": true,
+    "falling_risk_sensor_types": [
+      "oil_pressure",
+      "hydraulic_pressure"
+    ],
+    "minimum_observations": 5,
+    "rising_risk_sensor_types": [
+      "vibration",
+      "temperature",
+      "pressure",
+      "runtime"
+    ],
+    "rolling_windows": [
+      3,
+      7
+    ],
+    "trend_method": "slope"
+  },
+  "git_commit": "685ad8e0806fbc4bf493418283f4b0c0fd413167",
+  "governed_input_hashes": {
+    "equipment_health": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1",
+    "production_events": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483",
+    "quality_alerts": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f",
+    "quality_checks": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+  },
+  "governed_input_paths": {
+    "equipment_health": "data/interim/accepted/equipment_health.jsonl",
+    "production_events": "data/interim/accepted/production_events.jsonl",
+    "quality_alerts": "outputs/quality/quality_alerts.csv",
+    "quality_checks": "data/interim/accepted/quality_checks.csv"
+  },
+  "governed_input_row_counts": {
+    "equipment_health": 504,
+    "production_events": 168,
+    "quality_alerts": 38,
+    "quality_checks": 168
+  },
+  "governed_inputs_modified": false,
+  "kpi_summary": {
+    "alert_count": 135,
+    "critical_breach_count": 9,
+    "critical_risk_alert_count": 0,
+    "degradation_signal_count": 59,
+    "equipment_records_processed": 504,
+    "high_risk_alert_count": 7,
+    "isolation_forest_anomaly_count": 0,
+    "machines_represented": 18,
+    "near_threshold_observations": 52,
+    "robust_z_anomaly_count": 0,
+    "sensor_types_represented": 2,
+    "sensors_represented": 36,
+    "threshold_status_inconsistency_count": 0,
+    "warning_breach_count": 60
+  },
+  "maintenance_run_id": "MAINT-f281a27e7d014de8",
+  "output_files": {
+    "anomaly_scores": {
+      "file_size_bytes": 96123,
+      "path": "outputs/maintenance/anomaly_scores.csv",
+      "row_count": 504,
+      "sha256": "393d8c3a59243c0795df34911b5e7c45f5376b1c6bd9b7106758fb4add7b6a4a"
+    },
+    "degradation_signals": {
+      "file_size_bytes": 66689,
+      "path": "outputs/maintenance/degradation_signals.csv",
+      "row_count": 504,
+      "sha256": "586c40a1bd5d60c45b383173909e3f071a39c2d035d382fc47fa46f6fe5e27ae"
+    },
+    "equipment_health_features": {
+      "file_size_bytes": 468455,
+      "path": "outputs/maintenance/equipment_health_features.csv",
+      "row_count": 504,
+      "sha256": "9bc11958eb1935c4f60cc976db9db355bb42cca794b03deae6c9119ec3e3bfbb"
+    },
+    "equipment_health_scores": {
+      "file_size_bytes": 173279,
+      "path": "outputs/maintenance/equipment_health_scores.csv",
+      "row_count": 504,
+      "sha256": "c56e02d876633fa6b951ffeb0a5e10ba0f15a471a6cd83dff3a110bbf2a383a0"
+    },
+    "machine_health_summary": {
+      "file_size_bytes": 1892,
+      "path": "outputs/maintenance/machine_health_summary.csv",
+      "row_count": 18,
+      "sha256": "b4ad807679ddb29d1067dacefd3b5764d8c2f03c47c5df1d0e40f4968d50f284"
+    },
+    "maintenance_alert_summary": {
+      "file_size_bytes": 3278,
+      "path": "reports/maintenance_alert_summary.md",
+      "row_count": null,
+      "sha256": "bd0156ce761dcc1883cc171fd7c3ef6e796f1bb9e0a87f9bffcc59f73d68b305"
+    },
+    "maintenance_alerts": {
+      "file_size_bytes": 83369,
+      "path": "outputs/maintenance/maintenance_alerts.csv",
+      "row_count": 135,
+      "sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+    },
+    "maintenance_analytics_report": {
+      "file_size_bytes": 3850,
+      "path": "reports/maintenance_analytics_report.md",
+      "row_count": null,
+      "sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+    },
+    "maintenance_diagnostics": {
+      "file_size_bytes": 1962,
+      "path": "outputs/maintenance/maintenance_diagnostics.json",
+      "row_count": null,
+      "sha256": "771c030ec271668eb5af7e4ce25136ce5bcc7a9c32c5182b27f34af302ee847e"
+    },
+    "maintenance_risk_summary": {
+      "file_size_bytes": 224,
+      "path": "outputs/maintenance/maintenance_risk_summary.csv",
+      "row_count": 3,
+      "sha256": "e4efeee4a7afeb781fe752d0119dd2ca7a6f7172ad8f24fe88853330737e9b49"
+    },
+    "portfolio_maintenance_predictions": {
+      "file_size_bytes": 13170,
+      "path": "outputs/maintenance_predictions.json",
+      "row_count": null,
+      "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+    },
+    "sensor_health_summary": {
+      "file_size_bytes": 4718,
+      "path": "outputs/maintenance/sensor_health_summary.csv",
+      "row_count": 36,
+      "sha256": "910008d252e5405b6cc1f2ae7016004930c3f3f4d3bc1ab23a5eaea0cda25816"
+    }
+  },
+  "pipeline_name": "predictive_maintenance",
+  "pipeline_version": "0.1.0",
+  "risk_scoring_settings": {
+    "anomaly_weight": 0.2,
+    "critical_threshold": 80.0,
+    "degradation_weight": 0.2,
+    "high_threshold": 60.0,
+    "maintenance_state_weight": 0.1,
+    "production_context_weight": 0.05,
+    "runtime_weight": 0.15,
+    "threshold_breach_weight": 0.3
+  },
+  "software_version": "0.1.0",
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "threshold_settings": {
+    "critical_margin_fraction": 0.05,
+    "use_record_thresholds": true,
+    "warning_margin_fraction": 0.1
+  },
+  "upstream_ingestion_manifest_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+  "upstream_ingestion_run_id": "INGEST-da9a11a67abc6a18",
+  "upstream_quality_manifest_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf",
+  "upstream_quality_run_id": "QUALITY-ea15caf8c05763b0",
+  "validation_status": "success",
+  "warnings": [
+    "Failure-risk scores are deterministic heuristic scores, not calibrated probabilities.",
+    "Runtime and service outputs use configured proxy assumptions where explicit schedules are unavailable.",
+    "Investigation context is not root-cause proof and is not an operationally binding instruction."
+  ]
+}

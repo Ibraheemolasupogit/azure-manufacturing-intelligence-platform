@@ -123,3 +123,17 @@ Future outputs include:
 - `reports/executive_manufacturing_brief.md`
 
 Future run manifests should include run ID, pipeline name, configuration version, input paths, input hashes, output paths, output hashes, row counts, validation status, software version, random seed, and success or failure status. Current controlled analytical manifests avoid current timestamps so outputs remain reproducible.
+## Maintenance analytics contract
+
+Milestone 7 consumes only governed accepted inputs:
+
+- `data/interim/accepted/equipment_health.jsonl`
+- `data/interim/accepted/production_events.jsonl`
+- optional `data/interim/accepted/quality_checks.csv`
+- optional `outputs/quality/quality_alerts.csv`
+
+Required equipment fields include `sensor_event_id`, `timestamp`, `plant_id`, `line_id`, `machine_id`, `sensor_id`, `sensor_type`, `measurement`, `measurement_unit`, `warning_threshold`, `critical_threshold`, `threshold_status`, `runtime_hours`, `service_hours_since_maintenance`, `degradation_index`, `operating_mode`, and `maintenance_state`.
+
+The maintenance contract requires upstream manifest hash verification, row-count verification, successful ingestion validation, synthetic-data classification, coherent sensor type/unit pairs, non-negative runtime and service fields, valid thresholds, unique sensor event IDs, relative manifest paths, deterministic run identity, and unchanged upstream inputs.
+
+Maintenance outputs under `outputs/maintenance/` are controlled portfolio evidence. CI and experiments must write under `.generated/`.

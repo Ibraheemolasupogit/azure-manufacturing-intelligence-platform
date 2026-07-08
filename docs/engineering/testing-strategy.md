@@ -26,3 +26,8 @@ Milestone 5 specifically tests that inventory intelligence reads accepted govern
 Milestone 6 specifically tests that quality analytics reads governed accepted quality and production data only, preserves upstream files, verifies hashes and manifests, calculates specification compliance, capability diagnostics, SPC signals, anomaly scores, risk scores, deterministic alerts, existing-run validation, tamper detection, overwrite behavior, raw-input rejection, and CLI execution outside the repository root.
 
 Later milestones should expand tests in proportion to behavioural risk and blast radius.
+## Maintenance tests
+
+Milestone 7 tests cover governed input use, raw-input rejection, upstream row and hash evidence through manifests, threshold formula checks, threshold consistency flags, runtime and maintenance-state scoring, degradation insufficient-history handling, robust z-score and zero-MAD fallback, deterministic Isolation Forest scoring, anomaly score wording, risk and health score ranges, deterministic alert IDs, existing-run validation, tamper detection, overwrite protection, configuration validation, and CLI execution outside the repository root.
+
+The CI workflow runs `make maintenance-ci` and validates the generated maintenance run under `.generated/ci/maintenance/`, then removes `.generated/`.
