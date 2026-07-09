@@ -1,0 +1,630 @@
+[
+  {
+    "description": "Controlled generation manifest for synthetic manufacturing operations. Key metrics: pipeline_name=synthetic_data_generation.",
+    "domain": "generation",
+    "evidence_id": "EVID-001-generation-manifest",
+    "evidence_type": "manifest",
+    "file_size": 2865,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "synthetic_data_generation"
+    },
+    "related_lineage": null,
+    "related_manifest": "data/raw/generation_manifest.json",
+    "relative_path": "data/raw/generation_manifest.json",
+    "row_count": null,
+    "sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Synthetic generation manifest",
+    "upstream_run_id": "synthetic-b46d0952ec38e781"
+  },
+  {
+    "description": "Controlled generation json_output for synthetic manufacturing operations.",
+    "domain": "generation",
+    "evidence_id": "EVID-002-generation-json_output",
+    "evidence_type": "json_output",
+    "file_size": 15491,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": null,
+    "related_manifest": "data/raw/generation_manifest.json",
+    "relative_path": "data/raw/schema_metadata.json",
+    "row_count": null,
+    "sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Synthetic schema metadata",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled ingestion manifest for synthetic manufacturing operations. Key metrics: error_count=0, pipeline_name=governed_ingestion, quarantine_rate=0.0, validation_status=success.",
+    "domain": "ingestion",
+    "evidence_id": "EVID-003-ingestion-manifest",
+    "evidence_type": "manifest",
+    "file_size": 5633,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "error_count": 0,
+      "pipeline_name": "governed_ingestion",
+      "quarantine_rate": 0.0,
+      "validation_status": "success",
+      "warning_count": 0
+    },
+    "related_lineage": "data/interim/_metadata/lineage-records.json",
+    "related_manifest": "data/interim/_metadata/ingestion-manifest.json",
+    "relative_path": "data/interim/_metadata/ingestion-manifest.json",
+    "row_count": null,
+    "sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Governed ingestion manifest",
+    "upstream_run_id": "INGEST-da9a11a67abc6a18"
+  },
+  {
+    "description": "Controlled ingestion diagnostics for synthetic manufacturing operations. Key metrics: quarantine_rate=0.0, validation_status=success.",
+    "domain": "ingestion",
+    "evidence_id": "EVID-004-ingestion-diagnostics",
+    "evidence_type": "diagnostics",
+    "file_size": 1385,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "quarantine_rate": 0.0,
+      "validation_status": "success"
+    },
+    "related_lineage": "data/interim/_metadata/lineage-records.json",
+    "related_manifest": "data/interim/_metadata/ingestion-manifest.json",
+    "relative_path": "data/interim/_metadata/validation-summary.json",
+    "row_count": null,
+    "sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Validation summary",
+    "upstream_run_id": "INGEST-da9a11a67abc6a18"
+  },
+  {
+    "description": "Controlled ingestion diagnostics for synthetic manufacturing operations. Key metrics: validation_status=success.",
+    "domain": "ingestion",
+    "evidence_id": "EVID-005-ingestion-diagnostics",
+    "evidence_type": "diagnostics",
+    "file_size": 7188,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "validation_status": "success"
+    },
+    "related_lineage": "data/interim/_metadata/lineage-records.json",
+    "related_manifest": "data/interim/_metadata/ingestion-manifest.json",
+    "relative_path": "data/interim/_metadata/data-quality-report.json",
+    "row_count": null,
+    "sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Data quality JSON report",
+    "upstream_run_id": "INGEST-da9a11a67abc6a18"
+  },
+  {
+    "description": "Controlled ingestion markdown_report for synthetic manufacturing operations.",
+    "domain": "ingestion",
+    "evidence_id": "EVID-006-ingestion-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 738,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "data/interim/_metadata/lineage-records.json",
+    "related_manifest": "data/interim/_metadata/ingestion-manifest.json",
+    "relative_path": "reports/data_quality_report.md",
+    "row_count": null,
+    "sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Data quality report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled ingestion lineage for synthetic manufacturing operations. Key metrics: records=7.",
+    "domain": "ingestion",
+    "evidence_id": "EVID-007-ingestion-lineage",
+    "evidence_type": "lineage",
+    "file_size": 7451,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 7
+    },
+    "related_lineage": "data/interim/_metadata/lineage-records.json",
+    "related_manifest": "data/interim/_metadata/ingestion-manifest.json",
+    "relative_path": "data/interim/_metadata/lineage-records.json",
+    "row_count": null,
+    "sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838",
+    "supported_question_types": [
+      "executive_summary",
+      "data_quality",
+      "lineage"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Ingestion lineage records",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled forecasting manifest for synthetic manufacturing operations. Key metrics: pipeline_name=demand_forecasting, validation_status=success.",
+    "domain": "forecasting",
+    "evidence_id": "EVID-008-forecasting-manifest",
+    "evidence_type": "manifest",
+    "file_size": 4827,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "demand_forecasting",
+      "validation_status": "success"
+    },
+    "related_lineage": "outputs/forecasting/lineage-records.json",
+    "related_manifest": "outputs/forecasting/forecast-manifest.json",
+    "relative_path": "outputs/forecasting/forecast-manifest.json",
+    "row_count": null,
+    "sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+    "supported_question_types": [
+      "executive_summary",
+      "forecasting"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Forecast manifest",
+    "upstream_run_id": "FORECAST-6357daf22de3ea43"
+  },
+  {
+    "description": "Controlled forecasting csv_output for synthetic manufacturing operations. Key metrics: columns=14, rows=56.",
+    "domain": "forecasting",
+    "evidence_id": "EVID-009-forecasting-csv_output",
+    "evidence_type": "csv_output",
+    "file_size": 9670,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "columns": 14,
+      "rows": 56
+    },
+    "related_lineage": "outputs/forecasting/lineage-records.json",
+    "related_manifest": "outputs/forecasting/forecast-manifest.json",
+    "relative_path": "outputs/demand_forecast.csv",
+    "row_count": 56,
+    "sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8",
+    "supported_question_types": [
+      "executive_summary",
+      "forecasting"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Demand forecast output",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled forecasting markdown_report for synthetic manufacturing operations.",
+    "domain": "forecasting",
+    "evidence_id": "EVID-010-forecasting-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 1200,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/forecasting/lineage-records.json",
+    "related_manifest": "outputs/forecasting/forecast-manifest.json",
+    "relative_path": "reports/demand_forecasting_report.md",
+    "row_count": null,
+    "sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7",
+    "supported_question_types": [
+      "executive_summary",
+      "forecasting"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Demand forecasting report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled forecasting lineage for synthetic manufacturing operations. Key metrics: records=11.",
+    "domain": "forecasting",
+    "evidence_id": "EVID-011-forecasting-lineage",
+    "evidence_type": "lineage",
+    "file_size": 8455,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 11
+    },
+    "related_lineage": "outputs/forecasting/lineage-records.json",
+    "related_manifest": "outputs/forecasting/forecast-manifest.json",
+    "relative_path": "outputs/forecasting/lineage-records.json",
+    "row_count": null,
+    "sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced",
+    "supported_question_types": [
+      "executive_summary",
+      "forecasting"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Forecast lineage records",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled inventory manifest for synthetic manufacturing operations. Key metrics: pipeline_name=inventory_intelligence, validation_status=success.",
+    "domain": "inventory",
+    "evidence_id": "EVID-012-inventory-manifest",
+    "evidence_type": "manifest",
+    "file_size": 7546,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "inventory_intelligence",
+      "validation_status": "success"
+    },
+    "related_lineage": "outputs/inventory/lineage-records.json",
+    "related_manifest": "outputs/inventory/inventory-manifest.json",
+    "relative_path": "outputs/inventory/inventory-manifest.json",
+    "row_count": null,
+    "sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "supported_question_types": [
+      "executive_summary",
+      "inventory"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Inventory manifest",
+    "upstream_run_id": "INVENTORY-5a5cc7e83afe8502"
+  },
+  {
+    "description": "Controlled inventory csv_output for synthetic manufacturing operations. Key metrics: columns=88, rows=72.",
+    "domain": "inventory",
+    "evidence_id": "EVID-013-inventory-csv_output",
+    "evidence_type": "csv_output",
+    "file_size": 65992,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "columns": 88,
+      "rows": 72
+    },
+    "related_lineage": "outputs/inventory/lineage-records.json",
+    "related_manifest": "outputs/inventory/inventory-manifest.json",
+    "relative_path": "outputs/inventory_scores.csv",
+    "row_count": 72,
+    "sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859",
+    "supported_question_types": [
+      "executive_summary",
+      "inventory"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Inventory risk scores",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled inventory markdown_report for synthetic manufacturing operations.",
+    "domain": "inventory",
+    "evidence_id": "EVID-014-inventory-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 2753,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/inventory/lineage-records.json",
+    "related_manifest": "outputs/inventory/inventory-manifest.json",
+    "relative_path": "reports/inventory_intelligence_report.md",
+    "row_count": null,
+    "sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f",
+    "supported_question_types": [
+      "executive_summary",
+      "inventory"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Inventory intelligence report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled inventory lineage for synthetic manufacturing operations. Key metrics: records=13.",
+    "domain": "inventory",
+    "evidence_id": "EVID-015-inventory-lineage",
+    "evidence_type": "lineage",
+    "file_size": 24507,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 13
+    },
+    "related_lineage": "outputs/inventory/lineage-records.json",
+    "related_manifest": "outputs/inventory/inventory-manifest.json",
+    "relative_path": "outputs/inventory/lineage-records.json",
+    "row_count": null,
+    "sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc",
+    "supported_question_types": [
+      "executive_summary",
+      "inventory"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Inventory lineage records",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled quality manifest for synthetic manufacturing operations. Key metrics: pipeline_name=quality_analytics, validation_status=success.",
+    "domain": "quality",
+    "evidence_id": "EVID-016-quality-manifest",
+    "evidence_type": "manifest",
+    "file_size": 6906,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "quality_analytics",
+      "validation_status": "success"
+    },
+    "related_lineage": "outputs/quality/lineage-records.json",
+    "related_manifest": "outputs/quality/quality-manifest.json",
+    "relative_path": "outputs/quality/quality-manifest.json",
+    "row_count": null,
+    "sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf",
+    "supported_question_types": [
+      "executive_summary",
+      "quality"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Quality analytics manifest",
+    "upstream_run_id": "QUALITY-ea15caf8c05763b0"
+  },
+  {
+    "description": "Controlled quality csv_output for synthetic manufacturing operations. Key metrics: columns=30, rows=38.",
+    "domain": "quality",
+    "evidence_id": "EVID-017-quality-csv_output",
+    "evidence_type": "csv_output",
+    "file_size": 21959,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "columns": 30,
+      "rows": 38
+    },
+    "related_lineage": "outputs/quality/lineage-records.json",
+    "related_manifest": "outputs/quality/quality-manifest.json",
+    "relative_path": "outputs/quality_alerts.csv",
+    "row_count": 38,
+    "sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f",
+    "supported_question_types": [
+      "executive_summary",
+      "quality"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Quality alerts",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled quality markdown_report for synthetic manufacturing operations.",
+    "domain": "quality",
+    "evidence_id": "EVID-018-quality-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 2646,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/quality/lineage-records.json",
+    "related_manifest": "outputs/quality/quality-manifest.json",
+    "relative_path": "reports/quality_analytics_report.md",
+    "row_count": null,
+    "sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a",
+    "supported_question_types": [
+      "executive_summary",
+      "quality"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Quality analytics report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled quality lineage for synthetic manufacturing operations. Key metrics: records=14.",
+    "domain": "quality",
+    "evidence_id": "EVID-019-quality-lineage",
+    "evidence_type": "lineage",
+    "file_size": 16869,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 14
+    },
+    "related_lineage": "outputs/quality/lineage-records.json",
+    "related_manifest": "outputs/quality/quality-manifest.json",
+    "relative_path": "outputs/quality/lineage-records.json",
+    "row_count": null,
+    "sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6",
+    "supported_question_types": [
+      "executive_summary",
+      "quality"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Quality lineage records",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled maintenance manifest for synthetic manufacturing operations. Key metrics: pipeline_name=predictive_maintenance, validation_status=success.",
+    "domain": "maintenance",
+    "evidence_id": "EVID-020-maintenance-manifest",
+    "evidence_type": "manifest",
+    "file_size": 7634,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "predictive_maintenance",
+      "validation_status": "success"
+    },
+    "related_lineage": "outputs/maintenance/lineage-records.json",
+    "related_manifest": "outputs/maintenance/maintenance-manifest.json",
+    "relative_path": "outputs/maintenance/maintenance-manifest.json",
+    "row_count": null,
+    "sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "supported_question_types": [
+      "executive_summary",
+      "maintenance"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Maintenance manifest",
+    "upstream_run_id": "MAINT-f281a27e7d014de8"
+  },
+  {
+    "description": "Controlled maintenance json_output for synthetic manufacturing operations.",
+    "domain": "maintenance",
+    "evidence_id": "EVID-021-maintenance-json_output",
+    "evidence_type": "json_output",
+    "file_size": 13170,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/maintenance/lineage-records.json",
+    "related_manifest": "outputs/maintenance/maintenance-manifest.json",
+    "relative_path": "outputs/maintenance_predictions.json",
+    "row_count": null,
+    "sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9",
+    "supported_question_types": [
+      "executive_summary",
+      "maintenance"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Maintenance predictions",
+    "upstream_run_id": "MAINT-f281a27e7d014de8"
+  },
+  {
+    "description": "Controlled maintenance markdown_report for synthetic manufacturing operations.",
+    "domain": "maintenance",
+    "evidence_id": "EVID-022-maintenance-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 3850,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/maintenance/lineage-records.json",
+    "related_manifest": "outputs/maintenance/maintenance-manifest.json",
+    "relative_path": "reports/maintenance_analytics_report.md",
+    "row_count": null,
+    "sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010",
+    "supported_question_types": [
+      "executive_summary",
+      "maintenance"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Maintenance analytics report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled maintenance lineage for synthetic manufacturing operations. Key metrics: records=13.",
+    "domain": "maintenance",
+    "evidence_id": "EVID-023-maintenance-lineage",
+    "evidence_type": "lineage",
+    "file_size": 18305,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 13
+    },
+    "related_lineage": "outputs/maintenance/lineage-records.json",
+    "related_manifest": "outputs/maintenance/maintenance-manifest.json",
+    "relative_path": "outputs/maintenance/lineage-records.json",
+    "row_count": null,
+    "sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37",
+    "supported_question_types": [
+      "executive_summary",
+      "maintenance"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Maintenance lineage records",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled monitoring manifest for synthetic manufacturing operations. Key metrics: pipeline_name=platform_monitoring, platform_health_label=healthy, platform_health_score=98.66666666666667, validation_status=success.",
+    "domain": "monitoring",
+    "evidence_id": "EVID-024-monitoring-manifest",
+    "evidence_type": "manifest",
+    "file_size": 6750,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "pipeline_name": "platform_monitoring",
+      "platform_health_label": "healthy",
+      "platform_health_score": 98.66666666666667,
+      "validation_status": "success"
+    },
+    "related_lineage": "outputs/monitoring/lineage-records.json",
+    "related_manifest": "outputs/monitoring/monitoring-manifest.json",
+    "relative_path": "outputs/monitoring/monitoring-manifest.json",
+    "row_count": null,
+    "sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b",
+    "supported_question_types": [
+      "executive_summary",
+      "monitoring"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Monitoring manifest",
+    "upstream_run_id": "MONITOR-6a22c0e7c78c0641"
+  },
+  {
+    "description": "Controlled monitoring json_output for synthetic manufacturing operations. Key metrics: platform_health_label=healthy, platform_health_score=98.66666666666667.",
+    "domain": "monitoring",
+    "evidence_id": "EVID-025-monitoring-json_output",
+    "evidence_type": "json_output",
+    "file_size": 938,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "platform_health_label": "healthy",
+      "platform_health_score": 98.66666666666667
+    },
+    "related_lineage": "outputs/monitoring/lineage-records.json",
+    "related_manifest": "outputs/monitoring/monitoring-manifest.json",
+    "relative_path": "outputs/platform_health_summary.json",
+    "row_count": null,
+    "sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f",
+    "supported_question_types": [
+      "executive_summary",
+      "monitoring"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Platform health summary",
+    "upstream_run_id": "MONITOR-6a22c0e7c78c0641"
+  },
+  {
+    "description": "Controlled monitoring markdown_report for synthetic manufacturing operations.",
+    "domain": "monitoring",
+    "evidence_id": "EVID-026-monitoring-markdown_report",
+    "evidence_type": "markdown_report",
+    "file_size": 890,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {},
+    "related_lineage": "outputs/monitoring/lineage-records.json",
+    "related_manifest": "outputs/monitoring/monitoring-manifest.json",
+    "relative_path": "reports/platform_monitoring_report.md",
+    "row_count": null,
+    "sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd",
+    "supported_question_types": [
+      "executive_summary",
+      "monitoring"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Monitoring report",
+    "upstream_run_id": null
+  },
+  {
+    "description": "Controlled monitoring lineage for synthetic manufacturing operations. Key metrics: records=13.",
+    "domain": "monitoring",
+    "evidence_id": "EVID-027-monitoring-lineage",
+    "evidence_type": "lineage",
+    "file_size": 54142,
+    "freshness_label": "controlled_static_evidence",
+    "key_metrics": {
+      "records": 13
+    },
+    "related_lineage": "outputs/monitoring/lineage-records.json",
+    "related_manifest": "outputs/monitoring/monitoring-manifest.json",
+    "relative_path": "outputs/monitoring/lineage-records.json",
+    "row_count": null,
+    "sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9",
+    "supported_question_types": [
+      "executive_summary",
+      "monitoring"
+    ],
+    "synthetic_data_flag": true,
+    "title": "Monitoring lineage records",
+    "upstream_run_id": null
+  }
+]

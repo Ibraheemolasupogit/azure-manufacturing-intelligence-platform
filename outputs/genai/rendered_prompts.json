@@ -1,0 +1,162 @@
+[
+  {
+    "evidence_ids": [
+      "EVID-024-monitoring-manifest",
+      "EVID-001-generation-manifest",
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-008-forecasting-manifest",
+      "EVID-010-forecasting-markdown_report",
+      "EVID-012-inventory-manifest",
+      "EVID-014-inventory-markdown_report",
+      "EVID-016-quality-manifest",
+      "EVID-018-quality-markdown_report",
+      "EVID-020-maintenance-manifest",
+      "EVID-022-maintenance-markdown_report"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: executive_summary. Answer with citations for every material claim.\nEvidence: EVID-024-monitoring-manifest | monitoring | outputs/monitoring/monitoring-manifest.json | sha256=a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9; EVID-010-forecasting-markdown_report | forecasting | reports/demand_forecasting_report.md | sha256=b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7; EVID-012-inventory-manifest | inventory | outputs/inventory/inventory-manifest.json | sha256=0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee; EVID-014-inventory-markdown_report | inventory | reports/inventory_intelligence_report.md | sha256=e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf; EVID-018-quality-markdown_report | quality | reports/quality_analytics_report.md | sha256=21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a; EVID-020-maintenance-manifest | maintenance | outputs/maintenance/maintenance-manifest.json | sha256=51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b; EVID-022-maintenance-markdown_report | maintenance | reports/maintenance_analytics_report.md | sha256=b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Provide an executive operations brief for the synthetic manufacturing platform.",
+    "task_type": "executive_summary",
+    "user_question": "Provide an executive operations brief for the synthetic manufacturing platform."
+  },
+  {
+    "evidence_ids": [
+      "EVID-008-forecasting-manifest",
+      "EVID-010-forecasting-markdown_report",
+      "EVID-009-forecasting-csv_output",
+      "EVID-011-forecasting-lineage",
+      "EVID-012-inventory-manifest",
+      "EVID-014-inventory-markdown_report",
+      "EVID-013-inventory-csv_output",
+      "EVID-015-inventory-lineage",
+      "EVID-003-ingestion-manifest",
+      "EVID-001-generation-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-016-quality-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: forecasting. Answer with citations for every material claim.\nEvidence: EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9; EVID-010-forecasting-markdown_report | forecasting | reports/demand_forecasting_report.md | sha256=b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7; EVID-009-forecasting-csv_output | forecasting | outputs/demand_forecast.csv | sha256=44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8; EVID-011-forecasting-lineage | forecasting | outputs/forecasting/lineage-records.json | sha256=f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced; EVID-012-inventory-manifest | inventory | outputs/inventory/inventory-manifest.json | sha256=0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee; EVID-014-inventory-markdown_report | inventory | reports/inventory_intelligence_report.md | sha256=e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f; EVID-013-inventory-csv_output | inventory | outputs/inventory_scores.csv | sha256=c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859; EVID-015-inventory-lineage | inventory | outputs/inventory/lineage-records.json | sha256=6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Summarize forecast outlook and inventory risk using governed evidence.",
+    "task_type": "forecasting",
+    "user_question": "Summarize forecast outlook and inventory risk using governed evidence."
+  },
+  {
+    "evidence_ids": [
+      "EVID-012-inventory-manifest",
+      "EVID-014-inventory-markdown_report",
+      "EVID-013-inventory-csv_output",
+      "EVID-015-inventory-lineage",
+      "EVID-008-forecasting-manifest",
+      "EVID-010-forecasting-markdown_report",
+      "EVID-009-forecasting-csv_output",
+      "EVID-011-forecasting-lineage",
+      "EVID-001-generation-manifest",
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-016-quality-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: inventory. Answer with citations for every material claim.\nEvidence: EVID-012-inventory-manifest | inventory | outputs/inventory/inventory-manifest.json | sha256=0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee; EVID-014-inventory-markdown_report | inventory | reports/inventory_intelligence_report.md | sha256=e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f; EVID-013-inventory-csv_output | inventory | outputs/inventory_scores.csv | sha256=c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859; EVID-015-inventory-lineage | inventory | outputs/inventory/lineage-records.json | sha256=6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9; EVID-010-forecasting-markdown_report | forecasting | reports/demand_forecasting_report.md | sha256=b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7; EVID-009-forecasting-csv_output | forecasting | outputs/demand_forecast.csv | sha256=44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8; EVID-011-forecasting-lineage | forecasting | outputs/forecasting/lineage-records.json | sha256=f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Explain the most important inventory risks and recommended local actions.",
+    "task_type": "inventory",
+    "user_question": "Explain the most important inventory risks and recommended local actions."
+  },
+  {
+    "evidence_ids": [
+      "EVID-016-quality-manifest",
+      "EVID-018-quality-markdown_report",
+      "EVID-017-quality-csv_output",
+      "EVID-019-quality-lineage",
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-004-ingestion-diagnostics",
+      "EVID-005-ingestion-diagnostics",
+      "EVID-007-ingestion-lineage",
+      "EVID-001-generation-manifest",
+      "EVID-022-maintenance-markdown_report",
+      "EVID-008-forecasting-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: quality. Answer with citations for every material claim.\nEvidence: EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf; EVID-018-quality-markdown_report | quality | reports/quality_analytics_report.md | sha256=21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a; EVID-017-quality-csv_output | quality | outputs/quality_alerts.csv | sha256=36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f; EVID-019-quality-lineage | quality | outputs/quality/lineage-records.json | sha256=6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-004-ingestion-diagnostics | ingestion | data/interim/_metadata/validation-summary.json | sha256=75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385; EVID-005-ingestion-diagnostics | ingestion | data/interim/_metadata/data-quality-report.json | sha256=f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406; EVID-007-ingestion-lineage | ingestion | data/interim/_metadata/lineage-records.json | sha256=cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-022-maintenance-markdown_report | maintenance | reports/maintenance_analytics_report.md | sha256=b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Summarize current quality alerts and quality analytics evidence.",
+    "task_type": "quality",
+    "user_question": "Summarize current quality alerts and quality analytics evidence."
+  },
+  {
+    "evidence_ids": [
+      "EVID-020-maintenance-manifest",
+      "EVID-022-maintenance-markdown_report",
+      "EVID-021-maintenance-json_output",
+      "EVID-023-maintenance-lineage",
+      "EVID-024-monitoring-manifest",
+      "EVID-026-monitoring-markdown_report",
+      "EVID-025-monitoring-json_output",
+      "EVID-027-monitoring-lineage",
+      "EVID-001-generation-manifest",
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-008-forecasting-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: maintenance. Answer with citations for every material claim.\nEvidence: EVID-020-maintenance-manifest | maintenance | outputs/maintenance/maintenance-manifest.json | sha256=51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b; EVID-022-maintenance-markdown_report | maintenance | reports/maintenance_analytics_report.md | sha256=b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010; EVID-021-maintenance-json_output | maintenance | outputs/maintenance_predictions.json | sha256=40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9; EVID-023-maintenance-lineage | maintenance | outputs/maintenance/lineage-records.json | sha256=a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37; EVID-024-monitoring-manifest | monitoring | outputs/monitoring/monitoring-manifest.json | sha256=a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b; EVID-026-monitoring-markdown_report | monitoring | reports/platform_monitoring_report.md | sha256=6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd; EVID-025-monitoring-json_output | monitoring | outputs/platform_health_summary.json | sha256=aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f; EVID-027-monitoring-lineage | monitoring | outputs/monitoring/lineage-records.json | sha256=6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Summarize maintenance risks and predictive maintenance alerts.",
+    "task_type": "maintenance",
+    "user_question": "Summarize maintenance risks and predictive maintenance alerts."
+  },
+  {
+    "evidence_ids": [
+      "EVID-024-monitoring-manifest",
+      "EVID-026-monitoring-markdown_report",
+      "EVID-025-monitoring-json_output",
+      "EVID-027-monitoring-lineage",
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-004-ingestion-diagnostics",
+      "EVID-005-ingestion-diagnostics",
+      "EVID-007-ingestion-lineage",
+      "EVID-008-forecasting-manifest",
+      "EVID-012-inventory-manifest",
+      "EVID-016-quality-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: monitoring. Answer with citations for every material claim.\nEvidence: EVID-024-monitoring-manifest | monitoring | outputs/monitoring/monitoring-manifest.json | sha256=a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b; EVID-026-monitoring-markdown_report | monitoring | reports/platform_monitoring_report.md | sha256=6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd; EVID-025-monitoring-json_output | monitoring | outputs/platform_health_summary.json | sha256=aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f; EVID-027-monitoring-lineage | monitoring | outputs/monitoring/lineage-records.json | sha256=6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9; EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-004-ingestion-diagnostics | ingestion | data/interim/_metadata/validation-summary.json | sha256=75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385; EVID-005-ingestion-diagnostics | ingestion | data/interim/_metadata/data-quality-report.json | sha256=f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406; EVID-007-ingestion-lineage | ingestion | data/interim/_metadata/lineage-records.json | sha256=cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9; EVID-012-inventory-manifest | inventory | outputs/inventory/inventory-manifest.json | sha256=0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Summarize platform health and observability status.",
+    "task_type": "monitoring",
+    "user_question": "Summarize platform health and observability status."
+  },
+  {
+    "evidence_ids": [
+      "EVID-003-ingestion-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-004-ingestion-diagnostics",
+      "EVID-005-ingestion-diagnostics",
+      "EVID-007-ingestion-lineage",
+      "EVID-016-quality-manifest",
+      "EVID-018-quality-markdown_report",
+      "EVID-022-maintenance-markdown_report",
+      "EVID-008-forecasting-manifest",
+      "EVID-010-forecasting-markdown_report",
+      "EVID-012-inventory-manifest",
+      "EVID-014-inventory-markdown_report"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: lineage. Answer with citations for every material claim.\nEvidence: EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-004-ingestion-diagnostics | ingestion | data/interim/_metadata/validation-summary.json | sha256=75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385; EVID-005-ingestion-diagnostics | ingestion | data/interim/_metadata/data-quality-report.json | sha256=f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406; EVID-007-ingestion-lineage | ingestion | data/interim/_metadata/lineage-records.json | sha256=cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf; EVID-018-quality-markdown_report | quality | reports/quality_analytics_report.md | sha256=21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a; EVID-022-maintenance-markdown_report | maintenance | reports/maintenance_analytics_report.md | sha256=b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010; EVID-008-forecasting-manifest | forecasting | outputs/forecasting/forecast-manifest.json | sha256=d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9; EVID-010-forecasting-markdown_report | forecasting | reports/demand_forecasting_report.md | sha256=b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7; EVID-012-inventory-manifest | inventory | outputs/inventory/inventory-manifest.json | sha256=0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee; EVID-014-inventory-markdown_report | inventory | reports/inventory_intelligence_report.md | sha256=e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Explain governed data lineage from generation through analytics outputs.",
+    "task_type": "lineage",
+    "user_question": "Explain governed data lineage from generation through analytics outputs."
+  },
+  {
+    "evidence_ids": [
+      "EVID-003-ingestion-manifest",
+      "EVID-001-generation-manifest",
+      "EVID-006-ingestion-markdown_report",
+      "EVID-004-ingestion-diagnostics",
+      "EVID-005-ingestion-diagnostics",
+      "EVID-002-generation-json_output",
+      "EVID-007-ingestion-lineage",
+      "EVID-024-monitoring-manifest",
+      "EVID-026-monitoring-markdown_report",
+      "EVID-025-monitoring-json_output",
+      "EVID-027-monitoring-lineage",
+      "EVID-016-quality-manifest"
+    ],
+    "external_model_called": false,
+    "rendered_prompt": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.\nThis answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.\nNo external model, cloud service, or live operational system is called.\nTask: data_quality. Answer with citations for every material claim.\nEvidence: EVID-003-ingestion-manifest | ingestion | data/interim/_metadata/ingestion-manifest.json | sha256=ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035; EVID-001-generation-manifest | generation | data/raw/generation_manifest.json | sha256=0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0; EVID-006-ingestion-markdown_report | ingestion | reports/data_quality_report.md | sha256=f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e; EVID-004-ingestion-diagnostics | ingestion | data/interim/_metadata/validation-summary.json | sha256=75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385; EVID-005-ingestion-diagnostics | ingestion | data/interim/_metadata/data-quality-report.json | sha256=f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406; EVID-002-generation-json_output | generation | data/raw/schema_metadata.json | sha256=fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af; EVID-007-ingestion-lineage | ingestion | data/interim/_metadata/lineage-records.json | sha256=cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838; EVID-024-monitoring-manifest | monitoring | outputs/monitoring/monitoring-manifest.json | sha256=a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b; EVID-026-monitoring-markdown_report | monitoring | reports/platform_monitoring_report.md | sha256=6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd; EVID-025-monitoring-json_output | monitoring | outputs/platform_health_summary.json | sha256=aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f; EVID-027-monitoring-lineage | monitoring | outputs/monitoring/lineage-records.json | sha256=6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9; EVID-016-quality-manifest | quality | outputs/quality/quality-manifest.json | sha256=43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf\nGuardrails: require citations; refuse live operations, real-world claims, safety-critical instructions, unsupported causal claims, external data, credentials, and validation override requests.\nUser question: Summarize data quality and governance validation status.",
+    "task_type": "data_quality",
+    "user_question": "Summarize data quality and governance validation status."
+  }
+]

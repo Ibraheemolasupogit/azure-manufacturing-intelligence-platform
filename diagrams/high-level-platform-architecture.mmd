@@ -24,6 +24,7 @@ flowchart TD
         QualityAnalytics["Quality analytics and anomaly detection"]
         MaintenanceAnalytics["Predictive maintenance and failure-risk scoring"]
         MonitoringAnalytics["Local monitoring and observability"]
+        GenAIAssistant["Deterministic GenAI operations assistant"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -77,6 +78,14 @@ flowchart TD
     QualityAnalytics --> MonitoringAnalytics
     MaintenanceAnalytics --> MonitoringAnalytics
     MonitoringAnalytics --> Reporting
+    MonitoringAnalytics --> GenAIAssistant
+    Forecasting --> GenAIAssistant
+    InventoryIntel --> GenAIAssistant
+    QualityAnalytics --> GenAIAssistant
+    MaintenanceAnalytics --> GenAIAssistant
+    GenAIAssistant --> Reporting
+    GenAIAssistant --> Lineage
+    GenAIAssistant --> Manifests
     Forecasting --> Reporting
     InventoryIntel --> Reporting
     Features --> ML
@@ -116,6 +125,11 @@ flowchart TD
     MonitoringAnalytics -.-> ADX
     MonitoringAnalytics -.-> Purview
     MonitoringAnalytics -.-> PowerBI
+    GenAIAssistant -.-> Foundry
+    GenAIAssistant -.-> AzureML
+    GenAIAssistant -.-> Purview
+    GenAIAssistant -.-> Monitor
+    GenAIAssistant -.-> PowerBI
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

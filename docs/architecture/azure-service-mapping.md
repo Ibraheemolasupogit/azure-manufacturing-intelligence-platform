@@ -51,3 +51,18 @@ Milestone 8 maps local monitoring responsibilities to Azure concepts without dep
 - Portfolio health extracts: Power BI-ready output responsibility.
 
 No live telemetry collection, Azure SDK client, workspace, dashboard, secret, or cloud deployment is created.
+## Milestone 9 GenAI Reference Mapping
+
+The deterministic GenAI operations assistant is a local simulation of responsibilities that could later map to Azure services:
+
+| Local Milestone 9 component | Azure reference |
+| --- | --- |
+| Evidence catalogue | Azure AI Search responsibility |
+| Prompt-template rendering | Azure AI Foundry prompt-flow responsibility |
+| Future model endpoint boundary | Azure OpenAI Service responsibility |
+| Deterministic evaluation | Azure Machine Learning evaluation responsibility |
+| Manifest and lineage | Microsoft Purview responsibility |
+| Guardrail and health evidence | Azure Monitor responsibility |
+| Narrative report outputs | Power BI-ready narrative responsibility |
+
+No Azure AI service is deployed or called by Milestone 9.

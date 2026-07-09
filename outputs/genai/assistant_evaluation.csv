@@ -1,0 +1,9 @@
+response_id,task_type,grounding_score,citation_coverage,unsupported_claim_count,synthetic_disclaimer_present,external_model_called,citation_ids_valid,evidence_references_valid,word_count,length_compliant,evaluation_status
+RESP-DATA-QUALITY,data_quality,1.000000,1.000000,0,True,False,True,True,99,True,passed
+RESP-EXECUTIVE-SUMMARY,executive_summary,1.000000,1.000000,0,True,False,True,True,99,True,passed
+RESP-FORECASTING,forecasting,1.000000,1.000000,0,True,False,True,True,101,True,passed
+RESP-INVENTORY,inventory,1.000000,1.000000,0,True,False,True,True,101,True,passed
+RESP-LINEAGE,lineage,1.000000,1.000000,0,True,False,True,True,100,True,passed
+RESP-MAINTENANCE,maintenance,1.000000,1.000000,0,True,False,True,True,96,True,passed
+RESP-MONITORING,monitoring,1.000000,1.000000,0,True,False,True,True,99,True,passed
+RESP-QUALITY,quality,1.000000,1.000000,0,True,False,True,True,102,True,passed

@@ -37,3 +37,8 @@ The CI workflow runs `make maintenance-ci` and validates the generated maintenan
 Milestone 8 tests cover required manifest loading, missing evidence failures, hash and row-count checks, domain health scoring, label mapping, deterministic deductions, alert ID stability, alert ordering, platform summary determinism, lineage completeness, existing-run validation, tamper detection, overwrite protection, invalid configuration, and CLI execution outside the repository root.
 
 The CI workflow runs `make monitoring-ci` and validates the generated monitoring run under `.generated/ci/monitoring/`, then removes `.generated/`.
+## GenAI Assistant Testing
+
+Milestone 9 tests cover the evidence catalogue, required domains, hash calculation, `.generated` exclusion, deterministic retrieval, prompt rendering, guardrail refusal paths, response citation validity, unsupported-claim counts, grounding and citation metrics, all standard assistant tasks, manifest output metadata, lineage targets, overwrite protection, invalid configuration, existing-run validation, tamper detection, CLI execution outside the repository root, and CI generation under `.generated/ci/genai/`.
+
+The tests use local deterministic evidence only and do not access Azure, OpenAI, the internet, external evaluators, embeddings, vector databases, or live services.

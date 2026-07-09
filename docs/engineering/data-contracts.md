@@ -1,6 +1,6 @@
 # Data Contracts
 
-Milestones 2, 3, 4, 5, and 6 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, governed demand-forecast outputs, governed inventory-intelligence outputs, and governed quality-analytics outputs. These are local synthetic-data contracts only; they do not describe external customer feeds.
+Milestones 2 through 9 implement deterministic synthetic raw source files, governed local ingestion into accepted and quarantined interim zones, governed demand-forecast outputs, governed inventory-intelligence outputs, governed quality-analytics outputs, governed maintenance outputs, governed monitoring outputs, and deterministic GenAI assistant evidence. These are local synthetic-data contracts only; they do not describe external customer feeds.
 
 ## Contract principles
 
@@ -143,3 +143,10 @@ Maintenance outputs under `outputs/maintenance/` are controlled portfolio eviden
 Milestone 8 consumes tracked evidence only: generation, ingestion, forecast, inventory, quality, and maintenance manifests; lineage files; portfolio outputs; and data-quality evidence. Required evidence must exist, parse successfully, match declared SHA-256 hashes and row counts where available, and confirm synthetic classification.
 
 Monitoring outputs under `outputs/monitoring/` and `outputs/platform_health_summary.json` are controlled portfolio evidence. CI and experiments must write under `.generated/`.
+## GenAI Assistant Evidence Contract
+
+Milestone 9 treats generation, ingestion, forecasting, inventory, quality, maintenance, and monitoring artefacts as immutable governed inputs. Required inputs must exist, be parseable, retain matching hashes where upstream manifests expose them, carry successful validation status, carry synthetic-data classification, and provide lineage where available.
+
+GenAI outputs must use relative safe paths, stable SHA-256 hashes, row counts for CSV outputs, `external_model_called=false`, `azure_deployment=false`, citation references to valid evidence IDs, zero unsupported claims for standard tasks, grounding and citation coverage above configured thresholds, synthetic-data disclaimers, and deterministic run identity.
+
+Existing-run validation must detect missing outputs, tampered hashes, row-count mismatches, invalid citations, invalid evidence references, missing disclaimers, external-call flags, lineage target gaps, and run-ID mismatches.

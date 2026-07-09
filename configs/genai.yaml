@@ -1,0 +1,88 @@
+genai:
+  evidence_catalog_path: outputs/genai/evidence_catalog.json
+  output_directory: outputs/genai
+  report_directory: reports
+  overwrite: false
+  random_seed: 20260709
+  assistant_name: manufacturing_operations_assistant
+  mode: deterministic_local
+  allow_external_model_calls: false
+  require_citations: true
+  require_synthetic_data_disclaimer: true
+  maximum_response_words: 600
+
+inputs:
+  generation_manifest_path: data/raw/generation_manifest.json
+  schema_metadata_path: data/raw/schema_metadata.json
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  validation_summary_path: data/interim/_metadata/validation-summary.json
+  data_quality_report_path: data/interim/_metadata/data-quality-report.json
+  data_quality_markdown_path: reports/data_quality_report.md
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  forecast_manifest_path: outputs/forecasting/forecast-manifest.json
+  forecast_lineage_path: outputs/forecasting/lineage-records.json
+  demand_forecast_path: outputs/demand_forecast.csv
+  forecast_report_path: reports/demand_forecasting_report.md
+  inventory_manifest_path: outputs/inventory/inventory-manifest.json
+  inventory_lineage_path: outputs/inventory/lineage-records.json
+  inventory_scores_path: outputs/inventory_scores.csv
+  inventory_report_path: reports/inventory_intelligence_report.md
+  quality_manifest_path: outputs/quality/quality-manifest.json
+  quality_lineage_path: outputs/quality/lineage-records.json
+  quality_alerts_path: outputs/quality_alerts.csv
+  quality_report_path: reports/quality_analytics_report.md
+  maintenance_manifest_path: outputs/maintenance/maintenance-manifest.json
+  maintenance_lineage_path: outputs/maintenance/lineage-records.json
+  maintenance_predictions_path: outputs/maintenance_predictions.json
+  maintenance_report_path: reports/maintenance_analytics_report.md
+  monitoring_manifest_path: outputs/monitoring/monitoring-manifest.json
+  monitoring_lineage_path: outputs/monitoring/lineage-records.json
+  platform_health_summary_path: outputs/platform_health_summary.json
+  monitoring_report_path: reports/platform_monitoring_report.md
+
+evidence:
+  required_domains:
+    - generation
+    - ingestion
+    - forecasting
+    - inventory
+    - quality
+    - maintenance
+    - monitoring
+  include_reports: true
+  include_manifests: true
+  include_diagnostics: true
+  include_lineage: true
+
+retrieval:
+  method: deterministic_keyword_and_domain_matching
+  maximum_evidence_items: 12
+  minimum_evidence_items: 1
+  include_file_hashes: true
+  include_row_counts: true
+
+guardrails:
+  refuse_ungrounded_answers: true
+  refuse_live_operational_commands: true
+  refuse_safety_critical_claims: true
+  refuse_real_world_claims: true
+  require_local_evidence_references: true
+  allowed_answer_domains:
+    - executive_summary
+    - forecasting
+    - inventory
+    - quality
+    - maintenance
+    - monitoring
+    - lineage
+    - data_quality
+
+evaluation:
+  write_eval_results: true
+  minimum_grounding_score: 0.90
+  minimum_citation_coverage: 0.90
+  maximum_unsupported_claims: 0
+
+reporting:
+  maximum_example_answers: 10
+  write_markdown_report: true

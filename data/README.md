@@ -42,6 +42,13 @@ Milestone 8 monitoring outputs are also stored outside the data lake zones:
 - `reports/platform_monitoring_report.md`: human-readable monitoring report.
 - `reports/observability_summary.md`: concise observability summary.
 
+Milestone 9 GenAI assistant outputs are also stored outside the data lake zones:
+
+- `outputs/genai/`: evidence catalogue, retrieval results, prompt templates, rendered prompts, assistant responses, guardrail decisions, evaluation, diagnostics, manifest, and lineage.
+- `reports/genai_operations_assistant_report.md`: controlled assistant run summary.
+- `reports/genai_guardrails_report.md`: guardrail policy and refusal summary.
+- `reports/executive_manufacturing_brief.md`, `reports/supply_chain_summary.md`, and `reports/manufacturing_operations_report.md`: stable curated narrative projections from deterministic assistant responses.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -89,5 +96,8 @@ Useful commands:
 - `make monitoring`: regenerate tracked controlled monitoring evidence.
 - `make monitoring-ci`: generate and validate ignored CI monitoring evidence.
 - `make validate-monitoring`: validate an existing monitoring run without recalculating.
+- `make genai`: regenerate tracked controlled GenAI assistant evidence.
+- `make genai-ci`: generate and validate ignored CI GenAI assistant evidence.
+- `make validate-genai`: validate an existing GenAI assistant run without recalculating responses.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

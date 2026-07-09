@@ -17,7 +17,7 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 ## Core capabilities
 
-Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, and local evidence monitoring. Planned capabilities include supplier-risk expansion, GenAI-assisted recommendations, and Power BI-ready extracts.
+Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, local evidence monitoring, and a deterministic local GenAI-style operations assistant. Planned capabilities include supplier-risk expansion and Power BI-ready extracts.
 
 ## Intended users
 
@@ -60,8 +60,9 @@ flowchart TD
     validation --> zones["Governed Local Data Zones"]
     zones --> analytics["Analytics and Feature Engineering"]
     analytics --> intelligence["Forecasting / Inventory / Quality / Maintenance"]
-    intelligence --> monitoring["Monitoring and GenAI Assistance"]
-    monitoring --> outputs["Power BI-Ready Outputs and Executive Reports"]
+    intelligence --> monitoring["Monitoring and Observability"]
+    monitoring --> genai["Deterministic GenAI Operations Assistant"]
+    genai --> outputs["Power BI-Ready Outputs and Executive Reports"]
 ```
 
 See [diagrams/high-level-platform-architecture.mmd](diagrams/high-level-platform-architecture.mmd) and [docs/architecture/architecture-overview.md](docs/architecture/architecture-overview.md) for more detail.
@@ -92,13 +93,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 6 - Quality analytics and anomaly detection | Complete |
 | Milestone 7 - Predictive maintenance and equipment failure risk | Complete |
 | Milestone 8 - Monitoring and observability | Complete |
-| Milestone 9 onward | Planned |
+| Milestone 9 - GenAI operations assistant | Complete |
+| Milestone 10 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 8:
+Implemented through Milestone 9:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -124,8 +126,10 @@ Implemented through Milestone 8:
 - Deterministic sensor-threshold compliance, runtime/service proxies, chronological degradation indicators, robust z-score, deterministic Isolation Forest diagnostics, failure-risk scoring, equipment-health scoring, maintenance alerts, machine and sensor summaries, manifest, lineage, diagnostics, portfolio prediction JSON, and reports.
 - Governed local monitoring from tracked generation, ingestion, forecast, inventory, quality, and maintenance evidence.
 - Deterministic manifest integrity checks, lineage completeness checks, data-quality monitoring, model and analytics monitoring, domain health scores, platform health summary, monitoring alerts, manifest, lineage, diagnostics, portfolio health JSON, and observability reports.
+- Deterministic local GenAI-style operations assistant from tracked governed evidence.
+- Evidence catalogue, deterministic retrieval, prompt-template rendering, guardrails, response synthesis, evaluation, diagnostics, manifest, lineage, assistant interaction evidence, executive brief, supply-chain summary, and manufacturing operations report.
 
-Not implemented yet: Milestone 9 GenAI, dashboards, or live Azure integration.
+Not implemented yet: Milestone 10 dashboard outputs or live Azure integration.
 
 ## Development setup
 
@@ -167,6 +171,9 @@ make validate-maintenance
 make monitoring
 make monitoring-ci
 make validate-monitoring
+make genai
+make genai-ci
+make validate-genai
 make quality
 ```
 
@@ -186,9 +193,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make monitoring` reads tracked governed evidence from generation, ingestion, forecasting, inventory, quality, and maintenance; writes `outputs/platform_health_summary.json`, domain health scores, pipeline health, data-quality monitoring, model and analytics monitoring, evidence integrity checks, lineage completeness, alerts, diagnostics, manifest, and lineage under `outputs/monitoring/`; writes `reports/platform_monitoring_report.md` and `reports/observability_summary.md`; and records upstream hashes without mutating governed evidence. The controlled run scores platform health at 98.666667, with manifest integrity 100, lineage completeness 100, and one informational monitoring alert. `make monitoring-ci` writes the same shape under ignored `.generated/ci/`. `make validate-monitoring` verifies an existing monitoring run without recalculating.
 
+`make genai` reads tracked governed evidence from generation, ingestion, forecasting, inventory, quality, maintenance, and monitoring; writes the deterministic evidence catalogue, retrieval results, prompt templates, rendered prompts, assistant responses, guardrail decisions, evaluation, diagnostics, manifest, and lineage under `outputs/genai/`; writes `reports/genai_operations_assistant_report.md`, `reports/genai_guardrails_report.md`, `reports/executive_manufacturing_brief.md`, `reports/supply_chain_summary.md`, and `reports/manufacturing_operations_report.md`; and records upstream hashes without mutating governed evidence. The controlled run ID is `GENAI-56556548ec78b651`, with 27 evidence items, 8 assistant responses, 16 guardrail results, grounding score 1.000000, citation coverage 1.000000, zero unsupported claims, and `external_model_called=false`. `make genai-ci` writes the same shape under ignored `.generated/ci/genai/`. `make validate-genai` verifies an existing GenAI run without recalculating responses.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, overwrite behavior, tamper detection, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, deterministic GenAI evidence retrieval, prompt rendering, guardrails, response synthesis, evaluation, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -196,15 +205,15 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, and monitoring outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, monitoring, and GenAI assistant outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. No prompt logs containing secrets or real LLM outputs should be committed. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 8 monitoring produces deterministic observability evidence from tracked synthetic governed files. Health scores are heuristic local indicators, not formal SLA measurements; monitoring reports are not live dashboards; and no Azure Monitor, Log Analytics, Application Insights, or cloud resource is deployed or called.
+Milestone 9 GenAI assistance is deterministic and evidence-bound. It is not a real LLM, does not call OpenAI or Azure OpenAI, does not deploy Azure AI Foundry or Azure AI Search, does not use embeddings or a vector database, and cannot provide live operational or safety-critical decisions.
 
 ## Planned portfolio outputs
 
-Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, and `outputs/platform_health_summary.json`. Future milestones are expected to produce documented, reproducible outputs such as supplier risk scores, Power BI fact extracts, and additional narrative reports under `reports/`.
+Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/platform_health_summary.json`, and GenAI narrative reports under `reports/`. Future milestones are expected to produce documented, reproducible Power BI fact extracts and dashboard-ready data dictionaries.
 
 ## Disclaimer
 

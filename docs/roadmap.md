@@ -68,11 +68,12 @@ Out of scope: live Azure Monitor integration, dashboards, GenAI, Azure SDKs, str
 
 ## Milestone 9 - GenAI manufacturing operations assistant
 
-Objective: generate governed operational recommendations for human review.
-Principal components: prompt templates, context assembly, safety guardrails.
-Planned evidence: recommendation examples from synthetic data.
+Objective: simulate a governed GenAI operations assistant using local deterministic evidence retrieval, prompt templates, guardrails, response synthesis, evaluation, manifest, and lineage.
+Principal components: evidence catalogue, deterministic retrieval, rendered prompts, local rule-based answers, citations, guardrail refusals, evaluation, diagnostics, reports, CLI, tests, and CI profile.
+Evidence: `outputs/genai/` catalogue, retrieval, prompts, responses, guardrails, evaluation, diagnostics, manifest, lineage, and portfolio narrative reports.
 Dependencies: Milestones 1-8.
-Out of scope: ungrounded advice and real operational decisions.
+Status: Complete.
+Out of scope: real LLM calls, Azure AI deployments, vector databases, ungrounded advice, live operational decisions, dashboards, and Milestone 10 outputs.
 
 ## Milestone 10 - Power BI-ready analytical outputs
 

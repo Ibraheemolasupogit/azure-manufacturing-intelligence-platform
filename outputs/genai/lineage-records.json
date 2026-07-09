@@ -1,0 +1,2977 @@
+[
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/assistant_evaluation.csv",
+    "target_row_count": 8,
+    "target_sha256": "faca8d60c59554a9138ee7359d5d153bd0235520d9ecf595f5e080ac83f2e82a",
+    "transformation_name": "deterministic assistant evaluation",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/assistant_evaluation_summary.json",
+    "target_row_count": null,
+    "target_sha256": "e2c68ad67e45a6960465c731768d2b48b2637603ea23a8eef68ee7117caa2b5a",
+    "transformation_name": "assistant_evaluation_summary",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/assistant_responses.json",
+    "target_row_count": null,
+    "target_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6",
+    "transformation_name": "deterministic response synthesis",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/assistant_responses.md",
+    "target_row_count": null,
+    "target_sha256": "bce3326ce28d80a5fb3d8e29119fbe4876d8730af447cc9ba06f1810e508acdf",
+    "transformation_name": "assistant_responses_markdown",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/evidence_catalog.csv",
+    "target_row_count": 27,
+    "target_sha256": "d230b707a6ebce58b421ba46ee907a618b0d000a51accfd465f68dead563fc13",
+    "transformation_name": "evidence_catalog_csv",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/evidence_catalog.json",
+    "target_row_count": null,
+    "target_sha256": "2bf28ea3b5dd452c939d7cc8627fc48e9e5a8c3b4f962ab69d75e8b16f5461e0",
+    "transformation_name": "catalogue governed evidence",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/executive_manufacturing_brief.md",
+    "target_row_count": null,
+    "target_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6",
+    "transformation_name": "portfolio narrative projection",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/genai_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "8ad9304ac106fd2111e7f2ee6f178182ca5f14bca51010a19fbe56162818fc2d",
+    "transformation_name": "genai_diagnostics",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/genai_guardrails_report.md",
+    "target_row_count": null,
+    "target_sha256": "1c376ebefed739bc3de375fd9f56c9847e82592a2e14cd928ee59158e1a47e89",
+    "transformation_name": "genai_guardrails_report",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/genai-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823",
+    "transformation_name": "genai_manifest",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/genai_operations_assistant_report.md",
+    "target_row_count": null,
+    "target_sha256": "23fcf880be13cc5d47668ef093912d7582b53839739879c8bc3e0cb17e56694e",
+    "transformation_name": "genai_operations_assistant_report",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/guardrail_results.json",
+    "target_row_count": null,
+    "target_sha256": "b55cfce8e30c78d155c32a491da1b9ca6b103223d26bb62d45916c0029baff2b",
+    "transformation_name": "guardrail decisioning",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/manufacturing_operations_report.md",
+    "target_row_count": null,
+    "target_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a",
+    "transformation_name": "manufacturing_operations_report",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/prompt_templates.json",
+    "target_row_count": null,
+    "target_sha256": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "transformation_name": "prompt_templates",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/rendered_prompts.json",
+    "target_row_count": null,
+    "target_sha256": "b716b94b468dc28104637a5ba1e5f683d2b518e0e355952fc749c434b5ec3973",
+    "transformation_name": "prompt template rendering",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/genai/retrieval_results.json",
+    "target_row_count": null,
+    "target_sha256": "f069e810ac1cdccc488c6b4f7acdef47ec26bb7f46c670b19a0b093e4592d85d",
+    "transformation_name": "deterministic retrieval",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+    "external_model_called": false,
+    "genai_run_id": "GENAI-56556548ec78b651",
+    "source_inputs": [
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/generation_manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0"
+      },
+      {
+        "source_domain": "generation",
+        "source_path": "data/raw/schema_metadata.json",
+        "source_row_count": null,
+        "source_sha256": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/ingestion-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/validation-summary.json",
+        "source_row_count": null,
+        "source_sha256": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/data-quality-report.json",
+        "source_row_count": null,
+        "source_sha256": "f4a8229c1030ce572c132f14aa00daebf3f04f4ca1d1a5cc7ec314b5d9b66406"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "reports/data_quality_report.md",
+        "source_row_count": null,
+        "source_sha256": "f1b42ca4abfc62af7de59d9e296b50a1266e163689d5616fc0c3b067a6085c9e"
+      },
+      {
+        "source_domain": "ingestion",
+        "source_path": "data/interim/_metadata/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/forecast-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/demand_forecast.csv",
+        "source_row_count": 56,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "reports/demand_forecasting_report.md",
+        "source_row_count": null,
+        "source_sha256": "b46ddfbb5ebaa533b81be4d0acf06e85dff07ada0d440632c8f7f0894b51b2c7"
+      },
+      {
+        "source_domain": "forecasting",
+        "source_path": "outputs/forecasting/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/inventory-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory_scores.csv",
+        "source_row_count": 72,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "reports/inventory_intelligence_report.md",
+        "source_row_count": null,
+        "source_sha256": "e7a5a3147666fc8da523fc86a5778b1d8bfb07a83e7b8710d8c950dd307c817f"
+      },
+      {
+        "source_domain": "inventory",
+        "source_path": "outputs/inventory/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/quality-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality_alerts.csv",
+        "source_row_count": 38,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "reports/quality_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "21a4617fd8186ac74d34e228a41a4149db80a5ef3a6caf0fc3362187a2a41a5a"
+      },
+      {
+        "source_domain": "quality",
+        "source_path": "outputs/quality/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/maintenance-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance_predictions.json",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "reports/maintenance_analytics_report.md",
+        "source_row_count": null,
+        "source_sha256": "b4049915d85ed030158b6ed032c5257e8868b4a503e3f21d0d1b5c527eab7010"
+      },
+      {
+        "source_domain": "maintenance",
+        "source_path": "outputs/maintenance/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/monitoring-manifest.json",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/platform_health_summary.json",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "reports/platform_monitoring_report.md",
+        "source_row_count": null,
+        "source_sha256": "6f05112b47473de5e731f0e674a754b0c5a344ba9ce81b39be01f7beecd9bfbd"
+      },
+      {
+        "source_domain": "monitoring",
+        "source_path": "outputs/monitoring/lineage-records.json",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/supply_chain_summary.md",
+    "target_row_count": null,
+    "target_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a",
+    "transformation_name": "supply_chain_summary",
+    "validation_status": "success"
+  }
+]

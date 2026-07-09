@@ -1,0 +1,197 @@
+{
+  "assistant_response_count": 8,
+  "azure_deployment": false,
+  "azure_mapping": {
+    "assistant_orchestration": "Azure AI Foundry reference only",
+    "deployment_status": "reference-only; no Azure services deployed or called",
+    "evaluation": "Azure Machine Learning prompt evaluation reference only",
+    "future_llm": "Azure OpenAI Service reference only",
+    "lineage": "Microsoft Purview reference only",
+    "narrative_outputs": "Power BI-ready narrative outputs reference only",
+    "observability": "Azure Monitor reference only",
+    "retrieval": "Azure AI Search reference only"
+  },
+  "configuration_path": "configs/genai.yaml",
+  "configuration_sha256": "581e8892caa751ed0399b1b9177601a5b06d5efeb179cda772c9fda8648fb4e9",
+  "evaluation_metrics": {
+    "external_model_called": false,
+    "failed_count": 0,
+    "maximum_unsupported_claim_count": 0,
+    "minimum_citation_coverage": 1.0,
+    "minimum_grounding_score": 1.0,
+    "passed_count": 8,
+    "response_count": 8,
+    "synthetic_disclaimer_coverage": 1.0,
+    "validation_status": "success"
+  },
+  "evidence_catalogue_row_count": 27,
+  "evidence_input_hashes": {
+    "forecast_manifest_path": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+    "generation_manifest_path": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0",
+    "ingestion_manifest_path": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+    "inventory_manifest_path": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "maintenance_manifest_path": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "monitoring_manifest_path": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b",
+    "quality_manifest_path": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf",
+    "schema_metadata_path": "fb16d439dc187caf56619219ed03da43167a7e73e779502ed11b211eec4886af",
+    "validation_summary_path": "75c177265f9a95629daef31e8799b883b02605b000094228ec8d560e4ed5d385"
+  },
+  "evidence_inputs": [
+    "data/raw/generation_manifest.json",
+    "data/raw/schema_metadata.json",
+    "data/interim/_metadata/ingestion-manifest.json",
+    "data/interim/_metadata/validation-summary.json",
+    "data/interim/_metadata/data-quality-report.json",
+    "reports/data_quality_report.md",
+    "data/interim/_metadata/lineage-records.json",
+    "outputs/forecasting/forecast-manifest.json",
+    "outputs/demand_forecast.csv",
+    "reports/demand_forecasting_report.md",
+    "outputs/forecasting/lineage-records.json",
+    "outputs/inventory/inventory-manifest.json",
+    "outputs/inventory_scores.csv",
+    "reports/inventory_intelligence_report.md",
+    "outputs/inventory/lineage-records.json",
+    "outputs/quality/quality-manifest.json",
+    "outputs/quality_alerts.csv",
+    "reports/quality_analytics_report.md",
+    "outputs/quality/lineage-records.json",
+    "outputs/maintenance/maintenance-manifest.json",
+    "outputs/maintenance_predictions.json",
+    "reports/maintenance_analytics_report.md",
+    "outputs/maintenance/lineage-records.json",
+    "outputs/monitoring/monitoring-manifest.json",
+    "outputs/platform_health_summary.json",
+    "reports/platform_monitoring_report.md",
+    "outputs/monitoring/lineage-records.json"
+  ],
+  "external_model_called": false,
+  "genai_run_id": "GENAI-56556548ec78b651",
+  "git_commit": "9b273e29d1a9ffa8a5badfdebf5be31c8a8f8578",
+  "guardrail_result_count": 16,
+  "output_files": {
+    "assistant_evaluation": {
+      "file_size_bytes": 898,
+      "path": "outputs/genai/assistant_evaluation.csv",
+      "row_count": 8,
+      "sha256": "faca8d60c59554a9138ee7359d5d153bd0235520d9ecf595f5e080ac83f2e82a"
+    },
+    "assistant_evaluation_summary": {
+      "file_size_bytes": 286,
+      "path": "outputs/genai/assistant_evaluation_summary.json",
+      "row_count": null,
+      "sha256": "e2c68ad67e45a6960465c731768d2b48b2637603ea23a8eef68ee7117caa2b5a"
+    },
+    "assistant_responses": {
+      "file_size_bytes": 29829,
+      "path": "outputs/genai/assistant_responses.json",
+      "row_count": null,
+      "sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+    },
+    "assistant_responses_markdown": {
+      "file_size_bytes": 11582,
+      "path": "outputs/genai/assistant_responses.md",
+      "row_count": null,
+      "sha256": "bce3326ce28d80a5fb3d8e29119fbe4876d8730af447cc9ba06f1810e508acdf"
+    },
+    "evidence_catalog_csv": {
+      "file_size_bytes": 13751,
+      "path": "outputs/genai/evidence_catalog.csv",
+      "row_count": 27,
+      "sha256": "d230b707a6ebce58b421ba46ee907a618b0d000a51accfd465f68dead563fc13"
+    },
+    "evidence_catalog_json": {
+      "file_size_bytes": 24449,
+      "path": "outputs/genai/evidence_catalog.json",
+      "row_count": null,
+      "sha256": "2bf28ea3b5dd452c939d7cc8627fc48e9e5a8c3b4f962ab69d75e8b16f5461e0"
+    },
+    "executive_manufacturing_brief": {
+      "file_size_bytes": 1263,
+      "path": "reports/executive_manufacturing_brief.md",
+      "row_count": null,
+      "sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+    },
+    "genai_diagnostics": {
+      "file_size_bytes": 689,
+      "path": "outputs/genai/genai_diagnostics.json",
+      "row_count": null,
+      "sha256": "8ad9304ac106fd2111e7f2ee6f178182ca5f14bca51010a19fbe56162818fc2d"
+    },
+    "genai_guardrails_report": {
+      "file_size_bytes": 244,
+      "path": "reports/genai_guardrails_report.md",
+      "row_count": null,
+      "sha256": "1c376ebefed739bc3de375fd9f56c9847e82592a2e14cd928ee59158e1a47e89"
+    },
+    "genai_operations_assistant_report": {
+      "file_size_bytes": 571,
+      "path": "reports/genai_operations_assistant_report.md",
+      "row_count": null,
+      "sha256": "23fcf880be13cc5d47668ef093912d7582b53839739879c8bc3e0cb17e56694e"
+    },
+    "guardrail_results": {
+      "file_size_bytes": 7967,
+      "path": "outputs/genai/guardrail_results.json",
+      "row_count": null,
+      "sha256": "b55cfce8e30c78d155c32a491da1b9ca6b103223d26bb62d45916c0029baff2b"
+    },
+    "manufacturing_operations_report": {
+      "file_size_bytes": 3571,
+      "path": "reports/manufacturing_operations_report.md",
+      "row_count": null,
+      "sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+    },
+    "prompt_templates": {
+      "file_size_bytes": 810,
+      "path": "outputs/genai/prompt_templates.json",
+      "row_count": null,
+      "sha256": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079"
+    },
+    "rendered_prompts": {
+      "file_size_bytes": 26795,
+      "path": "outputs/genai/rendered_prompts.json",
+      "row_count": null,
+      "sha256": "b716b94b468dc28104637a5ba1e5f683d2b518e0e355952fc749c434b5ec3973"
+    },
+    "retrieval_results": {
+      "file_size_bytes": 101339,
+      "path": "outputs/genai/retrieval_results.json",
+      "row_count": null,
+      "sha256": "f069e810ac1cdccc488c6b4f7acdef47ec26bb7f46c670b19a0b093e4592d85d"
+    },
+    "supply_chain_summary": {
+      "file_size_bytes": 1168,
+      "path": "reports/supply_chain_summary.md",
+      "row_count": null,
+      "sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+    }
+  },
+  "pipeline_name": "genai_operations_assistant",
+  "pipeline_version": "0.1.0",
+  "prompt_template_hashes": {
+    "answer": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "citation": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "evidence_summary": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "no_live_operations_disclaimer": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "refusal": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "synthetic_data_disclaimer": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "system_instruction": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079",
+    "task_instruction": "2027960bdbbedfb20e10d0f6c00bd344926e59a3e01c5375418929394c3e4079"
+  },
+  "software_version": "0.1.0",
+  "supported_task_types": [
+    "executive_summary",
+    "forecasting",
+    "inventory",
+    "quality",
+    "maintenance",
+    "monitoring",
+    "lineage",
+    "data_quality"
+  ],
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "upstream_inputs_modified": false,
+  "validation_status": "success",
+  "warnings": []
+}

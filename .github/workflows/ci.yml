@@ -75,5 +75,11 @@ jobs:
       - name: Validate CI monitoring
         run: python -m manufacturing_intelligence.monitoring --config configs/monitoring_ci.yaml --validate-existing-run --output-directory .generated/ci/monitoring
 
+      - name: Run CI GenAI assistant
+        run: make genai-ci
+
+      - name: Validate CI GenAI assistant
+        run: python -m manufacturing_intelligence.genai --config configs/genai_ci.yaml --validate-existing-run --output-directory .generated/ci/genai
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

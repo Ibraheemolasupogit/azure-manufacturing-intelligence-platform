@@ -32,6 +32,8 @@ REQUIRED_PATHS = [
     "configs/maintenance_ci.yaml",
     "configs/monitoring.yaml",
     "configs/monitoring_ci.yaml",
+    "configs/genai.yaml",
+    "configs/genai_ci.yaml",
     "configs/synthetic_data.yaml",
     "configs/synthetic_data_ci.yaml",
     "configs/environments/local.yaml",
@@ -92,6 +94,15 @@ REQUIRED_PATHS = [
     "docs/monitoring/observability-reports.md",
     "docs/monitoring/monitoring-lineage-and-manifest.md",
     "docs/monitoring/limitations.md",
+    "docs/genai/genai-operations-assistant-design.md",
+    "docs/genai/governed-evidence-catalogue.md",
+    "docs/genai/retrieval-and-prompting.md",
+    "docs/genai/guardrails.md",
+    "docs/genai/deterministic-response-synthesis.md",
+    "docs/genai/assistant-evaluation.md",
+    "docs/genai/genai-lineage-and-manifest.md",
+    "docs/genai/responsible-use-boundaries.md",
+    "docs/genai/limitations.md",
     "docs/maintenance/degradation-analysis.md",
     "docs/maintenance/anomaly-detection.md",
     "docs/maintenance/failure-risk-scoring.md",
@@ -112,6 +123,7 @@ REQUIRED_PATHS = [
     "docs/milestones/milestone-6.md",
     "docs/milestones/milestone-7.md",
     "docs/milestones/milestone-8.md",
+    "docs/milestones/milestone-9.md",
     "docs/roadmap.md",
     "outputs/.gitkeep",
     "reports/.gitkeep",
@@ -208,6 +220,22 @@ REQUIRED_PATHS = [
     "src/manufacturing_intelligence/monitoring/scoring.py",
     "src/manufacturing_intelligence/monitoring/serialization.py",
     "src/manufacturing_intelligence/monitoring/summaries.py",
+    "src/manufacturing_intelligence/genai/__main__.py",
+    "src/manufacturing_intelligence/genai/cli.py",
+    "src/manufacturing_intelligence/genai/config.py",
+    "src/manufacturing_intelligence/genai/evidence.py",
+    "src/manufacturing_intelligence/genai/retrieval.py",
+    "src/manufacturing_intelligence/genai/prompts.py",
+    "src/manufacturing_intelligence/genai/guardrails.py",
+    "src/manufacturing_intelligence/genai/synthesis.py",
+    "src/manufacturing_intelligence/genai/evaluation.py",
+    "src/manufacturing_intelligence/genai/examples.py",
+    "src/manufacturing_intelligence/genai/pipeline.py",
+    "src/manufacturing_intelligence/genai/serialization.py",
+    "src/manufacturing_intelligence/genai/manifest.py",
+    "src/manufacturing_intelligence/genai/lineage.py",
+    "src/manufacturing_intelligence/genai/reporting.py",
+    "src/manufacturing_intelligence/genai/existing_run.py",
     "src/manufacturing_intelligence/ingestion/__main__.py",
     "src/manufacturing_intelligence/ingestion/cli.py",
     "src/manufacturing_intelligence/ingestion/config.py",
@@ -368,6 +396,27 @@ MONITORING_OUTPUTS = [
     "reports/observability_summary.md",
 ]
 
+GENAI_OUTPUTS = [
+    "outputs/genai/evidence_catalog.json",
+    "outputs/genai/evidence_catalog.csv",
+    "outputs/genai/retrieval_results.json",
+    "outputs/genai/prompt_templates.json",
+    "outputs/genai/rendered_prompts.json",
+    "outputs/genai/assistant_responses.json",
+    "outputs/genai/assistant_responses.md",
+    "outputs/genai/guardrail_results.json",
+    "outputs/genai/assistant_evaluation.csv",
+    "outputs/genai/assistant_evaluation_summary.json",
+    "outputs/genai/genai_diagnostics.json",
+    "outputs/genai/genai-manifest.json",
+    "outputs/genai/lineage-records.json",
+    "reports/genai_operations_assistant_report.md",
+    "reports/genai_guardrails_report.md",
+    "reports/executive_manufacturing_brief.md",
+    "reports/supply_chain_summary.md",
+    "reports/manufacturing_operations_report.md",
+]
+
 PACKAGE_DIRS = [
     "common",
     "data_generation",
@@ -393,6 +442,7 @@ def main() -> int:
     missing.extend(path for path in QUALITY_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in MAINTENANCE_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in MONITORING_OUTPUTS if not (root / path).exists())
+    missing.extend(path for path in GENAI_OUTPUTS if not (root / path).exists())
     for package_dir in PACKAGE_DIRS:
         marker = root / "src" / "manufacturing_intelligence" / package_dir / "__init__.py"
         if not marker.exists():

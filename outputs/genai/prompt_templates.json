@@ -1,0 +1,10 @@
+{
+  "answer": "{answer}\n\nCitations: {citations}",
+  "citation": "[{evidence_id}] {relative_path}",
+  "evidence_summary": "Evidence: {evidence_list}",
+  "no_live_operations_disclaimer": "No external model, cloud service, or live operational system is called.",
+  "refusal": "I cannot answer because: {reason}. Allowed scope: local synthetic evidence.",
+  "synthetic_data_disclaimer": "This answer is based only on local synthetic manufacturing evidence and does not describe real customers, suppliers, employees, plants, products, or live operations.",
+  "system_instruction": "You are a local deterministic manufacturing operations assistant. Use only provided evidence. Refuse unsupported or live-operation requests.",
+  "task_instruction": "Task: {task}. Answer with citations for every material claim."
+}
