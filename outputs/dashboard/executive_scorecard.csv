@@ -1,0 +1,15 @@
+run_date_label,domain,metric_name,metric_value,metric_unit,risk_level,source_artifact,source_run_id,synthetic_data_flag
+controlled_static_run,monitoring,platform_health_score,98.66666666666667,score,healthy,tracked governed milestone evidence,,True
+controlled_static_run,forecasting,total_forecast_rows,56,rows,,tracked governed milestone evidence,,True
+controlled_static_run,forecasting,selected_forecast_model,random_forest,model,,tracked governed milestone evidence,,True
+controlled_static_run,inventory,inventory_high_risk_count,5,count,high,tracked governed milestone evidence,,True
+controlled_static_run,inventory,inventory_critical_risk_count,0,count,critical,tracked governed milestone evidence,,True
+controlled_static_run,quality,quality_alert_count,38,count,,tracked governed milestone evidence,,True
+controlled_static_run,quality,quality_high_risk_count,6,count,high,tracked governed milestone evidence,,True
+controlled_static_run,quality,quality_critical_risk_count,4,count,critical,tracked governed milestone evidence,,True
+controlled_static_run,maintenance,maintenance_alert_count,135,count,,tracked governed milestone evidence,,True
+controlled_static_run,maintenance,maintenance_high_risk_count,7,count,high,tracked governed milestone evidence,,True
+controlled_static_run,maintenance,maintenance_critical_risk_count,0,count,critical,tracked governed milestone evidence,,True
+controlled_static_run,monitoring,monitoring_alert_count,1,count,,tracked governed milestone evidence,,True
+controlled_static_run,genai,genai_response_count,8,count,,tracked governed milestone evidence,,True
+controlled_static_run,governance,synthetic_data_flag,1,boolean,,tracked governed milestone evidence,,True

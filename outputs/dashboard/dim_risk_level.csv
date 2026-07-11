@@ -1,0 +1,5 @@
+risk_level,risk_sort,risk_description,synthetic_data_flag
+low,1,Low dashboard risk,True
+medium,2,Medium dashboard risk,True
+high,3,High dashboard risk,True
+critical,4,Critical dashboard risk,True

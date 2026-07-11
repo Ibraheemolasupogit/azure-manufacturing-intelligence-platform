@@ -1,0 +1,1244 @@
+[
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 1,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview KPI card",
+    "visual_id": "executive_overview-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 2,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview line chart",
+    "visual_id": "executive_overview-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 3,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview bar chart",
+    "visual_id": "executive_overview-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 4,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview matrix",
+    "visual_id": "executive_overview-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 5,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview table",
+    "visual_id": "executive_overview-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about executive overview?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "metric_name",
+      "metric_value"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "page_id": "executive_overview",
+    "sort_order": 6,
+    "source_table": "executive_scorecard",
+    "title": "Executive Overview narrative text box",
+    "visual_id": "executive_overview-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 1,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations KPI card",
+    "visual_id": "production_operations-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 2,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations line chart",
+    "visual_id": "production_operations-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 3,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations bar chart",
+    "visual_id": "production_operations-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 4,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations matrix",
+    "visual_id": "production_operations-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 5,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations table",
+    "visual_id": "production_operations-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about production operations?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "event_date",
+      "plant_id",
+      "accepted_quantity"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "production_output",
+      "production_variance"
+    ],
+    "page_id": "production_operations",
+    "sort_order": 6,
+    "source_table": "fact_production_kpis",
+    "title": "Production Operations narrative text box",
+    "visual_id": "production_operations-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 1,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting KPI card",
+    "visual_id": "demand_forecasting-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 2,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting line chart",
+    "visual_id": "demand_forecasting-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 3,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting bar chart",
+    "visual_id": "demand_forecasting-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 4,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting matrix",
+    "visual_id": "demand_forecasting-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 5,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting table",
+    "visual_id": "demand_forecasting-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about demand forecasting?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "forecast_date",
+      "product_id",
+      "point_forecast"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "page_id": "demand_forecasting",
+    "sort_order": 6,
+    "source_table": "fact_demand_forecast",
+    "title": "Demand Forecasting narrative text box",
+    "visual_id": "demand_forecasting-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 1,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain KPI card",
+    "visual_id": "inventory_and_supply_chain-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 2,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain line chart",
+    "visual_id": "inventory_and_supply_chain-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 3,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain bar chart",
+    "visual_id": "inventory_and_supply_chain-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 4,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain matrix",
+    "visual_id": "inventory_and_supply_chain-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 5,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain table",
+    "visual_id": "inventory_and_supply_chain-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about inventory and supply chain?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "warehouse_id",
+      "item_id",
+      "priority_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "page_id": "inventory_and_supply_chain",
+    "sort_order": 6,
+    "source_table": "fact_inventory_risk",
+    "title": "Inventory And Supply Chain narrative text box",
+    "visual_id": "inventory_and_supply_chain-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 1,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics KPI card",
+    "visual_id": "quality_analytics-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 2,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics line chart",
+    "visual_id": "quality_analytics-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 3,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics bar chart",
+    "visual_id": "quality_analytics-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 4,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics matrix",
+    "visual_id": "quality_analytics-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 5,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics table",
+    "visual_id": "quality_analytics-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about quality analytics?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "plant_id",
+      "risk_level",
+      "quality_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "page_id": "quality_analytics",
+    "sort_order": 6,
+    "source_table": "fact_quality_alerts",
+    "title": "Quality Analytics narrative text box",
+    "visual_id": "quality_analytics-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 1,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance KPI card",
+    "visual_id": "predictive_maintenance-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 2,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance line chart",
+    "visual_id": "predictive_maintenance-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 3,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance bar chart",
+    "visual_id": "predictive_maintenance-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 4,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance matrix",
+    "visual_id": "predictive_maintenance-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 5,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance table",
+    "visual_id": "predictive_maintenance-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about predictive maintenance?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "machine_id",
+      "risk_level",
+      "failure_risk_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "page_id": "predictive_maintenance",
+    "sort_order": 6,
+    "source_table": "fact_maintenance_alerts",
+    "title": "Predictive Maintenance narrative text box",
+    "visual_id": "predictive_maintenance-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 1,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring KPI card",
+    "visual_id": "platform_monitoring-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 2,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring line chart",
+    "visual_id": "platform_monitoring-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 3,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring bar chart",
+    "visual_id": "platform_monitoring-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 4,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring matrix",
+    "visual_id": "platform_monitoring-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 5,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring table",
+    "visual_id": "platform_monitoring-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about platform monitoring?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "domain",
+      "domain_health_score",
+      "platform_health_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "page_id": "platform_monitoring",
+    "sort_order": 6,
+    "source_table": "fact_platform_health",
+    "title": "Platform Monitoring narrative text box",
+    "visual_id": "platform_monitoring-visual-06",
+    "visual_type": "narrative text box"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 1,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant KPI card",
+    "visual_id": "operations_assistant-visual-01",
+    "visual_type": "KPI card"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 2,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant line chart",
+    "visual_id": "operations_assistant-visual-02",
+    "visual_type": "line chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 3,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant bar chart",
+    "visual_id": "operations_assistant-visual-03",
+    "visual_type": "bar chart"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 4,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant matrix",
+    "visual_id": "operations_assistant-visual-04",
+    "visual_type": "matrix"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 5,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant table",
+    "visual_id": "operations_assistant-visual-05",
+    "visual_type": "table"
+  },
+  {
+    "business_question": "What does the governed synthetic evidence say about operations assistant?",
+    "caveats": "Specification only; no Power BI visual was rendered.",
+    "expected_interaction": "filter and cross-highlight within local dashboard design",
+    "fields": [
+      "task_type",
+      "answer",
+      "grounding_score"
+    ],
+    "filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "measures": [
+      "assistant_response_count"
+    ],
+    "page_id": "operations_assistant",
+    "sort_order": 6,
+    "source_table": "fact_operations_assistant_narratives",
+    "title": "Operations Assistant narrative text box",
+    "visual_id": "operations_assistant-visual-06",
+    "visual_type": "narrative text box"
+  }
+]

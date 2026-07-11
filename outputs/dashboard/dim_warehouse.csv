@@ -1,0 +1,5 @@
+warehouse_id,warehouse_name,synthetic_data_flag
+WH-01,WH-01,True
+WH-02,WH-02,True
+WH-03,WH-03,True
+WH-04,WH-04,True

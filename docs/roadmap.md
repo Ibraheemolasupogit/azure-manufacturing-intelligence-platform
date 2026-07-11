@@ -78,10 +78,11 @@ Out of scope: real LLM calls, Azure AI deployments, vector databases, ungrounded
 ## Milestone 10 - Power BI-ready analytical outputs
 
 Objective: produce semantic extracts for dashboard development.
-Principal components: fact tables, dimensions, KPI extracts, documentation.
-Planned evidence: Power BI-ready CSVs and data dictionary.
-Dependencies: Milestones 1-8.
-Out of scope: publishing to Power BI service.
+Principal components: dashboard dimensions, fact tables, executive scorecard, metric catalogue, semantic model metadata, page specs, visual specs, manifest, lineage, reports, tests, and CI profile.
+Evidence: Power BI-ready CSV/JSON artefacts under `outputs/dashboard/`, dashboard reports, portfolio docs, manifest, lineage, and validation evidence.
+Dependencies: Milestones 1-9.
+Status: Complete.
+Out of scope: `.pbix` files, Power BI Service publishing, Fabric API calls, Azure deployment, and Milestone 11 architecture.
 
 ## Milestone 11 - Azure reference architecture and deployment mapping
 

@@ -49,6 +49,13 @@ Milestone 9 GenAI assistant outputs are also stored outside the data lake zones:
 - `reports/genai_guardrails_report.md`: guardrail policy and refusal summary.
 - `reports/executive_manufacturing_brief.md`, `reports/supply_chain_summary.md`, and `reports/manufacturing_operations_report.md`: stable curated narrative projections from deterministic assistant responses.
 
+Milestone 10 dashboard outputs are also stored outside the data lake zones:
+
+- `outputs/dashboard/`: dashboard dimensions, facts, executive scorecard, metric catalogue, semantic model metadata, page specs, visual specs, diagnostics, manifest, and lineage.
+- `reports/dashboard_output_report.md`: controlled dashboard output summary.
+- `reports/semantic_model_summary.md`: semantic model summary.
+- `dashboard/dashboard_index.md`, `dashboard/powerbi_ready_outputs.md`, and `dashboard/semantic_model_notes.md`: portfolio-level dashboard documentation.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -99,5 +106,8 @@ Useful commands:
 - `make genai`: regenerate tracked controlled GenAI assistant evidence.
 - `make genai-ci`: generate and validate ignored CI GenAI assistant evidence.
 - `make validate-genai`: validate an existing GenAI assistant run without recalculating responses.
+- `make dashboard`: regenerate tracked controlled dashboard evidence.
+- `make dashboard-ci`: generate and validate ignored CI dashboard evidence.
+- `make validate-dashboard`: validate an existing dashboard run without recalculating outputs.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

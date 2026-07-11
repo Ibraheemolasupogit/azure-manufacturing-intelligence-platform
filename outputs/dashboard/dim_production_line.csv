@@ -1,0 +1,7 @@
+production_line_id,production_line_name,synthetic_data_flag
+LINE-01-01,LINE-01-01,True
+LINE-01-02,LINE-01-02,True
+LINE-02-01,LINE-02-01,True
+LINE-02-02,LINE-02-02,True
+LINE-03-01,LINE-03-01,True
+LINE-03-02,LINE-03-02,True

@@ -33,6 +33,13 @@ flowchart LR
     QualityOutputs --> GenAI
     MaintenanceOutputs --> GenAI
     GenAI --> GenAIOutputs["Evidence catalogue, prompts, guardrails, responses, evaluation, reports, and lineage"]
+    Forecast --> Dashboard["Dashboard semantic outputs"]
+    InventoryOutputs --> Dashboard
+    QualityOutputs --> Dashboard
+    MaintenanceOutputs --> Dashboard
+    MonitoringOutputs --> Dashboard
+    GenAIOutputs --> Dashboard
+    Dashboard --> DashboardOutputs["Power BI-ready tables, semantic metadata, page specs, visual specs, reports, manifest, and lineage"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -50,6 +57,7 @@ flowchart LR
     Maintenance -.-> MaintenanceLineage["Maintenance manifests and lineage"]
     Monitoring -.-> MonitoringLineage["Monitoring manifests and lineage"]
     GenAI -.-> GenAILineage["GenAI manifest, evaluation, guardrails, and lineage"]
+    Dashboard -.-> DashboardLineage["Dashboard manifest, semantic model, diagnostics, and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

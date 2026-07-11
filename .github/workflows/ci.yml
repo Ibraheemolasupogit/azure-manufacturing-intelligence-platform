@@ -81,5 +81,11 @@ jobs:
       - name: Validate CI GenAI assistant
         run: python -m manufacturing_intelligence.genai --config configs/genai_ci.yaml --validate-existing-run --output-directory .generated/ci/genai
 
+      - name: Run CI dashboard outputs
+        run: make dashboard-ci
+
+      - name: Validate CI dashboard outputs
+        run: python -m manufacturing_intelligence.dashboard --config configs/dashboard_ci.yaml --validate-existing-run --output-directory .generated/ci/dashboard
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

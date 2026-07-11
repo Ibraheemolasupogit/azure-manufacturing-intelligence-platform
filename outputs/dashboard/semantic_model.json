@@ -1,0 +1,1137 @@
+{
+  "calculation_notes": "Measures are local semantic-model suggestions, not deployed DAX.",
+  "display_folders": {
+    "Assurance": [
+      "fact_quality_alerts",
+      "fact_maintenance_alerts"
+    ],
+    "Executive": [
+      "executive_scorecard"
+    ],
+    "Narratives": [
+      "fact_operations_assistant_narratives"
+    ],
+    "Operations": [
+      "fact_production_kpis",
+      "fact_platform_health"
+    ],
+    "Supply Chain": [
+      "fact_demand_forecast",
+      "fact_inventory_risk"
+    ]
+  },
+  "limitations": "No Fabric semantic model or Power BI dataset was deployed.",
+  "measures": [
+    {
+      "expression": "SUM(fact_production_kpis[accepted_quantity])",
+      "name": "Total Production Output"
+    },
+    {
+      "expression": "SUM(fact_demand_forecast[point_forecast])",
+      "name": "Forecast Demand"
+    },
+    {
+      "expression": "AVERAGE(fact_inventory_risk[priority_score])",
+      "name": "Inventory Priority"
+    },
+    {
+      "expression": "COUNTROWS(fact_quality_alerts)",
+      "name": "Quality Alerts"
+    },
+    {
+      "expression": "COUNTROWS(fact_maintenance_alerts)",
+      "name": "Maintenance Alerts"
+    },
+    {
+      "expression": "AVERAGE(fact_platform_health[platform_health_score])",
+      "name": "Platform Health"
+    }
+  ],
+  "model_name": "manufacturing_operations_intelligence",
+  "relationships": [
+    {
+      "from_column": "product_id",
+      "from_table": "fact_production_kpis",
+      "relationship_type": "many_to_one",
+      "to_column": "product_id",
+      "to_table": "dim_product"
+    },
+    {
+      "from_column": "plant_id",
+      "from_table": "fact_production_kpis",
+      "relationship_type": "many_to_one",
+      "to_column": "plant_id",
+      "to_table": "dim_plant"
+    },
+    {
+      "from_column": "production_line_id",
+      "from_table": "fact_production_kpis",
+      "relationship_type": "many_to_one",
+      "to_column": "production_line_id",
+      "to_table": "dim_production_line"
+    },
+    {
+      "from_column": "machine_id",
+      "from_table": "fact_production_kpis",
+      "relationship_type": "many_to_one",
+      "to_column": "machine_id",
+      "to_table": "dim_machine"
+    },
+    {
+      "from_column": "product_id",
+      "from_table": "fact_demand_forecast",
+      "relationship_type": "many_to_one",
+      "to_column": "product_id",
+      "to_table": "dim_product"
+    },
+    {
+      "from_column": "warehouse_id",
+      "from_table": "fact_inventory_risk",
+      "relationship_type": "many_to_one",
+      "to_column": "warehouse_id",
+      "to_table": "dim_warehouse"
+    },
+    {
+      "from_column": "product_id",
+      "from_table": "fact_quality_alerts",
+      "relationship_type": "many_to_one",
+      "to_column": "product_id",
+      "to_table": "dim_product"
+    },
+    {
+      "from_column": "machine_id",
+      "from_table": "fact_quality_alerts",
+      "relationship_type": "many_to_one",
+      "to_column": "machine_id",
+      "to_table": "dim_machine"
+    },
+    {
+      "from_column": "machine_id",
+      "from_table": "fact_maintenance_alerts",
+      "relationship_type": "many_to_one",
+      "to_column": "machine_id",
+      "to_table": "dim_machine"
+    },
+    {
+      "from_column": "domain",
+      "from_table": "fact_platform_health",
+      "relationship_type": "many_to_one",
+      "to_column": "domain",
+      "to_table": "dim_metric"
+    }
+  ],
+  "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+  "tables": [
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "page_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "page_id"
+        },
+        {
+          "data_type": "text",
+          "description": "page_title from governed synthetic evidence",
+          "hidden": false,
+          "name": "page_title"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_dashboard_page.",
+      "name": "dim_dashboard_page",
+      "primary_key": [
+        "page_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "date_key from governed synthetic evidence",
+          "hidden": false,
+          "name": "date_key"
+        },
+        {
+          "data_type": "integer",
+          "description": "year from governed synthetic evidence",
+          "hidden": false,
+          "name": "year"
+        },
+        {
+          "data_type": "integer",
+          "description": "month from governed synthetic evidence",
+          "hidden": false,
+          "name": "month"
+        },
+        {
+          "data_type": "integer",
+          "description": "day from governed synthetic evidence",
+          "hidden": false,
+          "name": "day"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_date.",
+      "name": "dim_date",
+      "primary_key": [
+        "date_key"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "machine_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "machine_id"
+        },
+        {
+          "data_type": "text",
+          "description": "machine_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "machine_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_machine.",
+      "name": "dim_machine",
+      "primary_key": [
+        "machine_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "metric_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_id"
+        },
+        {
+          "data_type": "text",
+          "description": "metric_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_name"
+        },
+        {
+          "data_type": "text",
+          "description": "domain from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain"
+        },
+        {
+          "data_type": "text",
+          "description": "business_definition from governed synthetic evidence",
+          "hidden": false,
+          "name": "business_definition"
+        },
+        {
+          "data_type": "text",
+          "description": "technical_definition from governed synthetic evidence",
+          "hidden": false,
+          "name": "technical_definition"
+        },
+        {
+          "data_type": "text",
+          "description": "calculation_formula from governed synthetic evidence",
+          "hidden": false,
+          "name": "calculation_formula"
+        },
+        {
+          "data_type": "text",
+          "description": "grain from governed synthetic evidence",
+          "hidden": false,
+          "name": "grain"
+        },
+        {
+          "data_type": "text",
+          "description": "source_table from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_table"
+        },
+        {
+          "data_type": "text",
+          "description": "source_fields from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_fields"
+        },
+        {
+          "data_type": "text",
+          "description": "refresh_dependency from governed synthetic evidence",
+          "hidden": false,
+          "name": "refresh_dependency"
+        },
+        {
+          "data_type": "text",
+          "description": "owner_role from governed synthetic evidence",
+          "hidden": false,
+          "name": "owner_role"
+        },
+        {
+          "data_type": "text",
+          "description": "quality_notes from governed synthetic evidence",
+          "hidden": false,
+          "name": "quality_notes"
+        },
+        {
+          "data_type": "text",
+          "description": "limitations from governed synthetic evidence",
+          "hidden": false,
+          "name": "limitations"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_metric.",
+      "name": "dim_metric",
+      "primary_key": [
+        "metric_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "plant_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_id"
+        },
+        {
+          "data_type": "text",
+          "description": "plant_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_plant.",
+      "name": "dim_plant",
+      "primary_key": [
+        "plant_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "product_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_id"
+        },
+        {
+          "data_type": "text",
+          "description": "product_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_product.",
+      "name": "dim_product",
+      "primary_key": [
+        "product_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "production_line_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_line_id"
+        },
+        {
+          "data_type": "text",
+          "description": "production_line_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_line_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_production_line.",
+      "name": "dim_production_line",
+      "primary_key": [
+        "production_line_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "risk_level from governed synthetic evidence",
+          "hidden": false,
+          "name": "risk_level"
+        },
+        {
+          "data_type": "integer",
+          "description": "risk_sort from governed synthetic evidence",
+          "hidden": true,
+          "name": "risk_sort"
+        },
+        {
+          "data_type": "text",
+          "description": "risk_description from governed synthetic evidence",
+          "hidden": false,
+          "name": "risk_description"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_risk_level.",
+      "name": "dim_risk_level",
+      "primary_key": [
+        "risk_level"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "supplier_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "supplier_id"
+        },
+        {
+          "data_type": "text",
+          "description": "supplier_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "supplier_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_supplier.",
+      "name": "dim_supplier",
+      "primary_key": [
+        "supplier_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "warehouse_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "warehouse_id"
+        },
+        {
+          "data_type": "text",
+          "description": "warehouse_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "warehouse_name"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for dim_warehouse.",
+      "name": "dim_warehouse",
+      "primary_key": [
+        "warehouse_id"
+      ]
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "run_date_label from governed synthetic evidence",
+          "hidden": false,
+          "name": "run_date_label"
+        },
+        {
+          "data_type": "text",
+          "description": "domain from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain"
+        },
+        {
+          "data_type": "text",
+          "description": "metric_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_name"
+        },
+        {
+          "data_type": "text",
+          "description": "metric_value from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_value"
+        },
+        {
+          "data_type": "text",
+          "description": "metric_unit from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_unit"
+        },
+        {
+          "data_type": "text",
+          "description": "risk_level from governed synthetic evidence",
+          "hidden": false,
+          "name": "risk_level"
+        },
+        {
+          "data_type": "text",
+          "description": "source_artifact from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_artifact"
+        },
+        {
+          "data_type": "text",
+          "description": "source_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_run_id"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for executive_scorecard.",
+      "name": "executive_scorecard",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "forecast_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "forecast_run_id"
+        },
+        {
+          "data_type": "text",
+          "description": "series_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "series_id"
+        },
+        {
+          "data_type": "text",
+          "description": "product_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_id"
+        },
+        {
+          "data_type": "text",
+          "description": "distribution_region from governed synthetic evidence",
+          "hidden": false,
+          "name": "distribution_region"
+        },
+        {
+          "data_type": "text",
+          "description": "forecast_date from governed synthetic evidence",
+          "hidden": false,
+          "name": "forecast_date"
+        },
+        {
+          "data_type": "integer",
+          "description": "forecast_horizon_day from governed synthetic evidence",
+          "hidden": false,
+          "name": "forecast_horizon_day"
+        },
+        {
+          "data_type": "text",
+          "description": "selected_model from governed synthetic evidence",
+          "hidden": false,
+          "name": "selected_model"
+        },
+        {
+          "data_type": "decimal",
+          "description": "point_forecast from governed synthetic evidence",
+          "hidden": false,
+          "name": "point_forecast"
+        },
+        {
+          "data_type": "decimal",
+          "description": "lower_bound from governed synthetic evidence",
+          "hidden": false,
+          "name": "lower_bound"
+        },
+        {
+          "data_type": "decimal",
+          "description": "upper_bound from governed synthetic evidence",
+          "hidden": false,
+          "name": "upper_bound"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_demand_forecast.",
+      "name": "fact_demand_forecast",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "inventory_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "inventory_run_id"
+        },
+        {
+          "data_type": "text",
+          "description": "warehouse_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "warehouse_id"
+        },
+        {
+          "data_type": "text",
+          "description": "plant_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_id"
+        },
+        {
+          "data_type": "text",
+          "description": "item_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "item_id"
+        },
+        {
+          "data_type": "text",
+          "description": "product_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_id"
+        },
+        {
+          "data_type": "text",
+          "description": "material_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "material_id"
+        },
+        {
+          "data_type": "text",
+          "description": "priority_level from governed synthetic evidence",
+          "hidden": false,
+          "name": "priority_level"
+        },
+        {
+          "data_type": "decimal",
+          "description": "priority_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "priority_score"
+        },
+        {
+          "data_type": "decimal",
+          "description": "stockout_risk_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "stockout_risk_score"
+        },
+        {
+          "data_type": "integer",
+          "description": "recommended_reorder_quantity from governed synthetic evidence",
+          "hidden": false,
+          "name": "recommended_reorder_quantity"
+        },
+        {
+          "data_type": "text",
+          "description": "recommended_action from governed synthetic evidence",
+          "hidden": false,
+          "name": "recommended_action"
+        },
+        {
+          "data_type": "decimal",
+          "description": "inventory_value from governed synthetic evidence",
+          "hidden": false,
+          "name": "inventory_value"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_inventory_risk.",
+      "name": "fact_inventory_risk",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "maintenance_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "maintenance_run_id"
+        },
+        {
+          "data_type": "text",
+          "description": "alert_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "alert_id"
+        },
+        {
+          "data_type": "text",
+          "description": "machine_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "machine_id"
+        },
+        {
+          "data_type": "text",
+          "description": "plant_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_id"
+        },
+        {
+          "data_type": "text",
+          "description": "production_line_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_line_id"
+        },
+        {
+          "data_type": "text",
+          "description": "sensor_type from governed synthetic evidence",
+          "hidden": false,
+          "name": "sensor_type"
+        },
+        {
+          "data_type": "text",
+          "description": "risk_level from governed synthetic evidence",
+          "hidden": false,
+          "name": "risk_level"
+        },
+        {
+          "data_type": "decimal",
+          "description": "failure_risk_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "failure_risk_score"
+        },
+        {
+          "data_type": "text",
+          "description": "recommended_action from governed synthetic evidence",
+          "hidden": false,
+          "name": "recommended_action"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_maintenance_alerts.",
+      "name": "fact_maintenance_alerts",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "response_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "response_id"
+        },
+        {
+          "data_type": "text",
+          "description": "task_type from governed synthetic evidence",
+          "hidden": false,
+          "name": "task_type"
+        },
+        {
+          "data_type": "text",
+          "description": "user_question from governed synthetic evidence",
+          "hidden": false,
+          "name": "user_question"
+        },
+        {
+          "data_type": "text",
+          "description": "answer from governed synthetic evidence",
+          "hidden": false,
+          "name": "answer"
+        },
+        {
+          "data_type": "decimal",
+          "description": "grounding_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "grounding_score"
+        },
+        {
+          "data_type": "decimal",
+          "description": "citation_coverage from governed synthetic evidence",
+          "hidden": false,
+          "name": "citation_coverage"
+        },
+        {
+          "data_type": "text",
+          "description": "guardrail_status from governed synthetic evidence",
+          "hidden": false,
+          "name": "guardrail_status"
+        },
+        {
+          "data_type": "boolean",
+          "description": "external_model_called from governed synthetic evidence",
+          "hidden": false,
+          "name": "external_model_called"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_operations_assistant_narratives.",
+      "name": "fact_operations_assistant_narratives",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "monitoring_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "monitoring_run_id"
+        },
+        {
+          "data_type": "text",
+          "description": "domain from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain"
+        },
+        {
+          "data_type": "decimal",
+          "description": "platform_health_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "platform_health_score"
+        },
+        {
+          "data_type": "decimal",
+          "description": "domain_health_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain_health_score"
+        },
+        {
+          "data_type": "text",
+          "description": "domain_health_label from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain_health_label"
+        },
+        {
+          "data_type": "integer",
+          "description": "alert_count from governed synthetic evidence",
+          "hidden": false,
+          "name": "alert_count"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_platform_health.",
+      "name": "fact_platform_health",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "event_date from governed synthetic evidence",
+          "hidden": false,
+          "name": "event_date"
+        },
+        {
+          "data_type": "text",
+          "description": "plant_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_id"
+        },
+        {
+          "data_type": "text",
+          "description": "production_line_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_line_id"
+        },
+        {
+          "data_type": "text",
+          "description": "machine_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "machine_id"
+        },
+        {
+          "data_type": "text",
+          "description": "product_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_id"
+        },
+        {
+          "data_type": "integer",
+          "description": "planned_quantity from governed synthetic evidence",
+          "hidden": false,
+          "name": "planned_quantity"
+        },
+        {
+          "data_type": "integer",
+          "description": "produced_quantity from governed synthetic evidence",
+          "hidden": false,
+          "name": "produced_quantity"
+        },
+        {
+          "data_type": "integer",
+          "description": "accepted_quantity from governed synthetic evidence",
+          "hidden": false,
+          "name": "accepted_quantity"
+        },
+        {
+          "data_type": "integer",
+          "description": "rejected_quantity from governed synthetic evidence",
+          "hidden": false,
+          "name": "rejected_quantity"
+        },
+        {
+          "data_type": "integer",
+          "description": "downtime_minutes from governed synthetic evidence",
+          "hidden": false,
+          "name": "downtime_minutes"
+        },
+        {
+          "data_type": "integer",
+          "description": "event_count from governed synthetic evidence",
+          "hidden": false,
+          "name": "event_count"
+        },
+        {
+          "data_type": "integer",
+          "description": "production_variance from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_variance"
+        },
+        {
+          "data_type": "decimal",
+          "description": "yield_rate from governed synthetic evidence",
+          "hidden": false,
+          "name": "yield_rate"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_production_kpis.",
+      "name": "fact_production_kpis",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "quality_run_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "quality_run_id"
+        },
+        {
+          "data_type": "text",
+          "description": "alert_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "alert_id"
+        },
+        {
+          "data_type": "text",
+          "description": "inspection_timestamp from governed synthetic evidence",
+          "hidden": false,
+          "name": "inspection_timestamp"
+        },
+        {
+          "data_type": "text",
+          "description": "plant_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "plant_id"
+        },
+        {
+          "data_type": "text",
+          "description": "production_line_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "production_line_id"
+        },
+        {
+          "data_type": "text",
+          "description": "machine_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "machine_id"
+        },
+        {
+          "data_type": "text",
+          "description": "product_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "product_id"
+        },
+        {
+          "data_type": "text",
+          "description": "quality_metric from governed synthetic evidence",
+          "hidden": false,
+          "name": "quality_metric"
+        },
+        {
+          "data_type": "text",
+          "description": "risk_level from governed synthetic evidence",
+          "hidden": false,
+          "name": "risk_level"
+        },
+        {
+          "data_type": "decimal",
+          "description": "quality_risk_score from governed synthetic evidence",
+          "hidden": false,
+          "name": "quality_risk_score"
+        },
+        {
+          "data_type": "text",
+          "description": "recommended_action from governed synthetic evidence",
+          "hidden": false,
+          "name": "recommended_action"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for fact_quality_alerts.",
+      "name": "fact_quality_alerts",
+      "primary_key": []
+    },
+    {
+      "columns": [
+        {
+          "data_type": "text",
+          "description": "metric_id from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_id"
+        },
+        {
+          "data_type": "text",
+          "description": "metric_name from governed synthetic evidence",
+          "hidden": false,
+          "name": "metric_name"
+        },
+        {
+          "data_type": "text",
+          "description": "domain from governed synthetic evidence",
+          "hidden": false,
+          "name": "domain"
+        },
+        {
+          "data_type": "text",
+          "description": "business_definition from governed synthetic evidence",
+          "hidden": false,
+          "name": "business_definition"
+        },
+        {
+          "data_type": "text",
+          "description": "technical_definition from governed synthetic evidence",
+          "hidden": false,
+          "name": "technical_definition"
+        },
+        {
+          "data_type": "text",
+          "description": "calculation_formula from governed synthetic evidence",
+          "hidden": false,
+          "name": "calculation_formula"
+        },
+        {
+          "data_type": "text",
+          "description": "grain from governed synthetic evidence",
+          "hidden": false,
+          "name": "grain"
+        },
+        {
+          "data_type": "text",
+          "description": "source_table from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_table"
+        },
+        {
+          "data_type": "text",
+          "description": "source_fields from governed synthetic evidence",
+          "hidden": false,
+          "name": "source_fields"
+        },
+        {
+          "data_type": "text",
+          "description": "refresh_dependency from governed synthetic evidence",
+          "hidden": false,
+          "name": "refresh_dependency"
+        },
+        {
+          "data_type": "text",
+          "description": "owner_role from governed synthetic evidence",
+          "hidden": false,
+          "name": "owner_role"
+        },
+        {
+          "data_type": "text",
+          "description": "quality_notes from governed synthetic evidence",
+          "hidden": false,
+          "name": "quality_notes"
+        },
+        {
+          "data_type": "text",
+          "description": "limitations from governed synthetic evidence",
+          "hidden": false,
+          "name": "limitations"
+        },
+        {
+          "data_type": "boolean",
+          "description": "synthetic_data_flag from governed synthetic evidence",
+          "hidden": false,
+          "name": "synthetic_data_flag"
+        }
+      ],
+      "description": "Power BI-ready local table for metric_catalogue.",
+      "name": "metric_catalogue",
+      "primary_key": []
+    }
+  ]
+}

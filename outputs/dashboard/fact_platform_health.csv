@@ -1,0 +1,7 @@
+monitoring_run_id,domain,platform_health_score,domain_health_score,domain_health_label,alert_count,synthetic_data_flag
+MONITOR-6a22c0e7c78c0641,forecasting,98.666667,100.000000,healthy,1,True
+MONITOR-6a22c0e7c78c0641,generation,98.666667,100.000000,healthy,1,True
+MONITOR-6a22c0e7c78c0641,ingestion,98.666667,100.000000,healthy,1,True
+MONITOR-6a22c0e7c78c0641,inventory,98.666667,100.000000,healthy,1,True
+MONITOR-6a22c0e7c78c0641,maintenance,98.666667,100.000000,healthy,1,True
+MONITOR-6a22c0e7c78c0641,quality,98.666667,92.000000,healthy,1,True

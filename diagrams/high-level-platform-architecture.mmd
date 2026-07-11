@@ -25,6 +25,7 @@ flowchart TD
         MaintenanceAnalytics["Predictive maintenance and failure-risk scoring"]
         MonitoringAnalytics["Local monitoring and observability"]
         GenAIAssistant["Deterministic GenAI operations assistant"]
+        DashboardOutputs["Dashboard semantic outputs"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -83,7 +84,13 @@ flowchart TD
     InventoryIntel --> GenAIAssistant
     QualityAnalytics --> GenAIAssistant
     MaintenanceAnalytics --> GenAIAssistant
-    GenAIAssistant --> Reporting
+    Forecasting --> DashboardOutputs
+    InventoryIntel --> DashboardOutputs
+    QualityAnalytics --> DashboardOutputs
+    MaintenanceAnalytics --> DashboardOutputs
+    MonitoringAnalytics --> DashboardOutputs
+    GenAIAssistant --> DashboardOutputs
+    DashboardOutputs --> Reporting
     GenAIAssistant --> Lineage
     GenAIAssistant --> Manifests
     Forecasting --> Reporting
@@ -105,6 +112,8 @@ flowchart TD
     MaintenanceAnalytics --> Manifests
     MonitoringAnalytics --> Lineage
     MonitoringAnalytics --> Manifests
+    DashboardOutputs --> Lineage
+    DashboardOutputs --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
@@ -130,6 +139,10 @@ flowchart TD
     GenAIAssistant -.-> Purview
     GenAIAssistant -.-> Monitor
     GenAIAssistant -.-> PowerBI
+    DashboardOutputs -.-> Synapse
+    DashboardOutputs -.-> ADLS
+    DashboardOutputs -.-> Purview
+    DashboardOutputs -.-> PowerBI
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

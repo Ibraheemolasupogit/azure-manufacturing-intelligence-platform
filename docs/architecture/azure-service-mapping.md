@@ -66,3 +66,15 @@ The deterministic GenAI operations assistant is a local simulation of responsibi
 | Narrative report outputs | Power BI-ready narrative responsibility |
 
 No Azure AI service is deployed or called by Milestone 9.
+
+## Milestone 10 dashboard reference mapping
+
+| Local Milestone 10 component | Reference service |
+| --- | --- |
+| Dashboard CSV and JSON outputs | Power BI import-ready artefacts |
+| Semantic model metadata | Microsoft Fabric semantic model responsibility |
+| Curated dashboard tables | Azure Synapse or ADLS Gen2 curated gold responsibility |
+| Dashboard lineage | Microsoft Purview responsibility |
+| Platform health views | Azure Monitor responsibility |
+
+No Power BI, Fabric, Synapse, ADLS, Purview, Azure Monitor, or Azure deployment is created by Milestone 10.

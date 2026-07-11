@@ -1,0 +1,314 @@
+[
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "platform_health_score",
+      "quality_alert_count"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "executive_overview",
+    "page_title": "Executive Overview",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about executive overview?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for executive_overview.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "executive_scorecard",
+      "fact_platform_health"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "executive leadership"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "production_output",
+      "production_variance"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "production_operations",
+    "page_title": "Production Operations",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about production operations?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for production_operations.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_production_kpis"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "plant and platform operators"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "demand_forecast",
+      "forecast_horizon"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "demand_forecasting",
+    "page_title": "Demand Forecasting",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about demand forecasting?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for demand_forecasting.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_demand_forecast"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "supply-chain planners"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "inventory_score",
+      "stockout_risk"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "inventory_and_supply_chain",
+    "page_title": "Inventory And Supply Chain",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about inventory and supply chain?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for inventory_and_supply_chain.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_inventory_risk"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "supply-chain planners"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "quality_alert",
+      "specification_failure"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "quality_analytics",
+    "page_title": "Quality Analytics",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about quality analytics?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for quality_analytics.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_quality_alerts"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "quality and maintenance leaders"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "maintenance_alert",
+      "failure_risk"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "predictive_maintenance",
+    "page_title": "Predictive Maintenance",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about predictive maintenance?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for predictive_maintenance.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_maintenance_alerts"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "quality and maintenance leaders"
+  },
+  {
+    "drillthrough_paths": [
+      "from KPI to detail table"
+    ],
+    "kpi_cards": [
+      "platform_health",
+      "monitoring_alert"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "platform_monitoring",
+    "page_title": "Platform Monitoring",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about platform monitoring?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for platform_monitoring.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_platform_health"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "plant and platform operators"
+  },
+  {
+    "drillthrough_paths": [
+      "from task to response"
+    ],
+    "kpi_cards": [
+      "assistant_response_count"
+    ],
+    "limitations": "Specification only; no page was deployed.",
+    "page_id": "operations_assistant",
+    "page_title": "Operations Assistant",
+    "primary_questions_answered": [
+      "What does the governed synthetic evidence say about operations assistant?",
+      "Which metrics need review in the controlled portfolio sample?"
+    ],
+    "purpose": "Power BI-ready local specification for operations_assistant.",
+    "recommended_filters": [
+      "date_key",
+      "plant_id",
+      "product_id",
+      "risk_level"
+    ],
+    "recommended_visuals": [
+      "KPI card",
+      "line chart",
+      "bar chart",
+      "matrix",
+      "table",
+      "narrative text box"
+    ],
+    "refresh_dependencies": [
+      "tracked governed milestone outputs"
+    ],
+    "source_tables": [
+      "fact_operations_assistant_narratives"
+    ],
+    "synthetic_data_disclaimer": "Dashboard outputs are based only on deterministic synthetic manufacturing evidence. No Power BI, Fabric, Azure service, or live operational system was called.",
+    "target_audience": "operations analysts"
+  }
+]

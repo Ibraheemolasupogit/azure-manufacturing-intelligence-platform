@@ -1,0 +1,64 @@
+dashboard:
+  output_directory: outputs/dashboard
+  report_directory: reports
+  dashboard_directory: dashboard
+  overwrite: false
+  random_seed: 20260710
+  semantic_model_name: manufacturing_operations_intelligence
+  currency: GBP
+  synthetic_data_disclaimer_required: true
+
+inputs:
+  production_events_path: data/interim/accepted/production_events.jsonl
+  sales_orders_path: data/interim/accepted/sales_orders.csv
+  inventory_levels_path: data/interim/accepted/inventory_levels.csv
+  supplier_performance_path: data/interim/accepted/supplier_performance.csv
+  quality_checks_path: data/interim/accepted/quality_checks.csv
+  equipment_health_path: data/interim/accepted/equipment_health.jsonl
+  demand_forecast_path: outputs/demand_forecast.csv
+  inventory_scores_path: outputs/inventory_scores.csv
+  quality_alerts_path: outputs/quality_alerts.csv
+  maintenance_predictions_path: outputs/maintenance_predictions.json
+  maintenance_alerts_path: outputs/maintenance/maintenance_alerts.csv
+  platform_health_summary_path: outputs/platform_health_summary.json
+  genai_responses_path: outputs/genai/assistant_responses.json
+  executive_brief_path: reports/executive_manufacturing_brief.md
+  supply_chain_summary_path: reports/supply_chain_summary.md
+  operations_report_path: reports/manufacturing_operations_report.md
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  forecast_manifest_path: outputs/forecasting/forecast-manifest.json
+  forecast_lineage_path: outputs/forecasting/lineage-records.json
+  inventory_manifest_path: outputs/inventory/inventory-manifest.json
+  inventory_lineage_path: outputs/inventory/lineage-records.json
+  quality_manifest_path: outputs/quality/quality-manifest.json
+  quality_lineage_path: outputs/quality/lineage-records.json
+  maintenance_manifest_path: outputs/maintenance/maintenance-manifest.json
+  maintenance_lineage_path: outputs/maintenance/lineage-records.json
+  monitoring_manifest_path: outputs/monitoring/monitoring-manifest.json
+  monitoring_lineage_path: outputs/monitoring/lineage-records.json
+  genai_manifest_path: outputs/genai/genai-manifest.json
+  genai_lineage_path: outputs/genai/lineage-records.json
+
+dashboard_pages:
+  - executive_overview
+  - production_operations
+  - demand_forecasting
+  - inventory_and_supply_chain
+  - quality_analytics
+  - predictive_maintenance
+  - platform_monitoring
+  - operations_assistant
+
+validation:
+  require_non_empty_tables: true
+  require_unique_keys: true
+  require_metric_catalogue: true
+  require_visual_specs: true
+  require_lineage: true
+  require_synthetic_disclaimer: true
+
+reporting:
+  write_dashboard_report: true
+  write_semantic_model_docs: true
+  maximum_visuals_per_page: 12

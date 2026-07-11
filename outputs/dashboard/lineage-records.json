@@ -1,0 +1,4729 @@
+[
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dashboard_diagnostics.json",
+    "target_row_count": null,
+    "target_sha256": "9993709cc31db8f1b89de4ddd64cc01bdb4e6ef2dd8902d9b89571c971ec79df",
+    "transformation_name": "dashboard_diagnostics",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "dashboard/dashboard_index.md",
+    "target_row_count": null,
+    "target_sha256": "53d7a36b44134974fddc2710f177c35dc6043f1b2eabff94f509f52405d2cb8f",
+    "transformation_name": "dashboard_index",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dashboard-manifest.json",
+    "target_row_count": null,
+    "target_sha256": "78ee5b43f5021aa1e84d39f7e97da64ebbded59f232cc90c5b9bd19b825f8287",
+    "transformation_name": "dashboard_manifest",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/dashboard_output_report.md",
+    "target_row_count": null,
+    "target_sha256": "de4ea33aa6751c3167d0e00a3099d4dd401a62e4ec5b55078442e6ddf4ccf519",
+    "transformation_name": "dashboard_output_report",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dashboard_page_specs.json",
+    "target_row_count": null,
+    "target_sha256": "91f4b821ad2b8f8dcf1c694f164ea8139c919a230bd911d2b4b7f5dd95f8644c",
+    "transformation_name": "dashboard_page_specs",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_dashboard_page.csv",
+    "target_row_count": 8,
+    "target_sha256": "0ffbd6a9d3ea0c8fdd1673c6d9304265db8ad4671a91019a0d7e270012234784",
+    "transformation_name": "dim_dashboard_page",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_date.csv",
+    "target_row_count": 26,
+    "target_sha256": "a3d0e7932e6ffe4d86206de865548f61363b39ad1ac64495ce6928c8dd3c7fcb",
+    "transformation_name": "dim_date",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_machine.csv",
+    "target_row_count": 18,
+    "target_sha256": "91ee9e2fca4db81e4500b593b0e45671254238620d9e1399f425d710d453ad64",
+    "transformation_name": "dim_machine",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_metric.csv",
+    "target_row_count": 13,
+    "target_sha256": "40f3a59ddd4012865c863deb8e5dae66e4aabb1f03554725f31f609036223079",
+    "transformation_name": "dim_metric",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_plant.csv",
+    "target_row_count": 3,
+    "target_sha256": "3902c4c3b0503d8d64bc6abfc7e1f48c4eb11cfb85d66044d923a4e32b7a0293",
+    "transformation_name": "dim_plant",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_product.csv",
+    "target_row_count": 8,
+    "target_sha256": "d13b0f70dc1ea363524649a71f8f4e79ee8d743ead34b821d1df1414655b9ade",
+    "transformation_name": "dim_product",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_production_line.csv",
+    "target_row_count": 6,
+    "target_sha256": "0ad1ae2000ace660b55b459490731718e5158d592f8945fc24d7e56ccc00ebf0",
+    "transformation_name": "dim_production_line",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_risk_level.csv",
+    "target_row_count": 4,
+    "target_sha256": "24f2c2a5ed71b2f6623d2367e4004ebf7a7a46ae7483643936eab9d556cb70fd",
+    "transformation_name": "dim_risk_level",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_supplier.csv",
+    "target_row_count": 6,
+    "target_sha256": "a39da60c0dcb721b5cf00d66724350926f63eb47e51dddfb9c049681b05acceb",
+    "transformation_name": "dim_supplier",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/dim_warehouse.csv",
+    "target_row_count": 4,
+    "target_sha256": "460bebe45f144a31d818e8fb982c0b852c9804dcdfec43cfdec66bc842a37f2f",
+    "transformation_name": "dim_warehouse",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/executive_scorecard.csv",
+    "target_row_count": 14,
+    "target_sha256": "f262360a2bc1bb6bfcd96f209d6f37b65f16103876c7eeaa022de9336ee403e3",
+    "transformation_name": "executive_scorecard",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_demand_forecast.csv",
+    "target_row_count": 56,
+    "target_sha256": "ec17de86e6a315348c0838910c909f817f9c1674852519f820924d532f1a763a",
+    "transformation_name": "fact_demand_forecast",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_inventory_risk.csv",
+    "target_row_count": 72,
+    "target_sha256": "02eceaa0124847155ef6fee333038daafeb8aefd520eb1c742ed1d4f21e145fb",
+    "transformation_name": "fact_inventory_risk",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_maintenance_alerts.csv",
+    "target_row_count": 135,
+    "target_sha256": "bf72c388d29dc640042cef9696aa24522a8109e1bcad97a77ea7ddc307cb340f",
+    "transformation_name": "fact_maintenance_alerts",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_operations_assistant_narratives.csv",
+    "target_row_count": 8,
+    "target_sha256": "b3174188a69ccf5164efa4ce464d1b335a1181500e6f4974492b01e88ac18a41",
+    "transformation_name": "fact_operations_assistant_narratives",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_platform_health.csv",
+    "target_row_count": 6,
+    "target_sha256": "e7da26b1ec2c765f293fbb2565a4eb43965424704ad6379333e04057216e0140",
+    "transformation_name": "fact_platform_health",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_production_kpis.csv",
+    "target_row_count": 168,
+    "target_sha256": "0cb0d5bbfd491a99ea1b15bb40c07f46759dc3fa9421ad11db68bed6db2fed29",
+    "transformation_name": "fact_production_kpis",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/fact_quality_alerts.csv",
+    "target_row_count": 38,
+    "target_sha256": "067a392ea4f3ccb46396a0b54250900f6b705fbe1e03b5a0076e5eeb158d9c77",
+    "transformation_name": "fact_quality_alerts",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/metric_catalogue.csv",
+    "target_row_count": 13,
+    "target_sha256": "40f3a59ddd4012865c863deb8e5dae66e4aabb1f03554725f31f609036223079",
+    "transformation_name": "metric_catalogue",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "dashboard/powerbi_ready_outputs.md",
+    "target_row_count": null,
+    "target_sha256": "f96420437e2a346cab82eac0d5f07c75bc05450074298156ae1f0bfad0fbd793",
+    "transformation_name": "powerbi_ready_outputs",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/semantic_model.json",
+    "target_row_count": null,
+    "target_sha256": "0b6134f3669d48134b3229cc4ec2f1bb9975f5ad3f2c86e70c175191f9290b10",
+    "transformation_name": "semantic_model",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "dashboard/semantic_model_notes.md",
+    "target_row_count": null,
+    "target_sha256": "1ba51956f22a5c65c2582d7fe7c57ac1eb44cc670085a68007949728c83d489f",
+    "transformation_name": "semantic_model_notes",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "reports/semantic_model_summary.md",
+    "target_row_count": null,
+    "target_sha256": "d9d24d105a5a9c23b6a97eec1151d637e1d09b9c2804afc8f6b6dce0b1d3186a",
+    "transformation_name": "semantic_model_summary",
+    "validation_status": "success"
+  },
+  {
+    "configuration_hash": "252d0cea1aa4dbbd587dd09c10c19a71189e866501cc072d176b5707c4e360f7",
+    "dashboard_run_id": "DASHBOARD-f32c9d5a9c8a5914",
+    "power_bi_deployment": false,
+    "source_inputs": [
+      {
+        "source_name": "demand_forecast_path",
+        "source_row_count": null,
+        "source_sha256": "44c8bc06fa4791868aeeb33e6fd2edfa02e797d52c475bc69e803b017bdb99d8"
+      },
+      {
+        "source_name": "equipment_health_path",
+        "source_row_count": null,
+        "source_sha256": "b40760fcbc55ea3864d65c486b93717958e702ee975041296a6d1c28368c44b1"
+      },
+      {
+        "source_name": "executive_brief_path",
+        "source_row_count": null,
+        "source_sha256": "5ba21f8c1e3319d1bc35ec8b46fbd75df2c1a362394f722931733a7f4aa062d6"
+      },
+      {
+        "source_name": "forecast_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced"
+      },
+      {
+        "source_name": "forecast_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9"
+      },
+      {
+        "source_name": "genai_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5"
+      },
+      {
+        "source_name": "genai_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823"
+      },
+      {
+        "source_name": "genai_responses_path",
+        "source_row_count": null,
+        "source_sha256": "f9ffcc97e3bc335e1b5aa573a90c7d3d12931381da76ee865b11508e4723e2c6"
+      },
+      {
+        "source_name": "ingestion_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838"
+      },
+      {
+        "source_name": "ingestion_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035"
+      },
+      {
+        "source_name": "inventory_levels_path",
+        "source_row_count": null,
+        "source_sha256": "dcf350befc3fd06b3545b23c852230eacb2b82b870dd17a60de4111af4dc63eb"
+      },
+      {
+        "source_name": "inventory_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc"
+      },
+      {
+        "source_name": "inventory_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee"
+      },
+      {
+        "source_name": "inventory_scores_path",
+        "source_row_count": null,
+        "source_sha256": "c982dcaf7cd034148c08d3f4f5f4a64f8d117e771b49fc750a7047c00b7cc859"
+      },
+      {
+        "source_name": "maintenance_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "4726b4d5fd0f7adc50178e5339c9b97df748192680050fa5fdcbdb622e3253d7"
+      },
+      {
+        "source_name": "maintenance_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37"
+      },
+      {
+        "source_name": "maintenance_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b"
+      },
+      {
+        "source_name": "maintenance_predictions_path",
+        "source_row_count": null,
+        "source_sha256": "40fe283cd2cabc7f1acddccf8ebd0605dddfcee0de9deefa4ffe5cefec8807e9"
+      },
+      {
+        "source_name": "monitoring_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9"
+      },
+      {
+        "source_name": "monitoring_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b"
+      },
+      {
+        "source_name": "operations_report_path",
+        "source_row_count": null,
+        "source_sha256": "c32cda1227eed59680ca325f938ac4d6b2ac4c52b153db90fa66989e4344c61a"
+      },
+      {
+        "source_name": "platform_health_summary_path",
+        "source_row_count": null,
+        "source_sha256": "aa48d27274b35462cd678248536bd8661dae0e5a3d2092f5ba22c6494663ab9f"
+      },
+      {
+        "source_name": "production_events_path",
+        "source_row_count": null,
+        "source_sha256": "d080144473f757c435a5f2f1151001f1cd7de3b1ed44a7ed53680b074d975483"
+      },
+      {
+        "source_name": "quality_alerts_path",
+        "source_row_count": null,
+        "source_sha256": "36a15ebb31519685fa717e5581af27ca246f1ced09ebf50001b7d05873b2b89f"
+      },
+      {
+        "source_name": "quality_checks_path",
+        "source_row_count": null,
+        "source_sha256": "7aa6d5f6bbd0b21c0065ee4452008a93eff82d9f9cc572d0b836df18b94422de"
+      },
+      {
+        "source_name": "quality_lineage_path",
+        "source_row_count": null,
+        "source_sha256": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6"
+      },
+      {
+        "source_name": "quality_manifest_path",
+        "source_row_count": null,
+        "source_sha256": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+      },
+      {
+        "source_name": "sales_orders_path",
+        "source_row_count": null,
+        "source_sha256": "2c6042fca0499c01b8a810b340dc9571f2a8b8e5a9c89a8d5ca2cacd806274c9"
+      },
+      {
+        "source_name": "supplier_performance_path",
+        "source_row_count": null,
+        "source_sha256": "8f4746a5169034cc1803f855e7be607c48c04dac9b7f4a28a837159371a590f3"
+      },
+      {
+        "source_name": "supply_chain_summary_path",
+        "source_row_count": null,
+        "source_sha256": "35e6d254706f69d973bed18019475338c38d0e5128e6e83743ce0d3adf44115a"
+      }
+    ],
+    "synthetic_data_classification": "synthetic_portfolio_sample",
+    "target_path": "outputs/dashboard/visual_specifications.json",
+    "target_row_count": null,
+    "target_sha256": "71368e25849130de2cb2aaa877855420a8a209a62e1ef35acd1cf55e5cfc0b8e",
+    "transformation_name": "visual_specifications",
+    "validation_status": "success"
+  }
+]

@@ -150,3 +150,9 @@ Milestone 9 treats generation, ingestion, forecasting, inventory, quality, maint
 GenAI outputs must use relative safe paths, stable SHA-256 hashes, row counts for CSV outputs, `external_model_called=false`, `azure_deployment=false`, citation references to valid evidence IDs, zero unsupported claims for standard tasks, grounding and citation coverage above configured thresholds, synthetic-data disclaimers, and deterministic run identity.
 
 Existing-run validation must detect missing outputs, tampered hashes, row-count mismatches, invalid citations, invalid evidence references, missing disclaimers, external-call flags, lineage target gaps, and run-ID mismatches.
+
+## Dashboard Output Contract
+
+Milestone 10 dashboard outputs must consume governed tracked evidence only. Required inputs must exist, upstream manifests must be successful, source hashes must match where manifests expose them, lineage must exist, synthetic classification must be present, and upstream files must remain unchanged.
+
+Dashboard outputs must include non-empty dimensions and facts, unique primary keys where declared, valid semantic model relationships, complete metric catalogue entries, page and visual specs that reference generated tables/pages, synthetic-data disclaimers, `power_bi_deployment=false`, `fabric_deployment=false`, `azure_deployment=false`, deterministic run identity, output row counts, sizes, hashes, manifest, and lineage.

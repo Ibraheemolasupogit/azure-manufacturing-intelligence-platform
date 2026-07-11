@@ -42,3 +42,9 @@ The CI workflow runs `make monitoring-ci` and validates the generated monitoring
 Milestone 9 tests cover the evidence catalogue, required domains, hash calculation, `.generated` exclusion, deterministic retrieval, prompt rendering, guardrail refusal paths, response citation validity, unsupported-claim counts, grounding and citation metrics, all standard assistant tasks, manifest output metadata, lineage targets, overwrite protection, invalid configuration, existing-run validation, tamper detection, CLI execution outside the repository root, and CI generation under `.generated/ci/genai/`.
 
 The tests use local deterministic evidence only and do not access Azure, OpenAI, the internet, external evaluators, embeddings, vector databases, or live services.
+
+## Dashboard Output Testing
+
+Milestone 10 tests cover dashboard configuration loading, environment overrides, path resolution, governed upstream manifest checks, source hash verification, non-empty dimensions and facts, primary key uniqueness, semantic model relationship validity, metric catalogue completeness, page and visual specification validity, synthetic-data disclaimers, deployment boundary flags, deterministic manifests, lineage records, overwrite protection, tamper detection, existing-run validation, and CLI execution outside the repository root.
+
+The CI workflow runs `make dashboard-ci` and validates the generated dashboard run under `.generated/ci/dashboard/`. Dashboard tests do not create `.pbix` files, call Power BI or Fabric APIs, access Azure services, publish dashboards, or mutate upstream governed evidence.

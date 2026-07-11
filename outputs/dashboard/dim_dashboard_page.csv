@@ -1,0 +1,9 @@
+page_id,page_title,synthetic_data_flag
+executive_overview,Executive Overview,True
+production_operations,Production Operations,True
+demand_forecasting,Demand Forecasting,True
+inventory_and_supply_chain,Inventory And Supply Chain,True
+quality_analytics,Quality Analytics,True
+predictive_maintenance,Predictive Maintenance,True
+platform_monitoring,Platform Monitoring,True
+operations_assistant,Operations Assistant,True

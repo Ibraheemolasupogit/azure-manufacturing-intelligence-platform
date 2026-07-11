@@ -17,7 +17,7 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 ## Core capabilities
 
-Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, local evidence monitoring, and a deterministic local GenAI-style operations assistant. Planned capabilities include supplier-risk expansion and Power BI-ready extracts.
+Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, local evidence monitoring, a deterministic local GenAI-style operations assistant, and Power BI-ready dashboard output tables. Planned capabilities include Azure reference architecture expansion.
 
 ## Intended users
 
@@ -94,13 +94,14 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 7 - Predictive maintenance and equipment failure risk | Complete |
 | Milestone 8 - Monitoring and observability | Complete |
 | Milestone 9 - GenAI operations assistant | Complete |
-| Milestone 10 onward | Planned |
+| Milestone 10 - Dashboard outputs and Power BI-ready reporting | Complete |
+| Milestone 11 onward | Planned |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 9:
+Implemented through Milestone 10:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -128,8 +129,10 @@ Implemented through Milestone 9:
 - Deterministic manifest integrity checks, lineage completeness checks, data-quality monitoring, model and analytics monitoring, domain health scores, platform health summary, monitoring alerts, manifest, lineage, diagnostics, portfolio health JSON, and observability reports.
 - Deterministic local GenAI-style operations assistant from tracked governed evidence.
 - Evidence catalogue, deterministic retrieval, prompt-template rendering, guardrails, response synthesis, evaluation, diagnostics, manifest, lineage, assistant interaction evidence, executive brief, supply-chain summary, and manufacturing operations report.
+- Local Power BI-ready dashboard output layer from governed tracked evidence.
+- Dashboard dimensions, fact tables, executive scorecard, metric catalogue, semantic model metadata, page specifications, visual specifications, diagnostics, manifest, lineage, dashboard reports, and portfolio dashboard documentation.
 
-Not implemented yet: Milestone 10 dashboard outputs or live Azure integration.
+Not implemented yet: Milestone 11 Azure architecture or live Azure integration.
 
 ## Development setup
 
@@ -174,6 +177,9 @@ make validate-monitoring
 make genai
 make genai-ci
 make validate-genai
+make dashboard
+make dashboard-ci
+make validate-dashboard
 make quality
 ```
 
@@ -195,9 +201,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make genai` reads tracked governed evidence from generation, ingestion, forecasting, inventory, quality, maintenance, and monitoring; writes the deterministic evidence catalogue, retrieval results, prompt templates, rendered prompts, assistant responses, guardrail decisions, evaluation, diagnostics, manifest, and lineage under `outputs/genai/`; writes `reports/genai_operations_assistant_report.md`, `reports/genai_guardrails_report.md`, `reports/executive_manufacturing_brief.md`, `reports/supply_chain_summary.md`, and `reports/manufacturing_operations_report.md`; and records upstream hashes without mutating governed evidence. The controlled run ID is `GENAI-56556548ec78b651`, with 27 evidence items, 8 assistant responses, 16 guardrail results, grounding score 1.000000, citation coverage 1.000000, zero unsupported claims, and `external_model_called=false`. `make genai-ci` writes the same shape under ignored `.generated/ci/genai/`. `make validate-genai` verifies an existing GenAI run without recalculating responses.
 
+`make dashboard` reads governed tracked ingestion, forecasting, inventory, quality, maintenance, monitoring, and GenAI evidence; writes 10 dimension tables, 7 fact tables, an executive scorecard, metric catalogue, semantic model metadata, page specs, visual specs, diagnostics, manifest, and lineage under `outputs/dashboard/`; writes `reports/dashboard_output_report.md`, `reports/semantic_model_summary.md`, and portfolio docs under `dashboard/`; and records upstream hashes without mutating governed evidence. The controlled run ID is `DASHBOARD-f32c9d5a9c8a5914`, with 19 dashboard tables, 13 metrics, 8 pages, 48 visual specs, and 14 executive scorecard KPIs. `make dashboard-ci` writes the same shape under ignored `.generated/ci/dashboard/`. `make validate-dashboard` verifies an existing dashboard run without recalculating outputs.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, deterministic GenAI evidence retrieval, prompt rendering, guardrails, response synthesis, evaluation, overwrite behavior, tamper detection, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, deterministic GenAI evidence retrieval, prompt rendering, guardrails, response synthesis, evaluation, dashboard dimensions and facts, semantic model metadata, page and visual specs, metric catalogue, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -205,15 +213,15 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, monitoring, and GenAI assistant outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. No prompt logs containing secrets or real LLM outputs should be committed. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, monitoring, GenAI assistant, and dashboard outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. No prompt logs containing secrets, real LLM outputs, `.pbix` files, or real Power BI exports should be committed. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 9 GenAI assistance is deterministic and evidence-bound. It is not a real LLM, does not call OpenAI or Azure OpenAI, does not deploy Azure AI Foundry or Azure AI Search, does not use embeddings or a vector database, and cannot provide live operational or safety-critical decisions.
+Milestone 10 dashboard outputs are local import-ready artefacts, not deployed dashboards. The repository does not generate `.pbix` files, call Power BI or Fabric APIs, create cloud refresh schedules, or deploy Azure resources.
 
 ## Planned portfolio outputs
 
-Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/platform_health_summary.json`, and GenAI narrative reports under `reports/`. Future milestones are expected to produce documented, reproducible Power BI fact extracts and dashboard-ready data dictionaries.
+Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/platform_health_summary.json`, GenAI narrative reports under `reports/`, and Power BI-ready dashboard tables under `outputs/dashboard/`. Future milestones are expected to document Azure architecture and deployment mapping.
 
 ## Disclaimer
 
