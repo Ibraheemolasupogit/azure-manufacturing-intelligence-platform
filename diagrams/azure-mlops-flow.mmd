@@ -1,0 +1,7 @@
+flowchart LR
+    Evidence["Governed local evidence"] --> Features["Feature generation"]
+    Features --> Train["Reference AML training or rules"]
+    Train --> Registry["Reference model registry"]
+    Registry --> Batch["Reference batch scoring"]
+    Batch --> Monitor["Reference model monitoring"]
+    Monitor --> Governance["Reference approval and lineage"]

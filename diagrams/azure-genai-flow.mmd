@@ -1,0 +1,7 @@
+flowchart LR
+    Evidence["Governed evidence catalogue"] --> Search["Reference Azure AI Search"]
+    Search --> Prompt["Reference AI Foundry prompt orchestration"]
+    Prompt --> Model["Reference Azure OpenAI"]
+    Model --> Guardrails["Guardrails and evaluation"]
+    Guardrails --> Response["Cited local recommendations"]
+    Response --> Monitor["Reference GenAI monitoring"]

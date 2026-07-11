@@ -156,3 +156,11 @@ Existing-run validation must detect missing outputs, tampered hashes, row-count 
 Milestone 10 dashboard outputs must consume governed tracked evidence only. Required inputs must exist, upstream manifests must be successful, source hashes must match where manifests expose them, lineage must exist, synthetic classification must be present, and upstream files must remain unchanged.
 
 Dashboard outputs must include non-empty dimensions and facts, unique primary keys where declared, valid semantic model relationships, complete metric catalogue entries, page and visual specs that reference generated tables/pages, synthetic-data disclaimers, `power_bi_deployment=false`, `fabric_deployment=false`, `azure_deployment=false`, deterministic run identity, output row counts, sizes, hashes, manifest, and lineage.
+
+## Azure Architecture Output Contract
+
+Milestone 11 architecture outputs consume governed tracked evidence only. Required ingestion, forecast, inventory, quality, maintenance, monitoring, GenAI, and dashboard manifests and lineage files must exist, validate successfully, carry governed evidence, retain source hashes, and remain unchanged.
+
+Architecture outputs must include Azure service mapping, security controls, data architecture layers, MLOps mapping, GenAI architecture mapping, operations mapping, cost considerations, ADRs, validation results, manifest, lineage, reports, docs, diagrams, and static Bicep/Terraform blueprint files. Deployment mode must be `reference_only`; live deployment, Azure CLI execution, Terraform apply, Bicep deployment, Power BI deployment, Fabric deployment, and Azure credential requirements must remain false.
+
+Existing-run validation must detect missing files, tampered row counts, tampered sizes, tampered hashes, incomplete service mappings, incomplete security domains, missing ADR decisions, invalid deployment flags, forbidden active deployment commands, real-looking secrets, lineage target gaps, upstream hash changes, and run-ID mismatches.

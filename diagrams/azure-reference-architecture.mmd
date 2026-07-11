@@ -1,0 +1,15 @@
+flowchart TD
+    Local["Local portfolio evidence (synthetic, tracked)"] --> Ingestion["Reference Azure ingestion (Event Hubs, Stream Analytics)"]
+    Ingestion --> Storage["Reference storage (ADLS Gen2 zones)"]
+    Storage --> Analytics["Reference analytics (ADX, Synapse, Fabric)"]
+    Analytics --> ML["Reference ML (Azure Machine Learning batch)"]
+    Analytics --> GenAI["Reference GenAI (AI Foundry, Azure OpenAI, AI Search)"]
+    Analytics --> Reporting["Reference reporting (Power BI, Fabric semantic model)"]
+    ML --> Monitoring["Reference monitoring (Azure Monitor, Log Analytics)"]
+    GenAI --> Monitoring
+    Reporting --> Monitoring
+    Governance["Reference governance (Purview, Entra ID, Key Vault)"] -.-> Storage
+    Governance -.-> Analytics
+    Governance -.-> ML
+    Governance -.-> GenAI
+    Governance -.-> Reporting

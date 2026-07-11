@@ -1,0 +1,7 @@
+flowchart TD
+    Pipelines["Local pipeline manifests"] --> Logs["Reference Log Analytics"]
+    Outputs["Local monitoring outputs"] --> Logs
+    Logs --> Workbooks["Reference Azure Monitor workbooks"]
+    Logs --> Alerts["Reference alert taxonomy"]
+    Alerts --> Runbooks["Operational runbooks"]
+    Workbooks --> PowerBI["Reference Power BI operations view"]

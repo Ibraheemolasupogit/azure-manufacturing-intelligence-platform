@@ -1,0 +1,71 @@
+azure_architecture:
+  output_directory: outputs/architecture
+  report_directory: reports
+  docs_directory: docs/architecture
+  diagrams_directory: diagrams
+  infra_directory: infra
+  overwrite: false
+  random_seed: 20260711
+  deployment_mode: reference_only
+  allow_live_deployment: false
+  allow_azure_cli: false
+  allow_terraform_apply: false
+  allow_bicep_deployment: false
+  architecture_name: azure_manufacturing_intelligence_platform
+  environment: reference
+
+inputs:
+  ingestion_manifest_path: data/interim/_metadata/ingestion-manifest.json
+  ingestion_lineage_path: data/interim/_metadata/lineage-records.json
+  forecast_manifest_path: outputs/forecasting/forecast-manifest.json
+  forecast_lineage_path: outputs/forecasting/lineage-records.json
+  inventory_manifest_path: outputs/inventory/inventory-manifest.json
+  inventory_lineage_path: outputs/inventory/lineage-records.json
+  quality_manifest_path: outputs/quality/quality-manifest.json
+  quality_lineage_path: outputs/quality/lineage-records.json
+  maintenance_manifest_path: outputs/maintenance/maintenance-manifest.json
+  maintenance_lineage_path: outputs/maintenance/lineage-records.json
+  monitoring_manifest_path: outputs/monitoring/monitoring-manifest.json
+  monitoring_lineage_path: outputs/monitoring/lineage-records.json
+  genai_manifest_path: outputs/genai/genai-manifest.json
+  genai_lineage_path: outputs/genai/lineage-records.json
+  dashboard_manifest_path: outputs/dashboard/dashboard-manifest.json
+  dashboard_lineage_path: outputs/dashboard/lineage-records.json
+
+services:
+  include_event_hubs: true
+  include_data_lake: true
+  include_stream_analytics: true
+  include_data_explorer: true
+  include_synapse_or_fabric: true
+  include_machine_learning: true
+  include_ai_foundry: true
+  include_ai_search: true
+  include_azure_openai: true
+  include_monitor: true
+  include_log_analytics: true
+  include_application_insights: true
+  include_purview: true
+  include_power_bi: true
+  include_key_vault: true
+  include_entra_id: true
+  include_container_apps: true
+
+governance:
+  require_private_networking_notes: true
+  require_identity_notes: true
+  require_rbac_notes: true
+  require_key_vault_notes: true
+  require_purview_lineage_notes: true
+  require_cost_management_notes: true
+  require_no_deployment_disclaimer: true
+
+validation:
+  forbid_live_deployment_commands: true
+  forbid_secret_values: true
+  require_parameter_templates: true
+  require_architecture_diagrams: true
+  require_service_mapping: true
+  require_security_controls: true
+  require_lineage_mapping: true
+  require_operational_runbooks: true

@@ -1,0 +1,5 @@
+operations_capability,local_artefact,azure_monitor_mapping,alert_type,runbook_reference,deployment_status,limitations
+platform health,outputs/monitoring/platform_health_summary.json,Azure Monitor workbook,domain health degradation,infra/runbooks/incident-response-runbook.md,reference_only,No live workbook.
+data quality monitoring,outputs/monitoring/data_quality_monitoring.csv,Log Analytics table and alert rule,data quality threshold breach,infra/runbooks/data-quality-runbook.md,reference_only,No log ingestion.
+model monitoring,outputs/monitoring/model_and_analytics_monitoring.csv,AML metrics and alerts,model metric drift,infra/runbooks/model-monitoring-runbook.md,reference_only,No deployed model metrics.
+cost management,reports/deployment_boundary_report.md,Cost Management budgets and alerts,budget threshold,infra/runbooks/cost-management-runbook.md,reference_only,No subscription budget.

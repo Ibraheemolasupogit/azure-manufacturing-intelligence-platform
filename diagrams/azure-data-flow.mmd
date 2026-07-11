@@ -1,0 +1,9 @@
+flowchart LR
+    Raw["Local raw synthetic data"] --> EventHubs["Reference Event Hubs"]
+    EventHubs --> Stream["Reference Stream Analytics"]
+    Stream --> LakeRaw["Reference ADLS raw"]
+    LakeRaw --> LakeAccepted["Reference ADLS accepted"]
+    LakeAccepted --> Curated["Reference curated lakehouse"]
+    Curated --> Semantic["Reference Fabric semantic model"]
+    Semantic --> PowerBI["Reference Power BI"]
+    Curated -.-> Purview["Reference Purview lineage"]

@@ -1,0 +1,8 @@
+service_area,azure_service,expected_cost_driver,cost_control,local_portfolio_status,production_consideration,limitation
+ingestion,Event Hubs and Stream Analytics,"Throughput, retention, and streaming units.",Right-size throughput and use autoscale alerts.,No cloud cost; local files only.,Model event volume before selecting capacity.,No exact price estimate is provided.
+storage,ADLS Gen2,"Stored capacity, transactions, redundancy, retention.",Lifecycle rules and tiering.,Tracked small synthetic files.,Separate hot curated data from archival raw data.,No storage account exists.
+analytics,"Data Explorer, Synapse, Fabric","Compute capacity, cache, query volume.",Pause or scale down non-production compute.,Local CSV and JSON only.,Budget by workload class and refresh cadence.,No warehouse or cluster.
+ml,Azure Machine Learning,"Compute clusters, registry, storage, batch jobs.",Use scheduled compute and idle shutdown.,Local deterministic analytics.,Separate training from batch scoring budgets.,No AML workspace.
+ai,"Azure AI Foundry, Azure OpenAI, Azure AI Search","Tokens, evaluations, indexes, replicas.",Grounded retrieval limits and usage quotas.,No external model calls.,Budget token usage and search index scale.,No AI service is called.
+reporting,Power BI and Fabric,"Capacity, refreshes, storage, users.",Certified semantic models and refresh governance.,Local Power BI-ready extracts.,"Choose Pro, Premium, or Fabric capacity deliberately.",No workspace or semantic model deployed.
+monitoring,Azure Monitor and Log Analytics,"Log ingestion, retention, alert rules, queries.","Sampling, retention tiers, and alert hygiene.",Static monitoring reports.,Control noisy logs and high-cardinality metrics.,No live telemetry.

@@ -1,0 +1,4 @@
+genai_capability,local_artefact,azure_ai_mapping,guardrail,evaluation_control,deployment_status,limitations
+grounded retrieval,outputs/genai/evidence_catalog.json,Azure AI Search index,Only cite governed evidence paths.,Citation coverage and unsupported-claim count.,planned,No search index is created.
+prompt orchestration,outputs/genai/rendered_prompts.json,Azure AI Foundry prompt flow,Deterministic prompt templates and refusal logic.,Prompt and response diagnostics.,planned,No Foundry project exists.
+response synthesis,outputs/genai/assistant_responses.json,Azure OpenAI Service,No external model call; local deterministic synthesis only.,Grounding score and guardrail result.,reference_only,No model deployment or token usage.

@@ -86,11 +86,12 @@ Out of scope: `.pbix` files, Power BI Service publishing, Fabric API calls, Azur
 
 ## Milestone 11 - Azure reference architecture and deployment mapping
 
-Objective: document cloud deployment design and service responsibilities.
-Principal components: architecture mapping, security model, IaC guidance if justified.
-Planned evidence: reference architecture and deployment notes.
+Objective: produce deterministic static Azure reference architecture and infrastructure blueprint artefacts.
+Principal components: service mapping, security controls, data architecture, MLOps mapping, GenAI architecture, operations architecture, cost management, ADRs, static Bicep/Terraform blueprints, diagrams, runbooks, manifest, lineage, tests, and CI profile.
+Evidence: `outputs/architecture/`, architecture reports, architecture docs, Azure reference diagrams, `infra/` blueprints, manifest, lineage, and validation evidence.
 Dependencies: Milestones 1-10.
-Out of scope: claiming deployed resources without real deployment evidence.
+Status: Complete.
+Out of scope: live Azure deployment, Azure credentials, Azure SDK calls, Power BI publishing, Terraform apply, Bicep deployment execution, and Milestone 12 portfolio polish.
 
 ## Milestone 12 - Portfolio evidence and final polish
 

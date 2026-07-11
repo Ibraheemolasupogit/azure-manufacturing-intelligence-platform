@@ -1,0 +1,8 @@
+flowchart TD
+    Boundary["Reference-only boundary: no live Azure tenant"] --> Entra["Reference Entra ID"]
+    Boundary --> KeyVault["Reference Key Vault"]
+    Boundary --> PrivateLink["Reference Private Link"]
+    Entra --> RBAC["Least-privilege RBAC design"]
+    KeyVault --> Secrets["No secrets in local portfolio"]
+    PrivateLink --> Network["Private network segmentation notes"]
+    Audit["Reference Azure Monitor audit"] --> Boundary

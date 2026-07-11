@@ -78,3 +78,13 @@ No Azure AI service is deployed or called by Milestone 9.
 | Platform health views | Azure Monitor responsibility |
 
 No Power BI, Fabric, Synapse, ADLS, Purview, Azure Monitor, or Azure deployment is created by Milestone 10.
+
+## Milestone 11 architecture blueprint mapping
+
+Milestone 11 writes static mapping evidence under `outputs/architecture/`:
+
+- `azure_service_mapping.csv` and `.json`: maps local capabilities to Event Hubs, ADLS Gen2, Stream Analytics, Azure Data Explorer, Synapse/Fabric, Azure Machine Learning, Azure AI Foundry, Azure OpenAI, Azure AI Search, Azure Monitor, Log Analytics, Application Insights, Microsoft Purview, Power BI, Key Vault, Entra ID, and Container Apps responsibilities.
+- `security_controls_matrix.csv`: documents identity, RBAC, Key Vault, private networking, exfiltration, audit, CI/CD, supply-chain, and synthetic-data controls.
+- `data_architecture_layers.csv`, `mlops_mapping.csv`, `genai_architecture_mapping.csv`, `operations_mapping.csv`, and `cost_considerations.csv`: map local governed evidence to production architecture responsibilities.
+
+All deployment statuses remain `reference_only` or `planned`. No Azure service, Power BI workspace, Fabric item, Terraform state, or Bicep deployment is created.

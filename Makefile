@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality-analytics quality-analytics-ci validate-quality-analytics maintenance maintenance-ci validate-maintenance monitoring monitoring-ci validate-monitoring genai genai-ci validate-genai dashboard dashboard-ci validate-dashboard quality clean
+.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality-analytics quality-analytics-ci validate-quality-analytics maintenance maintenance-ci validate-maintenance monitoring monitoring-ci validate-monitoring genai genai-ci validate-genai dashboard dashboard-ci validate-dashboard architecture architecture-ci validate-architecture quality clean
 
 install:
 	$(PYTHON) -m pip install --upgrade pip
@@ -109,6 +109,16 @@ dashboard-ci:
 
 validate-dashboard:
 	$(PYTHON) -m manufacturing_intelligence.dashboard --config configs/dashboard.yaml --validate-existing-run
+
+architecture:
+	$(PYTHON) -m manufacturing_intelligence.architecture --config configs/azure_architecture.yaml --overwrite
+
+architecture-ci:
+	$(PYTHON) -m manufacturing_intelligence.architecture --config configs/azure_architecture_ci.yaml --overwrite
+	$(PYTHON) -m manufacturing_intelligence.architecture --config configs/azure_architecture_ci.yaml --validate-existing-run --output-directory .generated/ci/architecture --infra-directory .generated/ci/architecture/infra
+
+validate-architecture:
+	$(PYTHON) -m manufacturing_intelligence.architecture --config configs/azure_architecture.yaml --validate-existing-run
 
 quality: structure-check lint type-check test
 

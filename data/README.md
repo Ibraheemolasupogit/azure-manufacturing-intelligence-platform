@@ -56,6 +56,13 @@ Milestone 10 dashboard outputs are also stored outside the data lake zones:
 - `reports/semantic_model_summary.md`: semantic model summary.
 - `dashboard/dashboard_index.md`, `dashboard/powerbi_ready_outputs.md`, and `dashboard/semantic_model_notes.md`: portfolio-level dashboard documentation.
 
+Milestone 11 architecture outputs are also stored outside the data lake zones:
+
+- `outputs/architecture/`: Azure service mapping, security controls, data architecture layers, MLOps mapping, GenAI architecture mapping, operations mapping, cost considerations, ADRs, validation results, manifest, and lineage.
+- `reports/azure_architecture_report.md`: controlled architecture blueprint summary.
+- `reports/deployment_boundary_report.md`: no-deployment boundary summary.
+- `docs/architecture/`, `diagrams/`, and `infra/`: reference-only docs, Mermaid diagrams, Bicep/Terraform blueprints, policy notes, and runbooks.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -109,5 +116,8 @@ Useful commands:
 - `make dashboard`: regenerate tracked controlled dashboard evidence.
 - `make dashboard-ci`: generate and validate ignored CI dashboard evidence.
 - `make validate-dashboard`: validate an existing dashboard run without recalculating outputs.
+- `make architecture`: regenerate tracked controlled Azure reference architecture evidence.
+- `make architecture-ci`: generate and validate ignored CI architecture evidence.
+- `make validate-architecture`: validate an existing architecture run without regenerating outputs.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

@@ -1,0 +1,123 @@
+[
+  {
+    "adr_id": "ADR-001",
+    "azure_mapping": "GitHub Actions and Azure landing zone planning.",
+    "consequences": "Blueprints are useful for design but not proof of deployment.",
+    "context": "Portfolio evidence must be reproducible without cloud access.",
+    "decision": "Generate static Azure reference artefacts locally.",
+    "limitations": "No subscription validation.",
+    "local_evidence": "configs/azure_architecture.yaml",
+    "status": "accepted",
+    "title": "Keep implementation local first"
+  },
+  {
+    "adr_id": "ADR-002",
+    "azure_mapping": "Purview classification plan.",
+    "consequences": "Security and governance controls are conceptual.",
+    "context": "The platform must not represent real operations.",
+    "decision": "All architecture artefacts reference synthetic portfolio evidence.",
+    "limitations": "No real sensitivity labels.",
+    "local_evidence": "data/raw/generation_manifest.json",
+    "status": "accepted",
+    "title": "Use synthetic data only"
+  },
+  {
+    "adr_id": "ADR-003",
+    "azure_mapping": "Azure Event Hubs.",
+    "consequences": "Streaming capacity must be planned in production.",
+    "context": "Manufacturing telemetry is event-shaped.",
+    "decision": "Use Event Hubs as the reference ingestion broker.",
+    "limitations": "No broker is deployed.",
+    "local_evidence": "data/raw/production_events.jsonl",
+    "status": "accepted",
+    "title": "Map future telemetry to Event Hubs"
+  },
+  {
+    "adr_id": "ADR-004",
+    "azure_mapping": "ADLS Gen2.",
+    "consequences": "Production needs lifecycle and access policies.",
+    "context": "Raw, accepted, curated, and evidence zones need durable storage.",
+    "decision": "Map local folders to ADLS Gen2 zones.",
+    "limitations": "Local files only.",
+    "local_evidence": "data/README.md",
+    "status": "accepted",
+    "title": "Use ADLS Gen2 for storage zones"
+  },
+  {
+    "adr_id": "ADR-005",
+    "azure_mapping": "Azure Data Explorer.",
+    "consequences": "ADX retention and cache policies must be cost-governed.",
+    "context": "Quality and maintenance analytics need fast time-series queries.",
+    "decision": "Map telemetry analytics to Azure Data Explorer.",
+    "limitations": "No cluster is created.",
+    "local_evidence": "outputs/monitoring/",
+    "status": "accepted",
+    "title": "Use ADX for operational telemetry"
+  },
+  {
+    "adr_id": "ADR-006",
+    "azure_mapping": "Azure Machine Learning.",
+    "consequences": "Production requires model governance and compute budgets.",
+    "context": "Forecasting, inventory, quality, and maintenance use repeatable scoring.",
+    "decision": "Map these workflows to AML batch jobs and registry concepts.",
+    "limitations": "No workspace or endpoint.",
+    "local_evidence": "outputs/forecasting/",
+    "status": "accepted",
+    "title": "Use AML for batch scoring"
+  },
+  {
+    "adr_id": "ADR-007",
+    "azure_mapping": "Azure AI Foundry, Azure OpenAI, Azure AI Search.",
+    "consequences": "Responsible-use and cost controls are required before live use.",
+    "context": "The assistant needs grounded orchestration and evaluation.",
+    "decision": "Use Foundry, Azure OpenAI, and AI Search as conceptual services.",
+    "limitations": "No external model call.",
+    "local_evidence": "outputs/genai/",
+    "status": "accepted",
+    "title": "Map future assistant to Azure AI Foundry"
+  },
+  {
+    "adr_id": "ADR-008",
+    "azure_mapping": "Power BI and Fabric.",
+    "consequences": "Production needs workspace, RLS, and refresh governance.",
+    "context": "Dashboard outputs are Power BI-ready.",
+    "decision": "Map semantic outputs to Power BI and Fabric.",
+    "limitations": "No .pbix or workspace.",
+    "local_evidence": "outputs/dashboard/",
+    "status": "accepted",
+    "title": "Use Power BI and Fabric for reporting"
+  },
+  {
+    "adr_id": "ADR-009",
+    "azure_mapping": "Microsoft Purview.",
+    "consequences": "Production needs scans, glossary, and ownership model.",
+    "context": "Manifest and lineage evidence need a catalogue mapping.",
+    "decision": "Map local lineage to conceptual Purview assets.",
+    "limitations": "No Purview registration.",
+    "local_evidence": "lineage-records.json",
+    "status": "accepted",
+    "title": "Use Purview for governance and lineage"
+  },
+  {
+    "adr_id": "ADR-010",
+    "azure_mapping": "Azure Monitor and Log Analytics.",
+    "consequences": "Production must manage log volume and alert quality.",
+    "context": "Monitoring evidence already has domain health and alerts.",
+    "decision": "Map operations to Azure Monitor and Log Analytics.",
+    "limitations": "No live telemetry.",
+    "local_evidence": "outputs/monitoring/",
+    "status": "accepted",
+    "title": "Use Azure Monitor for observability"
+  },
+  {
+    "adr_id": "ADR-011",
+    "azure_mapping": "Deployment boundary.",
+    "consequences": "Validation is static and local only.",
+    "context": "The milestone is an architecture blueprint, not cloud provisioning.",
+    "decision": "Forbid Azure CLI deployment, Bicep deployment, and Terraform apply.",
+    "limitations": "No live Azure validation.",
+    "local_evidence": "outputs/architecture/architecture-manifest.json",
+    "status": "accepted",
+    "title": "Do not deploy during Milestone 11"
+  }
+]

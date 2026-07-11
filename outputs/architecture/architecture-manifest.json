@@ -1,0 +1,543 @@
+{
+  "adr_count": 11,
+  "allow_azure_cli": false,
+  "allow_bicep_deployment": false,
+  "allow_live_deployment": false,
+  "allow_terraform_apply": false,
+  "architecture_run_id": "ARCH-415f3e814fd4aac6",
+  "architecture_specification_sha256": "77fad3f1ef0e2077607af9d3b7ba858150f7376dda769df612a8fc5c32039efd",
+  "azure_credentials_required": false,
+  "azure_deployment": false,
+  "bicep_deployment_executed": false,
+  "configuration_path": "configs/azure_architecture.yaml",
+  "configuration_sha256": "005fa5df949cae1b0b0a3aec442afa0dbf020ceee341df50ab7d462fbcecd0e8",
+  "deployment_mode": "reference_only",
+  "fabric_deployment": false,
+  "generated_diagrams": [
+    "diagrams/azure-reference-architecture.mmd",
+    "diagrams/azure-data-flow.mmd",
+    "diagrams/azure-security-boundary.mmd",
+    "diagrams/azure-mlops-flow.mmd",
+    "diagrams/azure-genai-flow.mmd",
+    "diagrams/azure-monitoring-flow.mmd"
+  ],
+  "generated_docs": [
+    "docs/architecture/azure-reference-architecture.md",
+    "docs/architecture/deployment-boundary.md",
+    "docs/architecture/security-architecture.md",
+    "docs/architecture/data-architecture.md",
+    "docs/architecture/mlops-architecture.md",
+    "docs/architecture/genai-architecture.md",
+    "docs/architecture/operations-architecture.md",
+    "docs/architecture/cost-management.md"
+  ],
+  "generated_infra_files": [
+    "infra/README.md",
+    "infra/bicep/main.bicep",
+    "infra/bicep/parameters.reference.json",
+    "infra/bicep/modules/storage.bicep",
+    "infra/bicep/modules/event-hubs.bicep",
+    "infra/bicep/modules/analytics.bicep",
+    "infra/bicep/modules/machine-learning.bicep",
+    "infra/bicep/modules/ai-services.bicep",
+    "infra/bicep/modules/monitoring.bicep",
+    "infra/bicep/modules/governance.bicep",
+    "infra/bicep/modules/dashboards.bicep",
+    "infra/terraform/README.md",
+    "infra/terraform/main.tf",
+    "infra/terraform/variables.tf",
+    "infra/terraform/outputs.tf",
+    "infra/terraform/terraform.tfvars.example",
+    "infra/policies/azure-policy-notes.md",
+    "infra/policies/rbac-matrix.md",
+    "infra/policies/private-networking-notes.md",
+    "infra/policies/data-governance-notes.md",
+    "infra/runbooks/deployment-boundary.md",
+    "infra/runbooks/local-validation-runbook.md",
+    "infra/runbooks/incident-response-runbook.md",
+    "infra/runbooks/cost-management-runbook.md",
+    "infra/runbooks/model-monitoring-runbook.md",
+    "infra/runbooks/data-quality-runbook.md"
+  ],
+  "git_commit": "b8513657488cb6f25200c2538b54b564ad3a8d70",
+  "input_hashes": {
+    "dashboard_lineage_path": "5de98d9ff85c11c6b304a914ef05879390b0fd370f396bdf15d827f2f195f5ae",
+    "dashboard_manifest_path": "78ee5b43f5021aa1e84d39f7e97da64ebbded59f232cc90c5b9bd19b825f8287",
+    "forecast_lineage_path": "f8a2f6e5f79b05f94ab57cdc912aa1cdc37a29efaec2f4a408e82f94b63fbced",
+    "forecast_manifest_path": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+    "genai_lineage_path": "9a668f9a67c236bf55bd2bd605490824add095b690d4376d98c0e5944b35cfd5",
+    "genai_manifest_path": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823",
+    "ingestion_lineage_path": "cb4d9f2ddf23e24f008d663e0c817f6f2be311fbdf2376d0f42a2cc7fb388838",
+    "ingestion_manifest_path": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+    "inventory_lineage_path": "6caeda1ffb886344b7b2f98226d5319d0c9dc2b2c96a27f6b5563ee23cdc4bdc",
+    "inventory_manifest_path": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "maintenance_lineage_path": "a958a5256ab8f322d6dafb8f5af74331f749f49d7a1b1dc80585a5f65b2c7b37",
+    "maintenance_manifest_path": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "monitoring_lineage_path": "6adbfa7a27d645c7c0a72d434797ee23115a0fb9662ea38b728a8922f365b2a9",
+    "monitoring_manifest_path": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b",
+    "quality_lineage_path": "6478cf8dc97c95c54a216df9f70dd77a27970f2e182b80e281ad7da7624064d6",
+    "quality_manifest_path": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+  },
+  "output_files": {
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_data_flow_mmd": {
+      "file_size_bytes": 464,
+      "path": "diagrams/azure-data-flow.mmd",
+      "row_count": null,
+      "sha256": "ba9f944b788e59a5b1661cdf1b0e587b5ff7964942037ed7042ec4b7ab509730"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_genai_flow_mmd": {
+      "file_size_bytes": 379,
+      "path": "diagrams/azure-genai-flow.mmd",
+      "row_count": null,
+      "sha256": "d9d7a2d35aad755a885402670c22a2f923f5711ae60d3fcf51ff5e6715659a39"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_mlops_flow_mmd": {
+      "file_size_bytes": 360,
+      "path": "diagrams/azure-mlops-flow.mmd",
+      "row_count": null,
+      "sha256": "5dbb70279e79d316c40f1c8a2d4ad5fd7777faf18f593b98330e7f647c71c07a"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_monitoring_flow_mmd": {
+      "file_size_bytes": 360,
+      "path": "diagrams/azure-monitoring-flow.mmd",
+      "row_count": null,
+      "sha256": "ba354a0a9b17efbde81d4273fc1b4f3c1c60e37ad1b86f6895928467cbbb7e3c"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_reference_architecture_mmd": {
+      "file_size_bytes": 840,
+      "path": "diagrams/azure-reference-architecture.mmd",
+      "row_count": null,
+      "sha256": "19cfd3b24fe3dba4d6c92eb21b20a4cf74b7f3877519463a00ff08d38f4b04dd"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_diagrams_azure_security_boundary_mmd": {
+      "file_size_bytes": 441,
+      "path": "diagrams/azure-security-boundary.mmd",
+      "row_count": null,
+      "sha256": "345ad5eaa7a9dadd70d3a4458f5c8c43010d9271215574fdb706965c10f2a7d5"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_azure_reference_architecture_md": {
+      "file_size_bytes": 475,
+      "path": "docs/architecture/azure-reference-architecture.md",
+      "row_count": null,
+      "sha256": "d7de8d72e2345e8f3c54c588a289b583473878c2b633b8436ed020648b423fcd"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_cost_management_md": {
+      "file_size_bytes": 455,
+      "path": "docs/architecture/cost-management.md",
+      "row_count": null,
+      "sha256": "a6eaffbcb33eab74dced95ebc9b91f063452a43dce0278f4d411a885ee3c0835"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_data_architecture_md": {
+      "file_size_bytes": 487,
+      "path": "docs/architecture/data-architecture.md",
+      "row_count": null,
+      "sha256": "86b2f578ec923d7a5dd7d7d3f4816b17d63a567c5fdac23bf0ab6e80aebce735"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_deployment_boundary_md": {
+      "file_size_bytes": 370,
+      "path": "docs/architecture/deployment-boundary.md",
+      "row_count": null,
+      "sha256": "ab85f1645cd38b1f5e09f95d29d47d16b78fa4b88759f933380bbdc1ae6b0270"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_genai_architecture_md": {
+      "file_size_bytes": 464,
+      "path": "docs/architecture/genai-architecture.md",
+      "row_count": null,
+      "sha256": "58e93660a66ef23bb66595fcf1d23d455631c27722a723b9f6862219114f9184"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_mlops_architecture_md": {
+      "file_size_bytes": 449,
+      "path": "docs/architecture/mlops-architecture.md",
+      "row_count": null,
+      "sha256": "c94b3e5dec4ccca824102691be690ed7ac4c037fdb6219e268c0e46a7847daf3"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_operations_architecture_md": {
+      "file_size_bytes": 448,
+      "path": "docs/architecture/operations-architecture.md",
+      "row_count": null,
+      "sha256": "31cd5af845005131002bb0c829bc2498bdb7a0b0c1b9a176840275e258907c49"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_docs_architecture_security_architecture_md": {
+      "file_size_bytes": 448,
+      "path": "docs/architecture/security-architecture.md",
+      "row_count": null,
+      "sha256": "d3d6673459c7e013575d35dcd23f93a35514eb94f366fb69a74ae64171c2a25e"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_README_md": {
+      "file_size_bytes": 249,
+      "path": "infra/README.md",
+      "row_count": null,
+      "sha256": "2920dc2cb63895a9415e0fa4014f2cb49b5d69c26808c85b5cb8082d2a05e1e3"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_main_bicep": {
+      "file_size_bytes": 334,
+      "path": "infra/bicep/main.bicep",
+      "row_count": null,
+      "sha256": "456032449bd4c707b973521e794219ac63a239ae281b0021f6ae4ef302e46e96"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_ai_services_bicep": {
+      "file_size_bytes": 214,
+      "path": "infra/bicep/modules/ai-services.bicep",
+      "row_count": null,
+      "sha256": "4e0251d8a4580f41e5110729624949b59847aa431dd699b877278a8929260d39"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_analytics_bicep": {
+      "file_size_bytes": 213,
+      "path": "infra/bicep/modules/analytics.bicep",
+      "row_count": null,
+      "sha256": "57aeef3561a299e95270c0b39a99b80cd01fc557019ab6cb76340f2f157dd66b"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_dashboards_bicep": {
+      "file_size_bytes": 214,
+      "path": "infra/bicep/modules/dashboards.bicep",
+      "row_count": null,
+      "sha256": "5e381edec6dba8603be4f9ec672639dfc27f90005c570fc5dc1bf57d7a6e9684"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_event_hubs_bicep": {
+      "file_size_bytes": 213,
+      "path": "infra/bicep/modules/event-hubs.bicep",
+      "row_count": null,
+      "sha256": "63bb4305d56213482047cb371326ee370284f48da808612bab92faf49cc4697d"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_governance_bicep": {
+      "file_size_bytes": 214,
+      "path": "infra/bicep/modules/governance.bicep",
+      "row_count": null,
+      "sha256": "51af1406c765c6b9359fcffe8d0afdf9d925461cc402c85d1879478dee5f1331"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_machine_learning_bicep": {
+      "file_size_bytes": 219,
+      "path": "infra/bicep/modules/machine-learning.bicep",
+      "row_count": null,
+      "sha256": "7865ed4232e0d54a4d3c482e458293a110e4e42d29a51983bfb49e9ad3c71f00"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_monitoring_bicep": {
+      "file_size_bytes": 214,
+      "path": "infra/bicep/modules/monitoring.bicep",
+      "row_count": null,
+      "sha256": "67be2adafbc097d8d68cbf96c03e21f71d62915a65b47d88cf7babd93e107a51"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_modules_storage_bicep": {
+      "file_size_bytes": 211,
+      "path": "infra/bicep/modules/storage.bicep",
+      "row_count": null,
+      "sha256": "e43761f64fe225ba5c3a0c4fafe7d26705f5d708169e64e1a9517a0302e70c75"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_bicep_parameters_reference_json": {
+      "file_size_bytes": 256,
+      "path": "infra/bicep/parameters.reference.json",
+      "row_count": null,
+      "sha256": "1c3d8fe248fc60ee15e5819aee2dccaa90a8b18b0c21ab2a3a461e0f9020b6e1"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_policies_azure_policy_notes_md": {
+      "file_size_bytes": 252,
+      "path": "infra/policies/azure-policy-notes.md",
+      "row_count": null,
+      "sha256": "d9494440b664a6d80832bf7be9d68edd74318b8d79f82f5d81cf60fcec83fbf4"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_policies_data_governance_notes_md": {
+      "file_size_bytes": 255,
+      "path": "infra/policies/data-governance-notes.md",
+      "row_count": null,
+      "sha256": "437a1e67ab234ce8cf6afeb8df96c11ff157426b77f8a756d090786ed077a692"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_policies_private_networking_notes_md": {
+      "file_size_bytes": 258,
+      "path": "infra/policies/private-networking-notes.md",
+      "row_count": null,
+      "sha256": "f6c9ceddd627707f1c4a09ca9f0a53adc87b6d357a5adcee675134e319ddc9cd"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_policies_rbac_matrix_md": {
+      "file_size_bytes": 245,
+      "path": "infra/policies/rbac-matrix.md",
+      "row_count": null,
+      "sha256": "f264011e33174006fa68e0a3fa65c76fad7b36cd362d6006435a4a979be6c5ad"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_cost_management_runbook_md": {
+      "file_size_bytes": 296,
+      "path": "infra/runbooks/cost-management-runbook.md",
+      "row_count": null,
+      "sha256": "1a0ab8d0cdb599c07260c189e593700789241b5b8a7dffb75a0f8cf34a6ed55d"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_data_quality_runbook_md": {
+      "file_size_bytes": 293,
+      "path": "infra/runbooks/data-quality-runbook.md",
+      "row_count": null,
+      "sha256": "1b1ea6658331b002b12cbd9978c1084e6c0fd5de1e0bd6231c728dc211a69459"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_deployment_boundary_md": {
+      "file_size_bytes": 300,
+      "path": "infra/runbooks/deployment-boundary.md",
+      "row_count": null,
+      "sha256": "75a464267468482d9abf2c213bf18ca964fab62fb85f188b7fe816955ddcce58"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_incident_response_runbook_md": {
+      "file_size_bytes": 298,
+      "path": "infra/runbooks/incident-response-runbook.md",
+      "row_count": null,
+      "sha256": "c3b475e18bf67f66de95f2e25ff683a4e5d6803002dd87bc57945b0a23dfd30a"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_local_validation_runbook_md": {
+      "file_size_bytes": 297,
+      "path": "infra/runbooks/local-validation-runbook.md",
+      "row_count": null,
+      "sha256": "a3e31089c9b8f8dd695f50a72ef51d0506581b3bb117b58d1bdc4fe235a373cb"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_runbooks_model_monitoring_runbook_md": {
+      "file_size_bytes": 297,
+      "path": "infra/runbooks/model-monitoring-runbook.md",
+      "row_count": null,
+      "sha256": "ea5b10dede620425fc47656ecd0d34379bc6546e8b21ef18d4ed6142cdce8d05"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_terraform_README_md": {
+      "file_size_bytes": 279,
+      "path": "infra/terraform/README.md",
+      "row_count": null,
+      "sha256": "58b73dc1e7301f82de35bcf2a8c2084fb3b7942704dcb9aef4eda38f3c6726fe"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_terraform_main_tf": {
+      "file_size_bytes": 167,
+      "path": "infra/terraform/main.tf",
+      "row_count": null,
+      "sha256": "e2380ffab5aca9fd72422c44eb773f8caffb8aa8ee26204e9cab8240c74049af"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_terraform_outputs_tf": {
+      "file_size_bytes": 111,
+      "path": "infra/terraform/outputs.tf",
+      "row_count": null,
+      "sha256": "ac2fa1dc356b779c3c256ec5dcf490890bfd3d427a6efe3229bea61de5899aac"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_terraform_terraform_tfvars_example": {
+      "file_size_bytes": 114,
+      "path": "infra/terraform/terraform.tfvars.example",
+      "row_count": null,
+      "sha256": "7bd27c6c703e2eec4ad68972ac78a5028c2814d815665eed7993556c66238af9"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_infra_terraform_variables_tf": {
+      "file_size_bytes": 124,
+      "path": "infra/terraform/variables.tf",
+      "row_count": null,
+      "sha256": "7df11124f7848131bc62784f7571820c5b62b592640d8e19ae0f7d68c57c8042"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_architecture_decision_records_json": {
+      "file_size_bytes": 5290,
+      "path": "outputs/architecture/architecture_decision_records.json",
+      "row_count": null,
+      "sha256": "03758aec534551c777a97bd8c7453ed91c3da91e1f56aaaa7a51084e7c046511"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_architecture_validation_results_json": {
+      "file_size_bytes": 425,
+      "path": "outputs/architecture/architecture_validation_results.json",
+      "row_count": null,
+      "sha256": "41da161d4e5f5bfec59e1d26482d6526707a7673a26f28b66b801251aa625602"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_azure_service_mapping_csv": {
+      "file_size_bytes": 6483,
+      "path": "outputs/architecture/azure_service_mapping.csv",
+      "row_count": 15,
+      "sha256": "806c1dcc28333a30668006ddd9091af39c704e2fdc4c77d39133cc0fa7eab88c"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_azure_service_mapping_json": {
+      "file_size_bytes": 11402,
+      "path": "outputs/architecture/azure_service_mapping.json",
+      "row_count": null,
+      "sha256": "4c4918e220fc0d9232604c42efef927092dac446ecc30936217e4ae56a6e437b"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_cost_considerations_csv": {
+      "file_size_bytes": 1735,
+      "path": "outputs/architecture/cost_considerations.csv",
+      "row_count": 7,
+      "sha256": "32a6d4e4978744b428e7e9cd1c0fa7d23a1a7dd1ebb3574e32786cc01c308d29"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_data_architecture_layers_csv": {
+      "file_size_bytes": 1357,
+      "path": "outputs/architecture/data_architecture_layers.csv",
+      "row_count": 5,
+      "sha256": "0e3fe87a4d93402eff088ec2fd6f8bac5b168234c1abdb966ce8d092cd73624b"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_genai_architecture_mapping_csv": {
+      "file_size_bytes": 735,
+      "path": "outputs/architecture/genai_architecture_mapping.csv",
+      "row_count": 3,
+      "sha256": "54cdabd56cc9031bcf1af2a3d617934de1ce957aafdf8b379283bd813a1d9a78"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_mlops_mapping_csv": {
+      "file_size_bytes": 943,
+      "path": "outputs/architecture/mlops_mapping.csv",
+      "row_count": 4,
+      "sha256": "fd83e61e11cf108b266dac6e0128ab4ec5365a34a4e1dd375bf72b1e9a4f283d"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_operations_mapping_csv": {
+      "file_size_bytes": 901,
+      "path": "outputs/architecture/operations_mapping.csv",
+      "row_count": 4,
+      "sha256": "eb4dd765c8587fe70eb3db6b1d7e410c36563282922f9dd9c5643d525b4da441"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_outputs_architecture_security_controls_matrix_csv": {
+      "file_size_bytes": 2296,
+      "path": "outputs/architecture/security_controls_matrix.csv",
+      "row_count": 9,
+      "sha256": "beee8b2d79338dabc2bf79fc4d70804b6c8817993bee4ca8e666943418f53c5f"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_reports_azure_architecture_report_md": {
+      "file_size_bytes": 357,
+      "path": "reports/azure_architecture_report.md",
+      "row_count": null,
+      "sha256": "2e8920a7ef638961a93695bc62a9979209cee1f56d1f41a8eccd0e8db1d89695"
+    },
+    "_Users_privilege_Desktop_GitHub_repository_azure_manufacturing_intelligence_platform_reports_deployment_boundary_report_md": {
+      "file_size_bytes": 341,
+      "path": "reports/deployment_boundary_report.md",
+      "row_count": null,
+      "sha256": "beb0555473f887df773e86a57cb651826933c0319c8e4a39195b6444785f4d28"
+    }
+  },
+  "pipeline_name": "azure_reference_architecture",
+  "pipeline_version": "0.1.0",
+  "power_bi_deployment": false,
+  "referenced_milestone_manifests": {
+    "dashboard": "outputs/dashboard/dashboard-manifest.json",
+    "forecast": "outputs/forecasting/forecast-manifest.json",
+    "genai": "outputs/genai/genai-manifest.json",
+    "ingestion": "data/interim/_metadata/ingestion-manifest.json",
+    "inventory": "outputs/inventory/inventory-manifest.json",
+    "maintenance": "outputs/maintenance/maintenance-manifest.json",
+    "monitoring": "outputs/monitoring/monitoring-manifest.json",
+    "quality": "outputs/quality/quality-manifest.json"
+  },
+  "security_control_count": 9,
+  "service_mapping_count": 15,
+  "software_version": "0.1.0",
+  "source_row_counts": {
+    "dashboard.dashboard_diagnostics": null,
+    "dashboard.dashboard_index": null,
+    "dashboard.dashboard_output_report": null,
+    "dashboard.dashboard_page_specs": null,
+    "dashboard.dim_dashboard_page": 8,
+    "dashboard.dim_date": 26,
+    "dashboard.dim_machine": 18,
+    "dashboard.dim_metric": 13,
+    "dashboard.dim_plant": 3,
+    "dashboard.dim_product": 8,
+    "dashboard.dim_production_line": 6,
+    "dashboard.dim_risk_level": 4,
+    "dashboard.dim_supplier": 6,
+    "dashboard.dim_warehouse": 4,
+    "dashboard.executive_scorecard": 14,
+    "dashboard.fact_demand_forecast": 56,
+    "dashboard.fact_inventory_risk": 72,
+    "dashboard.fact_maintenance_alerts": 135,
+    "dashboard.fact_operations_assistant_narratives": 8,
+    "dashboard.fact_platform_health": 6,
+    "dashboard.fact_production_kpis": 168,
+    "dashboard.fact_quality_alerts": 38,
+    "dashboard.metric_catalogue": 13,
+    "dashboard.powerbi_ready_outputs": null,
+    "dashboard.semantic_model": null,
+    "dashboard.semantic_model_notes": null,
+    "dashboard.semantic_model_summary": null,
+    "dashboard.visual_specifications": null,
+    "forecast.backtest_metrics": 24,
+    "forecast.backtest_predictions": 192,
+    "forecast.daily_demand_series": 112,
+    "forecast.demand_forecast": 56,
+    "forecast.feature_dataset": 112,
+    "forecast.forecast_diagnostics": null,
+    "forecast.model_comparison": 4,
+    "forecast.model_metadata": null,
+    "forecast.split_metadata": null,
+    "forecast.test_metrics": 1,
+    "genai.assistant_evaluation": 8,
+    "genai.assistant_evaluation_summary": null,
+    "genai.assistant_responses": null,
+    "genai.assistant_responses_markdown": null,
+    "genai.evidence_catalog_csv": 27,
+    "genai.evidence_catalog_json": null,
+    "genai.executive_manufacturing_brief": null,
+    "genai.genai_diagnostics": null,
+    "genai.genai_guardrails_report": null,
+    "genai.genai_operations_assistant_report": null,
+    "genai.guardrail_results": null,
+    "genai.manufacturing_operations_report": null,
+    "genai.prompt_templates": null,
+    "genai.rendered_prompts": null,
+    "genai.retrieval_results": null,
+    "genai.supply_chain_summary": null,
+    "ingestion.accepted.equipment_health": 504,
+    "ingestion.accepted.inventory_levels": 72,
+    "ingestion.accepted.production_events": 168,
+    "ingestion.accepted.quality_checks": 168,
+    "ingestion.accepted.sales_orders": 180,
+    "ingestion.accepted.supplier_performance": 120,
+    "ingestion.accepted.warehouse_movements": 220,
+    "inventory.inventory_diagnostics": null,
+    "inventory.inventory_health": 72,
+    "inventory.inventory_policy_inputs": 72,
+    "inventory.inventory_position": 72,
+    "inventory.inventory_scores": 72,
+    "inventory.inventory_summary": null,
+    "inventory.portfolio_inventory_scores": 72,
+    "inventory.reorder_recommendations": 72,
+    "inventory.scenario_comparison": 5,
+    "inventory.scenario_results": 5,
+    "inventory.supplier_risk_metrics": 10,
+    "inventory.warehouse_demand_forecast": 112,
+    "maintenance.anomaly_scores": 504,
+    "maintenance.degradation_signals": 504,
+    "maintenance.equipment_health_features": 504,
+    "maintenance.equipment_health_scores": 504,
+    "maintenance.machine_health_summary": 18,
+    "maintenance.maintenance_alert_summary": null,
+    "maintenance.maintenance_alerts": 135,
+    "maintenance.maintenance_analytics_report": null,
+    "maintenance.maintenance_diagnostics": null,
+    "maintenance.maintenance_risk_summary": 3,
+    "maintenance.portfolio_maintenance_predictions": null,
+    "maintenance.sensor_health_summary": 36,
+    "monitoring.data_quality_monitoring": 7,
+    "monitoring.domain_health_scores": 6,
+    "monitoring.evidence_integrity_checks": 62,
+    "monitoring.lineage_completeness": 5,
+    "monitoring.model_and_analytics_monitoring": 4,
+    "monitoring.monitoring_alerts": 1,
+    "monitoring.monitoring_diagnostics": null,
+    "monitoring.observability_summary": null,
+    "monitoring.pipeline_health": 6,
+    "monitoring.platform_health_summary": null,
+    "monitoring.platform_monitoring_report": null,
+    "monitoring.portfolio_platform_health_summary": null,
+    "quality.anomaly_scores": 168,
+    "quality.control_chart_points": 168,
+    "quality.defect_pareto": 51,
+    "quality.portfolio_quality_alerts": 38,
+    "quality.process_capability": 48,
+    "quality.quality_alert_summary": null,
+    "quality.quality_alerts": 38,
+    "quality.quality_analytics_report": null,
+    "quality.quality_diagnostics": null,
+    "quality.quality_kpis": 27,
+    "quality.quality_observations": 168,
+    "quality.quality_risk_summary": 4,
+    "quality.spc_signals": 168
+  },
+  "synthetic_data_classification": "synthetic_portfolio_sample",
+  "terraform_apply_executed": false,
+  "upstream_inputs_modified": false,
+  "validation_results": {
+    "adr_count": 11,
+    "azure_credentials_required": false,
+    "azure_deployment": false,
+    "deployment_mode": "reference_only",
+    "forbidden_active_commands_found": [],
+    "required_diagram_count": 6,
+    "required_doc_count": 8,
+    "required_infra_file_count": 26,
+    "secret_findings": [],
+    "security_control_count": 9,
+    "service_mapping_count": 15,
+    "subscription_or_tenant_findings": [],
+    "validation_status": "success"
+  },
+  "validation_status": "success",
+  "warnings": []
+}

@@ -1,0 +1,15 @@
+{
+  "adr_count": 11,
+  "azure_credentials_required": false,
+  "azure_deployment": false,
+  "deployment_mode": "reference_only",
+  "forbidden_active_commands_found": [],
+  "required_diagram_count": 6,
+  "required_doc_count": 8,
+  "required_infra_file_count": 26,
+  "secret_findings": [],
+  "security_control_count": 9,
+  "service_mapping_count": 15,
+  "subscription_or_tenant_findings": [],
+  "validation_status": "success"
+}

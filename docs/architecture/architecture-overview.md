@@ -1,10 +1,10 @@
 # Architecture Overview
 
-The platform is designed as a local-first reference implementation of an Azure manufacturing analytics estate. Milestones 1 through 10 create the repository foundation, deterministic synthetic raw data, governed local ingestion, validation, quarantine, lineage, demand forecasting, inventory intelligence, quality analytics, anomaly detection, predictive maintenance, monitoring, a deterministic local GenAI-style operations assistant, and Power BI-ready dashboard outputs.
+The platform is designed as a local-first reference implementation of an Azure manufacturing analytics estate. Milestones 1 through 11 create the repository foundation, deterministic synthetic raw data, governed local ingestion, validation, quarantine, lineage, demand forecasting, inventory intelligence, quality analytics, anomaly detection, predictive maintenance, monitoring, a deterministic local GenAI-style operations assistant, Power BI-ready dashboard outputs, and a static Azure reference architecture blueprint.
 
 ## Conceptual flow
 
-Synthetic manufacturing sources feed the raw zone under `data/raw/`. Milestone 3 ingestion validates those sources and separates accepted records from quarantined records under `data/interim/`. Milestone 4 uses accepted sales orders to build daily demand features, chronological model evaluation, future forecasts, reports, and lineage. Milestone 5 combines accepted inventory, supplier, warehouse-movement, sales, and forecast evidence to score inventory health and policy recommendations. Milestone 6 combines accepted quality checks and production events to calculate quality signals. Milestone 7 adds predictive maintenance, Milestone 8 adds monitoring, Milestone 9 adds deterministic GenAI-style assistance, and Milestone 10 adds dashboard-ready semantic outputs. Later milestones will add Azure architecture mapping.
+Synthetic manufacturing sources feed the raw zone under `data/raw/`. Milestone 3 ingestion validates those sources and separates accepted records from quarantined records under `data/interim/`. Milestone 4 uses accepted sales orders to build daily demand features, chronological model evaluation, future forecasts, reports, and lineage. Milestone 5 combines accepted inventory, supplier, warehouse-movement, sales, and forecast evidence to score inventory health and policy recommendations. Milestone 6 combines accepted quality checks and production events to calculate quality signals. Milestone 7 adds predictive maintenance, Milestone 8 adds monitoring, Milestone 9 adds deterministic GenAI-style assistance, Milestone 10 adds dashboard-ready semantic outputs, and Milestone 11 maps the tracked evidence to a static Azure reference architecture.
 
 The planned domains are production telemetry, inventory, sales orders, quality checks, equipment health, warehouse movements, and supplier performance. Future pipelines will support both batch and streaming paths.
 
@@ -37,3 +37,9 @@ This layer maps conceptually to Azure AI Foundry, Azure OpenAI Service, Azure AI
 The dashboard layer consumes governed ingestion, forecast, inventory, quality, maintenance, monitoring, and GenAI evidence to produce local dashboard dimensions, fact tables, executive scorecard, metric catalogue, semantic model metadata, dashboard page specifications, visual specifications, reports, manifest, and lineage.
 
 The outputs are Power BI-ready local artefacts only. No Power BI workspace, Fabric semantic model, Azure Synapse serving layer, ADLS curated zone, Purview registration, or Azure Monitor view is deployed.
+
+## Milestone 11 Azure reference architecture
+
+The architecture layer consumes tracked governed evidence from ingestion, forecasting, inventory, quality, maintenance, monitoring, GenAI, and dashboard outputs. It produces Azure service mappings, security controls, data architecture layers, MLOps mappings, GenAI mappings, operations mappings, cost considerations, ADRs, diagrams, reports, static Bicep and Terraform blueprint files, runbooks, a manifest, and lineage.
+
+This layer is reference-only. It does not require Azure credentials, create resource groups, call Azure SDKs, run Azure CLI deployment commands, run Terraform apply, execute Bicep deployments, publish Power BI content, or validate against a live subscription.

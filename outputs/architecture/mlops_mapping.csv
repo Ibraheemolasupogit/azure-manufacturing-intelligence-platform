@@ -1,0 +1,5 @@
+ml_capability,local_artefact,azure_ml_mapping,model_or_rule_type,training_or_scoring_mode,monitoring_signal,deployment_status,limitations
+forecasting,outputs/forecasting/model_metadata.json,AML training job and model registry,deterministic baseline model,local batch,forecast error and interval coverage,reference_only,No deployed model endpoint.
+inventory,outputs/inventory/inventory_scores.csv,AML batch scoring pipeline,rules and scenario scoring,local batch scoring,risk distribution and reorder volume,reference_only,No optimization service.
+quality,outputs/quality/anomaly_scores.csv,AML anomaly scoring job,SPC and deterministic anomaly score,local analytics batch,alert count and anomaly score drift,reference_only,No online scoring.
+maintenance,outputs/maintenance/maintenance_predictions.json,AML batch inference and registry,failure-risk scoring,local batch,risk score and sensor degradation,reference_only,No IoT model deployment.

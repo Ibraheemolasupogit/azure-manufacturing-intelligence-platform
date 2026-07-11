@@ -40,6 +40,10 @@ flowchart LR
     MonitoringOutputs --> Dashboard
     GenAIOutputs --> Dashboard
     Dashboard --> DashboardOutputs["Power BI-ready tables, semantic metadata, page specs, visual specs, reports, manifest, and lineage"]
+    DashboardOutputs --> Architecture["Static Azure reference architecture blueprint"]
+    MonitoringOutputs --> Architecture
+    GenAIOutputs --> Architecture
+    Architecture --> ArchitectureOutputs["Service mapping, security controls, infra blueprints, diagrams, manifest, and lineage"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -58,6 +62,7 @@ flowchart LR
     Monitoring -.-> MonitoringLineage["Monitoring manifests and lineage"]
     GenAI -.-> GenAILineage["GenAI manifest, evaluation, guardrails, and lineage"]
     Dashboard -.-> DashboardLineage["Dashboard manifest, semantic model, diagnostics, and lineage"]
+    Architecture -.-> ArchitectureLineage["Architecture manifest, validation results, and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

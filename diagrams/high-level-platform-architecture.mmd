@@ -26,6 +26,7 @@ flowchart TD
         MonitoringAnalytics["Local monitoring and observability"]
         GenAIAssistant["Deterministic GenAI operations assistant"]
         DashboardOutputs["Dashboard semantic outputs"]
+        ArchitectureBlueprint["Static Azure reference architecture blueprint"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -91,6 +92,9 @@ flowchart TD
     MonitoringAnalytics --> DashboardOutputs
     GenAIAssistant --> DashboardOutputs
     DashboardOutputs --> Reporting
+    Reporting --> ArchitectureBlueprint
+    MonitoringAnalytics --> ArchitectureBlueprint
+    GenAIAssistant --> ArchitectureBlueprint
     GenAIAssistant --> Lineage
     GenAIAssistant --> Manifests
     Forecasting --> Reporting
@@ -114,6 +118,8 @@ flowchart TD
     MonitoringAnalytics --> Manifests
     DashboardOutputs --> Lineage
     DashboardOutputs --> Manifests
+    ArchitectureBlueprint --> Lineage
+    ArchitectureBlueprint --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
@@ -143,6 +149,16 @@ flowchart TD
     DashboardOutputs -.-> ADLS
     DashboardOutputs -.-> Purview
     DashboardOutputs -.-> PowerBI
+    ArchitectureBlueprint -.-> EventHubs
+    ArchitectureBlueprint -.-> ADLS
+    ArchitectureBlueprint -.-> StreamAnalytics
+    ArchitectureBlueprint -.-> ADX
+    ArchitectureBlueprint -.-> Synapse
+    ArchitectureBlueprint -.-> AzureML
+    ArchitectureBlueprint -.-> Foundry
+    ArchitectureBlueprint -.-> PowerBI
+    ArchitectureBlueprint -.-> Purview
+    ArchitectureBlueprint -.-> Monitor
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

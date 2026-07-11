@@ -48,3 +48,9 @@ The tests use local deterministic evidence only and do not access Azure, OpenAI,
 Milestone 10 tests cover dashboard configuration loading, environment overrides, path resolution, governed upstream manifest checks, source hash verification, non-empty dimensions and facts, primary key uniqueness, semantic model relationship validity, metric catalogue completeness, page and visual specification validity, synthetic-data disclaimers, deployment boundary flags, deterministic manifests, lineage records, overwrite protection, tamper detection, existing-run validation, and CLI execution outside the repository root.
 
 The CI workflow runs `make dashboard-ci` and validates the generated dashboard run under `.generated/ci/dashboard/`. Dashboard tests do not create `.pbix` files, call Power BI or Fabric APIs, access Azure services, publish dashboards, or mutate upstream governed evidence.
+
+## Architecture Blueprint Testing
+
+Milestone 11 tests cover architecture configuration loading, invalid deployment-mode rejection, governed evidence use, required docs, required diagrams, required infra blueprint files, service mapping coverage, security control domains, data architecture layers, MLOps mappings, GenAI no-external-call boundaries, operations runbook mapping, cost service areas, ADR decisions, reference-only deployment flags, Azure credentials required false, forbidden active deployment command scanning, secret-like value scanning, manifest row counts, manifest sizes, manifest hashes, lineage target hashes, existing-run validation, tamper detection, overwrite protection, CLI execution outside the repository root, and CI generation under `.generated/ci/architecture/`.
+
+The CI workflow runs `make architecture-ci` and validates the generated architecture run with static checks only. Architecture tests do not access Azure, Power BI, Fabric, Terraform backends, Bicep deployment, the internet, external services, credentials, secrets, or live cloud resources.

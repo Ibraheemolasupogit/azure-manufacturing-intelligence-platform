@@ -1,0 +1,6 @@
+layer_name,purpose,local_path,azure_mapping,data_format,validation_controls,lineage_controls,consumer,limitations
+raw,Synthetic source landing files.,data/raw/,ADLS Gen2 raw zone,CSV and JSONL,Synthetic generation manifest and schema metadata.,generation_manifest.json,ingestion,Synthetic and local only.
+accepted,Validated records accepted by governed ingestion.,data/interim/accepted/,ADLS Gen2 accepted zone,CSV and JSONL,Data-quality rules and quarantine evidence.,data/interim/_metadata/lineage-records.json,"forecasting, inventory, quality, maintenance",No external ingestion.
+curated,Analytical outputs and model-ready evidence.,outputs/,Synapse or Fabric curated lakehouse,"CSV, JSON, Markdown",Domain manifests and existing-run validators.,domain lineage records,"monitoring, GenAI, dashboard",No serving warehouse exists.
+dashboard,Power BI-ready tables and semantic metadata.,outputs/dashboard/,Power BI or Fabric semantic model,CSV and JSON,Dashboard manifest and semantic relationship checks.,outputs/dashboard/lineage-records.json,reporting,No workspace or .pbix.
+evidence and manifests,"Hashes, row counts, run IDs, and lineage.",outputs/**/manifest.json and lineage-records.json,Purview and Azure Monitor evidence layer,JSON,Hash and row-count validation.,Architecture lineage records,architecture validation,No Purview registration occurs.

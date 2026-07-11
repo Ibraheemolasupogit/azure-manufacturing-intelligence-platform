@@ -87,5 +87,11 @@ jobs:
       - name: Validate CI dashboard outputs
         run: python -m manufacturing_intelligence.dashboard --config configs/dashboard_ci.yaml --validate-existing-run --output-directory .generated/ci/dashboard
 
+      - name: Run CI architecture blueprint
+        run: make architecture-ci
+
+      - name: Validate CI architecture blueprint
+        run: python -m manufacturing_intelligence.architecture --config configs/azure_architecture_ci.yaml --validate-existing-run --output-directory .generated/ci/architecture --infra-directory .generated/ci/architecture/infra
+
       - name: Clean generated CI outputs
         run: rm -rf .generated
