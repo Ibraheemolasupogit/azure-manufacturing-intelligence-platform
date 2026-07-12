@@ -34,6 +34,7 @@ manufacturing_intelligence = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 addopts = "--cov=manufacturing_intelligence --cov-report=term-missing"
 
 [tool.coverage.run]
