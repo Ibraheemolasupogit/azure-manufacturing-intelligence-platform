@@ -95,8 +95,9 @@ Out of scope: live Azure deployment, Azure credentials, Azure SDK calls, Power B
 
 ## Milestone 12 - Portfolio evidence and final polish
 
-Objective: assemble interview-ready evidence and final documentation.
-Principal components: demos, diagrams, summaries, limitations, and next steps.
-Planned evidence: portfolio narrative and reproducible validation results.
+Objective: consolidate final release evidence and make the repository interview-ready.
+Principal components: evidence index, report index, architecture index, data catalogue, model and analytics catalogue, dashboard catalogue, GenAI catalogue, Azure reference catalogue, validation summary, repository health, release manifest, release lineage, final docs, and interview/CV/recruiter reports.
+Evidence: `outputs/release/`, final release reports under `reports/`, release docs under `docs/release/`, milestone 12 evidence, tests, CI static validation, and `make validate-all`.
 Dependencies: all prior milestones.
-Out of scope: adding new analytical scope without tests.
+Status: Complete.
+Out of scope: new analytical scope, live Azure deployment, Power BI/Fabric publishing, OpenAI calls, external services, and Milestone 13.

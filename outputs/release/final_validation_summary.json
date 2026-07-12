@@ -1,0 +1,50 @@
+{
+  "ci_static_validation_summary": "release-ci validates under .generated/ci/release",
+  "cloud_deployment": false,
+  "coverage_summary": "82%",
+  "external_service_called": false,
+  "formatting_status": "passed",
+  "limitations": [
+    "No live cloud or external service validation."
+  ],
+  "milestone_validation_status": "Milestones 1-11 passed baseline validation",
+  "mypy_status": "passed",
+  "pytest_status": "passed",
+  "release_validation_status": "success",
+  "ruff_status": "passed",
+  "status_by_target": {
+    "architecture": "passed_baseline",
+    "dashboard": "passed_baseline",
+    "forecast": "passed_baseline",
+    "genai": "passed_baseline",
+    "generation": "passed_baseline",
+    "ingestion": "passed_baseline",
+    "inventory": "passed_baseline",
+    "maintenance": "passed_baseline",
+    "monitoring": "passed_baseline",
+    "quality": "passed_baseline"
+  },
+  "structure_validation_status": "passed",
+  "validation_commands_expected": [
+    "make quality",
+    "make validate-all",
+    "make release",
+    "make validate-release",
+    "make release-ci"
+  ],
+  "validation_run_id": "REL-de43cd61b28d2282",
+  "validation_targets": [
+    "generation",
+    "ingestion",
+    "forecast",
+    "inventory",
+    "quality",
+    "maintenance",
+    "monitoring",
+    "genai",
+    "dashboard",
+    "architecture"
+  ],
+  "validation_timestamp_label": "deterministic-final-release",
+  "warnings": []
+}

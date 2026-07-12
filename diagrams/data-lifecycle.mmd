@@ -44,6 +44,10 @@ flowchart LR
     MonitoringOutputs --> Architecture
     GenAIOutputs --> Architecture
     Architecture --> ArchitectureOutputs["Service mapping, security controls, infra blueprints, diagrams, manifest, and lineage"]
+    ArchitectureOutputs --> Release["Final release evidence consolidation"]
+    DashboardOutputs --> Release
+    GenAIOutputs --> Release
+    Release --> ReleaseOutputs["Evidence indexes, catalogues, validation summary, repository health, reports, manifest, and lineage"]
     Transform --> Analyse["Analyse"]
     Analyse --> Model["Model"]
     Model --> Score["Score"]
@@ -63,6 +67,7 @@ flowchart LR
     GenAI -.-> GenAILineage["GenAI manifest, evaluation, guardrails, and lineage"]
     Dashboard -.-> DashboardLineage["Dashboard manifest, semantic model, diagnostics, and lineage"]
     Architecture -.-> ArchitectureLineage["Architecture manifest, validation results, and lineage"]
+    Release -.-> ReleaseLineage["Release manifest, diagnostics, validation summary, and lineage"]
     Accepted -.-> Manifest["Run manifests"]
     Quarantine -.-> Manifest
     Score -.-> Manifest

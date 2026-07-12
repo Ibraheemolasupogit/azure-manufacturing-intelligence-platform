@@ -27,6 +27,7 @@ flowchart TD
         GenAIAssistant["Deterministic GenAI operations assistant"]
         DashboardOutputs["Dashboard semantic outputs"]
         ArchitectureBlueprint["Static Azure reference architecture blueprint"]
+        ReleaseEvidence["Final release evidence catalogues"]
         ML["Future ML workflows"]
         Reporting["Power BI-ready extracts and reports"]
     end
@@ -95,6 +96,9 @@ flowchart TD
     Reporting --> ArchitectureBlueprint
     MonitoringAnalytics --> ArchitectureBlueprint
     GenAIAssistant --> ArchitectureBlueprint
+    ArchitectureBlueprint --> ReleaseEvidence
+    DashboardOutputs --> ReleaseEvidence
+    GenAIAssistant --> ReleaseEvidence
     GenAIAssistant --> Lineage
     GenAIAssistant --> Manifests
     Forecasting --> Reporting
@@ -120,6 +124,8 @@ flowchart TD
     DashboardOutputs --> Manifests
     ArchitectureBlueprint --> Lineage
     ArchitectureBlueprint --> Manifests
+    ReleaseEvidence --> Lineage
+    ReleaseEvidence --> Manifests
 
     Stream -.-> EventHubs
     Raw -.-> ADLS
@@ -159,6 +165,7 @@ flowchart TD
     ArchitectureBlueprint -.-> PowerBI
     ArchitectureBlueprint -.-> Purview
     ArchitectureBlueprint -.-> Monitor
+    ReleaseEvidence -.-> Purview
     Forecasting -.-> Synapse
     Reporting -.-> Synapse
     ML -.-> AzureML

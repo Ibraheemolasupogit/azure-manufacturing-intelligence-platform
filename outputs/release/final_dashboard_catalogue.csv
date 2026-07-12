@@ -1,0 +1,30 @@
+dashboard_item_id,item_type,relative_path,dashboard_page,source_tables,metrics,visual_type,Power_BI_ready_status,deployment_status,limitations
+DASH-001,json,outputs/dashboard/dashboard-manifest.json,semantic model,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-002,json,outputs/dashboard/dashboard_diagnostics.json,semantic model,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-003,json,outputs/dashboard/dashboard_page_specs.json,multiple,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-004,csv,outputs/dashboard/dim_dashboard_page.csv,multiple,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-005,csv,outputs/dashboard/dim_date.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-006,csv,outputs/dashboard/dim_machine.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-007,csv,outputs/dashboard/dim_metric.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-008,csv,outputs/dashboard/dim_plant.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-009,csv,outputs/dashboard/dim_product.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-010,csv,outputs/dashboard/dim_production_line.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-011,csv,outputs/dashboard/dim_risk_level.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-012,csv,outputs/dashboard/dim_supplier.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-013,csv,outputs/dashboard/dim_warehouse.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-014,csv,outputs/dashboard/executive_scorecard.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-015,csv,outputs/dashboard/fact_demand_forecast.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-016,csv,outputs/dashboard/fact_inventory_risk.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-017,csv,outputs/dashboard/fact_maintenance_alerts.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-018,csv,outputs/dashboard/fact_operations_assistant_narratives.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-019,csv,outputs/dashboard/fact_platform_health.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-020,csv,outputs/dashboard/fact_production_kpis.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-021,csv,outputs/dashboard/fact_quality_alerts.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-022,json,outputs/dashboard/lineage-records.json,semantic model,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-023,csv,outputs/dashboard/metric_catalogue.csv,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-024,json,outputs/dashboard/semantic_model.json,semantic model,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-025,json,outputs/dashboard/visual_specifications.json,semantic model,outputs/dashboard/,metric_catalogue.csv,metadata,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-026,markdown,dashboard/README.md,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-027,markdown,dashboard/dashboard_index.md,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-028,markdown,dashboard/powerbi_ready_outputs.md,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.
+DASH-029,markdown,dashboard/semantic_model_notes.md,semantic model,outputs/dashboard/,metric_catalogue.csv,table,import_ready_local_file,local_reference_only,No .pbix or Power BI workspace.

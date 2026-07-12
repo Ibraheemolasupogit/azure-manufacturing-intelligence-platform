@@ -1,0 +1,17 @@
+{
+  "ci_workflow_status": "static local validation only",
+  "diagram_count": 8,
+  "documentation_count": 111,
+  "infra_blueprint_count": 26,
+  "known_limitations": "No live Azure, Power BI, Fabric, OpenAI, or external service deployment.",
+  "lineage_count": 10,
+  "make_target_coverage": "quality, generation, ingestion, analytics, dashboard, architecture, release",
+  "manifest_count": 11,
+  "milestone_completion_status": "Milestones 1-12 complete",
+  "output_artefact_count": 137,
+  "package_count": 15,
+  "release_readiness_label": "portfolio_release_ready",
+  "report_count": 26,
+  "source_file_count": 177,
+  "test_count": 13
+}

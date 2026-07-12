@@ -1,0 +1,31 @@
+release:
+  output_directory: outputs/release
+  report_directory: reports
+  documentation_directory: docs
+  overwrite: false
+  random_seed: 20260712
+  release_name: azure_manufacturing_intelligence_platform
+  release_mode: portfolio_evidence
+  allow_external_services: false
+  allow_cloud_deployment: false
+  synthetic_data_only: true
+
+validation:
+  require_all_milestone_docs: true
+  require_all_validation_targets: true
+  require_all_core_outputs: true
+  require_all_manifests: true
+  require_all_lineage: true
+  require_dashboard_outputs: true
+  require_architecture_outputs: true
+  require_no_deployment_claims: true
+  require_no_secrets: true
+  require_no_large_temp_outputs: true
+
+catalogues:
+  write_evidence_index: true
+  write_report_index: true
+  write_architecture_index: true
+  write_dashboard_index: true
+  write_model_catalogue: true
+  write_interview_pack: true

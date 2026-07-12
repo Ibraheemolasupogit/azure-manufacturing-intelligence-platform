@@ -38,6 +38,8 @@ REQUIRED_PATHS = [
     "configs/dashboard_ci.yaml",
     "configs/azure_architecture.yaml",
     "configs/azure_architecture_ci.yaml",
+    "configs/release.yaml",
+    "configs/release_ci.yaml",
     "configs/synthetic_data.yaml",
     "configs/synthetic_data_ci.yaml",
     "configs/environments/local.yaml",
@@ -66,6 +68,13 @@ REQUIRED_PATHS = [
     "docs/architecture/genai-architecture.md",
     "docs/architecture/operations-architecture.md",
     "docs/architecture/cost-management.md",
+    "docs/release/final-release-notes.md",
+    "docs/release/repository-evidence-map.md",
+    "docs/release/local-first-boundary.md",
+    "docs/release/synthetic-data-boundary.md",
+    "docs/release/validation-and-quality-gates.md",
+    "docs/release/interview-guide.md",
+    "docs/release/limitations.md",
     "docs/business/business-context.md",
     "docs/business/manufacturing-use-cases.md",
     "docs/business/kpi-catalogue.md",
@@ -154,6 +163,7 @@ REQUIRED_PATHS = [
     "docs/milestones/milestone-9.md",
     "docs/milestones/milestone-10.md",
     "docs/milestones/milestone-11.md",
+    "docs/milestones/milestone-12.md",
     "docs/roadmap.md",
     "outputs/.gitkeep",
     "reports/.gitkeep",
@@ -164,6 +174,13 @@ REQUIRED_PATHS = [
     "reports/quality_alert_summary.md",
     "reports/azure_architecture_report.md",
     "reports/deployment_boundary_report.md",
+    "reports/final_portfolio_summary.md",
+    "reports/final_evidence_register.md",
+    "reports/final_validation_report.md",
+    "reports/final_release_readiness_report.md",
+    "reports/interview_talking_points.md",
+    "reports/cv_project_summary.md",
+    "reports/recruiter_readme_summary.md",
     "src/manufacturing_intelligence/__init__.py",
     "src/manufacturing_intelligence/common/config.py",
     "src/manufacturing_intelligence/common/exceptions.py",
@@ -295,6 +312,17 @@ REQUIRED_PATHS = [
     "src/manufacturing_intelligence/architecture/serialization.py",
     "src/manufacturing_intelligence/architecture/pipeline.py",
     "src/manufacturing_intelligence/architecture/existing_run.py",
+    "src/manufacturing_intelligence/release/__main__.py",
+    "src/manufacturing_intelligence/release/cli.py",
+    "src/manufacturing_intelligence/release/config.py",
+    "src/manufacturing_intelligence/release/catalogue.py",
+    "src/manufacturing_intelligence/release/validation.py",
+    "src/manufacturing_intelligence/release/manifest.py",
+    "src/manufacturing_intelligence/release/lineage.py",
+    "src/manufacturing_intelligence/release/reporting.py",
+    "src/manufacturing_intelligence/release/serialization.py",
+    "src/manufacturing_intelligence/release/pipeline.py",
+    "src/manufacturing_intelligence/release/existing_run.py",
     "src/manufacturing_intelligence/ingestion/__main__.py",
     "src/manufacturing_intelligence/ingestion/cli.py",
     "src/manufacturing_intelligence/ingestion/config.py",
@@ -552,6 +580,30 @@ ARCHITECTURE_OUTPUTS = [
     "reports/deployment_boundary_report.md",
 ]
 
+RELEASE_OUTPUTS = [
+    "outputs/release/final_evidence_index.csv",
+    "outputs/release/final_evidence_index.json",
+    "outputs/release/final_report_index.csv",
+    "outputs/release/final_architecture_index.csv",
+    "outputs/release/final_data_catalogue.csv",
+    "outputs/release/final_model_analytics_catalogue.csv",
+    "outputs/release/final_dashboard_catalogue.csv",
+    "outputs/release/final_genai_catalogue.csv",
+    "outputs/release/final_azure_reference_catalogue.csv",
+    "outputs/release/final_validation_summary.json",
+    "outputs/release/final_repository_health.json",
+    "outputs/release/release_diagnostics.json",
+    "outputs/release/release-manifest.json",
+    "outputs/release/lineage-records.json",
+    "reports/final_portfolio_summary.md",
+    "reports/final_evidence_register.md",
+    "reports/final_validation_report.md",
+    "reports/final_release_readiness_report.md",
+    "reports/interview_talking_points.md",
+    "reports/cv_project_summary.md",
+    "reports/recruiter_readme_summary.md",
+]
+
 PACKAGE_DIRS = [
     "common",
     "data_generation",
@@ -565,6 +617,7 @@ PACKAGE_DIRS = [
     "genai",
     "dashboard",
     "architecture",
+    "release",
     "reporting",
 ]
 
@@ -582,6 +635,7 @@ def main() -> int:
     missing.extend(path for path in GENAI_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in DASHBOARD_OUTPUTS if not (root / path).exists())
     missing.extend(path for path in ARCHITECTURE_OUTPUTS if not (root / path).exists())
+    missing.extend(path for path in RELEASE_OUTPUTS if not (root / path).exists())
     for package_dir in PACKAGE_DIRS:
         marker = root / "src" / "manufacturing_intelligence" / package_dir / "__init__.py"
         if not marker.exists():

@@ -63,6 +63,13 @@ Milestone 11 architecture outputs are also stored outside the data lake zones:
 - `reports/deployment_boundary_report.md`: no-deployment boundary summary.
 - `docs/architecture/`, `diagrams/`, and `infra/`: reference-only docs, Mermaid diagrams, Bicep/Terraform blueprints, policy notes, and runbooks.
 
+Milestone 12 final release outputs are also stored outside the data lake zones:
+
+- `outputs/release/`: final evidence index, report index, architecture index, data catalogue, model and analytics catalogue, dashboard catalogue, GenAI catalogue, Azure reference catalogue, validation summary, repository health, diagnostics, release manifest, and lineage.
+- `reports/final_portfolio_summary.md`, `reports/final_evidence_register.md`, `reports/final_validation_report.md`, and `reports/final_release_readiness_report.md`: final release summaries.
+- `reports/interview_talking_points.md`, `reports/cv_project_summary.md`, and `reports/recruiter_readme_summary.md`: portfolio communication pack.
+- `docs/release/`: final release notes, evidence map, local-first boundary, synthetic-data boundary, validation gates, interview guide, and limitations.
+
 Milestone 2 generates synthetic raw files only:
 
 - `production_events.jsonl`
@@ -119,5 +126,9 @@ Useful commands:
 - `make architecture`: regenerate tracked controlled Azure reference architecture evidence.
 - `make architecture-ci`: generate and validate ignored CI architecture evidence.
 - `make validate-architecture`: validate an existing architecture run without regenerating outputs.
+- `make release`: regenerate tracked controlled final release evidence.
+- `make release-ci`: generate and validate ignored CI release evidence.
+- `make validate-release`: validate an existing final release run without regenerating outputs.
+- `make validate-all`: validate all controlled milestone outputs in order.
 
 Direct generator and ingestion calls refuse to overwrite existing managed files unless `--overwrite` is provided. Raw files are treated as immutable inputs. All data must remain synthetic and must not represent real employees, customers, suppliers, or commercially sensitive operations.

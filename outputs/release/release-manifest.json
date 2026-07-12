@@ -1,0 +1,243 @@
+{
+  "azure_deployment": false,
+  "cloud_deployment": false,
+  "configuration_path": "configs/release.yaml",
+  "configuration_sha256": "b304c67fe3df5e0558f39ccebd97ef7cdbdd4ec412dac6e7f3575f5ddf0fb8f5",
+  "external_services_called": false,
+  "generated_catalogues": [
+    "outputs/release/final_architecture_index.csv",
+    "outputs/release/final_azure_reference_catalogue.csv",
+    "outputs/release/final_dashboard_catalogue.csv",
+    "outputs/release/final_data_catalogue.csv",
+    "outputs/release/final_evidence_index.csv",
+    "outputs/release/final_evidence_index.json",
+    "outputs/release/final_genai_catalogue.csv",
+    "outputs/release/final_model_analytics_catalogue.csv",
+    "outputs/release/final_report_index.csv"
+  ],
+  "generated_docs": [
+    "docs/milestones/milestone-12.md",
+    "docs/release/final-release-notes.md",
+    "docs/release/interview-guide.md",
+    "docs/release/limitations.md",
+    "docs/release/local-first-boundary.md",
+    "docs/release/repository-evidence-map.md",
+    "docs/release/synthetic-data-boundary.md",
+    "docs/release/validation-and-quality-gates.md"
+  ],
+  "generated_reports": [
+    "reports/cv_project_summary.md",
+    "reports/final_evidence_register.md",
+    "reports/final_portfolio_summary.md",
+    "reports/final_release_readiness_report.md",
+    "reports/final_validation_report.md",
+    "reports/interview_talking_points.md",
+    "reports/recruiter_readme_summary.md"
+  ],
+  "git_commit": "0e97b1a44953304fc73155d20254d5994cfa4eaa",
+  "input_hashes": {
+    "architecture": "050b2d817565c15e31428c606d35d5be51834d614d4a29f2d3d847c723231587",
+    "dashboard": "78ee5b43f5021aa1e84d39f7e97da64ebbded59f232cc90c5b9bd19b825f8287",
+    "forecast": "d384ecbd3007a0a2a65988a65f38f1ed076107c0b89b12cf068cac60c4ef52c9",
+    "genai": "8d608ec0ab6b8c515d7db05f12a5bd90b5f8fe9ac17dc5469009a287efb0b823",
+    "generation": "0c449c26e4e919847a76b4e31e3ec2ab5dc603fc95e4dd01e1a9d5a5dbcd90e0",
+    "ingestion": "ed8d1b02e8825556caffd57e1b0db260c3375147cf86593e7564ac2760ea6035",
+    "inventory": "0583c861e5c832323d62e404204f27ae23d052dad56b441e6be86c4cb5d022ee",
+    "maintenance": "51d844609ce656de67b57094644b5b5824ec0dceb0bb28a856e6e00e40d37a1b",
+    "monitoring": "a6f3adfa6428e998212cfd5bd6bb25cea862838f52f0c6fa665f3dbc4c9d3b3b",
+    "quality": "43513e01d755a6c861e0a53fd414baef88b6580bc0aaa480d41a6c446d7958bf"
+  },
+  "output_files": {
+    "docs_milestones_milestone_12_md": {
+      "file_size_bytes": 684,
+      "path": "docs/milestones/milestone-12.md",
+      "row_count": null,
+      "sha256": "d95aa4836af2c5a9f3d330a080200d5710a7d6844cc5c09380eb074a9451734d"
+    },
+    "docs_release_final_release_notes_md": {
+      "file_size_bytes": 180,
+      "path": "docs/release/final-release-notes.md",
+      "row_count": null,
+      "sha256": "66129259297b50005c4e654ada4eb3a9e15f33d2e89e7e5a4027be64079dcf1a"
+    },
+    "docs_release_interview_guide_md": {
+      "file_size_bytes": 233,
+      "path": "docs/release/interview-guide.md",
+      "row_count": null,
+      "sha256": "c8bbd2d6f7eb8a3107105259d9818b3503bbb5f9bd657236150595cb18a3269f"
+    },
+    "docs_release_limitations_md": {
+      "file_size_bytes": 225,
+      "path": "docs/release/limitations.md",
+      "row_count": null,
+      "sha256": "1e85db1dea722f6ef734033f76569e478988d9ab708a902ffbba372548efd9da"
+    },
+    "docs_release_local_first_boundary_md": {
+      "file_size_bytes": 230,
+      "path": "docs/release/local-first-boundary.md",
+      "row_count": null,
+      "sha256": "440637a47c74019f21c327734c0914d31eb1e1b60971b3856439554210c93361"
+    },
+    "docs_release_repository_evidence_map_md": {
+      "file_size_bytes": 222,
+      "path": "docs/release/repository-evidence-map.md",
+      "row_count": null,
+      "sha256": "f56aac73eb441bd7825ba3345c6fd6d4c702c85da44f1e2cbc35ff281d6a7845"
+    },
+    "docs_release_synthetic_data_boundary_md": {
+      "file_size_bytes": 234,
+      "path": "docs/release/synthetic-data-boundary.md",
+      "row_count": null,
+      "sha256": "123fd8892750bae26ab43f42f104e887492ec01986af9b386f1d8fba01629e73"
+    },
+    "docs_release_validation_and_quality_gates_md": {
+      "file_size_bytes": 241,
+      "path": "docs/release/validation-and-quality-gates.md",
+      "row_count": null,
+      "sha256": "840f6867ce21ac3b59cfee20c961f4b0ef03660845053a07f17a548fc4025cab"
+    },
+    "outputs_release_final_architecture_index_csv": {
+      "file_size_bytes": 12802,
+      "path": "outputs/release/final_architecture_index.csv",
+      "row_count": 45,
+      "sha256": "756f6b7dc959ae6b799e800c1745ae8850892e2ea78af26d1d6c7e7ed7a7e74f"
+    },
+    "outputs_release_final_azure_reference_catalogue_csv": {
+      "file_size_bytes": 12593,
+      "path": "outputs/release/final_azure_reference_catalogue.csv",
+      "row_count": 44,
+      "sha256": "3f15cf46394184c1df8acf36bd246362b2d2eb5a4b38d999af19c556c4904669"
+    },
+    "outputs_release_final_dashboard_catalogue_csv": {
+      "file_size_bytes": 5679,
+      "path": "outputs/release/final_dashboard_catalogue.csv",
+      "row_count": 29,
+      "sha256": "2461c849be0b4e6e0cae1d43c4bab9e622b2a991fecd15cbe0c50dc22ee8acc1"
+    },
+    "outputs_release_final_data_catalogue_csv": {
+      "file_size_bytes": 37249,
+      "path": "outputs/release/final_data_catalogue.csv",
+      "row_count": 147,
+      "sha256": "09b2ac337604c632f6572831c8a7b053371786453e6631bf8c142d1c7f3d4251"
+    },
+    "outputs_release_final_evidence_index_csv": {
+      "file_size_bytes": 152082,
+      "path": "outputs/release/final_evidence_index.csv",
+      "row_count": 323,
+      "sha256": "6a1e022c8965c1b91d218808e1d56a603ea6c4f47dabd6f1899304ee041f0b9f"
+    },
+    "outputs_release_final_evidence_index_json": {
+      "file_size_bytes": 282721,
+      "path": "outputs/release/final_evidence_index.json",
+      "row_count": null,
+      "sha256": "acd6c11dfe4e39a39f9453386e5b4197d4aba1cb09ad90a049535d7ea922c9fb"
+    },
+    "outputs_release_final_genai_catalogue_csv": {
+      "file_size_bytes": 4172,
+      "path": "outputs/release/final_genai_catalogue.csv",
+      "row_count": 15,
+      "sha256": "17b59627b5b19b793178d85f58bf089264bbb1b5d9403676ff91fb02b504ef67"
+    },
+    "outputs_release_final_model_analytics_catalogue_csv": {
+      "file_size_bytes": 3019,
+      "path": "outputs/release/final_model_analytics_catalogue.csv",
+      "row_count": 8,
+      "sha256": "b2a5e5a116b61c23f0710d86747b3fe3a4f77b96e66aa9a4288c826f61c764b8"
+    },
+    "outputs_release_final_report_index_csv": {
+      "file_size_bytes": 7439,
+      "path": "outputs/release/final_report_index.csv",
+      "row_count": 26,
+      "sha256": "5d4277a91f8f5a6e675a5680268210c578f52828e6cec3f3882e305f74566a1e"
+    },
+    "outputs_release_final_repository_health_json": {
+      "file_size_bytes": 635,
+      "path": "outputs/release/final_repository_health.json",
+      "row_count": null,
+      "sha256": "3d1a0be0ccc27fdf6417f5a25e981466d1c8b882ebaaa8c3e02c57e63a4aeac7"
+    },
+    "outputs_release_final_validation_summary_json": {
+      "file_size_bytes": 1412,
+      "path": "outputs/release/final_validation_summary.json",
+      "row_count": null,
+      "sha256": "07d4eb971c9834690839651118fea2b67f6dc18c7fbe1941ba105e9ef2c8f148"
+    },
+    "outputs_release_release_diagnostics_json": {
+      "file_size_bytes": 287,
+      "path": "outputs/release/release_diagnostics.json",
+      "row_count": null,
+      "sha256": "ac7a2a09fa01b3de2a29dbebd98c8cc2449e4d56028c1db795ad046cc0cbb6d7"
+    },
+    "reports_cv_project_summary_md": {
+      "file_size_bytes": 840,
+      "path": "reports/cv_project_summary.md",
+      "row_count": null,
+      "sha256": "03db67412a93c605281eada65e5a93fdeb753d85c989d3b3e3915e532499d6ab"
+    },
+    "reports_final_evidence_register_md": {
+      "file_size_bytes": 266,
+      "path": "reports/final_evidence_register.md",
+      "row_count": null,
+      "sha256": "01a9b3bf53bd166ac7b8da1a174f12ecd1e90c13f3bb8c4f7706452161d2ba25"
+    },
+    "reports_final_portfolio_summary_md": {
+      "file_size_bytes": 263,
+      "path": "reports/final_portfolio_summary.md",
+      "row_count": null,
+      "sha256": "0f2c55f65056fe4e79ca8e04bb613c395a9a8e0520f34a56ceb3876a69a4ed42"
+    },
+    "reports_final_release_readiness_report_md": {
+      "file_size_bytes": 243,
+      "path": "reports/final_release_readiness_report.md",
+      "row_count": null,
+      "sha256": "4ca155a7b28fff63e1569ae4069d09a92345be2c557a6314a594bbd9d9201903"
+    },
+    "reports_final_validation_report_md": {
+      "file_size_bytes": 262,
+      "path": "reports/final_validation_report.md",
+      "row_count": null,
+      "sha256": "f1e6a43d14d50004dda70b9ca71ac920ae1535acaca915c8d25879fdd5114c44"
+    },
+    "reports_interview_talking_points_md": {
+      "file_size_bytes": 684,
+      "path": "reports/interview_talking_points.md",
+      "row_count": null,
+      "sha256": "38eb51591e97f9c7d1eb24f82fdd837bc21d0d6ff2e44823ba7a390ec17e1a1b"
+    },
+    "reports_recruiter_readme_summary_md": {
+      "file_size_bytes": 381,
+      "path": "reports/recruiter_readme_summary.md",
+      "row_count": null,
+      "sha256": "0a5db6afacfba56a342175fca90a2b712f61635dd63b523013b4758210fe5dd4"
+    }
+  },
+  "pipeline_name": "final_portfolio_release",
+  "pipeline_version": "0.1.0",
+  "power_bi_deployment": false,
+  "referenced_milestone_manifests": {
+    "architecture": "outputs/architecture/architecture-manifest.json",
+    "dashboard": "outputs/dashboard/dashboard-manifest.json",
+    "forecast": "outputs/forecasting/forecast-manifest.json",
+    "genai": "outputs/genai/genai-manifest.json",
+    "generation": "data/raw/generation_manifest.json",
+    "ingestion": "data/interim/_metadata/ingestion-manifest.json",
+    "inventory": "outputs/inventory/inventory-manifest.json",
+    "maintenance": "outputs/maintenance/maintenance-manifest.json",
+    "monitoring": "outputs/monitoring/monitoring-manifest.json",
+    "quality": "outputs/quality/quality-manifest.json"
+  },
+  "release_mode": "portfolio_evidence",
+  "release_readiness_status": "portfolio_release_ready",
+  "release_run_id": "REL-de43cd61b28d2282",
+  "software_version": "0.1.0",
+  "synthetic_data_only": true,
+  "upstream_inputs_modified": false,
+  "validation_results": {
+    "catalogue_reference_status": "success",
+    "forbidden_command_findings": [],
+    "lineage_status": "success",
+    "secret_findings": [],
+    "validation_status": "success"
+  },
+  "validation_status": "success"
+}

@@ -93,5 +93,11 @@ jobs:
       - name: Validate CI architecture blueprint
         run: python -m manufacturing_intelligence.architecture --config configs/azure_architecture_ci.yaml --validate-existing-run --output-directory .generated/ci/architecture --infra-directory .generated/ci/architecture/infra
 
+      - name: Run CI final release
+        run: make release-ci
+
+      - name: Validate CI final release
+        run: python -m manufacturing_intelligence.release --config configs/release_ci.yaml --validate-existing-run --output-directory .generated/ci/release
+
       - name: Clean generated CI outputs
         run: rm -rf .generated

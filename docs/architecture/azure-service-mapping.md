@@ -88,3 +88,9 @@ Milestone 11 writes static mapping evidence under `outputs/architecture/`:
 - `data_architecture_layers.csv`, `mlops_mapping.csv`, `genai_architecture_mapping.csv`, `operations_mapping.csv`, and `cost_considerations.csv`: map local governed evidence to production architecture responsibilities.
 
 All deployment statuses remain `reference_only` or `planned`. No Azure service, Power BI workspace, Fabric item, Terraform state, or Bicep deployment is created.
+
+## Milestone 12 final release mapping
+
+Milestone 12 does not add a new Azure service mapping. It consolidates the local evidence into release catalogues under `outputs/release/`, final reports under `reports/`, and release docs under `docs/release/`.
+
+The release catalogues reference existing local evidence for data generation, ingestion, forecasting, inventory, quality, maintenance, monitoring, GenAI, dashboard outputs, and Azure reference architecture. They are portfolio governance artefacts only and do not claim production deployment, live Azure validation, Power BI publishing, Fabric deployment, OpenAI usage, or external service execution.

@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality-analytics quality-analytics-ci validate-quality-analytics maintenance maintenance-ci validate-maintenance monitoring monitoring-ci validate-monitoring genai genai-ci validate-genai dashboard dashboard-ci validate-dashboard architecture architecture-ci validate-architecture quality clean
+.PHONY: install format lint type-check test structure-check generate-data generate-data-ci validate-generation ingest ingest-ci validate-ingestion prepare-forecast-data forecast forecast-ci validate-forecast inventory inventory-ci validate-inventory quality-analytics quality-analytics-ci validate-quality-analytics maintenance maintenance-ci validate-maintenance monitoring monitoring-ci validate-monitoring genai genai-ci validate-genai dashboard dashboard-ci validate-dashboard architecture architecture-ci validate-architecture release release-ci validate-release validate-all quality clean
 
 install:
 	$(PYTHON) -m pip install --upgrade pip
@@ -119,6 +119,18 @@ architecture-ci:
 
 validate-architecture:
 	$(PYTHON) -m manufacturing_intelligence.architecture --config configs/azure_architecture.yaml --validate-existing-run
+
+release:
+	$(PYTHON) -m manufacturing_intelligence.release --config configs/release.yaml --overwrite
+
+release-ci:
+	$(PYTHON) -m manufacturing_intelligence.release --config configs/release_ci.yaml --overwrite
+	$(PYTHON) -m manufacturing_intelligence.release --config configs/release_ci.yaml --validate-existing-run --output-directory .generated/ci/release
+
+validate-release:
+	$(PYTHON) -m manufacturing_intelligence.release --config configs/release.yaml --validate-existing-run
+
+validate-all: validate-generation validate-ingestion validate-forecast validate-inventory validate-quality-analytics validate-maintenance validate-monitoring validate-genai validate-dashboard validate-architecture validate-release
 
 quality: structure-check lint type-check test
 

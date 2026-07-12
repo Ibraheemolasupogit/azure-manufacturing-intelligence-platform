@@ -164,3 +164,9 @@ Milestone 11 architecture outputs consume governed tracked evidence only. Requir
 Architecture outputs must include Azure service mapping, security controls, data architecture layers, MLOps mapping, GenAI architecture mapping, operations mapping, cost considerations, ADRs, validation results, manifest, lineage, reports, docs, diagrams, and static Bicep/Terraform blueprint files. Deployment mode must be `reference_only`; live deployment, Azure CLI execution, Terraform apply, Bicep deployment, Power BI deployment, Fabric deployment, and Azure credential requirements must remain false.
 
 Existing-run validation must detect missing files, tampered row counts, tampered sizes, tampered hashes, incomplete service mappings, incomplete security domains, missing ADR decisions, invalid deployment flags, forbidden active deployment commands, real-looking secrets, lineage target gaps, upstream hash changes, and run-ID mismatches.
+
+## Final Release Evidence Contract
+
+Milestone 12 release outputs consume tracked governed evidence from all previous milestones. Required source manifests must exist, output catalogues must reference existing repository files, `.generated/` artefacts must be excluded, release paths must be relative and safe, and upstream milestone evidence must remain unchanged.
+
+Release outputs must include evidence, report, architecture, data, model analytics, dashboard, GenAI, and Azure reference catalogues; validation summary; repository health; diagnostics; manifest; lineage; final reports; release docs; and milestone 12 evidence. Deployment and external-service flags must remain false, and `synthetic_data_only` must remain true.

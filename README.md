@@ -2,7 +2,7 @@
 
 ## Executive overview
 
-This repository is the foundation for a local-first, Azure-mapped manufacturing operations and supply-chain intelligence platform. It is designed to show how an enterprise manufacturer could ingest synthetic factory and supply-chain data, govern it, validate it, model it, and expose analytics-ready outputs without requiring live cloud resources during development.
+This repository is a complete local-first, Azure-mapped manufacturing operations and supply-chain intelligence portfolio. It shows how an enterprise manufacturer could ingest synthetic factory and supply-chain data, govern it, validate it, model it, expose analytics-ready outputs, document Azure reference architecture, and consolidate release evidence without requiring live cloud resources.
 
 ## Business problem
 
@@ -17,7 +17,7 @@ Manufacturing organisations often make decisions from fragmented production, inv
 
 ## Core capabilities
 
-Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, local evidence monitoring, a deterministic local GenAI-style operations assistant, Power BI-ready dashboard output tables, and a static Azure reference architecture blueprint.
+Implemented local capabilities include production telemetry ingestion, schema validation, demand forecasting, inventory-risk scoring, quality anomaly detection, predictive maintenance, local evidence monitoring, a deterministic local GenAI-style operations assistant, Power BI-ready dashboard output tables, a static Azure reference architecture blueprint, and a final release evidence catalogue.
 
 ## Intended users
 
@@ -46,6 +46,7 @@ Local directories, Python modules, configuration files, tests, and run manifests
 | Local GenAI adapter | Azure AI Foundry |
 | Local dashboard extracts | Microsoft Power BI |
 | Static architecture blueprint | Bicep, Terraform, Azure landing-zone guidance |
+| Final release evidence catalogues | Portfolio release governance and validation evidence |
 | Local lineage metadata | Microsoft Purview |
 | Local structured logs and metrics | Azure Monitor and Application Insights |
 | GitHub Actions | Azure DevOps Pipelines or GitHub Actions for Azure |
@@ -65,6 +66,7 @@ flowchart TD
     monitoring --> genai["Deterministic GenAI Operations Assistant"]
     genai --> outputs["Power BI-Ready Outputs and Executive Reports"]
     outputs --> architecture["Static Azure Reference Architecture Blueprint"]
+    architecture --> release["Final Portfolio Evidence Release"]
 ```
 
 See [diagrams/high-level-platform-architecture.mmd](diagrams/high-level-platform-architecture.mmd) and [docs/architecture/architecture-overview.md](docs/architecture/architecture-overview.md) for more detail.
@@ -99,13 +101,13 @@ tests/         Unit tests and deterministic fixture guidance
 | Milestone 9 - GenAI operations assistant | Complete |
 | Milestone 10 - Dashboard outputs and Power BI-ready reporting | Complete |
 | Milestone 11 - Azure reference architecture and infrastructure blueprint | Complete |
-| Milestone 12 - Portfolio evidence and final polish | Planned |
+| Milestone 12 - Final portfolio polish and release readiness | Complete |
 
 Full roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## Current implementation status
 
-Implemented through Milestone 11:
+Implemented through Milestone 12:
 
 - Repository scaffold and package boundaries.
 - Configuration loading with base, local, CI, and environment-variable overrides.
@@ -137,8 +139,10 @@ Implemented through Milestone 11:
 - Dashboard dimensions, fact tables, executive scorecard, metric catalogue, semantic model metadata, page specifications, visual specifications, diagnostics, manifest, lineage, dashboard reports, and portfolio dashboard documentation.
 - Static Azure reference architecture and infrastructure blueprint layer from governed tracked evidence.
 - Azure service mapping, security controls matrix, data architecture layers, MLOps mapping, GenAI architecture mapping, operations mapping, cost considerations, ADRs, validation results, architecture manifest, architecture lineage, architecture reports, Mermaid diagrams, and reference-only Bicep and Terraform files.
+- Final release evidence consolidation from all tracked milestone outputs.
+- Final evidence index, report index, architecture index, data catalogue, model and analytics catalogue, dashboard catalogue, GenAI catalogue, Azure reference catalogue, validation summary, repository health, release diagnostics, manifest, lineage, release docs, and interview/CV/recruiter reports.
 
-Not implemented yet: Milestone 12 portfolio polish or live Azure integration.
+Not implemented: live Azure integration, live Power BI/Fabric publishing, OpenAI or Azure OpenAI calls, production orchestration, or any Milestone 13 scope.
 
 ## Development setup
 
@@ -189,6 +193,10 @@ make validate-dashboard
 make architecture
 make architecture-ci
 make validate-architecture
+make release
+make release-ci
+make validate-release
+make validate-all
 make quality
 ```
 
@@ -214,9 +222,11 @@ Forecasting uses `ordered_quantity` at the `product_id` plus `distribution_regio
 
 `make architecture` reads governed tracked ingestion, forecasting, inventory, quality, maintenance, monitoring, GenAI, and dashboard evidence; writes static Azure service mapping, security controls, data architecture, MLOps, GenAI, operations, cost, ADR, validation, manifest, and lineage outputs under `outputs/architecture/`; writes `reports/azure_architecture_report.md` and `reports/deployment_boundary_report.md`; creates reference-only docs under `docs/architecture/`, diagrams under `diagrams/`, and Bicep/Terraform/policy/runbook blueprints under `infra/`; and records upstream hashes without mutating governed evidence. The controlled run ID is `ARCH-415f3e814fd4aac6`, with 15 service mappings, 9 security controls, and 11 ADRs. `make architecture-ci` writes the same shape under ignored `.generated/ci/architecture/`. `make validate-architecture` verifies an existing architecture run without regenerating outputs.
 
+`make release` consolidates tracked evidence from Milestones 1-11 into final portfolio catalogues under `outputs/release/`; writes final release, validation, evidence, interview, CV, and recruiter reports under `reports/`; writes final release documentation under `docs/release/`; and records release manifest and lineage without mutating upstream milestone evidence. The controlled run ID is `REL-de43cd61b28d2282`, with 323 evidence rows, 26 report rows, and 8 catalogues. `make release-ci` writes the same shape under ignored `.generated/ci/release/`. `make validate-release` validates an existing release run, and `make validate-all` runs every milestone validator from generation through release.
+
 ## Testing approach
 
-Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, deterministic GenAI evidence retrieval, prompt rendering, guardrails, response synthesis, evaluation, dashboard dimensions and facts, semantic model metadata, page and visual specs, metric catalogue, architecture service mapping, security controls, data/MLOps/GenAI/operations/cost mappings, ADRs, no-deploy boundaries, overwrite behavior, tamper detection, and CLI execution outside the repository root.
+Current tests verify configuration loading, environment overrides, path resolution, repository structure, package imports, project metadata, Azure reference-only safety, deterministic synthetic generation, schema headers, row counts, manifests, cross-dataset entity consistency, governed ingestion, data-quality validation, quarantine behavior, lineage evidence, governed forecasting, inventory intelligence, governed quality analytics, governed maintenance analytics, governed monitoring, deterministic GenAI evidence retrieval, prompt rendering, guardrails, response synthesis, evaluation, dashboard dimensions and facts, semantic model metadata, page and visual specs, metric catalogue, architecture service mapping, security controls, data/MLOps/GenAI/operations/cost mappings, ADRs, release evidence catalogues, release manifest and lineage, no-deploy boundaries, overwrite behavior, tamper detection, and CLI execution outside the repository root.
 
 ## Security, privacy, and synthetic data
 
@@ -224,15 +234,21 @@ This repository is synthetic-data only. Do not commit credentials, `.env` files,
 
 ## Generated-data tracking policy
 
-The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, monitoring, GenAI assistant, dashboard, and architecture outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. No prompt logs containing secrets, real LLM outputs, `.pbix` files, real Power BI exports, Terraform state, Terraform plan files, `.terraform/` directories, or deployment credentials should be committed. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
+The small deterministic `data/raw/` sample, governed `data/interim/` validation evidence, and controlled forecast, inventory, quality, maintenance, monitoring, GenAI assistant, dashboard, architecture, and release outputs are intentionally tracked as portfolio evidence. Larger, ad hoc, CI, and temporary generated runs must stay out of Git; `.generated/` is ignored for that purpose. No prompt logs containing secrets, real LLM outputs, `.pbix` files, real Power BI exports, Terraform state, Terraform plan files, `.terraform/` directories, or deployment credentials should be committed. Generation timestamps and analytical run IDs are derived from stable configuration and input hashes, so controlled runs remain reproducible.
 
 ## Known limitations
 
-Milestone 11 architecture outputs are local reference artefacts, not deployed infrastructure. The repository does not generate `.pbix` files, call Power BI or Fabric APIs, create cloud refresh schedules, create Azure resources, require Azure credentials, run Terraform apply, or run Bicep deployment commands.
+Milestone 12 release outputs are local portfolio artefacts, not production deployment evidence. The repository does not generate `.pbix` files, call Power BI or Fabric APIs, call OpenAI or Azure OpenAI, create cloud refresh schedules, create Azure resources, require Azure credentials, run Terraform apply, or run Bicep deployment commands.
 
 ## Planned portfolio outputs
 
-Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/platform_health_summary.json`, GenAI narrative reports under `reports/`, Power BI-ready dashboard tables under `outputs/dashboard/`, and Azure reference architecture evidence under `outputs/architecture/`. Milestone 12 is expected to focus on portfolio polish.
+Current portfolio outputs include `outputs/demand_forecast.csv`, `outputs/inventory_scores.csv`, `outputs/quality_alerts.csv`, `outputs/maintenance_predictions.json`, `outputs/platform_health_summary.json`, GenAI narrative reports under `reports/`, Power BI-ready dashboard tables under `outputs/dashboard/`, Azure reference architecture evidence under `outputs/architecture/`, and final release catalogues under `outputs/release/`.
+
+## Recruiter and Interview Highlights
+
+- End-to-end manufacturing intelligence platform spanning data engineering, analytics, ML-style scoring, monitoring, dashboard-ready modelling, GenAI-style assistance, and Azure architecture.
+- Evidence-backed implementation with deterministic outputs, manifests, lineage, CI, tests, and validation commands.
+- Clear production boundary: local synthetic portfolio evidence today; Azure services are mapped as reference architecture for a future deployment.
 
 ## Disclaimer
 
